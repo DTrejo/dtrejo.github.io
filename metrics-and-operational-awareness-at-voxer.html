@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8" /><meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><link href="/images/favicon.png?1395435091" rel="icon" type="image/png" /><link href="http://dtrejo.com/feed.xml" rel="alternate" title="David Trejo | Developer &amp; Consultant Feed" type="application/atom+xml" /><title>Metrics and Operational Awareness at Voxer by David Trejo | Developer &amp; Consultant</title><link href="/metrics-and-operational-awareness-at-voxer.html" rel="canonical" /><meta content="nodejs, voxer" name="keywords" /><meta content=", as it explains how..." name="description" /><link href="/stylesheets/application.css?1395435097" media="screen" rel="stylesheet" type="text/css" /><link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script><script src="/javascripts/application.js?1394782169" type="text/javascript"></script>
+</head><body><script type="text/javascript">      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-47094657-2', 'dtrejo.com');
+      ga('send', 'pageview');
+</script><nav class="navbar navbar-default navbar-static-top"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".bs-navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><h2><a class="navbar-brand" href="http://dtrejo.com/">dtrejo.com</a></h2></div><div class="collapse navbar-collapse"><ul class="navbar-nav nav"><li><a href="/blog.html">DTrejo's Developer Tips</a></li></ul><ul class="navbar-nav nav navbar-right"><li><a href="https://twitter.com/ddtrejo"><i class='fa fa-twitter fa-inline'></i> ddtrejo</a></li></ul></div></div></nav><div class="container"><article><h1 class="article-title">Metrics and Operational Awareness at Voxer</h1><p class="article-date"><span class='date'> <span class='day'>18</span> <span class='month'>Jan</span> <span class='year'> 2013 </span> </span></p><div class="article-body"><p><img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395435092" /></p>
+
+<p><em>note: written in august 2012 during my Voxer internship.</em>
+<em>some links are broken as the <code>sky</code> project has yet to be released.</em>
+<em><code>sky</code> has been released as <a href="http://voxer.github.io/zag/">zag</a>!</em></p>
+
+<p>Please read the article on Voxer's <a href="/node-single-point-of-failure">no single point of failure architecture</a>,
+as it explains how process rings work, and how Voxer's load balancing works.</p>
+
+<p><img alt="" width="503" height="497" src="http://dtrejo.com/images/46879901-sky.png?1395435092" /></p>
+
+<h2 id="what-are-the-salient-implementation-features-of-our-metrics-solution">What are the salient implementation features of our metrics solution?</h2>
+
+<p>Client side (on your app servers, which emit data)</p>
+
+<ul>
+  <li>metrics are coalesced into 1440 byte udp packets to optimize network
+efficiency</li>
+  <li><a href="/node-single-point-of-failure">handy node.js bindings</a> which allow you simply call
+<code>sky.counter("http_status|200")</code> whenever a certain call suceeds or fails</li>
+  <li>keys emitted with the form <code>http_status|200</code> are rolled together with keys
+of the form <code>http_status|404</code>, giving you both information on, say, 404s,
+200 OKs, AND the high-level view of how many http requests you are doing per
+minute.</li>
+</ul>
+
+<p>Server side (on the skyservers which aggregate metrics data)</p>
+
+<ul>
+  <li>skyservers form a ring, and clients load balance themselves so as not to
+overwhelm a single server</li>
+  <li>intra-ring skyserver communication is also coalesced for efficiency.</li>
+  <li>load balancing allows you to add more skyservers as the number of your
+appservers grows</li>
+  <li>every minute, skyservers talk to a single redis server to roll-up their data</li>
+  <li>the redis intermediary in front of riak allows for accurate counters,
+because redis performs atomic <a href="http://redis.io/commands/incr"><code>INCR</code></a> operations</li>
+</ul>
+
+<p>Persisting data</p>
+
+<ul>
+  <li>a rollup process continuously pulls keys out of redis and puts the latest
+time period of data into redis, simultaneously performing 5-minute rollups of
+the 1 minute data, if applicable.</li>
+  <li>riak as our persistence medium allows us to keep historical data forever, as
+we can increase the size of our riak cluster by adding a machine.</li>
+</ul>
+
+<p>Viewing metrics and adding new ones</p>
+
+<ul>
+  <li>the redis server keeps a list of keys that have recently been emitted, and exposes
+this list to our graphing UI, meaning that to begin recording a new metric,
+you need not do any configuration, simply start recording it on your app servers.
+The skygraphs UI will simply pick it up and start showing it to you.</li>
+  <li>the skygraphs UI will also hit redis for the latest minute's data, giving
+you real-time access to what is going on right now in your infrastructure.</li>
+</ul>
+
+<h2 id="why-didnt-we-just-use-etsys-statsd-and-whisper-and-carbon">Why didn't we just use etsy's statsd and whisper and carbon?</h2>
+<p>Etsy wrote a library called <a href="https://github.com/etsy/statsd">statsd</a>, which works with <a href="https://github.com/etsy/statsd">whisper</a> (the
+backend) to record metrics data. There are a couple reasons we chose not to use
+these technologies.</p>
+
+<ul>
+  <li>rings of servers recieving metrics is the only way we can handle the
+volume of data being recorded by our app servers</li>
+  <li>riak allows us to store historical data forever (just add another machine)</li>
+  <li>we think our <a href="skygraphs">graphing UI</a> is pretty snazzy, especially since it has
+<a href="https://github.com/sentientwaffle/llquantize">heat maps</a></li>
+</ul>
+
+<p>Forthcoming: If you'd like to read about <a href="skygraphs">skygraphs</a>, our awesome graphing
+UI, please check out <a href="skygraphs">this article</a>.</p>
+
+<p>Thanks for reading!<br />
+<a href="http://dtrejo.com">David Trejo</a><br />
+<a href="https://twitter.com/ddtrejo">@ddtrejo</a> &amp; <a href="https://github.com/DTrejo">DTrejo on github</a></p>
+
+</div></article><div class="article-social"><h4>Share</h4><ul><li><a class="social" href="https://twitter.com/share?text=Metrics%20and%20Operational%20Awareness%20at%20Voxer&url=http%3A%2F%2Fdtrejo.com%2Fmetrics-and-operational-awareness-at-voxer.html" target="_blank"><i class='fa fa-twitter fa-inline'></i></a></li><li><a class="social" href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fdtrejo.com%2Fmetrics-and-operational-awareness-at-voxer.html" target="_blank"><i class='fa fa-linkedin fa-inline'></i></a></li><li><a class="social" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdtrejo.com%2Fmetrics-and-operational-awareness-at-voxer.html" target="_blank"><i class='fa fa-facebook fa-inline'></i></a></li><li><a class="social" href="https://plus.google.com/share?url=http%3A%2F%2Fdtrejo.com%2Fmetrics-and-operational-awareness-at-voxer.html" target="_blank"><i class='fa fa-google-plus fa-inline'></i></a></li><li class="pull-right"><div class="suggest-edit"><a class="social" href="https://github.com/dtrejo/dtrejo.github.io/blob/master/source/2013-01-18-metrics-and-operational-awareness-at-voxer.html.markdown.erb"><i class='glyphicon glyphicon-edit'></i> Suggest edit</a></div></li></ul></div><div class="media author"><div class="pull-left"><img class="media-object img-circle author-avatar" src="https://pbs.twimg.com/profile_images/2635862099/b4df37538e5380968ff9b752dd1e4c93_bigger.jpeg" /></div><div class="media-body"><h4 class="media-heading author-name"><a href="/">David Trejo</a></h4><span class="author-desc">Brown University computer science grad. Former intern at Voxer and
+Cloudera. Node Enthusiast.</span></div></div><div class="comments"><div class="article-footer"><p>Interested in leaving a comment? Keep scrolling for my email. I appreciate
+non-troll comments. If your comment is very critical, it's likely that
+I'll publish it anyway.</p><h3>Recent Articles<a class="pull-right" href="http://dtrejo.com/feed.xml"><i class='fa fa-rss fa-fw'></i> Atom Feed</a></h3><ul class="nav nav-pills nav-stacked"><li><a href="http://dtrejo.com/my-javascript-tooling-wishlist.html">My Javascript Tooling Wishlist</a></li><li><a href="http://dtrejo.com/faster-git-workflow.html">Faster git workflow?</a></li><li class="active"><a href="http://dtrejo.com/metrics-and-operational-awareness-at-voxer.html">Metrics and Operational Awareness at Voxer</a></li><li><a href="/calendar.html"><i class='fa fa-plus fa-fw'></i> 12 more</a></li></ul><hr /><form action="https://tinyletter.com/dtrejo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/dtrejo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+class="form-inline"
+>
+
+  <p><label for="tlemail">Enter your email address for posts hot off the press</label></p>
+
+  <p>
+    <input class="form-control"
+      type="text" style="width:200px" name="email" id="tlemail" placeholder="email@example.com" />
+    <input class="form-control" type="hidden" value="1" name="embed"/>
+    <input class="form-control btn-success" type="submit" value="Subscribe"/>
+  </p>
+</form></div></div></div><footer><div class="container"><div class="col-md-6"><em>Find me</em><br /><br /><a href="http://blog.dtrejo.com/">Blog</a><br /><a href="http://github.com/DTrejo">Github</a><br /><a href="http://twitter.com/ddtrejo">Twitter</a><br /><a id="email" title="david at this domain">Email</a></div><div class="col-md-6"><em>Prototypes</em><br /><br /><a href="http://colorslice.dtrejo.com">ColorSlice</a><br /><a href="http://dtrejo.com/salary.html">Salary Calculator</a><br /><a href="http://dev.stg.brown.edu/projects/imagEngine/new/">ImagEngine for <a href="http://ianaldenrussell.com/">Ian</a></a><br /><a href="https://github.com/DTrejo/rotten">rotten (for git repos)</a></div><span class="fin col-md-12 text-center"><a href="404.html">fin</a></span></div></footer></body></html>

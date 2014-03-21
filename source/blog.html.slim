@@ -1,0 +1,22 @@
+---
+pageable: true
+per_page: 10
+---
+
+= partial 'pagination_top'
+
+.articles
+  - page_articles.each_with_index do |article, i|
+    - current_resource.add_metadata article: article
+    article
+      h2.article-title #{link_to article.title, article}
+      p.article-date = render_date(article.date)
+      .article-body
+        p
+          = article_summary(article, 250)
+          '
+          a href=article_url(article) Read more
+
+  - current_resource.add_metadata article: nil
+
+= partial 'pagination_bottom'

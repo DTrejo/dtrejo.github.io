@@ -1,0 +1,38 @@
+---
+title: Faster git workflow?
+date: 2013-10-12 00:00 CET
+tags: git, productivity
+author: dtrejo
+---
+
+<%= image_tag '00000000-Git-Logo-2Color.png', :height => '100' %>
+
+I find myself copy-pasting long filenames way too often when I work with
+git. Tab completing deep paths is just as annoying. What might be a better way?
+
+READMORE
+
+What if `git status -s` showed me this?
+
+
+    $ git status -s
+    g1  M lib/child_process.js
+    g2 M  lib/sys.js
+    g3 ?? newfile.md
+
+
+And then I could do this:
+
+
+    $ vim g1
+    $ git add g3
+    ...
+
+
+Does anyone know of a tool that allows this?
+
+If it doesn't exist, let's see if I can make it :)
+
+Cheers,
+
+D

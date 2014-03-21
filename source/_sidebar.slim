@@ -1,0 +1,13 @@
+/ aside.panel.panel-default
+/ .panel-body
+
+/ = partial 'sidebar_author'
+/ = partial 'sidebar_author_projects'
+/ hr
+= partial 'sidebar_articles'
+/ - if blog.articles.length > 10
+/  = partial 'sidebar_tags'
+/- if blog.articles.length > 10
+/  = partial 'sidebar_calendar'
+hr
+/ = partial 'sidebar_links'

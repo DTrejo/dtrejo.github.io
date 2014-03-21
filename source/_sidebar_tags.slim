@@ -1,0 +1,8 @@
+h3 Tags
+ol.list-unstyled
+  - blog.tags.each do |tag, articles|
+    - # TODO if !current_article.tags.contains(tag) continue
+    li
+      = link_to tag, tag_path(tag)
+      = ' '
+      .badge= articles.size

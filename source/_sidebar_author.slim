@@ -1,0 +1,14 @@
+.person-img
+  - if data.urls.main_project
+    a href=data.urls.main_project
+      = image_tag 'author.png'
+  - else
+    = image_tag 'author.png'
+
+p: abbr title=data.author.name @#{data.author.twitter}
+p
+  ul.nav.nav-pills.nav-justified
+    li: a href=('https://twitter.com/' + data.author.twitter) rel="me"
+      | #{fa :twitter} Twitter
+    li: a href=('https://github.com/' + data.author.github) rel="me"
+      | #{fa :github} Github
