@@ -5,7 +5,7 @@
   <id>http://dtrejo.com/</id>
   <link href="http://dtrejo.com/"/>
   <link href="http://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2014-03-14T06:06:00Z</updated>
+  <updated>2014-03-21T06:06:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
@@ -13,20 +13,20 @@
     <title>My Javascript Tooling Wishlist</title>
     <link rel="alternate" href="http://dtrejo.com/my-javascript-tooling-wishlist.html"/>
     <id>http://dtrejo.com//my-javascript-tooling-wishlist.html</id>
-    <published>2014-03-14T06:06:00Z</published>
-    <updated>2014-03-14T06:06:00Z</updated>
+    <published>2014-03-21T06:06:00Z</published>
+    <updated>2014-03-21T06:06:00Z</updated>
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;What follows is a wishlist of features I'd want in my perfect javascript
+    <content type="html">&lt;p&gt;&lt;img height="120px" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/js-logo.png?1395440837" /&gt;&lt;/p&gt;
+
+&lt;p&gt;What follows is a wishlist of features I'd want in my perfect javascript
 dev environment (I don't care whether each of these things is a separate command
 line tool, I just want them :)&lt;/p&gt;
 
 
 
-&lt;p&gt;I came up with this list at 2am instead of getting a good night's sleep in
-preparation for a productive day at work. Some of these are easy to write, some
-are HARD.&lt;/p&gt;
+&lt;p&gt;Some of these are easy to write, some are hard. What would you add to this list?&lt;/p&gt;
 
 &lt;h2 id="i-dream-of-a-javascript-with-these-tools"&gt;I dream of a javascript with these tools…&lt;/h2&gt;
 &lt;ul&gt;
@@ -49,7 +49,7 @@ version of your package.json when you break the API.&lt;/li&gt;
       &lt;li&gt;test fuzzer based on the inferred types, to easily up your code coverage&lt;/li&gt;
       &lt;li&gt;some kind of fuzzer pattern language that would allow you to automatically
 generate assertions to be used at the start of every function. assertions
-would be removed before running in productions. this would help people
+would be removed before running in production. This would help people
 using your code to find mistakes more quickly. (This one is going off into
 la la land. Not sure if I believe this would be useful enough).&lt;/li&gt;
     &lt;/ul&gt;
@@ -58,8 +58,8 @@ la la land. Not sure if I believe this would be useful enough).&lt;/li&gt;
   &lt;li&gt;visualization of which functions call other functions, along with a bird's eye
 view of your whole program&lt;/li&gt;
   &lt;li&gt;static analysis tool to find uncalled callbacks (&lt;code&gt;callback&lt;/code&gt; &lt;code&gt;cb&lt;/code&gt;, &lt;code&gt;next&lt;/code&gt;,
-&lt;code&gt;done&lt;/code&gt;, etc)&lt;/li&gt;
-  &lt;li&gt;static analysis tool to find dead code after &lt;code&gt;return&lt;/code&gt;. e.g. &lt;a href="http://npm.im/jshint"&gt;jshint?&lt;/a&gt;&lt;/li&gt;
+&lt;code&gt;done&lt;/code&gt;, etc) e.g. &lt;a href="http://npm.im/jshint"&gt;jshint&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;static analysis tool to find dead code after &lt;code&gt;return&lt;/code&gt;. e.g. &lt;a href="http://npm.im/jshint"&gt;jshint&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;static analysis tool that reminds you to do &lt;code&gt;return cb()&lt;/code&gt;, so you never call
 callbacks twice.&lt;/li&gt;
   &lt;li&gt;auto npm install
@@ -72,7 +72,7 @@ have to&lt;/li&gt;
   &lt;li&gt;style guide enforcement &lt;strong&gt;and correction&lt;/strong&gt; tool that bases itself on certain
 "blessed" files. Based on the formatting and style of the blessed files, it
 corrects newly written files to match the same whitespace, line-length, etc.
-No blasphemers allowed!&lt;/li&gt;
+No blasphemers allowed! e.g. &lt;a href="https://github.com/jshint/fixmyjs"&gt;fixymyjs (kinda)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;v8 hidden class detector - if a hidden class is "broken" or deoptimized, it
 warns you. e.g. if you use &lt;code&gt;delete&lt;/code&gt; on a property of your &lt;code&gt;new Point()&lt;/code&gt;
 object.&lt;/li&gt;
@@ -121,7 +121,7 @@ npm modules you've written)&lt;/li&gt;
 e.g. &lt;a href="http://racket-lang.org/"&gt;DrScheme&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;review and edit diffs side-by-side before pushing to master (or while fixing
+  &lt;li&gt;review and &lt;strong&gt;edit&lt;/strong&gt; diffs side-by-side before pushing to master (or while fixing
 conflicts)
     &lt;ul&gt;
       &lt;li&gt;use &lt;a href="https://github.com/philz/git-vimdiff"&gt;Philip Zeyliger's git-vimdiff&lt;/a&gt;&lt;/li&gt;
@@ -137,6 +137,8 @@ at me: &lt;a href="http://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt;, alternativ
 
 &lt;p&gt;David Trejo&lt;/p&gt;
 
+&lt;p&gt;Projects I mentioned:&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;&lt;a href="https://github.com/brownplt/strobe"&gt;https://github.com/brownplt/strobe&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://www.jetbrains.com/webstorm/"&gt;https://www.jetbrains.com/webstorm/&lt;/a&gt;&lt;/li&gt;
@@ -150,6 +152,8 @@ at me: &lt;a href="http://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt;, alternativ
   &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=DCQNm6yiZh0"&gt;https://www.youtube.com/watch?v=DCQNm6yiZh0&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://github.com/philz/git-vimdiff"&gt;https://github.com/philz/git-vimdiff&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://github.com/substack/coverify"&gt;https://github.com/substack/coverify&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://cs.brown.edu/~sk/Publications/Papers/Published/gsk-flow-typing-theory/paper.pdf"&gt;http://cs.brown.edu/~sk/Publications/Papers/Published/gsk-flow-typing-theory/paper.pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/jshint/fixmyjs"&gt;https://github.com/jshint/fixmyjs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
@@ -162,7 +166,7 @@ at me: &lt;a href="http://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt;, alternativ
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img height="100" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1395261751" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img height="100" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1395261751" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I find myself copy-pasting long filenames way too often when I work with
 git. Tab completing deep paths is just as annoying. What might be a better way?&lt;/p&gt;
@@ -200,7 +204,7 @@ $ git add g3
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395439199" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395440837" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
 &lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
@@ -209,7 +213,7 @@ $ git add g3
 &lt;p&gt;Please read the article on Voxer's &lt;a href="/node-single-point-of-failure"&gt;no single point of failure architecture&lt;/a&gt;,
 as it explains how process rings work, and how Voxer's load balancing works.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="503" height="497" src="http://dtrejo.com/images/46879901-sky.png?1395439199" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="503" height="497" src="http://dtrejo.com/images/46879901-sky.png?1395440837" /&gt;&lt;/p&gt;
 
 &lt;h2 id="what-are-the-salient-implementation-features-of-our-metrics-solution"&gt;What are the salient implementation features of our metrics solution?&lt;/h2&gt;
 
@@ -291,11 +295,11 @@ UI, please check out &lt;a href="skygraphs"&gt;this article&lt;/a&gt;.&lt;/p&gt;
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395440837" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
 &lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
 &lt;em&gt;&lt;code&gt;sky&lt;/code&gt; has been released as &lt;a href="http://voxer.github.io/zag/"&gt;zag&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395439199" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Voxer believes that any single point of failure is bad. Very bad (this is why we
 use riak). To achieve this, we've written a couple libraries to allow node
@@ -307,7 +311,7 @@ of the work).&lt;/p&gt;
 
 &lt;p&gt;Here's how this looks:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1395439199" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1395440837" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Requests emanate from clients via &lt;a href="https://github.com/dannycoates/poolee"&gt;poolee&lt;/a&gt;, which has a list of all API
 servers. Poolee chooses a random API server to speak with, and will stop talking
@@ -406,7 +410,7 @@ power of &lt;a href="http://nodejs.org"&gt;node.js&lt;/a&gt;.&lt;/p&gt;
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img height="100" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1395261751" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img height="120px" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1395261751" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Let's say I'm taking pull requests for &lt;a href="https://github.com/mranney/node_redis"&gt;node_redis&lt;/a&gt;.&lt;/p&gt;
 
