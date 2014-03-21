@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /feed.html
+Disallow: /feed.xml
+Disallow: /javascripts/
+Disallow: /stylesheets/
+
+Sitemap: http://dtrejo.com/sitemap.xml

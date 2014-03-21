@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://dtrejo.com/2010-07-27-meta-rules.html</loc>
+    <loc>http://dtrejo.com/meta-rules.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2010-08-02-how-to-stay-up-to-date-with-nodejs.html</loc>
+    <loc>http://dtrejo.com/how-to-stay-up-to-date-with-nodejs.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2010-08-14-hotkeys-for-hacker-news.html</loc>
+    <loc>http://dtrejo.com/hotkeys-for-hacker-news.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2010-08-15-1100-clock-made-with-jquery.html</loc>
+    <loc>http://dtrejo.com/1100-clock-made-with-jquery.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2010-09-03-nodejs-for-server-newbs.html</loc>
+    <loc>http://dtrejo.com/nodejs-for-server-newbs.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2010-11-02-watch-me-demo-my-phone-controlled-game-7pm-to.html</loc>
+    <loc>http://dtrejo.com/watch-me-demo-my-phone-controlled-game-7pm-to.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2010-11-22-always-be-coding.html</loc>
+    <loc>http://dtrejo.com/always-be-coding.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2010-12-07-touch-tone-tanks-featured-on-techcrunch-tv.html</loc>
+    <loc>http://dtrejo.com/touch-tone-tanks-featured-on-techcrunch-tv.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2012-01-02-convert-all-line-endings-to-lf.html</loc>
+    <loc>http://dtrejo.com/convert-all-line-endings-to-lf.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2012-07-06-my-github-pull-request-workflow.html</loc>
+    <loc>http://dtrejo.com/my-github-pull-request-workflow.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2013-01-06-salary-negotiation-resources-cs-focused.html</loc>
+    <loc>http://dtrejo.com/salary-negotiation-resources-cs-focused.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2013-01-18-metrics-and-operational-awareness-at-voxer.html</loc>
+    <loc>http://dtrejo.com/metrics-and-operational-awareness-at-voxer.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2013-01-18-node-single-point-of-failure.html</loc>
+    <loc>http://dtrejo.com/node-single-point-of-failure.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2013-10-12-faster-git-workflow.html</loc>
+    <loc>http://dtrejo.com/faster-git-workflow.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/2014-03-14-my-javascript-tooling-wishlist.html</loc>
+    <loc>http://dtrejo.com/my-javascript-tooling-wishlist.html</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -103,7 +103,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://dtrejo.com/index.html</loc>
+    <loc>http://dtrejo.com/</loc>
     <lastmod>2014-03-21T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
