@@ -200,7 +200,7 @@ $ git add g3
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395435092" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395435377" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
 &lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
@@ -209,7 +209,7 @@ $ git add g3
 &lt;p&gt;Please read the article on Voxer's &lt;a href="/node-single-point-of-failure"&gt;no single point of failure architecture&lt;/a&gt;,
 as it explains how process rings work, and how Voxer's load balancing works.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="503" height="497" src="http://dtrejo.com/images/46879901-sky.png?1395435092" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="503" height="497" src="http://dtrejo.com/images/46879901-sky.png?1395435377" /&gt;&lt;/p&gt;
 
 &lt;h2 id="what-are-the-salient-implementation-features-of-our-metrics-solution"&gt;What are the salient implementation features of our metrics solution?&lt;/h2&gt;
 
@@ -295,7 +295,7 @@ UI, please check out &lt;a href="skygraphs"&gt;this article&lt;/a&gt;.&lt;/p&gt;
 &lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
 &lt;em&gt;&lt;code&gt;sky&lt;/code&gt; has been released as &lt;a href="http://voxer.github.io/zag/"&gt;zag&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395435092" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395435377" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Voxer believes that any single point of failure is bad. Very bad (this is why we
 use riak). To achieve this, we've written a couple libraries to allow node
@@ -307,7 +307,7 @@ of the work).&lt;/p&gt;
 
 &lt;p&gt;Here's how this looks:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1395435092" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1395435377" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Requests emanate from clients via &lt;a href="https://github.com/dannycoates/poolee"&gt;poolee&lt;/a&gt;, which has a list of all API
 servers. Poolee chooses a random API server to speak with, and will stop talking
