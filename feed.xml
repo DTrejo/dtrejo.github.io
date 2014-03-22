@@ -5,10 +5,158 @@
   <id>http://dtrejo.com/</id>
   <link href="http://dtrejo.com/"/>
   <link href="http://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2014-03-21T06:06:00Z</updated>
+  <updated>2014-03-21T23:33:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>How to Run an Intern Meetup</title>
+    <link rel="alternate" href="http://dtrejo.com/how-to-run-an-intern-meetup.html"/>
+    <id>http://dtrejo.com//how-to-run-an-intern-meetup.html</id>
+    <published>2014-03-21T23:33:00Z</published>
+    <updated>2014-03-21T23:33:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;em&gt;Note: written in 2012&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the checklist version. Normally I'd write a story about how to do this,
+but that takes more time and also is probably less reproducible.&lt;/p&gt;
+
+
+
+&lt;h3 id="goals"&gt;Goals&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;have interns visit&lt;/li&gt;
+  &lt;li&gt;have interns talk to your employees&lt;/li&gt;
+  &lt;li&gt;have interns think your company is awesome and then apply to work with you.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="suck-points"&gt;Suck points&lt;/h3&gt;
+&lt;p&gt;Reasons why your event might suck, based on past experiences at meetups I
+attended during my three Bay Area Software Engineering internships. Also based
+on the two meetups I helped organize in summer 2011 and 2012 (the meetups I
+organized didn't have these problems :).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the exec you picked to give a talk isn't great at public speaking, or wasn't
+excited enough about the topic&lt;/li&gt;
+  &lt;li&gt;the talk went for too long&lt;/li&gt;
+  &lt;li&gt;you served pizza&lt;/li&gt;
+  &lt;li&gt;you don't serve beer&lt;/li&gt;
+  &lt;li&gt;too many people show up to your event. personally I think 40-60 is a good
+number.&lt;/li&gt;
+  &lt;li&gt;you let non-intern adults into the event&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="how-not-to-suck-and-have-a-good-event"&gt;How not to suck and have a good event&lt;/h3&gt;
+
+&lt;h3 id="venue--physical-stuff"&gt;Venue &amp;amp; Physical stuff&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;name tags with the person's name and the company they work at, so people don't
+have to incessantly and annoyingly ask each other where they work.&lt;/li&gt;
+  &lt;li&gt;food. Burritos are a decent choice. Tacos are as well. Sushi is super pro, but
+expensive ;)&lt;/li&gt;
+  &lt;li&gt;have a projector for slides for your speaker&lt;/li&gt;
+  &lt;li&gt;use Eventbrite, collect email name, employer, university, and graduation year,
+all in different fields. You'll use this to un-invite non-students, and for
+recruiting later on.&lt;/li&gt;
+  &lt;li&gt;at the event have a little booth sort of thing with a sign up sheet for "yes,
+I'd like to work here, please ping me for my resume so we can start talking".&lt;/li&gt;
+  &lt;li&gt;swag. stickers, whatever, doesn't need to be expensive or fancy or useless or
+hackneyed.&lt;/li&gt;
+  &lt;li&gt;chairs for people to sit down. I recommend leaving lots of space between the
+rows, as well as a decent amount of space between the chairs so that people
+can get through. People will turn their chairs once the talk is finished and
+talk to each other, and eat their food with plenty of space to be messy and
+put their trash/plate on the ground.&lt;/li&gt;
+  &lt;li&gt;have beer. You can ask people if they are 21 when they sign up on Eventbrite,
+and then give them little pink stickers on their name tag when they show up
+and are over 21. Then you could have someone near the beer enforcing that
+people are 21.&lt;/li&gt;
+  &lt;li&gt;if you are not on the ground floor of your building, or your doors lock, give
+your phone number to attendees by modifying the Eventbrite RSVP email, and
+also possibly putting a number on your locked door so people can call you if
+they are locked out.&lt;/li&gt;
+  &lt;li&gt;have a little table and a couple of friendly people sit there and hang out
+name tags and make conversation with people.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="getting-the-word-out"&gt;Getting the word out&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DONT schedule it on the same night as ALL the other intern meetups. At least
+in summer 2012, this was Thursday. Try Tuesday or something.&lt;/li&gt;
+  &lt;li&gt;DO have one of your interns take point on publicizing the event: this makes it
+more personal and ALSO relevant to other interns, because people are like "oh,
+this person I've seen around the valley and that is my age, I should listen
+and maybe I'll even see them later and we'll become friends. I might actually
+end up caring about this person".&lt;/li&gt;
+  &lt;li&gt;every year there is an intern group on Facebook. Post to it 2 weeks before the
+event, 1 week before the event, and the day before.&lt;/li&gt;
+  &lt;li&gt;the intern who takes point (the LEAD) will likely know interns at many other
+companies. The LEAD can then ask their friends at each of these companies to
+email a blurb out to that company's intern list. Here are some
+companies/interns that &lt;a href="https://twitter.com/seanzawi"&gt;Sean&lt;/a&gt; and I emailed out to for this past meetup (emails
+may/may not have been sent out, but we asked people there to send out for us):
+    &lt;ul&gt;
+      &lt;li&gt;mozilla&lt;/li&gt;
+      &lt;li&gt;learnboost&lt;/li&gt;
+      &lt;li&gt;uber&lt;/li&gt;
+      &lt;li&gt;yammer&lt;/li&gt;
+      &lt;li&gt;twitter&lt;/li&gt;
+      &lt;li&gt;zynga&lt;/li&gt;
+      &lt;li&gt;mixpanel&lt;/li&gt;
+      &lt;li&gt;stripe&lt;/li&gt;
+      &lt;li&gt;codeforamerica&lt;/li&gt;
+      &lt;li&gt;yahoo (really? Okay!)&lt;/li&gt;
+      &lt;li&gt;google&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;shoot an email to the folks at internmatch who have a ~500 person list of
+interns in the bay (as of 2012).&lt;/li&gt;
+  &lt;li&gt;big companies will send more interns, so sending off to big companies is a
+bigger priority.&lt;/li&gt;
+  &lt;li&gt;don't forget to have each of your interns send out to their university friends
+(and acquaintances) who are in the area. Tell them not to be ashamed about
+emailing, but DO give them a blurb, otherwise each one will have to spend time
+writing an invitation.&lt;/li&gt;
+  &lt;li&gt;of the people who RSVP on eventbrite, about 50% will show up. No, you and your
+event are not special, it will be 50%. This should guide how much food you
+buy.&lt;/li&gt;
+  &lt;li&gt;it doesn't matter if emails are sent out via personal email or work email. In
+fact, personal email with the work email cc'd is almost more human &amp;amp; friendly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="making-the-most-of-the-event-for-the-sake-of-your-company"&gt;Making the most of the event, for the sake of your company&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;DO invite your full-time engineers. You should also feed them.&lt;/li&gt;
+  &lt;li&gt;DO have your exec talk on a topic that would be interesting to both your
+full-timers and your interns. If your CTO is a good speaker, I recommend
+having them give a tech talk. It is OK to get technical, people will raise
+their hands. The worst thing is to have the talk go on too long, I recommend
+limiting them to 15-20 minutes of speaking and then open it up to another 10
+minutes of questions.&lt;/li&gt;
+  &lt;li&gt;ONCE THE TALK IS OVER, the LEAD should say thanks for talking, and
+then CALL OUT EMPLOYEES e.g. this is Shahrooz, talk to him about
+Android; this is Danny talk to him about node.js; this is &lt;a href="https://medium.com/tech-talk/d823af31f7c"&gt;Chris&lt;/a&gt;, talk to him
+about iOS; this is Mike &amp;amp; Dave, talk to them about Riak and DTrace and
+keeping machines from not blowing up in a cloud of rainbow smoke. This allows
+interns to go and talk to the people who interest them, and gives them a
+handle on your organization so they can get more out of the meetup by asking
+questions of those specific people.&lt;/li&gt;
+  &lt;li&gt;your employees and interns should be wearing some sort of company swag.&lt;/li&gt;
+  &lt;li&gt;REMIND your employees to bring their business cards and hand them out like
+cray cray. They do have cards, right?&lt;/li&gt;
+  &lt;li&gt;After the event, have the LEAD send an email out to everyone who RSVP'd on the
+eventbrite, thanking them for coming, and encouraging them to email back if
+they are interested in working at your company. Cc your hiring person on this
+email to make hand-off easier.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
   <entry>
     <title>My Javascript Tooling Wishlist</title>
     <link rel="alternate" href="http://dtrejo.com/my-javascript-tooling-wishlist.html"/>
@@ -166,7 +314,7 @@ at me: &lt;a href="http://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt;, alternativ
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img height="100" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1395261751" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img height="100" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1395518362" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I find myself copy-pasting long filenames way too often when I work with
 git. Tab completing deep paths is just as annoying. What might be a better way?&lt;/p&gt;
@@ -196,6 +344,69 @@ $ git add g3
 </content>
   </entry>
   <entry>
+    <title>Node Single Point of Failure</title>
+    <link rel="alternate" href="http://dtrejo.com/node-single-point-of-failure.html"/>
+    <id>http://dtrejo.com//node-single-point-of-failure.html</id>
+    <published>2013-01-17T23:00:00Z</published>
+    <updated>2013-01-17T23:00:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395518381" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
+&lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
+&lt;em&gt;&lt;code&gt;sky&lt;/code&gt; has been released as &lt;a href="http://voxer.github.io/zag/"&gt;zag&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Voxer believes that any single point of failure is bad. Very bad (this is why we
+use riak). To achieve this, we've written a couple libraries to allow node
+processes to communicate across machines and in concert. The first is
+&lt;a href="https://github.com/dannycoates/poolee"&gt;poolee&lt;/a&gt; by &lt;a href="https://github.com/dannycoates"&gt;Danny Coates&lt;/a&gt; which does http load balancing on the client,
+and the second is &lt;a href="ring-was-unpublished"&gt;ring&lt;/a&gt;*, which organizes processes that compose a service
+into a cooperating whole (each process owns part of the keyspace, and thus part
+of the work).&lt;/p&gt;
+
+&lt;p&gt;Here's how this looks:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1395518381" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Requests emanate from clients via &lt;a href="https://github.com/dannycoates/poolee"&gt;poolee&lt;/a&gt;, which has a list of all API
+servers. Poolee chooses a random API server to speak with, and will stop talking
+to the API server if it becomes unresponsive. Health checks on unresponsive
+servers are performed with using exponential backoff (e.g. 1 second, 8 seconds,
+16 seconds, etc), so as not to flood the network.&lt;/p&gt;
+
+&lt;p&gt;The ring of API servers kicks in! Each client request has a distinguishing
+characteristic (e.g. geographic region), which dictates a specific API server as
+the "home" or "owner" of that data, and it is tasked with responding to that
+request. You may have noticed that poolee chooses a &lt;em&gt;random&lt;/em&gt; node, but it turns
+our that this random node knows it is not the owner of the request, and can
+forward it to the true "home" node of that request.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ring&lt;/code&gt; is consistent, which means that when an API server goes down, the other
+servers will fill in for the downed server without changing the homes of data
+stored on any nodes other than one neighboring node. The efficiency of home
+re-shuffling is what makes the ring consistent. If this doesn't make sense, it is
+because it's difficult to explain, wikipedia does a better job of explaining
+&lt;a href="https://en.wikipedia.org/wiki/Consistent_hashing"&gt;consistent hash rings&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="failure"&gt;Failure&lt;/h2&gt;
+&lt;p&gt;Poolee and ring work together and allow us to do rolling restarts without
+service interruption, restart single machines when SSL has memory leaks,
+and remove machines from our clusters.&lt;/p&gt;
+
+&lt;p&gt;Thus, Voxer achieves a no single point of failure architecture using the
+power of &lt;a href="http://nodejs.org"&gt;node.js&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;*Forthcoming: docs and more information on &lt;a href="ring-was-unpublished"&gt;ring&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;br /&gt;
+&lt;a href="http://dtrejo.com"&gt;David Trejo&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt; &amp;amp; &lt;a href="https://github.com/DTrejo"&gt;DTrejo on github&lt;/a&gt;&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
     <title>Metrics and Operational Awareness at Voxer</title>
     <link rel="alternate" href="http://dtrejo.com/metrics-and-operational-awareness-at-voxer.html"/>
     <id>http://dtrejo.com//metrics-and-operational-awareness-at-voxer.html</id>
@@ -204,7 +415,7 @@ $ git add g3
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395460671" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395518381" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
 &lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
@@ -213,7 +424,7 @@ $ git add g3
 &lt;p&gt;Please read the article on Voxer's &lt;a href="/node-single-point-of-failure"&gt;no single point of failure architecture&lt;/a&gt;,
 as it explains how process rings work, and how Voxer's load balancing works.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="503" height="497" src="http://dtrejo.com/images/46879901-sky.png?1395460671" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="503" height="497" src="http://dtrejo.com/images/46879901-sky.png?1395518381" /&gt;&lt;/p&gt;
 
 &lt;h2 id="what-are-the-salient-implementation-features-of-our-metrics-solution"&gt;What are the salient implementation features of our metrics solution?&lt;/h2&gt;
 
@@ -287,69 +498,6 @@ UI, please check out &lt;a href="skygraphs"&gt;this article&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   <entry>
-    <title>Node Single Point of Failure</title>
-    <link rel="alternate" href="http://dtrejo.com/node-single-point-of-failure.html"/>
-    <id>http://dtrejo.com//node-single-point-of-failure.html</id>
-    <published>2013-01-17T23:00:00Z</published>
-    <updated>2013-01-17T23:00:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1395460671" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
-&lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
-&lt;em&gt;&lt;code&gt;sky&lt;/code&gt; has been released as &lt;a href="http://voxer.github.io/zag/"&gt;zag&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Voxer believes that any single point of failure is bad. Very bad (this is why we
-use riak). To achieve this, we've written a couple libraries to allow node
-processes to communicate across machines and in concert. The first is
-&lt;a href="https://github.com/dannycoates/poolee"&gt;poolee&lt;/a&gt; by &lt;a href="https://github.com/dannycoates"&gt;Danny Coates&lt;/a&gt; which does http load balancing on the client,
-and the second is &lt;a href="ring-was-unpublished"&gt;ring&lt;/a&gt;*, which organizes processes that compose a service
-into a cooperating whole (each process owns part of the keyspace, and thus part
-of the work).&lt;/p&gt;
-
-&lt;p&gt;Here's how this looks:&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1395460671" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Requests emanate from clients via &lt;a href="https://github.com/dannycoates/poolee"&gt;poolee&lt;/a&gt;, which has a list of all API
-servers. Poolee chooses a random API server to speak with, and will stop talking
-to the API server if it becomes unresponsive. Health checks on unresponsive
-servers are performed with using exponential backoff (e.g. 1 second, 8 seconds,
-16 seconds, etc), so as not to flood the network.&lt;/p&gt;
-
-&lt;p&gt;The ring of API servers kicks in! Each client request has a distinguishing
-characteristic (e.g. geographic region), which dictates a specific API server as
-the "home" or "owner" of that data, and it is tasked with responding to that
-request. You may have noticed that poolee chooses a &lt;em&gt;random&lt;/em&gt; node, but it turns
-our that this random node knows it is not the owner of the request, and can
-forward it to the true "home" node of that request.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ring&lt;/code&gt; is consistent, which means that when an API server goes down, the other
-servers will fill in for the downed server without changing the homes of data
-stored on any nodes other than one neighboring node. The efficiency of home
-re-shuffling is what makes the ring consistent. If this doesn't make sense, it is
-because it's difficult to explain, wikipedia does a better job of explaining
-&lt;a href="https://en.wikipedia.org/wiki/Consistent_hashing"&gt;consistent hash rings&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id="failure"&gt;Failure&lt;/h2&gt;
-&lt;p&gt;Poolee and ring work together and allow us to do rolling restarts without
-service interruption, restart single machines when SSL has memory leaks,
-and remove machines from our clusters.&lt;/p&gt;
-
-&lt;p&gt;Thus, Voxer achieves a no single point of failure architecture using the
-power of &lt;a href="http://nodejs.org"&gt;node.js&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;*Forthcoming: docs and more information on &lt;a href="ring-was-unpublished"&gt;ring&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Thanks for reading!&lt;br /&gt;
-&lt;a href="http://dtrejo.com"&gt;David Trejo&lt;/a&gt;&lt;br /&gt;
-&lt;a href="https://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt; &amp;amp; &lt;a href="https://github.com/DTrejo"&gt;DTrejo on github&lt;/a&gt;&lt;/p&gt;
-
-</content>
-  </entry>
-  <entry>
     <title>Salary Negotiation Resources (CS focused)</title>
     <link rel="alternate" href="http://dtrejo.com/salary-negotiation-resources-cs-focused.html"/>
     <id>http://dtrejo.com//salary-negotiation-resources-cs-focused.html</id>
@@ -399,55 +547,6 @@ power of &lt;a href="http://nodejs.org"&gt;node.js&lt;/a&gt;.&lt;/p&gt;
   &lt;li&gt;&lt;a href="http://news.ycombinator.com/item?id=2309317"&gt;http://news.ycombinator.com/item?id=2309317&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://news.ycombinator.com/item?id=2438980"&gt;http://news.ycombinator.com/item?id=2438980&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>My Github Pull Request Workflow</title>
-    <link rel="alternate" href="http://dtrejo.com/my-github-pull-request-workflow.html"/>
-    <id>http://dtrejo.com//my-github-pull-request-workflow.html</id>
-    <published>2012-07-05T23:00:00Z</published>
-    <updated>2012-07-05T23:00:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img height="120px" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1395261751" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Let's say I'm taking pull requests for &lt;a href="https://github.com/mranney/node_redis"&gt;node_redis&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here's how I go about it.&lt;/p&gt;
-
-&lt;pre class="highlight text"&gt;export NUM=214 # for convenience
-curl -s https://github.com/mranney/node_redis/pull/$NUM.patch &amp;gt; $NUM.patch
-
-# see what changed, and make sure it applies cleanly
-git apply --stat $NUM.patch
-git apply --check $NUM.patch
-
-# add the commits to master
-git am --signoff &amp;lt; $NUM.patch
-
-# if I need to make some changes, I do the following and put &amp;quot;e&amp;quot; next
-# to the commits that need changes
-git rebase -i origin/master
-
-# If there&amp;#39;s only one commit in the PR, I use
-git commit --amend
-# (you should make an alias for this)
-&lt;/pre&gt;
-&lt;p&gt;Yes, rebase can be scary. I recommend reading about &lt;a href="http://gitfu.wordpress.com/2008/04/06/git-reflog-no-commits-left-behind"&gt;how to undo &lt;strong&gt;anything&lt;/strong&gt;
-using git's reflog&lt;/a&gt;, even a botched rebase or merge.&lt;/p&gt;
-
-&lt;h3 id="update-here-are-some-simpler-ways"&gt;Update: here are some simpler ways:&lt;/h3&gt;
-
-&lt;pre class="highlight text"&gt;export NUM=8
-curl -s https://github.com/dtrejo/readmetree/pull/$NUM.patch | git am --signoff
-&lt;/pre&gt;
-&lt;p&gt;Or even add this to your &lt;code&gt;~/.gitconfig&lt;/code&gt; (via &lt;a href="https://gist.github.com/piscisaureus/3342247"&gt;piscisaureus&lt;/a&gt;)&lt;/p&gt;
-
-&lt;pre class="highlight text"&gt;[alias]
-  # via https://gist.github.com/piscisaureus/3342247
-  pullify = config --add remote.origin.fetch &amp;#39;+refs/pull/*/head:refs/remotes/origin/pr/*&amp;#39;
-&lt;/pre&gt;
 </content>
   </entry>
 </feed>
