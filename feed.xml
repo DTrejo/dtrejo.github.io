@@ -5,10 +5,68 @@
   <id>http://dtrejo.com/</id>
   <link href="http://dtrejo.com/"/>
   <link href="http://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2014-03-21T23:33:00Z</updated>
+  <updated>2014-07-19T21:32:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>Zero Effort Responsive Email Creation</title>
+    <link rel="alternate" href="http://dtrejo.com/zero-effort-responsive-email-creation.html"/>
+    <id>http://dtrejo.com//zero-effort-responsive-email-creation.html</id>
+    <published>2014-07-19T21:32:00Z</published>
+    <updated>2014-07-19T21:32:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;Creating responsive emails can be time consuming. Many email service providers
+have terrible email editors. With this process you won't have to understand
+email client compatibility issues, &lt;em&gt;and&lt;/em&gt; you won't have to write inline CSS.&lt;/p&gt;
+
+&lt;p&gt;This flow assumes that you 1) do not have heavy design needs, and 2) you have an
+existing email system that accepts HTML/text (and you don't want to migrate your
+list just to send out your responsive email).&lt;/p&gt;
+
+&lt;p&gt;First, choose an email service provider, like Mailchimp, whose web email editor
+sends responsive emails. Then, use Mailchimp's email editor to create your email
+and send it to yourself via a “campaign,” not the "test" email button. Mailchimp
+will send the email to your inbox. Use Gmail’s "view original," and you'll
+find its source: mangled HTML and text. (Side note: emails are sent as both HTML
+and text in order to support both sophisticated and unsophisticated email
+clients.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1405806519" /&gt;&lt;/p&gt;
+
+&lt;h2 id="how-to-unmangle-mailchimps-htmltext"&gt;How to unmangle Mailchimp's HTML/text&lt;/h2&gt;
+
+&lt;p&gt;The HTML and text are encoded in a format called "quoted printable." To decode
+them into something usable, head over to this great tool by &lt;a href="http://mathiasbynens.be/"&gt;Mattias
+Byrnens&lt;/a&gt;, &lt;a href="mothereff.in/quoted-printable"&gt;mothereff.in/quoted-printable&lt;/a&gt;. Copy the HTML section out of
+the email, and paste it in "Encoded" textarea. Instantly, the decoded version
+will appear in the "Decoded" area above it. Do the same for the text version of
+the email. Take both versions of the email, put them in your text editor, and
+edit them to your heart's content!&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1405806519" /&gt;&lt;/p&gt;
+
+&lt;p&gt;To test your edits (and double-check mailchimp’s output), use
+&lt;a href="http://PutsMail.com"&gt;PutsMail.com&lt;/a&gt;. Paste the HTML in the Body textarea and test out
+various resolutions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1405806519" /&gt;&lt;/p&gt;
+
+&lt;p&gt;NOTE: uncheck the checkbox that says, "Make the CSS inline
+when 'Check your HTML.’" All your CSS is already inline—you don’t want PutsMail
+to screw up anything by being too smart.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1405806519" /&gt;&lt;/p&gt;
+
+&lt;p&gt;To triple-check that your email is beautiful, use PutsMail to send yourself test
+emails.&lt;/p&gt;
+
+&lt;p&gt;That's it! Enjoy!&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>How to Run an Intern Meetup</title>
     <link rel="alternate" href="http://dtrejo.com/how-to-run-an-intern-meetup.html"/>
@@ -352,7 +410,7 @@ $ git add g3
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1398397664" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1405806519" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
 &lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
@@ -368,7 +426,7 @@ of the work).&lt;/p&gt;
 
 &lt;p&gt;Here's how this looks:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1398397664" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1405806519" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Requests emanate from clients via &lt;a href="https://github.com/dannycoates/poolee"&gt;poolee&lt;/a&gt;, which has a list of all API
 servers. Poolee chooses a random API server to speak with, and will stop talking
@@ -415,7 +473,7 @@ power of &lt;a href="http://nodejs.org"&gt;node.js&lt;/a&gt;.&lt;/p&gt;
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1398397664" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1405806519" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
 &lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
@@ -424,7 +482,7 @@ power of &lt;a href="http://nodejs.org"&gt;node.js&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Please read the article on Voxer's &lt;a href="/node-single-point-of-failure"&gt;no single point of failure architecture&lt;/a&gt;,
 as it explains how process rings work, and how Voxer's load balancing works.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="503" height="497" src="http://dtrejo.com/images/46879901-sky.png?1398397664" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="503" height="497" src="http://dtrejo.com/images/46879901-sky.png?1405806519" /&gt;&lt;/p&gt;
 
 &lt;h2 id="what-are-the-salient-implementation-features-of-our-metrics-solution"&gt;What are the salient implementation features of our metrics solution?&lt;/h2&gt;
 
@@ -495,58 +553,6 @@ UI, please check out &lt;a href="skygraphs"&gt;this article&lt;/a&gt;.&lt;/p&gt;
 &lt;a href="http://dtrejo.com"&gt;David Trejo&lt;/a&gt;&lt;br /&gt;
 &lt;a href="https://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt; &amp;amp; &lt;a href="https://github.com/DTrejo"&gt;DTrejo on github&lt;/a&gt;&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>Salary Negotiation Resources (CS focused)</title>
-    <link rel="alternate" href="http://dtrejo.com/salary-negotiation-resources-cs-focused.html"/>
-    <id>http://dtrejo.com//salary-negotiation-resources-cs-focused.html</id>
-    <published>2013-01-05T23:00:00Z</published>
-    <updated>2013-01-05T23:00:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;strong&gt;This is a dump of my personal notes; expect nothing!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id="general"&gt;General&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://www.offer-letters.com/"&gt;http://www.offer-letters.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.jamesaltucher.com/2011/11/how-to-negotiate-in-three-easy-lessons/"&gt;http://www.jamesaltucher.com/2011/11/how-to-negotiate-in-three-easy-lessons/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.iwillteachyoutoberich.com/blog/negotiate-like-an-indian-i-taught-my-friend-how-to-negotiate-an-8000-salary-increase/"&gt;http://www.iwillteachyoutoberich.com/blog/negotiate-like-an-indian-i-taught-m…&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://mindyourdecisions.com/blog/2009/08/04/how-to-negotiate-a-pay-raise-with-game-theory/"&gt;http://mindyourdecisions.com/blog/2009/08/04/how-to-negotiate-a-pay-raise-wit…&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;why you should talk about salary with co-workers and friends: &lt;a href="http://news.ycombinator.com/item?id=4767273"&gt;http://news.ycombinator.com/item?id=4767273&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;summary/review of secrets of power negotiating book: &lt;a href="http://www.korokithakis.net/posts/secrets-power-negotiating/"&gt;http://www.korokithakis.net/posts/secrets-power-negotiating/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="startup-specific"&gt;Startup-specific&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://accountalent.com/?p=380"&gt;http://accountalent.com/?p=380&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;How I negotiated my startup compensation
-&lt;a href="http://blog.keen.io/post/29904565692/how-i-negotiated-my-startup-compensation"&gt;http://blog.keen.io/post/29904565692/how-i-negotiated-my-startup-compensation&lt;/a&gt; [article crit: &lt;a href="http://news.ycombinator.com/item?id=4413569"&gt;http://news.ycombinator.com/item?id=4413569&lt;/a&gt; ]&lt;/li&gt;
-  &lt;li&gt;Should you join that start-up? Running the numbers.
- &lt;a href="http://auscillate.com/post/238"&gt;http://auscillate.com/post/238&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;[great comments] &lt;a href="http://news.ycombinator.com/item?id=2928339"&gt;http://news.ycombinator.com/item?id=2928339&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="books"&gt;Books&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ask for it on amazon; be sure to do excercises with whichever friend of yours is best at negotiating&lt;/li&gt;
-  &lt;li&gt;summary/review of secrets of power negotiating book: &lt;a href="http://www.korokithakis.net/posts/secrets-power-negotiating/"&gt;http://www.korokithakis.net/posts/secrets-power-negotiating/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="scientific"&gt;Scientific&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://link.springer.com/chapter/10.1007%2F978-3-642-00142-0_66"&gt;http://link.springer.com/chapter/10.1007%2F978-3-642-00142-0_66&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://link.springer.com/article/10.1007%2Fs11211-008-0084-x"&gt;http://link.springer.com/article/10.1007%2Fs11211-008-0084-x&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://psycnet.apa.org/index.cfm?fa=search.displayRecord&amp;amp;UID=2001-17820-002"&gt;http://psycnet.apa.org/index.cfm?fa=search.displayRecord&amp;amp;UID=2001-17820-002&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="unread"&gt;unread&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://news.ycombinator.com/item?id=2309317"&gt;http://news.ycombinator.com/item?id=2309317&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://news.ycombinator.com/item?id=2438980"&gt;http://news.ycombinator.com/item?id=2438980&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
