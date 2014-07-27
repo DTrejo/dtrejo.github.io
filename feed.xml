@@ -25,9 +25,6 @@ to prepare it, to the most minute but important details.&lt;/p&gt;
 
 
 
-&lt;p&gt;Cheers,
-David&lt;/p&gt;
-
 &lt;h2 id="how-to-buy-steak"&gt;How to Buy Steak&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;by &lt;a href="http://ericzhang.com"&gt;Eric Zhang&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -52,10 +49,10 @@ David&lt;/p&gt;
 &lt;br /&gt;rib eye is easiest to cook cuz it has best marbling
 &lt;br /&gt;marbling is the amount of fat "strands" inside the lean muscle, hence giving a marbled &lt;br /&gt;appearance
 &lt;br /&gt;top notch marbling:
-&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1406501607" /&gt;
+&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1406501725" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;very shitty marbling:
-&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1406501607" /&gt;
+&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1406501725" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;marbling is 2nd most important thing when buying steaks
 &lt;br /&gt;you want more marbling
@@ -209,7 +206,7 @@ find its source: mangled HTML and text. (Side note: emails are sent as both HTML
 and text in order to support both sophisticated and unsophisticated email
 clients.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1406501606" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1406501725" /&gt;&lt;/p&gt;
 
 &lt;h2 id="how-to-unmangle-mailchimps-htmltext"&gt;How to unmangle Mailchimp's HTML/text&lt;/h2&gt;
 
@@ -221,19 +218,19 @@ will appear in the "Decoded" area above it. Do the same for the text version of
 the email. Take both versions of the email, put them in your text editor, and
 edit them to your heart's content!&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1406501606" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1406501725" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To test your edits (and double-check mailchimp’s output), use
 &lt;a href="http://PutsMail.com"&gt;PutsMail.com&lt;/a&gt;. Paste the HTML in the Body textarea and test out
 various resolutions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1406501606" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1406501725" /&gt;&lt;/p&gt;
 
 &lt;p&gt;NOTE: uncheck the checkbox that says, "Make the CSS inline
 when 'Check your HTML.’" All your CSS is already inline—you don’t want PutsMail
 to screw up anything by being too smart.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1406501606" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1406501725" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To triple-check that your email is beautiful, use PutsMail to send yourself test
 emails.&lt;/p&gt;
@@ -585,7 +582,7 @@ $ git add g3
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1406501607" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1406501725" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
 &lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
@@ -601,7 +598,7 @@ of the work).&lt;/p&gt;
 
 &lt;p&gt;Here's how this looks:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1406501607" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1406501725" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Requests emanate from clients via &lt;a href="https://github.com/dannycoates/poolee"&gt;poolee&lt;/a&gt;, which has a list of all API
 servers. Poolee chooses a random API server to speak with, and will stop talking
