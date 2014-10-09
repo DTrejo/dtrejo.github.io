@@ -5,10 +5,76 @@
   <id>http://dtrejo.com/</id>
   <link href="http://dtrejo.com/"/>
   <link href="http://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2014-07-27T21:36:00Z</updated>
+  <updated>2014-10-09T19:11:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>Why is Node Being Forked?</title>
+    <link rel="alternate" href="http://dtrejo.com/why-is-node-being-forked.html"/>
+    <id>http://dtrejo.com//why-is-node-being-forked.html</id>
+    <published>2014-10-09T19:11:00Z</published>
+    <updated>2014-10-09T19:11:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="node logo" alt="" width="212" height="114" src='http://dtrejo.com/images/new-nodejs-logo.png?1412885160' /&gt;&lt;/p&gt;
+
+&lt;p&gt;As of October 9th I learned that &lt;a href="http://github.com/joyent/node"&gt;Node&lt;/a&gt; is being forked!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://twitter.com/mikeal/status/520285400279965698"&gt;&lt;img alt="Why is node being forked? tweet" alt="" width="707" height="333" src='http://dtrejo.com/images/why-is-node-being-forked-tweet1.png?1412885160' /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I asked someone close to this, "what is the reason for the fork?"&lt;/p&gt;
+
+&lt;p&gt;It turns out that some contributors* are forking because Node is currently run
+by a Benevolent Dictator For Life (BDFL), and these contributors are intested in
+running it by committee.&lt;/p&gt;
+
+&lt;p&gt;Here is a video on the subject, where these contributors discuss the
+effort:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=fNW_tu2QnpA"&gt;https://www.youtube.com/watch?v=fNW_tu2QnpA&lt;/a&gt; (37 mins)&lt;/p&gt;
+
+&lt;p&gt;Interesting notes from the video:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;they are considering hiring a full-time person to triage bugs on Node&lt;/li&gt;
+  &lt;li&gt;they wish they could share bug-closing and bug-management abilities on the
+&lt;a href="http://github.com/joyent/node"&gt;joyent/node&lt;/a&gt; Github (but Github itself does not make this easy without giving direct commit access),&lt;/li&gt;
+  &lt;li&gt;For the near-term, they are considering spending 3 hours per week doing bug
+triage.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here are the leaders of this, with their names and their rank as a contributor
+to &lt;a href="http://github.com/joyent/node"&gt;node&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;#2&lt;/code&gt; Isaac Schlueter (and former BDFL)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;#4&lt;/code&gt; Bert Belder&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;#5&lt;/code&gt; Fedor Indutny&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;#7&lt;/code&gt; Trevor Norris&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;#27&lt;/code&gt; Mikeal Rogers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As a bystander to this, I hope that when the dust settles, Node's stability and
+progress have not been adversely affected. I know for a fact that all of these
+people have better things to do than forking node (running their businesses for
+example). I have no doubt that this whole thing is a big headache for everyone,
+and hopefully the headache goes away soon (they would not be forking if they
+didn't have good reasons).&lt;/p&gt;
+
+&lt;p&gt;Have a good day,&lt;br /&gt;
+David Trejo&lt;/p&gt;
+
+&lt;h2 id="more-information"&gt;More information&lt;/h2&gt;
+
+&lt;p&gt;Here a video of the previous meeting (25 mins):
+&lt;a href="https://www.youtube.com/watch?v=X5PtRHjUO1U"&gt;https://www.youtube.com/watch?v=X5PtRHjUO1U&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is a link to the node fork: &lt;a href="https://github.com/node-forward/node"&gt;https://github.com/node-forward/node&lt;/a&gt;&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>How to Buy and Cook Steak</title>
     <link rel="alternate" href="http://dtrejo.com/how-to-buy-and-cook-steak.html"/>
@@ -49,10 +115,10 @@ to prepare it, down to the most minute (but crucial) details.&lt;/p&gt;
 &lt;br /&gt;rib eye is easiest to cook cuz it has best marbling
 &lt;br /&gt;marbling is the amount of fat "strands" inside the lean muscle, hence giving a marbled &lt;br /&gt;appearance
 &lt;br /&gt;top notch marbling:
-&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1407164321" /&gt;
+&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1412885160" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;very shitty marbling:
-&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1407164321" /&gt;
+&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1412885161" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;marbling is 2nd most important thing when buying steaks
 &lt;br /&gt;you want more marbling
@@ -186,7 +252,7 @@ find its source: mangled HTML and text. (Side note: emails are sent as both HTML
 and text in order to support both sophisticated and unsophisticated email
 clients.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1407164321" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1412885160" /&gt;&lt;/p&gt;
 
 &lt;h2 id="how-to-unmangle-mailchimps-htmltext"&gt;How to unmangle Mailchimp's HTML/text&lt;/h2&gt;
 
@@ -198,19 +264,19 @@ will appear in the "Decoded" area above it. Do the same for the text version of
 the email. Take both versions of the email, put them in your text editor, and
 edit them to your heart's content!&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1407164321" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1412885160" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To test your edits (and double-check mailchimp’s output), use
 &lt;a href="http://PutsMail.com"&gt;PutsMail.com&lt;/a&gt;. Paste the HTML in the Body textarea and test out
 various resolutions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1407164321" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1412885160" /&gt;&lt;/p&gt;
 
 &lt;p&gt;NOTE: uncheck the checkbox that says, "Make the CSS inline
 when 'Check your HTML.’" All your CSS is already inline—you don’t want PutsMail
 to screw up anything by being too smart.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1407164321" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1412885160" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To triple-check that your email is beautiful, use PutsMail to send yourself test
 emails.&lt;/p&gt;
@@ -376,7 +442,7 @@ email to make hand-off easier.&lt;/li&gt;
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img height="120px" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/js-logo.png?1398397656" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img height="120px" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/js-logo.png?1412885160" /&gt;&lt;/p&gt;
 
 &lt;p&gt;What follows is a wishlist of features I'd want in my perfect javascript
 dev environment (I don't care whether each of these things is a separate command
@@ -524,7 +590,7 @@ at me: &lt;a href="http://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt;, alternativ
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img height="100" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1398397655" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img height="100" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1412885145" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I find myself copy-pasting long filenames way too often when I work with
 git. Tab completing deep paths is just as annoying. What might be a better way?&lt;/p&gt;
@@ -551,69 +617,6 @@ $ git add g3
 &lt;p&gt;Cheers,&lt;/p&gt;
 
 &lt;p&gt;D&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Node Single Point of Failure</title>
-    <link rel="alternate" href="http://dtrejo.com/node-single-point-of-failure.html"/>
-    <id>http://dtrejo.com//node-single-point-of-failure.html</id>
-    <published>2013-01-17T23:00:00Z</published>
-    <updated>2013-01-17T23:00:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1407164321" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;note: written in august 2012 during my Voxer internship.&lt;/em&gt;
-&lt;em&gt;some links are broken as the &lt;code&gt;sky&lt;/code&gt; project has yet to be released.&lt;/em&gt;
-&lt;em&gt;&lt;code&gt;sky&lt;/code&gt; has been released as &lt;a href="http://voxer.github.io/zag/"&gt;zag&lt;/a&gt;!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Voxer believes that any single point of failure is bad. Very bad (this is why we
-use riak). To achieve this, we've written a couple libraries to allow node
-processes to communicate across machines and in concert. The first is
-&lt;a href="https://github.com/dannycoates/poolee"&gt;poolee&lt;/a&gt; by &lt;a href="https://github.com/dannycoates"&gt;Danny Coates&lt;/a&gt; which does http load balancing on the client,
-and the second is &lt;a href="ring-was-unpublished"&gt;ring&lt;/a&gt;*, which organizes processes that compose a service
-into a cooperating whole (each process owns part of the keyspace, and thus part
-of the work).&lt;/p&gt;
-
-&lt;p&gt;Here's how this looks:&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="" width="499" height="388" src="http://dtrejo.com/images/46879717-nospof.png?1407164321" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Requests emanate from clients via &lt;a href="https://github.com/dannycoates/poolee"&gt;poolee&lt;/a&gt;, which has a list of all API
-servers. Poolee chooses a random API server to speak with, and will stop talking
-to the API server if it becomes unresponsive. Health checks on unresponsive
-servers are performed with using exponential backoff (e.g. 1 second, 8 seconds,
-16 seconds, etc), so as not to flood the network.&lt;/p&gt;
-
-&lt;p&gt;The ring of API servers kicks in! Each client request has a distinguishing
-characteristic (e.g. geographic region), which dictates a specific API server as
-the "home" or "owner" of that data, and it is tasked with responding to that
-request. You may have noticed that poolee chooses a &lt;em&gt;random&lt;/em&gt; node, but it turns
-our that this random node knows it is not the owner of the request, and can
-forward it to the true "home" node of that request.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ring&lt;/code&gt; is consistent, which means that when an API server goes down, the other
-servers will fill in for the downed server without changing the homes of data
-stored on any nodes other than one neighboring node. The efficiency of home
-re-shuffling is what makes the ring consistent. If this doesn't make sense, it is
-because it's difficult to explain, wikipedia does a better job of explaining
-&lt;a href="https://en.wikipedia.org/wiki/Consistent_hashing"&gt;consistent hash rings&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id="failure"&gt;Failure&lt;/h2&gt;
-&lt;p&gt;Poolee and ring work together and allow us to do rolling restarts without
-service interruption, restart single machines when SSL has memory leaks,
-and remove machines from our clusters.&lt;/p&gt;
-
-&lt;p&gt;Thus, Voxer achieves a no single point of failure architecture using the
-power of &lt;a href="http://nodejs.org"&gt;node.js&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;*Forthcoming: docs and more information on &lt;a href="ring-was-unpublished"&gt;ring&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Thanks for reading!&lt;br /&gt;
-&lt;a href="http://dtrejo.com"&gt;David Trejo&lt;/a&gt;&lt;br /&gt;
-&lt;a href="https://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt; &amp;amp; &lt;a href="https://github.com/DTrejo"&gt;DTrejo on github&lt;/a&gt;&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
