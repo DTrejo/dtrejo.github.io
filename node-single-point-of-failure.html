@@ -8,15 +8,14 @@
       ga('send', 'pageview');
 </script><nav class="navbar navbar-default navbar-static-top"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".bs-navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><h2><a class="navbar-brand" href="http://dtrejo.com/">dtrejo.com</a></h2></div><div class="collapse navbar-collapse"><ul class="navbar-nav nav"><li><a href="/blog.html">DTrejo's Developer Tips</a></li></ul><ul class="navbar-nav nav navbar-right"><li><a href="https://twitter.com/ddtrejo"><i class='fa fa-twitter fa-inline'></i> ddtrejo</a></li></ul></div></div></nav><div class="container"><article><h1 class="article-title">Node Single Point of Failure</h1><p class="article-date"><span class='date'> <span class='day'>18</span> <span class='month'>Jan</span> <span class='year'> 2013 </span> </span></p><div class="article-body"><p><img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1416883158" /></p>
 
-<p><em>note: written in august 2012 during my Voxer internship.</em>
-<em>some links are broken as the <code>sky</code> project has yet to be released.</em>
-<em><code>sky</code> has been released as <a href="http://voxer.github.io/zag/">zag</a>!</em></p>
+<p><em>Note: written in August 2012 during my summer at Voxer. <code>sky</code> has been released
+as [zag][5]!</em></p>
 
 <p>Voxer believes that any single point of failure is bad. Very bad (this is why we
 use riak). To achieve this, we've written a couple libraries to allow node
 processes to communicate across machines and in concert. The first is
 <a href="https://github.com/dannycoates/poolee">poolee</a> by <a href="https://github.com/dannycoates">Danny Coates</a> which does http load balancing on the client,
-and the second is <a href="ring-was-unpublished">ring</a>*, which organizes processes that compose a service
+and the second is [ring][3]*, which organizes processes that compose a service
 into a cooperating whole (each process owns part of the keyspace, and thus part
 of the work).</p>
 
@@ -51,8 +50,6 @@ and remove machines from our clusters.</p>
 
 <p>Thus, Voxer achieves a no single point of failure architecture using the
 power of <a href="http://nodejs.org">node.js</a>.</p>
-
-<p>*Forthcoming: docs and more information on <a href="ring-was-unpublished">ring</a>.</p>
 
 <p>Thanks for reading!<br />
 <a href="http://dtrejo.com">David Trejo</a><br />

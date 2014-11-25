@@ -8,11 +8,10 @@
       ga('send', 'pageview');
 </script><nav class="navbar navbar-default navbar-static-top"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".bs-navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><h2><a class="navbar-brand" href="http://dtrejo.com/">dtrejo.com</a></h2></div><div class="collapse navbar-collapse"><ul class="navbar-nav nav"><li><a href="/blog.html">DTrejo's Developer Tips</a></li></ul><ul class="navbar-nav nav navbar-right"><li><a href="https://twitter.com/ddtrejo"><i class='fa fa-twitter fa-inline'></i> ddtrejo</a></li></ul></div></div></nav><div class="container"><article><h1 class="article-title">Metrics and Operational Awareness at Voxer</h1><p class="article-date"><span class='date'> <span class='day'>18</span> <span class='month'>Jan</span> <span class='year'> 2013 </span> </span></p><div class="article-body"><p><img alt="" width="252" height="58" src="http://dtrejo.com/images/46879900-Voxer_Logo.png?1416883158" /></p>
 
-<p><em>note: written in august 2012 during my Voxer internship.</em>
-<em>some links are broken as the <code>sky</code> project has yet to be released.</em>
-<em><code>sky</code> has been released as <a href="http://voxer.github.io/zag/">zag</a>!</em></p>
+<p><em>Note: written in August 2012 during my summer at Voxer. <code>sky</code> has been released
+as <a href="http://voxer.github.io/zag/">zag</a>!</em></p>
 
-<p>Please read the article on Voxer's <a href="/node-single-point-of-failure">no single point of failure architecture</a>,
+<p>Please read the article on Voxer's <a href="/node-single-point-of-failure.html">no single point of failure architecture</a>,
 as it explains how process rings work, and how Voxer's load balancing works.</p>
 
 <p><img alt="" width="503" height="497" src="http://dtrejo.com/images/46879901-sky.png?1413867380" /></p>
@@ -24,7 +23,7 @@ as it explains how process rings work, and how Voxer's load balancing works.</p>
 <ul>
   <li>metrics are coalesced into 1440 byte udp packets to optimize network
 efficiency</li>
-  <li><a href="/node-single-point-of-failure">handy node.js bindings</a> which allow you simply call
+  <li><a href="/node-single-point-of-failure.html">handy node.js bindings</a> which allow you simply call
 <code>sky.counter("http_status|200")</code> whenever a certain call suceeds or fails</li>
   <li>keys emitted with the form <code>http_status|200</code> are rolled together with keys
 of the form <code>http_status|404</code>, giving you both information on, say, 404s,
@@ -61,8 +60,8 @@ we can increase the size of our riak cluster by adding a machine.</li>
   <li>the redis server keeps a list of keys that have recently been emitted, and exposes
 this list to our graphing UI, meaning that to begin recording a new metric,
 you need not do any configuration, simply start recording it on your app servers.
-The skygraphs UI will simply pick it up and start showing it to you.</li>
-  <li>the skygraphs UI will also hit redis for the latest minute's data, giving
+The Sky UI will simply pick it up and start showing it to you.</li>
+  <li>the Sky UI will also hit redis for the latest minute's data, giving
 you real-time access to what is going on right now in your infrastructure.</li>
 </ul>
 
@@ -74,13 +73,15 @@ these technologies.</p>
 <ul>
   <li>rings of servers recieving metrics is the only way we can handle the
 volume of data being recorded by our app servers</li>
+  <li>UDP as the transport mechanism allows our metrics servers to stay up, even
+if our app servers send too many events.</li>
   <li>riak allows us to store historical data forever (just add another machine)</li>
-  <li>we think our <a href="skygraphs">graphing UI</a> is pretty snazzy, especially since it has
+  <li>we think our <a href="http://voxer.github.io/zag/">graphing UI</a> is pretty snazzy, especially since it has
 <a href="https://github.com/sentientwaffle/llquantize">heat maps</a></li>
 </ul>
 
-<p>Forthcoming: If you'd like to read about <a href="skygraphs">skygraphs</a>, our awesome graphing
-UI, please check out <a href="skygraphs">this article</a>.</p>
+<p>If you'd like to read about <a href="http://voxer.github.io/zag/">Zag</a>, our awesome graphing UI, please check out
+<a href="http://voxer.github.io/zag/">this article</a>.</p>
 
 <p>Thanks for reading!<br />
 <a href="http://dtrejo.com">David Trejo</a><br />
