@@ -18,11 +18,11 @@
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="node logo" alt="" width="212" height="114" src='http://dtrejo.com/images/new-nodejs-logo.png?1427679962' /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="node logo" alt="" width="212" height="114" src='http://dtrejo.com/images/new-nodejs-logo.png?1428365901' /&gt;&lt;/p&gt;
 
 &lt;p&gt;As of October 9th I learned that &lt;a href="http://github.com/joyent/node"&gt;Node&lt;/a&gt; is being forked!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://twitter.com/mikeal/status/520285400279965698"&gt;&lt;img alt="Why is node being forked? tweet" alt="" width="707" height="333" src='http://dtrejo.com/images/why-is-node-being-forked-tweet1.png?1427679962' /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/mikeal/status/520285400279965698"&gt;&lt;img alt="Why is node being forked? tweet" alt="" width="707" height="333" src='http://dtrejo.com/images/why-is-node-being-forked-tweet1.png?1428365901' /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I asked someone close to this, "what is the reason for the fork?"&lt;/p&gt;
 
@@ -118,10 +118,10 @@ to prepare it, down to the most minute (but crucial) details.&lt;/p&gt;
 &lt;br /&gt;rib eye is easiest to cook cuz it has best marbling
 &lt;br /&gt;marbling is the amount of fat "strands" inside the lean muscle, hence giving a marbled &lt;br /&gt;appearance
 &lt;br /&gt;top notch marbling:
-&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1427679962" /&gt;
+&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1428365901" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;very shitty marbling:
-&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1427679962" /&gt;
+&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1428365901" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;marbling is 2nd most important thing when buying steaks
 &lt;br /&gt;you want more marbling
@@ -255,7 +255,7 @@ find its source: mangled HTML and text. (Side note: emails are sent as both HTML
 and text in order to support both sophisticated and unsophisticated email
 clients.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1427679961" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1428365901" /&gt;&lt;/p&gt;
 
 &lt;h2 id="how-to-unmangle-mailchimps-htmltext"&gt;How to unmangle Mailchimp's HTML/text&lt;/h2&gt;
 
@@ -267,19 +267,19 @@ will appear in the "Decoded" area above it. Do the same for the text version of
 the email. Take both versions of the email, put them in your text editor, and
 edit them to your heart's content!&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1427679961" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1428365901" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To test your edits (and double-check mailchimp’s output), use
 &lt;a href="http://PutsMail.com"&gt;PutsMail.com&lt;/a&gt;. Paste the HTML in the Body textarea and test out
 various resolutions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1427679961" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1428365901" /&gt;&lt;/p&gt;
 
 &lt;p&gt;NOTE: uncheck the checkbox that says, "Make the CSS inline
 when 'Check your HTML.’" All your CSS is already inline—you don’t want PutsMail
 to screw up anything by being too smart.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1427679961" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1428365901" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To triple-check that your email is beautiful, use PutsMail to send yourself test
 emails.&lt;/p&gt;
@@ -445,7 +445,7 @@ email to make hand-off easier.&lt;/li&gt;
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img height="120px" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/js-logo.png?1427679962" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img height="120px" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/js-logo.png?1428365901" /&gt;&lt;/p&gt;
 
 &lt;p&gt;What follows is a wishlist of features I'd want in my perfect javascript
 dev environment (I don't care whether each of these things is a separate command
@@ -593,7 +593,7 @@ at me: &lt;a href="http://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt;, alternativ
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img height="100" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1427679960" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img height="100" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/00000000-Git-Logo-2Color.png?1428365899" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I find myself copy-pasting long filenames way too often when I work with
 git. Tab completing deep paths is just as annoying. What might be a better way?&lt;/p&gt;
