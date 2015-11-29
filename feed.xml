@@ -22,6 +22,19 @@
 
 
 
+&lt;h2 id="table-of-contents"&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="#software-engineering"&gt;Software Engineering&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#college-admissions-consulting"&gt;College Admissions Consulting&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#consulting"&gt;Consulting&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#writing"&gt;Writing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#sales"&gt;Sales&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#marketing"&gt;Marketing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#food"&gt;Food&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#self-care"&gt;Self Care&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#other"&gt;Other&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id="software-engineering"&gt;Software Engineering&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Understanding callbacks&lt;/li&gt;
@@ -32,10 +45,10 @@
   &lt;li&gt;Setting up / trying out browserify&lt;/li&gt;
   &lt;li&gt;Setting up / trying out stylus&lt;/li&gt;
   &lt;li&gt;As an inactive contributor to &lt;code&gt;mranney/node_redis&lt;/code&gt;, if you have any questions it's likely that I can help (can tell you about distributed systems, what redis is good for, what the other nosql's are good for, and am slightly familiar with the &lt;code&gt;node_redis&lt;/code&gt; codebase)&lt;/li&gt;
-  &lt;li&gt;Learn to use git like it's easy — rebase, manage branches, take pull requests quickly, use git's reflog to undo a git command that went wild and screwed up all your work.&lt;/li&gt;
+  &lt;li&gt;Learn to use git like it's easy — rebase, manage branches, take pull requests quickly, use git's reflog to undo a git command that went wild and screwed up all your work&lt;/li&gt;
   &lt;li&gt;How to break into software engineering if you just learned to code&lt;/li&gt;
   &lt;li&gt;How to run a software engineering intern program&lt;/li&gt;
-  &lt;li&gt;Good ways to recruit at brown, both officially and unofficially&lt;/li&gt;
+  &lt;li&gt;Good ways to recruit at Brown, both officially and unofficially&lt;/li&gt;
   &lt;li&gt;How to value equity (hint: 0)&lt;/li&gt;
   &lt;li&gt;How to figure out if a startup is good to work for&lt;/li&gt;
   &lt;li&gt;How to negotiate your salary&lt;/li&gt;
@@ -49,16 +62,16 @@
   &lt;li&gt;Whether you should read…
     &lt;ul&gt;
       &lt;li&gt;Open Book Management&lt;/li&gt;
-      &lt;li&gt;Microsoft's academic papers about a/b testing&lt;/li&gt;
+      &lt;li&gt;Microsoft's academic papers about A/B testing&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id="college-counseling--independent-educational-consulting"&gt;College Counseling &amp;amp; Independent Educational Consulting&lt;/h2&gt;
+&lt;h2 id="college-admissions-consulting"&gt;College Admissions Consulting&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;How to get more students&lt;/li&gt;
   &lt;li&gt;How to schedule workshops at local high-schools&lt;/li&gt;
-  &lt;li&gt;How to get a Yelp review taken down in under 12 hours if you're lucky.&lt;/li&gt;
+  &lt;li&gt;How to get a Yelp review taken down in under 12 hours if you're lucky&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="consulting"&gt;Consulting&lt;/h2&gt;
@@ -74,9 +87,9 @@
   &lt;li&gt;How to research a new service offering&lt;/li&gt;
   &lt;li&gt;How to convince your clients that a roadmapping session is an important first step prior to custom engineering work&lt;/li&gt;
   &lt;li&gt;How to work to work your best with a designer&lt;/li&gt;
-  &lt;li&gt;How to test your value prop with content marketing using "the problem post." also helps you do customer development.&lt;/li&gt;
+  &lt;li&gt;How to test your value prop with content marketing using "the problem post." also helps you do customer development&lt;/li&gt;
   &lt;li&gt;How to do respectful professional intros&lt;/li&gt;
-  &lt;li&gt;How to do a good handshake&lt;/li&gt;
+  &lt;li&gt;How to give a good handshake&lt;/li&gt;
   &lt;li&gt;How payment before starting work helps both you and the client be more successful&lt;/li&gt;
   &lt;li&gt;Whether you should read…
     &lt;ul&gt;
@@ -93,7 +106,7 @@
   &lt;li&gt;How to write great cold emails to drive calls with buyer/decider&lt;/li&gt;
   &lt;li&gt;How to write a sales page&lt;/li&gt;
   &lt;li&gt;How to write your resume&lt;/li&gt;
-  &lt;li&gt;How to write to your value and outcomes, not simply your action and movement.&lt;/li&gt;
+  &lt;li&gt;How to write to your value and outcomes, not simply your action and movement&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="sales"&gt;Sales&lt;/h2&gt;
@@ -126,7 +139,7 @@
       &lt;li&gt;The Brain Audit&lt;/li&gt;
       &lt;li&gt;The Positioning Manual for Technical Firms&lt;/li&gt;
       &lt;li&gt;My Life in Advertising&lt;/li&gt;
-      &lt;li&gt;Positioning, by reis and trout&lt;/li&gt;
+      &lt;li&gt;Positioning&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -134,14 +147,14 @@
 &lt;h2 id="food"&gt;Food&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;How to make amazing steak&lt;/li&gt;
-  &lt;li&gt;How to make Arepas&lt;/li&gt;
+  &lt;li&gt;How to make arepas&lt;/li&gt;
   &lt;li&gt;How to take care of your chef's knife&lt;/li&gt;
   &lt;li&gt;How to take care of your cast iron pan&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="self-care"&gt;Self Care&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;How to get work done with a sense of accomplishment and eliminate multitasking by organizing yourself with a Kanban board.&lt;/li&gt;
+  &lt;li&gt;How to get work done with a sense of accomplishment and eliminate multitasking by organizing yourself with a Kanban board&lt;/li&gt;
   &lt;li&gt;How to give yourself a second brain with notational.net&lt;/li&gt;
   &lt;li&gt;How to fix your hands if you coded too much&lt;/li&gt;
   &lt;li&gt;Who to talk to for style advice&lt;/li&gt;
@@ -149,7 +162,6 @@
   &lt;li&gt;How to know if you are sleeping enough&lt;/li&gt;
   &lt;li&gt;How to know if you are drinking enough water&lt;/li&gt;
   &lt;li&gt;How to decide what kind of lifestyle you want and work back from there to decide what you want to do with your life&lt;/li&gt;
-  &lt;li&gt;How to tie your shoes so they don't come undone&lt;/li&gt;
   &lt;li&gt;How to actually work out: join a class and make friends&lt;/li&gt;
   &lt;li&gt;How to easily swallow vitamins&lt;/li&gt;
   &lt;li&gt;How to not get razor burn, not cut yourself, and get a way better shave with a safety razor and proper technique&lt;/li&gt;
@@ -165,7 +177,7 @@
 &lt;h2 id="other"&gt;Other&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;How to buy a road bike&lt;/li&gt;
-  &lt;li&gt;What you should do to get your kid into Brown (where I went).&lt;/li&gt;
+  &lt;li&gt;What you should do to get your kid into Brown (where I went)&lt;/li&gt;
   &lt;li&gt;How to not hate noisy parties&lt;/li&gt;
   &lt;li&gt;How divorce is not so bad for your kids&lt;/li&gt;
   &lt;li&gt;Whether you should read…
@@ -181,7 +193,7 @@
 
 &lt;p&gt;Send me an email about any of these, I'd be happy to discuss it with you.&lt;/p&gt;
 
-&lt;p&gt;Yours,
+&lt;p&gt;Sincerely,&lt;br /&gt;
 David Trejo&lt;/p&gt;
 </content>
   </entry>
