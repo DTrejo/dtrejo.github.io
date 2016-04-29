@@ -5,10 +5,41 @@
   <id>http://dtrejo.com/</id>
   <link href="http://dtrejo.com/"/>
   <link href="http://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2015-11-13T02:36:00Z</updated>
+  <updated>2016-04-29T22:51:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>How To Email</title>
+    <link rel="alternate" href="http://dtrejo.com/how-to-email.html"/>
+    <id>http://dtrejo.com//how-to-email.html</id>
+    <published>2016-04-29T22:51:00Z</published>
+    <updated>2016-04-29T22:51:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;You think you know how to email. Think again. This is a guide on how to write and send emails that are considerate to the reader, and &lt;strong&gt;get replies&lt;/strong&gt;. This is meant for everyday people sending normal emails.&lt;/p&gt;
+
+&lt;h2 id="be-considerate"&gt;Be considerate.&lt;/h2&gt;
+&lt;p&gt;In a first email to someone, keep it under 250 words. How do you feel when people stop you on the street, then talk on and on?&lt;/p&gt;
+
+&lt;h2 id="ask-only-one-question-directly-before-your-signature"&gt;Ask only one question, directly before your signature.&lt;/h2&gt;
+&lt;p&gt;You can only expect the reader to do one thing. Ask for it. If there's no question in an email, the reader has no reason to reply. If you &lt;em&gt;really&lt;/em&gt; need to, and you're already in conversation with someone, and you have more than one question you need answered, number your questions.&lt;/p&gt;
+
+&lt;h2 id="so-you-want-them-to-reply"&gt;So you want them to reply?&lt;/h2&gt;
+&lt;p&gt;Make it easy to reply. Make your reader's life effortless. Ask a single yes/no question. Provide choices of times to meet, or send them a Calendly link so you both save on back-and-forth email scheduling hell.&lt;/p&gt;
+
+&lt;h2 id="extra-credit-show-you-did-your-research"&gt;Extra Credit: Show you did your research&lt;/h2&gt;
+&lt;p&gt;Tell them what you know about them. If you're asking for help, detail the ways you tried to solve the problem on your own. Showing you've made an effort makes people feel that you are more relevant to them, and worth emailing back.&lt;/p&gt;
+
+&lt;p&gt;These are the things that I see people getting wrong the most often. If you fix these in your emails, your readers will love you and you'll love yourself, because people will reply to you.&lt;/p&gt;
+
+&lt;p&gt;Yours,&lt;br /&gt;
+David&lt;/p&gt;
+
+&lt;p&gt;PS And when you care enough that you actually want a reply… ALWAYS &lt;a href="http://blog.close.io/follow-up"&gt;http://blog.close.io/follow-up&lt;/a&gt;. Especially do this if you are emailing a relative or someone who has agreed to help you: they are busy, but they do want to help—there's no way you can get on their bad side by being persistent.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>How I Can Help You</title>
     <link rel="alternate" href="http://dtrejo.com/help.html"/>
@@ -206,11 +237,11 @@ David Trejo&lt;/p&gt;
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="node logo" alt="" width="212" height="114" src='http://dtrejo.com/images/new-nodejs-logo.png?1448761099' /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="node logo" alt="" width="212" height="114" src='http://dtrejo.com/images/new-nodejs-logo.png?1461971549' /&gt;&lt;/p&gt;
 
 &lt;p&gt;As of October 9th I learned that &lt;a href="http://github.com/joyent/node"&gt;Node&lt;/a&gt; is being forked!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://twitter.com/mikeal/status/520285400279965698"&gt;&lt;img alt="Why is node being forked? tweet" alt="" width="707" height="333" src='http://dtrejo.com/images/why-is-node-being-forked-tweet1.png?1448761099' /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/mikeal/status/520285400279965698"&gt;&lt;img alt="Why is node being forked? tweet" alt="" width="707" height="333" src='http://dtrejo.com/images/why-is-node-being-forked-tweet1.png?1461971549' /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I asked someone close to this, "what is the reason for the fork?"&lt;/p&gt;
 
@@ -306,10 +337,10 @@ to prepare it, down to the most minute (but crucial) details.&lt;/p&gt;
 &lt;br /&gt;rib eye is easiest to cook cuz it has best marbling
 &lt;br /&gt;marbling is the amount of fat "strands" inside the lean muscle, hence giving a marbled &lt;br /&gt;appearance
 &lt;br /&gt;top notch marbling:
-&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1448761099" /&gt;
+&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1461971549" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;very shitty marbling:
-&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1448761099" /&gt;
+&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1461971549" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;marbling is 2nd most important thing when buying steaks
 &lt;br /&gt;you want more marbling
@@ -443,7 +474,7 @@ find its source: mangled HTML and text. (Side note: emails are sent as both HTML
 and text in order to support both sophisticated and unsophisticated email
 clients.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1448761096" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1461971549" /&gt;&lt;/p&gt;
 
 &lt;h2 id="how-to-unmangle-mailchimps-htmltext"&gt;How to unmangle Mailchimp's HTML/text&lt;/h2&gt;
 
@@ -455,19 +486,19 @@ will appear in the "Decoded" area above it. Do the same for the text version of
 the email. Take both versions of the email, put them in your text editor, and
 edit them to your heart's content!&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1448761097" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1461971549" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To test your edits (and double-check mailchimp’s output), use
 &lt;a href="http://PutsMail.com"&gt;PutsMail.com&lt;/a&gt;. Paste the HTML in the Body textarea and test out
 various resolutions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1448761097" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1461971549" /&gt;&lt;/p&gt;
 
 &lt;p&gt;NOTE: uncheck the checkbox that says, "Make the CSS inline
 when 'Check your HTML.’" All your CSS is already inline—you don’t want PutsMail
 to screw up anything by being too smart.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1448761097" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1461971549" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To triple-check that your email is beautiful, use PutsMail to send yourself test
 emails.&lt;/p&gt;
@@ -622,154 +653,6 @@ they are interested in working at your company. Cc your hiring person on this
 email to make hand-off easier.&lt;/li&gt;
 &lt;/ul&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>My Javascript Tooling Wishlist</title>
-    <link rel="alternate" href="http://dtrejo.com/my-javascript-tooling-wishlist.html"/>
-    <id>http://dtrejo.com//my-javascript-tooling-wishlist.html</id>
-    <published>2014-03-21T06:06:00Z</published>
-    <updated>2014-03-21T06:06:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img height="120px" style="float:right; padding: 0 0 3.2rem 3.2rem;" src="http://dtrejo.com/images/js-logo.png?1448761097" /&gt;&lt;/p&gt;
-
-&lt;p&gt;What follows is a wishlist of features I'd want in my perfect javascript
-dev environment (I don't care whether each of these things is a separate command
-line tool, I just want them :)&lt;/p&gt;
-
-
-
-&lt;p&gt;Some of these are easy to write, some are hard. What would you add to this list?&lt;/p&gt;
-
-&lt;h2 id="i-dream-of-a-javascript-with-these-tools"&gt;I dream of a javascript with these tools…&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;flow-typing e.g. &lt;a href="https://github.com/brownplt/strobe"&gt;strobe&lt;/a&gt;, &lt;a href="http://cs.brown.edu/~sk/Publications/Papers/Published/gsk-flow-typing-theory/paper.pdf"&gt;strobe paper&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;a flow typer is a program that reads your javascript, notices the
-operators you use on certain variables (e.g. &lt;code&gt;a + 1&lt;/code&gt;), and then guesses
-the type of those variables.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;types via the flow-typer would make the following possible…
-    &lt;ul&gt;
-      &lt;li&gt;editor shows types for every variable, and you didn't have to specify them
-:)&lt;/li&gt;
-      &lt;li&gt;auto-generated API documentation, with types&lt;/li&gt;
-      &lt;li&gt;a "lock-API" tool; when you run it, your the type signatures of your
-functions are remembered. If the signatures every change, it warns you.
-This "lock-API" tool will prevent you from forgetting to increment the
-version of your package.json when you break the API.&lt;/li&gt;
-      &lt;li&gt;test fuzzer based on the inferred types, to easily up your code coverage&lt;/li&gt;
-      &lt;li&gt;some kind of fuzzer pattern language that would allow you to automatically
-generate assertions to be used at the start of every function. assertions
-would be removed before running in production. This would help people
-using your code to find mistakes more quickly. (This one is going off into
-la la land. Not sure if I believe this would be useful enough).&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;visualization of your project's require dependency graph e.g. &lt;a href="https://trace.gl/"&gt;tracegl&lt;/a&gt;?, &lt;a href="http://www.yasiv.com/npm#view/browserify"&gt;yasiv npm visualization&lt;/a&gt; via &lt;a href="https://www.youtube.com/watch?v=DCQNm6yiZh0"&gt;substack's lxjs '13 talk&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;visualization of which functions call other functions, along with a bird's eye
-view of your whole program&lt;/li&gt;
-  &lt;li&gt;static analysis tool to find uncalled callbacks (&lt;code&gt;callback&lt;/code&gt; &lt;code&gt;cb&lt;/code&gt;, &lt;code&gt;next&lt;/code&gt;,
-&lt;code&gt;done&lt;/code&gt;, etc) e.g. &lt;a href="http://npm.im/jshint"&gt;jshint&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;static analysis tool to find dead code after &lt;code&gt;return&lt;/code&gt;. e.g. &lt;a href="http://npm.im/jshint"&gt;jshint&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;static analysis tool that reminds you to do &lt;code&gt;return cb()&lt;/code&gt;, so you never call
-callbacks twice.&lt;/li&gt;
-  &lt;li&gt;auto npm install
-    &lt;ul&gt;
-      &lt;li&gt;when you add a call to &lt;code&gt;require('example')&lt;/code&gt;, &lt;code&gt;example&lt;/code&gt; is detected as not
-installed, and the tool runs &lt;code&gt;npm install --save example&lt;/code&gt; so you don't
-have to&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;style guide enforcement &lt;strong&gt;and correction&lt;/strong&gt; tool that bases itself on certain
-"blessed" files. Based on the formatting and style of the blessed files, it
-corrects newly written files to match the same whitespace, line-length, etc.
-No blasphemers allowed! e.g. &lt;a href="https://github.com/jshint/fixmyjs"&gt;fixymyjs (kinda)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;v8 hidden class detector - if a hidden class is "broken" or deoptimized, it
-warns you. e.g. if you use &lt;code&gt;delete&lt;/code&gt; on a property of your &lt;code&gt;new Point()&lt;/code&gt;
-object.&lt;/li&gt;
-  &lt;li&gt;lodash style native vs custom speed improvement detector
-    &lt;ul&gt;
-      &lt;li&gt;many functions are slower when implemented using native calls e.g. &lt;code&gt;[].slice&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="http://allyoucanleet.com/post/21624742336/jsconf-us-12-slides"&gt;John David Dalton's jsconf '12 presentation on which custom implementations are faster&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;this tool would tell you when to use custom, and when to use native.&lt;/li&gt;
-      &lt;li&gt;it would also tell you when to switch from custom back to native (v8 gets
-faster, etc)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;memory usage map overlaid on your code as a heat map
-    &lt;ul&gt;
-      &lt;li&gt;visually see where memory is being used in your code.&lt;/li&gt;
-      &lt;li&gt;see which lines are responsible for how much memory usage&lt;/li&gt;
-      &lt;li&gt;a snapshot after a day's run should theoretically show you where your
-leaks are, because those lines are the hottest.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;(new Error).stack&lt;/code&gt; printer that highlights lines based on your app's code,
-&lt;code&gt;node_modules&lt;/code&gt; code, and node core code.&lt;/li&gt;
-  &lt;li&gt;performance test runner that takes a list of git commits, checks out each one,
-runs benchmarks and records results, then continues on. spits out a report at
-the end. maybe with a pretty graph showing which commits did best on which
-parts of the benchmark.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="general-node-style-project-tools"&gt;general node-style project tools&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;bulk git repo updating (if your project is modular, and each part is in a
-different repo)&lt;/li&gt;
-  &lt;li&gt;bulk npm version updating (if you are substack, and want to manage the many
-npm modules you've written)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="already-implemented-and-thus-less-interesting"&gt;already-implemented and thus less interesting&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;jump to declaration e.g. &lt;a href="https://www.jetbrains.com/webstorm/"&gt;webstorm&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;jump to all usages of a function&lt;/li&gt;
-  &lt;li&gt;auto test or auto rerun server on change e.g. &lt;a href="http://npm.im/run"&gt;run&lt;/a&gt;, &lt;a href="http://npm.im/nodemon"&gt;nodemon&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;shell enhancement: click on a filename to open in your editor&lt;/li&gt;
-  &lt;li&gt;code coverage e.g. &lt;a href="https://github.com/substack/coverify"&gt;coverify for client side js&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;highlight untested code in a really ugly color in your editor
-e.g. &lt;a href="http://racket-lang.org/"&gt;DrScheme&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;review and &lt;strong&gt;edit&lt;/strong&gt; diffs side-by-side before pushing to master (or while fixing
-conflicts)
-    &lt;ul&gt;
-      &lt;li&gt;use &lt;a href="https://github.com/philz/git-vimdiff"&gt;Philip Zeyliger's git-vimdiff&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id="ideas--suggestions--i-built-that"&gt;Ideas / suggestions / "I built that!"&lt;/h4&gt;
-&lt;p&gt;Please if you know of any things that I should add to the lists above, tweet
-at me: &lt;a href="http://twitter.com/ddtrejo"&gt;@ddtrejo&lt;/a&gt;, alternatively, &lt;a href="https://github.com/dtrejo"&gt;my email is on my github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Thanks!&lt;/p&gt;
-
-&lt;p&gt;David Trejo&lt;/p&gt;
-
-&lt;p&gt;Projects I mentioned:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://github.com/brownplt/strobe"&gt;https://github.com/brownplt/strobe&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.jetbrains.com/webstorm/"&gt;https://www.jetbrains.com/webstorm/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://npm.im/run"&gt;http://npm.im/run&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://npm.im/nodemon"&gt;http://npm.im/nodemon&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://trace.gl/"&gt;https://trace.gl/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.yasiv.com/npm#view/browserify"&gt;http://www.yasiv.com/npm#view/browserify&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://npm.im/jshint"&gt;http://npm.im/jshint&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://allyoucanleet.com/post/21624742336/jsconf-us-12-slides"&gt;http://allyoucanleet.com/post/21624742336/jsconf-us-12-slides&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://racket-lang.org/"&gt;http://racket-lang.org/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=DCQNm6yiZh0"&gt;https://www.youtube.com/watch?v=DCQNm6yiZh0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/philz/git-vimdiff"&gt;https://github.com/philz/git-vimdiff&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/substack/coverify"&gt;https://github.com/substack/coverify&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://cs.brown.edu/~sk/Publications/Papers/Published/gsk-flow-typing-theory/paper.pdf"&gt;http://cs.brown.edu/~sk/Publications/Papers/Published/gsk-flow-typing-theory/paper.pdf&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/jshint/fixmyjs"&gt;https://github.com/jshint/fixmyjs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
