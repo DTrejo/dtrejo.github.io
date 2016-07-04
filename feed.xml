@@ -5,10 +5,51 @@
   <id>http://dtrejo.com/</id>
   <link href="http://dtrejo.com/"/>
   <link href="http://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2016-04-29T22:51:00Z</updated>
+  <updated>2016-07-04T04:41:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>How to Write Consistently, Painlessly, and Without Writers-Block</title>
+    <link rel="alternate" href="http://dtrejo.com/how-to-write-consistently-painlessly-and-without-writers-block.html"/>
+    <id>http://dtrejo.com//how-to-write-consistently-painlessly-and-without-writers-block.html</id>
+    <published>2016-07-04T04:41:00Z</published>
+    <updated>2016-07-04T04:41:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;The more of these you do, the more successful your writing session will be. I've marked the most important ones with a ★.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;★ Write in the morning.&lt;/li&gt;
+  &lt;li&gt;★ Close your eyes while you type&lt;/li&gt;
+  &lt;li&gt;Do not edit&lt;/li&gt;
+  &lt;li&gt;Do not reference your research&lt;/li&gt;
+  &lt;li&gt;Have your research done the day before you sit down to write.&lt;/li&gt;
+  &lt;li&gt;★ Write into &lt;a href="http://750words.com"&gt;http://750words.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Leave the 750words.com tab open even after you finish for the day&lt;/li&gt;
+  &lt;li&gt;Make it fullscreen so you're less easily distracted&lt;/li&gt;
+  &lt;li&gt;Disconnect your internet, or write on a plane, or outside (even if it's cold: this gives you a natural deadline).&lt;/li&gt;
+  &lt;li&gt;Write about whatever you feel like; once that's poured out, you can move on to whatever "productive" writing you wanted to do. This is also known as writing out the "noise."&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This list of tips is built from experience and Josh Seiden's article, &lt;a href="https://medium.com/neo-innovation-ideas/how-to-write-a016e5d898bc"&gt;How to Write&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id="when-youre-ready-to-start-editing-these-writing-tools-will-come-in-handy"&gt;When you're ready to start editing, these writing tools will come in handy.&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;★ &lt;a href="http://polishmywriting.com"&gt;http://polishmywriting.com&lt;/a&gt; is my favorite, despite its looks.&lt;/li&gt;
+  &lt;li&gt;★ &lt;a href="http://hemingwayapp.com"&gt;http://hemingwayapp.com&lt;/a&gt; is great for simplifying sentences. If you're doing sales writing, get it under grade 8 to increase conversion.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://alexjs.com/#demo"&gt;http://alexjs.com/#demo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://labs.foxtype.com/politeness"&gt;http://labs.foxtype.com/politeness&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://grammarly.com"&gt;http://grammarly.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://paperrater.com/free_paper_grader"&gt;http://paperrater.com/free_paper_grader&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sincerely,&lt;br /&gt;
+David Trejo&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>How To Email</title>
     <link rel="alternate" href="http://dtrejo.com/how-to-email.html"/>
@@ -237,11 +278,11 @@ David Trejo&lt;/p&gt;
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="node logo" alt="" width="212" height="114" src='http://dtrejo.com/images/new-nodejs-logo.png?1461971549' /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="node logo" alt="" width="212" height="114" src='http://dtrejo.com/images/new-nodejs-logo.png?1467608548' /&gt;&lt;/p&gt;
 
 &lt;p&gt;As of October 9th I learned that &lt;a href="http://github.com/joyent/node"&gt;Node&lt;/a&gt; is being forked!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://twitter.com/mikeal/status/520285400279965698"&gt;&lt;img alt="Why is node being forked? tweet" alt="" width="707" height="333" src='http://dtrejo.com/images/why-is-node-being-forked-tweet1.png?1461971549' /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/mikeal/status/520285400279965698"&gt;&lt;img alt="Why is node being forked? tweet" alt="" width="707" height="333" src='http://dtrejo.com/images/why-is-node-being-forked-tweet1.png?1467608549' /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I asked someone close to this, "what is the reason for the fork?"&lt;/p&gt;
 
@@ -337,10 +378,10 @@ to prepare it, down to the most minute (but crucial) details.&lt;/p&gt;
 &lt;br /&gt;rib eye is easiest to cook cuz it has best marbling
 &lt;br /&gt;marbling is the amount of fat "strands" inside the lean muscle, hence giving a marbled &lt;br /&gt;appearance
 &lt;br /&gt;top notch marbling:
-&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1461971549" /&gt;
+&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1467608549" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;very shitty marbling:
-&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1461971549" /&gt;
+&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1467608549" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;marbling is 2nd most important thing when buying steaks
 &lt;br /&gt;you want more marbling
@@ -474,7 +515,7 @@ find its source: mangled HTML and text. (Side note: emails are sent as both HTML
 and text in order to support both sophisticated and unsophisticated email
 clients.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1461971549" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="614" height="352" src="http://dtrejo.com/images/email-creation1.png?1467608548" /&gt;&lt;/p&gt;
 
 &lt;h2 id="how-to-unmangle-mailchimps-htmltext"&gt;How to unmangle Mailchimp's HTML/text&lt;/h2&gt;
 
@@ -486,172 +527,24 @@ will appear in the "Decoded" area above it. Do the same for the text version of
 the email. Take both versions of the email, put them in your text editor, and
 edit them to your heart's content!&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1461971549" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="781" height="196" src="http://dtrejo.com/images/email-creation2.png?1467608548" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To test your edits (and double-check mailchimp’s output), use
 &lt;a href="http://PutsMail.com"&gt;PutsMail.com&lt;/a&gt;. Paste the HTML in the Body textarea and test out
 various resolutions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1461971549" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="494" height="317" src="http://dtrejo.com/images/email-creation3.png?1467608548" /&gt;&lt;/p&gt;
 
 &lt;p&gt;NOTE: uncheck the checkbox that says, "Make the CSS inline
 when 'Check your HTML.’" All your CSS is already inline—you don’t want PutsMail
 to screw up anything by being too smart.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1461971549" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="492" height="51" src="http://dtrejo.com/images/email-creation4.png?1467608548" /&gt;&lt;/p&gt;
 
 &lt;p&gt;To triple-check that your email is beautiful, use PutsMail to send yourself test
 emails.&lt;/p&gt;
 
 &lt;p&gt;That's it! Enjoy!&lt;/p&gt;
-
-</content>
-  </entry>
-  <entry>
-    <title>How to Run an Intern Meetup</title>
-    <link rel="alternate" href="http://dtrejo.com/how-to-run-an-intern-meetup.html"/>
-    <id>http://dtrejo.com//how-to-run-an-intern-meetup.html</id>
-    <published>2014-03-21T23:33:00Z</published>
-    <updated>2014-03-21T23:33:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;Note: written in 2012&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This is the checklist version. Normally I'd write a story about how to do this,
-but that takes more time and also is probably less reproducible.&lt;/p&gt;
-
-
-
-&lt;h3 id="goals"&gt;Goals&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;have interns visit&lt;/li&gt;
-  &lt;li&gt;have interns talk to your employees&lt;/li&gt;
-  &lt;li&gt;have interns think your company is awesome and then apply to work with you.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="suck-points"&gt;Suck points&lt;/h3&gt;
-&lt;p&gt;Reasons why your event might suck, based on past experiences at meetups I
-attended during my three Bay Area Software Engineering internships. Also based
-on the two meetups I helped organize in summer 2011 and 2012 (the meetups I
-organized didn't have these problems :).&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;the exec you picked to give a talk isn't great at public speaking, or wasn't
-excited enough about the topic&lt;/li&gt;
-  &lt;li&gt;the talk went for too long&lt;/li&gt;
-  &lt;li&gt;you served pizza&lt;/li&gt;
-  &lt;li&gt;you don't serve beer&lt;/li&gt;
-  &lt;li&gt;too many people show up to your event. personally I think 40-60 is a good
-number.&lt;/li&gt;
-  &lt;li&gt;you let non-intern adults into the event&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="how-not-to-suck-and-have-a-good-event"&gt;How not to suck and have a good event&lt;/h3&gt;
-
-&lt;h3 id="venue--physical-stuff"&gt;Venue &amp;amp; Physical stuff&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;name tags with the person's name and the company they work at, so people don't
-have to incessantly and annoyingly ask each other where they work.&lt;/li&gt;
-  &lt;li&gt;food. Burritos are a decent choice. Tacos are as well. Sushi is super pro, but
-expensive ;)&lt;/li&gt;
-  &lt;li&gt;have a projector for slides for your speaker&lt;/li&gt;
-  &lt;li&gt;use Eventbrite, collect email name, employer, university, and graduation year,
-all in different fields. You'll use this to un-invite non-students, and for
-recruiting later on.&lt;/li&gt;
-  &lt;li&gt;at the event have a little booth sort of thing with a sign up sheet for "yes,
-I'd like to work here, please ping me for my resume so we can start talking".&lt;/li&gt;
-  &lt;li&gt;swag. stickers, whatever, doesn't need to be expensive or fancy or useless or
-hackneyed.&lt;/li&gt;
-  &lt;li&gt;chairs for people to sit down. I recommend leaving lots of space between the
-rows, as well as a decent amount of space between the chairs so that people
-can get through. People will turn their chairs once the talk is finished and
-talk to each other, and eat their food with plenty of space to be messy and
-put their trash/plate on the ground.&lt;/li&gt;
-  &lt;li&gt;have beer. You can ask people if they are 21 when they sign up on Eventbrite,
-and then give them little pink stickers on their name tag when they show up
-and are over 21. Then you could have someone near the beer enforcing that
-people are 21.&lt;/li&gt;
-  &lt;li&gt;if you are not on the ground floor of your building, or your doors lock, give
-your phone number to attendees by modifying the Eventbrite RSVP email, and
-also possibly putting a number on your locked door so people can call you if
-they are locked out.&lt;/li&gt;
-  &lt;li&gt;have a little table and a couple of friendly people sit there and hang out
-name tags and make conversation with people.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="getting-the-word-out"&gt;Getting the word out&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;DONT schedule it on the same night as ALL the other intern meetups. At least
-in summer 2012, this was Thursday. Try Tuesday or something.&lt;/li&gt;
-  &lt;li&gt;DO have one of your interns take point on publicizing the event: this makes it
-more personal and ALSO relevant to other interns, because people are like "oh,
-this person I've seen around the valley and that is my age, I should listen
-and maybe I'll even see them later and we'll become friends. I might actually
-end up caring about this person".&lt;/li&gt;
-  &lt;li&gt;every year there is an intern group on Facebook. Post to it 2 weeks before the
-event, 1 week before the event, and the day before.&lt;/li&gt;
-  &lt;li&gt;the intern who takes point (the LEAD) will likely know interns at many other
-companies. The LEAD can then ask their friends at each of these companies to
-email a blurb out to that company's intern list. Here are some
-companies/interns that &lt;a href="https://twitter.com/seanzawi"&gt;Sean&lt;/a&gt; and I emailed out to for this past meetup (emails
-may/may not have been sent out, but we asked people there to send out for us):
-    &lt;ul&gt;
-      &lt;li&gt;mozilla&lt;/li&gt;
-      &lt;li&gt;learnboost&lt;/li&gt;
-      &lt;li&gt;uber&lt;/li&gt;
-      &lt;li&gt;yammer&lt;/li&gt;
-      &lt;li&gt;twitter&lt;/li&gt;
-      &lt;li&gt;zynga&lt;/li&gt;
-      &lt;li&gt;mixpanel&lt;/li&gt;
-      &lt;li&gt;stripe&lt;/li&gt;
-      &lt;li&gt;codeforamerica&lt;/li&gt;
-      &lt;li&gt;yahoo (really? Okay!)&lt;/li&gt;
-      &lt;li&gt;google&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;shoot an email to the folks at internmatch who have a ~500 person list of
-interns in the bay (as of 2012).&lt;/li&gt;
-  &lt;li&gt;big companies will send more interns, so sending off to big companies is a
-bigger priority.&lt;/li&gt;
-  &lt;li&gt;don't forget to have each of your interns send out to their university friends
-(and acquaintances) who are in the area. Tell them not to be ashamed about
-emailing, but DO give them a blurb, otherwise each one will have to spend time
-writing an invitation.&lt;/li&gt;
-  &lt;li&gt;of the people who RSVP on eventbrite, about 50% will show up. No, you and your
-event are not special, it will be 50%. This should guide how much food you
-buy.&lt;/li&gt;
-  &lt;li&gt;it doesn't matter if emails are sent out via personal email or work email. In
-fact, personal email with the work email cc'd is almost more human &amp;amp; friendly.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="making-the-most-of-the-event-for-the-sake-of-your-company"&gt;Making the most of the event, for the sake of your company&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;DO invite your full-time engineers. You should also feed them.&lt;/li&gt;
-  &lt;li&gt;DO have your exec talk on a topic that would be interesting to both your
-full-timers and your interns. If your CTO is a good speaker, I recommend
-having them give a tech talk. It is OK to get technical, people will raise
-their hands. The worst thing is to have the talk go on too long, I recommend
-limiting them to 15-20 minutes of speaking and then open it up to another 10
-minutes of questions.&lt;/li&gt;
-  &lt;li&gt;ONCE THE TALK IS OVER, the LEAD should say thanks for talking, and
-then CALL OUT EMPLOYEES e.g. this is Shahrooz, talk to him about
-Android; this is Danny talk to him about node.js; this is &lt;a href="https://medium.com/tech-talk/d823af31f7c"&gt;Chris&lt;/a&gt;, talk to him
-about iOS; this is Mike &amp;amp; &lt;a href="http://daveeddy.com/"&gt;Dave&lt;/a&gt;, talk to them about Riak and DTrace and
-keeping machines from not blowing up in a cloud of rainbow smoke. This allows
-interns to go and talk to the people who interest them, and gives them a
-handle on your organization so they can get more out of the meetup by asking
-questions of those specific people.&lt;/li&gt;
-  &lt;li&gt;your employees and interns should be wearing some sort of company swag.&lt;/li&gt;
-  &lt;li&gt;REMIND your employees to bring their business cards and hand them out like
-cray cray. They do have cards, right?&lt;/li&gt;
-  &lt;li&gt;After the event, have the LEAD send an email out to everyone who RSVP'd on the
-eventbrite, thanking them for coming, and encouraging them to email back if
-they are interested in working at your company. Cc your hiring person on this
-email to make hand-off easier.&lt;/li&gt;
-&lt;/ul&gt;
 
 </content>
   </entry>
