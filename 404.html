@@ -12,8 +12,8 @@
 <link rel="canonical" href="http://dtrejo.com/404.html">
 
 <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-<link href="stylesheets/screen.css" rel="stylesheet" type="text/css" media="all">
-<link href="stylesheets/dtrejo.css" rel="stylesheet" type="text/css" media="all">
+<link href="/stylesheets/screen.css" rel="stylesheet" type="text/css" media="all">
+<link href="/stylesheets/dtrejo.css" rel="stylesheet" type="text/css" media="all">
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
@@ -27,9 +27,6 @@
       $(this).attr('href', 'mailto:' + me + atDomain)
              .text(me + atDomain);
     });
-    if (location.hash == '#rick') {
-      $('#rick').show();
-    }
   });
 </script>
 
@@ -43,25 +40,23 @@
         <a id="me" href="http://dtrejo.com/">404 error!</a>
     </h2>
 
-    <iframe id="rick" style="display:none" title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/oHg5SJYRHA0&autoplay=1" frameborder="0" allowfullscreen></iframe>
-
     <p><a href="http://mrdoob.com/">mr.doob</a> is cool.</p>
 
     <div class="obra">
       <a href="http://flagfrenzy.jit.su/"
       title="Play Flag Frenzy (This picture is staged :)">
-      <img alt="Flag Frenzy screenshot" src="images/banner_flagfrenzy.png"
+      <img alt="Flag Frenzy screenshot" src="/images/banner_flagfrenzy.png"
       class="span-16 box2d"></a>
     </div>
     <div class="obra">
       <a href="http://touchtonetanks.com/" title="Play now">
-      <img alt="Touch Tone Tanks demo" src="images/banner_tanks.png"
+      <img alt="Touch Tone Tanks demo" src="/images/banner_tanks.png"
       class="span-16 box2d"></a>
     </div>
 
     <div class="obra">
       <a href="http://dtrejo.com/qlock/qlock.html" title="See the jQuery QlockTwo">
-      <img alt="jQuery QlockTwo Screenshot" src="images/banner_jquery_qlocktwo.png" class="span-16 box2d"></a>
+      <img alt="jQuery QlockTwo Screenshot" src="/images/banner_jquery_qlocktwo.png" class="span-16 box2d"></a>
     </div>
 
   </div>
@@ -73,9 +68,9 @@ catch(err){}</script>
 
 <!--make it fall apart-->
 <script></script>
-<script src="javascripts/protoclass.js"></script>
-<script src='javascripts/box2d.js'></script>
-<script src='javascripts/Main.js'></script>
+<script src="/javascripts/protoclass.js"></script>
+<script src='/javascripts/box2d.js'></script>
+<script src='/javascripts/Main.js'></script>
 
 </body>
 </html>
