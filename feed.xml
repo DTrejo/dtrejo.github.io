@@ -2,17 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>David Trejo | Developer and Consultant</title>
   <subtitle>DTrejo's Developer Tips</subtitle>
-  <id>http://dtrejo.com/</id>
-  <link href="http://dtrejo.com/"/>
-  <link href="http://dtrejo.com/feed.xml" rel="self"/>
+  <id>https://dtrejo.com/</id>
+  <link href="https://dtrejo.com/"/>
+  <link href="https://dtrejo.com/feed.xml" rel="self"/>
   <updated>2016-10-04T20:16:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
   <entry>
     <title>Overcome Cold-Email Procrastination</title>
-    <link rel="alternate" href="http://dtrejo.com/overcome-cold-email-procrastination.html"/>
-    <id>http://dtrejo.com//overcome-cold-email-procrastination.html</id>
+    <link rel="alternate" href="https://dtrejo.com/overcome-cold-email-procrastination.html"/>
+    <id>https://dtrejo.com//overcome-cold-email-procrastination.html</id>
     <published>2016-10-04T20:16:00Z</published>
     <updated>2016-10-04T20:16:00Z</updated>
     <author>
@@ -78,8 +78,8 @@ EngineerOverflow.com&lt;/p&gt;
   </entry>
   <entry>
     <title>How to Write Consistently, Painlessly, and Without Writer's Block</title>
-    <link rel="alternate" href="http://dtrejo.com/how-to-write-consistently-painlessly-and-without-writers-block.html"/>
-    <id>http://dtrejo.com//how-to-write-consistently-painlessly-and-without-writers-block.html</id>
+    <link rel="alternate" href="https://dtrejo.com/how-to-write-consistently-painlessly-and-without-writers-block.html"/>
+    <id>https://dtrejo.com//how-to-write-consistently-painlessly-and-without-writers-block.html</id>
     <published>2016-07-04T04:41:00Z</published>
     <updated>2016-07-04T04:41:00Z</updated>
     <author>
@@ -119,8 +119,8 @@ David Trejo&lt;/p&gt;
   </entry>
   <entry>
     <title>How To Email</title>
-    <link rel="alternate" href="http://dtrejo.com/how-to-email.html"/>
-    <id>http://dtrejo.com//how-to-email.html</id>
+    <link rel="alternate" href="https://dtrejo.com/how-to-email.html"/>
+    <id>https://dtrejo.com//how-to-email.html</id>
     <published>2016-04-29T22:51:00Z</published>
     <updated>2016-04-29T22:51:00Z</updated>
     <author>
@@ -150,8 +150,8 @@ David&lt;/p&gt;
   </entry>
   <entry>
     <title>How I Can Help You</title>
-    <link rel="alternate" href="http://dtrejo.com/help.html"/>
-    <id>http://dtrejo.com//help.html</id>
+    <link rel="alternate" href="https://dtrejo.com/help.html"/>
+    <id>https://dtrejo.com//help.html</id>
     <published>2015-11-13T02:36:00Z</published>
     <updated>2015-11-13T02:36:00Z</updated>
     <author>
@@ -338,18 +338,18 @@ David Trejo&lt;/p&gt;
   </entry>
   <entry>
     <title>Why is Node Being Forked?</title>
-    <link rel="alternate" href="http://dtrejo.com/why-is-node-being-forked.html"/>
-    <id>http://dtrejo.com//why-is-node-being-forked.html</id>
+    <link rel="alternate" href="https://dtrejo.com/why-is-node-being-forked.html"/>
+    <id>https://dtrejo.com//why-is-node-being-forked.html</id>
     <published>2014-10-09T19:11:00Z</published>
     <updated>2014-10-09T19:11:00Z</updated>
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="node logo" alt="" width="212" height="114" src='http://dtrejo.com/images/new-nodejs-logo.png?1467608548' /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="node logo" alt="" width="212" height="114" src='https://dtrejo.com/images/new-nodejs-logo.png?1467608548' /&gt;&lt;/p&gt;
 
 &lt;p&gt;As of October 9th I learned that &lt;a href="http://github.com/joyent/node"&gt;Node&lt;/a&gt; is being forked!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://twitter.com/mikeal/status/520285400279965698"&gt;&lt;img alt="Why is node being forked? tweet" alt="" width="707" height="333" src='http://dtrejo.com/images/why-is-node-being-forked-tweet1.png?1467608549' /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/mikeal/status/520285400279965698"&gt;&lt;img alt="Why is node being forked? tweet" alt="" width="707" height="333" src='https://dtrejo.com/images/why-is-node-being-forked-tweet1.png?1467608549' /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I asked someone close to this, "what is the reason for the fork?"&lt;/p&gt;
 
@@ -407,8 +407,8 @@ David Trejo&lt;/p&gt;
   </entry>
   <entry>
     <title>How to Buy and Cook Steak</title>
-    <link rel="alternate" href="http://dtrejo.com/how-to-buy-and-cook-steak.html"/>
-    <id>http://dtrejo.com//how-to-buy-and-cook-steak.html</id>
+    <link rel="alternate" href="https://dtrejo.com/how-to-buy-and-cook-steak.html"/>
+    <id>https://dtrejo.com//how-to-buy-and-cook-steak.html</id>
     <published>2014-07-27T21:36:00Z</published>
     <updated>2014-07-27T21:36:00Z</updated>
     <author>
@@ -445,10 +445,10 @@ to prepare it, down to the most minute (but crucial) details.&lt;/p&gt;
 &lt;br /&gt;rib eye is easiest to cook cuz it has best marbling
 &lt;br /&gt;marbling is the amount of fat "strands" inside the lean muscle, hence giving a marbled &lt;br /&gt;appearance
 &lt;br /&gt;top notch marbling:
-&lt;br /&gt;&lt;img alt="" width="540" height="348" src="http://dtrejo.com/images/top-notch-marbling.jpg?1467608549" /&gt;
+&lt;br /&gt;&lt;img alt="" width="540" height="348" src="https://dtrejo.com/images/top-notch-marbling.jpg?1467608549" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;very shitty marbling:
-&lt;br /&gt;&lt;img alt="" width="300" height="161" src="http://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1467608549" /&gt;
+&lt;br /&gt;&lt;img alt="" width="300" height="161" src="https://dtrejo.com/images/shitty-markbling-toproundsteak.jpg?1467608549" /&gt;
 &lt;br /&gt;
 &lt;br /&gt;marbling is 2nd most important thing when buying steaks
 &lt;br /&gt;you want more marbling

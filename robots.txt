@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /feed.html
 Disallow: /feed.xml
 
-Sitemap: http://dtrejo.com/sitemap.xml
+Sitemap: https://dtrejo.com/sitemap.xml
