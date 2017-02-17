@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8" /><meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><link href="/images/favicon.png?1467608548" rel="icon" type="image/png" /><link href="https://dtrejo.com/feed.xml" rel="alternate" title="David Trejo | Developer and Consultant Feed" type="application/atom+xml" /><title>Chaos in Your Product Prototyping by David Trejo | Developer and Consultant</title><link href="https://dtrejo.com/chaos-in-your-product-prototyping.html" rel="canonical" /><meta content="lean, prototyping" name="keywords" /><link href="/stylesheets/application.css?1467608550" media="screen" rel="stylesheet" type="text/css" /><link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script><script src="/javascripts/application.js?1467608550" type="text/javascript"></script>
+</head><body><script type="text/javascript">      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-11131137-1', 'dtrejo.com');
+      ga('send', 'pageview');
+</script><nav class="navbar navbar-default navbar-static-top"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".bs-navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><h2><a class="navbar-brand" href="https://dtrejo.com/">dtrejo.com</a></h2></div><div class="collapse navbar-collapse"><ul class="navbar-nav nav navbar-right"><li><a href="https://twitter.com/ddtrejo"><i class='fa fa-twitter fa-inline'></i> ddtrejo</a></li></ul></div></div></nav><div class="container"><article><h1 class="article-title">Chaos in Your Product Prototyping</h1><div class="article-body"><p>Note: <strong>I no longer believe that product ideas should be <em>validated</em>.</strong> One should only
+build after one has pre-sold or collected signed letters of intent to buy at
+a specific price-point.</p>
+
+<p>I wrote this for the rest of the team at Neo, where we built new lines of
+business for Fortune 500 companies. Our projects were 12 weeks long. We
+designed, built, and launched new products for our clients.</p>
+
+<p>This article is an amalgamation of tactical advice, written for teams of at least one
+designer and one engineer who want to build a new product more quickly. It can
+be applied to building a new feature as well.</p>
+
+<h2 id="what-is-chaos">What is Chaos?</h2>
+
+<p>It's this strange feeling that you're not as productive as you could be because
+the flow of work and coordination and communication with your team is not at its
+best. It's the feeling that you are occasionally doing inefficient things, or
+that you don't know what's going to happen next, or taking steps backward. Your
+"chaos" as an engineer is different from that of a designer, something to be
+aware of.</p>
+
+<h2 id="areas-of-chaos">Areas of Chaos</h2>
+<ul>
+  <li>Design flow – flow of a design from whiteboard to code</li>
+  <li>Experiment choice – given what's already been built, your team's decision on what fidelity the next experiment should be</li>
+  <li>Figuring out the definition of "MVP"</li>
+  <li>Figuring out what the "MVP" is for this solution space</li>
+</ul>
+
+<h2 id="reducing-chaos">Reducing Chaos</h2>
+<p>Here we explain each area of chaos, along with some ways to reduce chaos.</p>
+
+<h2 id="less-chaos-design-flow">Less Chaos: Design Flow</h2>
+
+<p>As an engineer, it's difficult to know when to jump in and code. Has the design
+undergone enough feedback from users? Is it at a high-enough fidelity? Will the
+design change drastically soon? Is there a major flaw that won't be noticed
+until it gets coded up? These are difficult questions to answer–I'll outline a
+full flow, and then I'll outline an "ideal" flow that might help us move faster
+on future designs. Having this conversation with Alex (designer of the project)
+was very helpful for us.</p>
+
+<p>Each bolded step includes some feedback from the Engineer, if needed. And
+possibly feedback from another Neo designer, but not too much! Too much feedback
+leads to more chaos. Advice can make you regress to a previous step in the flow,
+and it takes much longer to finish it. Also, not all advice is worth taking even
+though it may be "better," so you may have done yourself a disservice. It all
+depends on the situation.</p>
+
+<h3 id="full-flow">Full Flow</h3>
+<ul>
+  <li><strong>Whiteboard the design</strong></li>
+  <li>Customer feedback</li>
+  <li><strong>Paper prototype</strong></li>
+  <li>Customer feedback</li>
+  <li><strong>Put design into proto.io or invisionapp.com</strong></li>
+  <li>Customer feedback</li>
+  <li>Make a psd of the design</li>
+  <li>Customer feedback</li>
+  <li><strong>CODE the design</strong></li>
+  <li>Customer feedback</li>
+</ul>
+
+<h3 id="fast-flow">Fast flow</h3>
+<ul>
+  <li><strong>Whiteboard the design</strong></li>
+  <li>Co-worker feedback (3 people)</li>
+  <li><strong>Put design into proto.io or invisionapp.com</strong></li>
+  <li>Customer feedback, co-worker feedback</li>
+  <li><strong>Make a psd of the design</strong></li>
+  <li><strong>CODE the design</strong></li>
+  <li>Customer feedback</li>
+</ul>
+
+<h2 id="you-really-should">You really should…</h2>
+<ul>
+  <li>Include real copy in the design(s)–this can change information hierarchy, the
+sizes of page elements, what design works or doesn't work, etc</li>
+  <li>Consider choosing standard widths and sizes for your code and design. Alex and
+I chose the following: 1rem = 16px, and the height/width/spacing of
+everything on the page is a multiple 16px, or 8px. This makes coding the page
+much easier. Don't forget that line-height is not the same as the top of the
+letter "M", this means not every number in your design/code will be pretty (b/c
+CSS typography doesn't directly map to visual beauty: Ask Gon for more
+information about this, he can draw you a picture to show you what I mean).</li>
+</ul>
+
+<h2 id="less-chaos-experiment-choice">Less Chaos: Experiment Choice</h2>
+<p>It is difficult to choose the next experiment. It is difficult to assess how
+"confident" you are about the product. Are you truly confident enough to build
+the MVP right now? Here's the rough progression of experiments that eventually
+help you get comfortable enough to build the MVP. It is expected that you will
+run an experiment, it will fail, and you could return even to the first few
+bullet points! I don't recommend choosing to validate two ideas at once. Ask and
+share common conversion numbers for each step.</p>
+
+<ul>
+  <li>[Optional] Find/Validate the problem
+    <ul>
+      <li>Do customer development and figure out what their problems are</li>
+      <li>Figure out which is the most painful</li>
+    </ul>
+  </li>
+  <li>Find/Validate the solution to the problem
+    <ul>
+      <li>Come up with solutions</li>
+      <li>Do customer development to see which one people want more, discounted by the fact that customer's don't always know what they want</li>
+    </ul>
+  </li>
+  <li>Do a lean canvas on the top problems, eliminating the ones that don't have good ROI</li>
+  <li>Do customer development on the remaining most-painful problem</li>
+  <li>Make a landing page for the problem, drive traffic to it. 
+    <ul>
+      <li>e.g. fit experiment: Adwords CTR: 0.54%, email signup conversion: 24.5%; Style experiment: Adwords CTR: 0.19% email signup conversation: 10.17%</li>
+    </ul>
+  </li>
+  <li>Make a concierge MVP</li>
+  <li>Make an MVP</li>
+  <li>Make a real Product</li>
+  <li>Optionally A/B tests if you have enough traffic, to improve the copy/product</li>
+  <li>Acquire more and more users</li>
+  <li>Success!</li>
+</ul>
+
+<h3 id="less-chaos-mvp-choice">Less Chaos: MVP Choice</h3>
+<p>This is hard. No way around it. Think about it for a really long time. Here's a list of ways you can make your product simpler:</p>
+
+<ul>
+  <li>Cut down on your audience until it is only one person
+    <ul>
+      <li>E.g. women, in the bay area, buying pants, and only plus-sizes. Jane Doe.</li>
+    </ul>
+  </li>
+  <li>Cut down to only one value prop
+    <ul>
+      <li>E.g. "I want to know how it will fit and look on someone like me": show variously sized models in the same pair of pants</li>
+    </ul>
+  </li>
+  <li>Do things by hand, only program at the last moment, use spreadsheets</li>
+  <li>Deliver less product less often
+    <ul>
+      <li>E.g. we will send you one look (on four different models) every week</li>
+    </ul>
+  </li>
+  <li>Only one problem</li>
+  <li>Only one solution to one problem</li>
+  <li>Only something you could do yourself manually</li>
+  <li>Only what you can get done in 7 days / 100 days</li>
+  <li>…</li>
+</ul>
+
+<h2 id="client-gotchas">Client Gotchas</h2>
+
+<p>It's really best to 100% ignore the fact that your client has an existing
+audience. You certainly can send an email to a segment of their audience, but
+this will take weeks to make happen and won't make a significant difference to
+whether people use/need your product. Your other acquisition channels should
+already be working.</p>
+
+<p>Thanks <a href="https://twitter.com/wakeupmrkim">Alex Kim</a>,
+<a href="https://twitter.com/gonzif">Gon Zifroni</a>, and everyone else at Neo–it was a pleasure working with you!</p>
+
+<p>Yours,<br />
+David</p>
+</div></article><div class="media author"><div class="pull-left"><img class="media-object img-circle author-avatar" src="/images/dtrejo.jpg" /></div><div class="media-body"><h4 class="media-heading author-name"><a href="/">David Trejo</a></h4><span class="author-desc">Engineer &amp; Consultant. Past clients include Neo, Presentate, Brown Computer Science Department, Voxer, Cloudera, and the Veteran's Benefits Administration.</span></div></div><div class="comments"><div class="article-footer"><h3>Need help hiring engineers? <a href="http://engineeroverflow.com">EngineerOverflow.com</a></h3><p>Get help from an engineer who knows what experienced engineers want out of their careers <span class="unicode">☛</span> <a href="http://engineeroverflow.com">EngineerOverflow.com</a>.</p></div></div></div><footer><div class="container"><div class="col-md-6"><em>Find me</em><br /><br /><a href="https://github.com/DTrejo">Github</a><br /><a href="https://twitter.com/ddtrejo">Twitter</a><br /><a href="#" id="email" title="david at this domain">Email</a></div><span class="fin col-md-12 text-center"><a href="404.html">fin</a></span></div></footer><script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script><script type="text/javascript">$(document).ready(function() {
+  // Show email to humans.
+  var me = 'david'
+  var atDomain = '@dtrejo.com'
+  $('a#email').click(function() {
+    $(this).attr('href', 'mailto:' + me + atDomain).text(me + atDomain)
+  })
+})</script></body></html>

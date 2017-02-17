@@ -5,10 +5,185 @@
   <id>https://dtrejo.com/</id>
   <link href="https://dtrejo.com/"/>
   <link href="https://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2017-02-11T04:03:00Z</updated>
+  <updated>2017-02-17T04:50:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>Chaos in Your Product Prototyping</title>
+    <link rel="alternate" href="https://dtrejo.com/chaos-in-your-product-prototyping.html"/>
+    <id>https://dtrejo.com//chaos-in-your-product-prototyping.html</id>
+    <published>2017-02-17T04:50:00Z</published>
+    <updated>2017-02-17T04:50:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;Note: &lt;strong&gt;I no longer believe that product ideas should be &lt;em&gt;validated&lt;/em&gt;.&lt;/strong&gt; One should only
+build after one has pre-sold or collected signed letters of intent to buy at
+a specific price-point.&lt;/p&gt;
+
+&lt;p&gt;I wrote this for the rest of the team at Neo, where we built new lines of
+business for Fortune 500 companies. Our projects were 12 weeks long. We
+designed, built, and launched new products for our clients.&lt;/p&gt;
+
+&lt;p&gt;This article is an amalgamation of tactical advice, written for teams of at least one
+designer and one engineer who want to build a new product more quickly. It can
+be applied to building a new feature as well.&lt;/p&gt;
+
+&lt;h2 id="what-is-chaos"&gt;What is Chaos?&lt;/h2&gt;
+
+&lt;p&gt;It's this strange feeling that you're not as productive as you could be because
+the flow of work and coordination and communication with your team is not at its
+best. It's the feeling that you are occasionally doing inefficient things, or
+that you don't know what's going to happen next, or taking steps backward. Your
+"chaos" as an engineer is different from that of a designer, something to be
+aware of.&lt;/p&gt;
+
+&lt;h2 id="areas-of-chaos"&gt;Areas of Chaos&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Design flow – flow of a design from whiteboard to code&lt;/li&gt;
+  &lt;li&gt;Experiment choice – given what's already been built, your team's decision on what fidelity the next experiment should be&lt;/li&gt;
+  &lt;li&gt;Figuring out the definition of "MVP"&lt;/li&gt;
+  &lt;li&gt;Figuring out what the "MVP" is for this solution space&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="reducing-chaos"&gt;Reducing Chaos&lt;/h2&gt;
+&lt;p&gt;Here we explain each area of chaos, along with some ways to reduce chaos.&lt;/p&gt;
+
+&lt;h2 id="less-chaos-design-flow"&gt;Less Chaos: Design Flow&lt;/h2&gt;
+
+&lt;p&gt;As an engineer, it's difficult to know when to jump in and code. Has the design
+undergone enough feedback from users? Is it at a high-enough fidelity? Will the
+design change drastically soon? Is there a major flaw that won't be noticed
+until it gets coded up? These are difficult questions to answer–I'll outline a
+full flow, and then I'll outline an "ideal" flow that might help us move faster
+on future designs. Having this conversation with Alex (designer of the project)
+was very helpful for us.&lt;/p&gt;
+
+&lt;p&gt;Each bolded step includes some feedback from the Engineer, if needed. And
+possibly feedback from another Neo designer, but not too much! Too much feedback
+leads to more chaos. Advice can make you regress to a previous step in the flow,
+and it takes much longer to finish it. Also, not all advice is worth taking even
+though it may be "better," so you may have done yourself a disservice. It all
+depends on the situation.&lt;/p&gt;
+
+&lt;h3 id="full-flow"&gt;Full Flow&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Whiteboard the design&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Customer feedback&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Paper prototype&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Customer feedback&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Put design into proto.io or invisionapp.com&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Customer feedback&lt;/li&gt;
+  &lt;li&gt;Make a psd of the design&lt;/li&gt;
+  &lt;li&gt;Customer feedback&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CODE the design&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Customer feedback&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="fast-flow"&gt;Fast flow&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Whiteboard the design&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Co-worker feedback (3 people)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Put design into proto.io or invisionapp.com&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Customer feedback, co-worker feedback&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Make a psd of the design&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CODE the design&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Customer feedback&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="you-really-should"&gt;You really should…&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Include real copy in the design(s)–this can change information hierarchy, the
+sizes of page elements, what design works or doesn't work, etc&lt;/li&gt;
+  &lt;li&gt;Consider choosing standard widths and sizes for your code and design. Alex and
+I chose the following: 1rem = 16px, and the height/width/spacing of
+everything on the page is a multiple 16px, or 8px. This makes coding the page
+much easier. Don't forget that line-height is not the same as the top of the
+letter "M", this means not every number in your design/code will be pretty (b/c
+CSS typography doesn't directly map to visual beauty: Ask Gon for more
+information about this, he can draw you a picture to show you what I mean).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="less-chaos-experiment-choice"&gt;Less Chaos: Experiment Choice&lt;/h2&gt;
+&lt;p&gt;It is difficult to choose the next experiment. It is difficult to assess how
+"confident" you are about the product. Are you truly confident enough to build
+the MVP right now? Here's the rough progression of experiments that eventually
+help you get comfortable enough to build the MVP. It is expected that you will
+run an experiment, it will fail, and you could return even to the first few
+bullet points! I don't recommend choosing to validate two ideas at once. Ask and
+share common conversion numbers for each step.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[Optional] Find/Validate the problem
+    &lt;ul&gt;
+      &lt;li&gt;Do customer development and figure out what their problems are&lt;/li&gt;
+      &lt;li&gt;Figure out which is the most painful&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Find/Validate the solution to the problem
+    &lt;ul&gt;
+      &lt;li&gt;Come up with solutions&lt;/li&gt;
+      &lt;li&gt;Do customer development to see which one people want more, discounted by the fact that customer's don't always know what they want&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Do a lean canvas on the top problems, eliminating the ones that don't have good ROI&lt;/li&gt;
+  &lt;li&gt;Do customer development on the remaining most-painful problem&lt;/li&gt;
+  &lt;li&gt;Make a landing page for the problem, drive traffic to it. 
+    &lt;ul&gt;
+      &lt;li&gt;e.g. fit experiment: Adwords CTR: 0.54%, email signup conversion: 24.5%; Style experiment: Adwords CTR: 0.19% email signup conversation: 10.17%&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Make a concierge MVP&lt;/li&gt;
+  &lt;li&gt;Make an MVP&lt;/li&gt;
+  &lt;li&gt;Make a real Product&lt;/li&gt;
+  &lt;li&gt;Optionally A/B tests if you have enough traffic, to improve the copy/product&lt;/li&gt;
+  &lt;li&gt;Acquire more and more users&lt;/li&gt;
+  &lt;li&gt;Success!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="less-chaos-mvp-choice"&gt;Less Chaos: MVP Choice&lt;/h3&gt;
+&lt;p&gt;This is hard. No way around it. Think about it for a really long time. Here's a list of ways you can make your product simpler:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cut down on your audience until it is only one person
+    &lt;ul&gt;
+      &lt;li&gt;E.g. women, in the bay area, buying pants, and only plus-sizes. Jane Doe.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cut down to only one value prop
+    &lt;ul&gt;
+      &lt;li&gt;E.g. "I want to know how it will fit and look on someone like me": show variously sized models in the same pair of pants&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Do things by hand, only program at the last moment, use spreadsheets&lt;/li&gt;
+  &lt;li&gt;Deliver less product less often
+    &lt;ul&gt;
+      &lt;li&gt;E.g. we will send you one look (on four different models) every week&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Only one problem&lt;/li&gt;
+  &lt;li&gt;Only one solution to one problem&lt;/li&gt;
+  &lt;li&gt;Only something you could do yourself manually&lt;/li&gt;
+  &lt;li&gt;Only what you can get done in 7 days / 100 days&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="client-gotchas"&gt;Client Gotchas&lt;/h2&gt;
+
+&lt;p&gt;It's really best to 100% ignore the fact that your client has an existing
+audience. You certainly can send an email to a segment of their audience, but
+this will take weeks to make happen and won't make a significant difference to
+whether people use/need your product. Your other acquisition channels should
+already be working.&lt;/p&gt;
+
+&lt;p&gt;Thanks &lt;a href="https://twitter.com/wakeupmrkim"&gt;Alex Kim&lt;/a&gt;,
+&lt;a href="https://twitter.com/gonzif"&gt;Gon Zifroni&lt;/a&gt;, and everyone else at Neo–it was a pleasure working with you!&lt;/p&gt;
+
+&lt;p&gt;Yours,&lt;br /&gt;
+David&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>How to Get Your Business to Pull You Forward</title>
     <link rel="alternate" href="https://dtrejo.com/how-to-get-your-business-to-pull-you-forward.html"/>
@@ -473,75 +648,6 @@ David&lt;/p&gt;
 
 &lt;p&gt;Sincerely,&lt;br /&gt;
 David Trejo&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Why is Node Being Forked?</title>
-    <link rel="alternate" href="https://dtrejo.com/why-is-node-being-forked.html"/>
-    <id>https://dtrejo.com//why-is-node-being-forked.html</id>
-    <published>2014-10-09T19:11:00Z</published>
-    <updated>2014-10-09T19:11:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="node logo" alt="" width="212" height="114" src='https://dtrejo.com/images/new-nodejs-logo.png?1467608548' /&gt;&lt;/p&gt;
-
-&lt;p&gt;As of October 9th I learned that &lt;a href="http://github.com/joyent/node"&gt;Node&lt;/a&gt; is being forked!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://twitter.com/mikeal/status/520285400279965698"&gt;&lt;img alt="Why is node being forked? tweet" alt="" width="707" height="333" src='https://dtrejo.com/images/why-is-node-being-forked-tweet1.png?1467608549' /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I asked someone close to this, "what is the reason for the fork?"&lt;/p&gt;
-
-&lt;p&gt;It turns out that some contributors* are forking because Node is currently run
-by a Benevolent Dictator For Life (BDFL), and these contributors are interested
-in running it by committee.&lt;/p&gt;
-
-&lt;p&gt;Here is a video on the subject, where these contributors discuss the
-effort:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://cloudup.com/cMfev4cebay"&gt;https://www.youtube.com/watch?v=fNW_tu2QnpA&lt;/a&gt; (37 mins; re-uploaded)&lt;/p&gt;
-
-&lt;p&gt;Interesting notes from the video:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;they are considering hiring a full-time person to triage bugs on Node&lt;/li&gt;
-  &lt;li&gt;they wish they could share bug-closing and bug-management abilities on the
-&lt;a href="http://github.com/joyent/node"&gt;joyent/node&lt;/a&gt; Github (but Github itself does not make this easy without giving direct commit access),&lt;/li&gt;
-  &lt;li&gt;For the near-term, they are considering spending 3 hours per week doing bug
-triage.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here are the leaders of this, with their names and their rank as a contributor
-to &lt;a href="http://github.com/joyent/node"&gt;node&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;#2&lt;/code&gt; Isaac Schlueter (and former BDFL)&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;#3&lt;/code&gt; Ben Noordhuis [Mikeal pointed out that I forgot Ben, thank you Mikeal!]&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;#4&lt;/code&gt; Bert Belder&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;#5&lt;/code&gt; Fedor Indutny&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;#7&lt;/code&gt; Trevor Norris&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;#27&lt;/code&gt; Mikeal Rogers&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As a bystander to this, I hope that when the dust settles, Node's stability and
-progress have not been adversely affected. I know for a fact that all of these
-people have better things to do than forking node (running their businesses for
-example). I have no doubt that this whole thing is a big headache for everyone,
-and hopefully the headache goes away soon (they would not be forking if they
-didn't have good reasons).&lt;/p&gt;
-
-&lt;p&gt;Have a good day,&lt;br /&gt;
-David Trejo&lt;/p&gt;
-
-&lt;h2 id="more-information"&gt;More information&lt;/h2&gt;
-
-&lt;p&gt;Here a video of the previous meeting (25 mins; re-uploaded):
-&lt;a href="https://cloudup.com/cMfev4cebay"&gt;https://www.youtube.com/watch?v=X5PtRHjUO1U&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is a link to the node fork: &lt;a href="https://github.com/node-forward/node"&gt;https://github.com/node-forward/node&lt;/a&gt;&lt;/p&gt;
-
-&lt;!-- [vid1]:https://www.youtube.com/watch?v=fNW_tu2QnpA --&gt;
-&lt;!-- [vid2]:https://www.youtube.com/watch?v=X5PtRHjUO1U --&gt;
 </content>
   </entry>
 </feed>
