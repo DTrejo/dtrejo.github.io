@@ -1,0 +1,341 @@
+
+<!DOCTYPE html><html itemscope itemtype="http://schema.org/Article" lang="en"><head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"><meta itemprop="mainEntityOfPage" content="undefined"><title>Stripe Referral Supercharger by David Trejo</title><!-- for Google --><meta name="description" content="undefined"><meta name="author" content="David Trejo"><meta name="copyright" content="DTrejo, Inc"><!-- for Facebook --><meta property="og:type" content="article"><meta property="og:title" content="Stripe Referral Supercharger by David Trejo"><meta property="og:description" content="undefined"><meta property="og:image" content="https://images.unsplash.com/1/bag-and-hands.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&h=630&w=1200&fit=crop&txtpad=20&txtalign=center,middle&txtfit=max&txtsize=120&txtlig=1&txtfont=futura%20medium&txtclr=fff&txtshad=10&bm=normal&blend=000&balph=50&txt=Stripe%20Referral%20Supercharger%20by%20David%20Trejo"><meta property="og:url" content="undefined"><!-- for Twitter --><meta property="twitter:card" content="photo"><meta property="twitter:site" content="@ddtrejo"><meta property="twitter:title" content="Stripe Referral Supercharger by David Trejo by David Trejo"><meta property="twitter:description" content="undefined"><meta property="twitter:image" content="https://images.unsplash.com/1/bag-and-hands.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&h=630&w=1200&fit=crop&txtpad=20&txtalign=center,middle&txtfit=max&txtsize=120&txtlig=1&txtfont=futura%20medium&txtclr=fff&txtshad=10&bm=normal&blend=000&balph=50&txt=Stripe%20Referral%20Supercharger%20by%20David%20Trejo"><meta property="twitter:url" content="undefined"><!-- The HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+<![endif]--><link rel="stylesheet" href="static/tachyons.css">
+<link rel="stylesheet" href="static/hot.css">
+<link rel="stylesheet" href="static/dropzone-basic.css">
+<link rel="stylesheet" href="static/dropzone.css"><style>body {
+  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-size: 150%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.offwhite {
+  background-color: #f6f9fc;
+}
+* + * {
+  margin-top: 1.5rem
+}
+main > h1,
+main > h2,
+main > h3,
+main > p,
+main > form,
+main > div,
+body > header,
+body > footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 34rem;
+}
+.pc {
+  color: #6b7c93;
+}
+.h2c {
+  color: #24b47e
+}
+.lc, .lc:visited {
+  color: #6772e5;
+  font-weight: 500;
+  transition: color .1s ease;
+  cursor: pointer;
+}
+.lc:hover {
+  color: #32325d;
+}
+.bc {
+  border-color: rgba(207,215,223,.25)
+}
+tbody, caption, .dtc {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+     -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+}
+.h3qa:before {
+  content: '?';
+  border-radius: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  
+  color: #1bb978;
+  background-color: #b9f4bc;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  top: 0.25rem;
+}
+.button {
+  color: #fff;
+  background: #3ecf8e;
+  text-shadow: 0 1px 3px rgba(36,180,126,.4);
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+  transition: all .15s ease;
+  line-height: 3rem;
+  height: 3rem;
+}
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+}
+.dropzone {
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 0;
+  box-shadow: inset 0 1px 3px rgba(50,50,93,.3), inset 0 1px 0 rgba(0,0,0,.04);
+}
+.dz-drag-hover {
+  background-color: lightyellow;
+}
+.dz-image {
+  border-radius: 0.75rem;
+}
+.person.checked {
+  background-color: #6772e5;
+  color: white;
+}
+.person:hover {
+  background-color: #7795f8;
+  color: white;
+}
+.hot * + *, .htmenu * + * {
+  margin-top: 0
+}
+.htItemWrapper {
+  font-size: initial
+}
+</style></head><body><header class="mt5"><h1 class="lh-title">Stripe<sub class="f4 ttu tracked h2c">&nbsp; Referral SuperCharger</sub></h1><h2 class="f4">Dear Michael,</h2><p class="f5 fw4 lh-copy pc">I whipped this together for you and Stripe because Jordan said around half of your hires come from referrals.</p><p class="f5 fw4 lh-copy pc">I optimized for UX, longevity (no server), and development speed. Because of these constraints, this code is on the "prototype" end of the production readiness spectrum.</p><p class="f5 fw4 lh-copy pc">Yours,<br>David Trejo<br><a class="lc" href="https://DTrejo.com">DTrejo.com</a><br><a class="lc lc" href="https://EngineerOverflow.com">EngineerOverflow.com</a></p><details class="f5 fw4 lh-copy pc"><summary>PS Want the emails of all your 1st degree connections? <span class="underline">Read more</span></summary><p>Visit Linkedin &rarr; click your profile photo at the top right &rarr; click Settings &amp; Privacy &rarr; click Getting an archive of your data &rarr; Click Fast file only &rarr; click Request Archive.</p></details><p class="f5 fw4 lh-copy pc">PPS Looks like you already use Teamable! Nice!</p><div class="bt bw1 bc mt5"></div></header><main role="main"><h2 class="ttu tc f4 fw6 tracked h2c mt5">When should you use this?</h2><p class="f5 fw4 lh-copy pc">When you're going to coffee with your best friend who doesn't work at Stripe yet, who still wants to refer people to Stripe (but isn't sure who).</p><h2 class="ttu tc f4 fw6 tracked h2c mt5">Why is this different than plain LinkedIn or Teamable?</h2><p class="f5 fw4 lh-copy pc"><span class="black fw7">Stripe</span> <sub class="ttu h2c fw7">Referral SuperCharger</sub> ranks people roughly by the size of their employer, this breaks analysis paralysis about who you should talk to first. Unlike other tools, it doesn't require the other person to sign-in. Finally, this tool works on any variety of titles, not just engineers.</p><div class="bt bw1 bc mt5"></div><div style="color: #1bb978; background-color: #b9f4bc; border-color: #b9f4bc;line-height: 4rem" class="tc ba w3 h3 mt5 br-100 fw7"><caption>1</caption></div><h2 class="ttu tc f4 fw6 tracked h2c">Drop your connections HTML file here</h2><form id="HTMLorCSV" action="/404" class="dropzone needsclick br2 offwhite"><div class="dz-message needsclick center tc pc pa4">Drop HTML file here or click to choose<br><small class="f6">Selected HTML file is <strong>not</strong> uploaded, it stays on your computer.</small></div></form><p class="f5 fw4 lh-copy pc"><small class="f6 pc">To find this html, visit a friend's profile &rarr; click "See connections" &rarr; scroll to bottom &rarr; press <code>command + s</code> to save &rarr; drop the resulting HTML file here.</small></p><div style="color: #1bb978; background-color: #b9f4bc; border-color: #b9f4bc;line-height: 4rem" class="tc ba w3 h3 mt5 br-100 fw7"><caption>2</caption></div><h2 class="ttu tc f4 fw6 tracked h2c">Pick titles that interest you</h2><div style="display: none" class="title-picker"></div><div style="color: #1bb978; background-color: #b9f4bc; border-color: #b9f4bc;line-height: 4rem" class="tc ba w3 h3 mt5 br-100 fw7"><caption>3</caption></div><h2 class="ttu tc f4 fw6 tracked h2c">Review your people</h2><p class="f5 fw4 lh-copy pc">Adjust the previous steps and the sorting of the table until you're happy.</p><div id="targets" class="w-100 mw-100 f6 hot"></div><div style="color: #1bb978; background-color: #b9f4bc; border-color: #b9f4bc;line-height: 4rem" class="tc ba w3 h3 mt5 br-100 fw7"><caption>4</caption></div><h2 class="ttu tc f4 fw6 tracked h2c">Export Your People</h2><div class="tc"><a href="#" class="button dib br2 f5 ttu tracking no-underline fw6 nowrap ph3 download"><img height="16px" width="16px" src="static/plan-receive.svg">&nbsp; Download as CSV</a></div><div class="bt bw1 bc mt5"></div><div class="relative"><h3 style="color: #32325d;" class="h3qa fw5 ml4 mt5">What do the salary numbers mean?</h3></div><p class="f5 fw4 lh-copy pc pl4"><code>medianSalary</code> is the median salary for H1B applications with this job title throughout the USA. <code>companyNumRecords</code> is the number of H1B applications this company has made: tech companies and larger companies employ larger numbers of H1B workers. <code>companyMedianSalary</code> is the median salary of H1B workers at that company.</p><div class="relative"><h3 style="color: #32325d;" class="h3qa fw5 ml4">How do you calculate the "score"?</h3></div><p class="f5 fw4 lh-copy pc pl4"><code>score = person's median salary + (median salary for the company * number of H1B employees at the company)</code></p><div class="relative"><h3 style="color: #32325d;" class="h3qa fw5 ml4">Is it secure?</h3></div><p class="f5 fw4 lh-copy pc pl4">Yes. The data you provide never leaves your computer.</p><div class="tc center db"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#6772E5" d="M31.006 20v-4.76a7.507 7.507 0 0 0-15.013 0V20H11v-4.5C11 8.597 16.596 3 23.5 3S36 8.597 36 15.5V20h-4.994z"></path><path fill="#87BBFD" d="M20 30c0 1.48.805 2.77 2 3.46V37a2 2 0 0 0 2 2v6H10a4 4 0 0 1-4-4V24a4 4 0 0 1 4-4h14v6a4 4 0 0 0-4 4z"></path><path fill="#6772E5" d="M37 45H24v-6a2 2 0 0 0 2-2v-3.54A3.99 3.99 0 0 0 28 30a4 4 0 0 0-4-4v-6h13a4 4 0 0 1 4 4v17a4 4 0 0 1-4 4z"></path></svg></div></main><footer></footer><script type="text/javascript" defer src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script src="static/jquery.js"></script>
+<script src="static/dropzone.js"></script>
+<script src="partial_titles.jade.js"></script>
+<script src="static/hot.js"></script>
+<script src="static/papaparse.js"></script>
+<script src="static/download.js"></script><script>$(main)
+function main() {
+  setupDropzone()
+  
+  if (window.localStorage.introCompanies) {
+    window.introCompanies = JSON.parse(window.localStorage.introCompanies)
+  } else {
+    $.getJSON('ca.json', function(data) {
+      window.introCompanies = data
+      window.localStorage.introCompanies = JSON.stringify(window.introCompanies)
+    })
+  }
+  if (window.localStorage.introTitles) {
+    window.introTitles = JSON.parse(window.localStorage.introTitles)
+  } else {
+    $.getJSON('ta.json', function(data) {
+      window.introTitles = data
+      window.localStorage.introTitles = JSON.stringify(window.introTitles)
+    })
+  }
+  
+  window.$titlePicker = $('.title-picker')
+  window.$titlePicker.on('change', 'input', function(e) {
+    $(this).parents('.person').toggleClass('checked')
+    rank()
+  })
+  
+  $('body').on('click', '.rank', function(e) {
+    rank()
+    e.preventDefault()
+  })
+  
+  $('body').on('click', '.download', function(e) {
+    downloadCSV()
+    e.preventDefault()
+  })
+}
+//- CSV or html handling
+function setupDropzone() {
+  var options =
+  { paramName: "file"
+  , maxFilesize: 2
+  , url: '/404'
+  , accept: accept
+  }
+  Dropzone.options.HTMLorCSV = options
+}
+function accept(file, done) {
+  //- if (/\.csv$/i.test(file.name)) {
+  //-   return Papa.parse(file, {
+  //-     header: true
+  //-   , complete: onParse
+  //-   , skipEmptyLines: true
+  //-   })
+  //- }
+  //- file.type === "text/html"
+  if (/\.html/i.test(file.name)) {
+    var r = new FileReader()
+    r.onerror = console.error
+    r.onload = function(e) {
+      var html = e.target.result
+      return parseHTML(html)
+    }
+    return r.readAsText(file)
+  }
+  return done('Bad file type')
+}
+//- function onParse(parsed) {
+//-   console.log('onParse', parsed)
+//-   //- return refreshDashboard(parsed)
+//- }
+
+function parseHTML(html) {
+  window.html = html
+  var $html = document.createElement('template') // keeps the html inert but allows querying
+  $html.innerHTML = html
+  window.$html = $html
+  var people = [].slice.call($html.content.querySelectorAll('.entity-list-item')).map(function(el) {
+    var person = {}
+    var el = $(el)
+    person.position = el.find('.visually-hidden:contains("Member Occupation")').next().text()
+    person.name = el.find('.profile-item__name--has-hover').text().trim()
+    person.linkedin =
+      'https://linkedin.com' + el.find('a[data-control-name="profile_link"]').attr('href')
+    //- person.img = el.find('img').attr('src')
+    
+    ;[ ' at ', ', ', ' @ ' ].forEach(function(needle) {
+      var index = person.position.lastIndexOf(needle)
+      if (index === -1 || person.company) return
+      person.company = person.position.substring(index + needle.length).trim()
+      
+      var indices = [',', '@', '.', '/', '&', ' and ', '+', ' of ', ' at '].map(function(punc) {
+        var puncIndex = person.position.indexOf(punc)
+        if (puncIndex === -1) puncIndex = Infinity
+        return puncIndex
+      })
+      indices.push(index)
+      person.title = person.position.substring(0, Math.min.apply(Math, indices)).trim()
+      person.title = person.title.replace(/cofounder|co founder/gi, 'Co-Founder')
+    })
+    
+    return person
+  })
+  window.people = people
+  return refreshTitles(people)
+}
+function refreshTitles(people) {
+  var seen = {}
+  people.forEach(function(p) {
+    var k = '   ' + (p.title || '')
+    seen[k] = (seen[k] || 0) + 1
+  })
+  var rankedTitles = Object.keys(seen)
+  .map(function(k) {
+    var t = k.trim()
+    return {
+      count: seen[k]
+    , title: t
+    , medianSalary: (introTitles[t.toLowerCase()] || [0,0])[1]
+    }
+  }).sort(function(a, b) {
+    if (a.count > b.count) return -1
+    if (a.count < b.count) return 1
+    return 0
+  })
+  
+  window.$titlePicker.html(partial_titles({ titles: rankedTitles })).slideDown('fast')
+  
+  rank()
+}
+function rank() {
+  var allPeople = JSON.parse(JSON.stringify(window.people))
+  var titles = []
+  window.$titlePicker
+    .find('input:checked')
+    .toArray()
+    .map(function(el) {
+      titles.push($(el).parents('.person').find('.title').text())
+    })
+    
+  var re = new RegExp(titles.join('|'), 'i')
+  
+  var targets = allPeople.filter(function(p) {
+    return re.test(p.position)
+  })
+  var rest = allPeople.filter(function(p) {
+    return !re.test(p.position)
+  })
+  
+  targets = targets.map(addScore)
+  var scored = targets.sort(byScore)
+  
+  rest = rest.map(addScore)
+  var scoredrest = rest.sort(byScore)
+  
+  return refreshTable(targets, rest)
+}
+
+function refreshTable(targets, rest) {
+  var $targets = $('#targets')
+  // one may be empty
+  var headers = Object.keys(targets[0] || rest[0])
+  var data = targets.map(function(p) {
+    return Object.values(p)
+  })
+  
+  window.hot = window.hot || new Handsontable($targets[0], {
+    rowHeaders: true
+  , colHeaders: headers
+  , columnSorting: true
+  , sortIndicator: true
+  , colWidths: [150, 100, 60, 100, 100, 100, 150, 150, 100]
+  , manualColumnResize: true
+  , contextMenu: true
+  })
+  hot.loadData(data)
+}
+
+function addTitle(person) {
+  var indices = [',', '@', '.', '/', '&', ' and ', '+', ' of ', ' at ', ' - '].map(function(punc) {
+    var puncIndex = person.position.indexOf(punc)
+    if (puncIndex === -1) puncIndex = Infinity
+    return puncIndex
+  })
+  person.title = person.position.substring(0, Math.min.apply(Math, indices)).trim()
+  person.title = person.title.replace(/cofounder|co founder/gi, 'Co-Founder')
+  return person
+}
+function addScore(p, i) {
+  if (p.title) {
+    //- "programmer analyst": [733, 63258]
+    var data = introTitles[p.title.toLowerCase()] || [0, 0]
+    p.medianSalary = data[1]
+  } else {
+    p.medianSalary = 0
+  }
+  
+  if (p.company) {
+    // TODO: fuzzy search
+    data = introCompanies[p.company.toUpperCase()] || [0, 0]
+    p.companyNumRecords = data[0]
+    p.companyMedianSalary = data[1]
+    p.score = (p.companyMedianSalary * p.companyNumRecords) + p.medianSalary
+  } else {
+    p.companyMedianSalary = 0
+    p.companyNumRecords = 0
+    p.score = 0
+  }
+  return p
+}
+function byScore (a, b) {
+  if (a.score > b.score) return -1
+  if (a.score < b.score) return 1
+  return 0
+}
+function downloadCSV() {
+  var headers = window.hot.getColHeader()
+  var data = window.hot.getData()
+  var csv = Papa.unparse({ fields: headers, data: data }, { quotes: true })
+  //- TODO name this better
+  var filename = 'Michael people via Stripe Referral Supercharger by David Trejo.csv'
+  download(csv, filename, 'text/csv')
+}</script></body></html>
