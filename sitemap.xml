@@ -175,6 +175,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://dtrejo.com/expensiveproblem/</loc>
+    <lastmod>2017-04-04T00:00:00-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://dtrejo.com/how-to-write.html</loc>
     <lastmod>2017-04-04T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
