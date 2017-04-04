@@ -175,6 +175,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://dtrejo.com/creditkarma/</loc>
+    <lastmod>2017-04-04T00:00:00-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://dtrejo.com/envoy/</loc>
+    <lastmod>2017-04-04T00:00:00-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://dtrejo.com/expensiveproblem/</loc>
     <lastmod>2017-04-04T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -200,6 +212,12 @@
   </url>
   <url>
     <loc>https://dtrejo.com/qlock/qlock.html</loc>
+    <lastmod>2017-04-04T00:00:00-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://dtrejo.com/quip/</loc>
     <lastmod>2017-04-04T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
