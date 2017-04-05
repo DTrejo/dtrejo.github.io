@@ -168,8 +168,7 @@ function accept(file, done) {
   //-   , skipEmptyLines: true
   //-   })
   //- }
-  //- file.type === "text/html"
-  if (/\.html/i.test(file.name)) {
+  if (file.type === "text/html") {
     var r = new FileReader()
     r.onerror = console.error
     r.onload = function(e) {
