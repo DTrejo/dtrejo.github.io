@@ -5,10 +5,56 @@
   <id>https://dtrejo.com/</id>
   <link href="https://dtrejo.com/"/>
   <link href="https://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2017-03-28T06:15:00Z</updated>
+  <updated>2017-04-12T18:53:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>Why share salary?</title>
+    <link rel="alternate" href="https://dtrejo.com/why-share-salary.html"/>
+    <id>https://dtrejo.com//why-share-salary.html</id>
+    <published>2017-04-12T18:53:00Z</published>
+    <updated>2017-04-12T18:53:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;Sharing salary ranges for engineering positions is delicate. You don't want
+candidates to see the top end of the range and think that they left money on the
+table. This creates awkwardness and unmet expectations. You also don't want
+current engineers to feel they are being underpaid, making them ask for a raise.&lt;/p&gt;
+
+&lt;h2 id="sharing-salary-ranges-is-beneficial-because"&gt;Sharing salary ranges is beneficial because…&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Job posts with salary get 75% more clicks than those that don't.&lt;sup&gt;†&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;Engineers will love you for it, which means way more applicants.&lt;/li&gt;
+  &lt;li&gt;You won't waste thousands of dollars on interviews with candidates who you can't afford.&lt;/li&gt;
+  &lt;li&gt;You differentiate yourself from underpaying employers and the legion of shitty startups (there's way more of these than you realize). You might think that in today's climate, no respectable startup would lowball solid candidates. Your candidates have no idea whether you're respectable. The burden is on you to demonstrate respectability.&lt;/li&gt;
+  &lt;li&gt;Sharing salary is "you-focused." If you appear selfish and only talk about what your company needs, everyone will tune out. Readers only care about themselves.&lt;/li&gt;
+  &lt;li&gt;You won't melt into the sea of recruiter emails which almost never have salary information.&lt;/li&gt;
+  &lt;li&gt;You catch the attention of undervalued engineers who are great at what they do.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You may already be publishing salary ranges to some job sites, so you might as
+well share the range on your site as well.&lt;/p&gt;
+
+&lt;h2 id="youre-still-hesitant-about-sharing-salary-bands"&gt;You're still hesitant about sharing salary bands…&lt;/h2&gt;
+&lt;p&gt;Here are some options to reduce risk.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;List a few salary ranges so it's clear you're hiring junior/mid/senior people. This way, the junior person won't expect to earn at the top end of the range.&lt;/li&gt;
+  &lt;li&gt;Test it: run two identical job descriptions, one with a salary range and one without. See which gets more applicants and interest.&lt;/li&gt;
+  &lt;li&gt;List only the bottom end of the range. Listing only the minimum could backfire because people may expect you to pay only +$20,000.00 USD above the minimum.&lt;/li&gt;
+  &lt;li&gt;Do compensation research to learn about what the market pays. Work the numbers backwards from how much revenue you want them to make you (for this, I made you &lt;a href="https://EngineerWorth.com"&gt;EngineerWorth.com&lt;/a&gt;). When you have a solid business case for the hire, you'll feel good about the range you end up sharing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What's stopping you from sharing salary ranges? Email me and tell me: david åt dtrejo dot com.&lt;/p&gt;
+
+&lt;p&gt;Best,&lt;br /&gt;
+David&lt;/p&gt;
+
+&lt;p&gt;† &lt;a href="https://blog.stackoverflow.com/2016/07/salary-transparency/"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Massive List of Engineering Recruiting Channels</title>
     <link rel="alternate" href="https://dtrejo.com/massive-list-of-engineering-recruiting-channels.html"/>
@@ -570,37 +616,6 @@ EngineerOverflow.com&lt;/p&gt;
 
 &lt;p&gt;Sincerely,&lt;br /&gt;
 David Trejo&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>How To Email</title>
-    <link rel="alternate" href="https://dtrejo.com/how-to-email.html"/>
-    <id>https://dtrejo.com//how-to-email.html</id>
-    <published>2016-04-29T22:51:00Z</published>
-    <updated>2016-04-29T22:51:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;You think you know how to email. Think again. This is a guide on how to write and send emails that are considerate to the reader, and &lt;strong&gt;get replies&lt;/strong&gt;. This is meant for everyday people sending normal emails.&lt;/p&gt;
-
-&lt;h2 id="be-considerate"&gt;Be considerate.&lt;/h2&gt;
-&lt;p&gt;In a first email to someone, keep it under 250 words. How do you feel when people stop you on the street, then talk on and on?&lt;/p&gt;
-
-&lt;h2 id="ask-only-one-question-directly-before-your-signature"&gt;Ask only one question, directly before your signature.&lt;/h2&gt;
-&lt;p&gt;You can only expect the reader to do one thing. Ask for it. If there's no question in an email, the reader has no reason to reply. If you &lt;em&gt;really&lt;/em&gt; need to, and you're already in conversation with someone, and you have more than one question you need answered, number your questions.&lt;/p&gt;
-
-&lt;h2 id="so-you-want-them-to-reply"&gt;So you want them to reply?&lt;/h2&gt;
-&lt;p&gt;Make it easy to reply. Make your reader's life effortless. Ask a single yes/no question. Provide choices of times to meet, or send them a Calendly link so you both save on back-and-forth email scheduling hell.&lt;/p&gt;
-
-&lt;h2 id="extra-credit-show-you-did-your-research"&gt;Extra Credit: Show you did your research&lt;/h2&gt;
-&lt;p&gt;Tell them what you know about them. If you're asking for help, detail the ways you tried to solve the problem on your own. Showing you've made an effort makes people feel that you are more relevant to them, and worth emailing back.&lt;/p&gt;
-
-&lt;p&gt;These are the things that I see people getting wrong the most often. If you fix these in your emails, your readers will love you and you'll love yourself, because people will reply to you.&lt;/p&gt;
-
-&lt;p&gt;Yours,&lt;br /&gt;
-David&lt;/p&gt;
-
-&lt;p&gt;PS And when you care enough that you actually want a reply… ALWAYS &lt;a href="http://blog.close.io/follow-up"&gt;http://blog.close.io/follow-up&lt;/a&gt;. Especially do this if you are emailing a relative or someone who has agreed to help you: they are busy, but they do want to help—there's no way you can get on their bad side by being persistent.&lt;/p&gt;
 </content>
   </entry>
 </feed>
