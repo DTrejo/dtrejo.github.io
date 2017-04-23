@@ -5,10 +5,91 @@
   <id>https://dtrejo.com/</id>
   <link href="https://dtrejo.com/"/>
   <link href="https://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2017-04-12T18:53:00Z</updated>
+  <updated>2017-04-23T21:54:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>How to Reliably Get Your Team to Write Articles for Your Engineering Blog</title>
+    <link rel="alternate" href="https://dtrejo.com/how-to-reliably-get-your-team-to-write-articles-for-your-engineering-blog.html"/>
+    <id>https://dtrejo.com//how-to-reliably-get-your-team-to-write-articles-for-your-engineering-blog.html</id>
+    <published>2017-04-23T21:54:00Z</published>
+    <updated>2017-04-23T21:54:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;You probably already know why it's so helpful to have your team write
+engineering articles:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;They're massively useful for recruiting, even if only a few people read them&lt;/li&gt;
+  &lt;li&gt;If many people read your articles, you'll get tons more applicants&lt;/li&gt;
+  &lt;li&gt;If you sell to developers, your articles create trust and lead to more
+  sales, on top of the above&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id="how-do-you-get-an-engineer-to-write-an-article"&gt;How do you get an engineer to write an article?&lt;/h2&gt;
+
+&lt;p&gt;You don't. Instead you ask them over email:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;"How does X work?"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This tip is from &lt;a href="https://twitter.com/melindakjacobs"&gt;Melinda Jacobs&lt;/a&gt;, CEO of
+&lt;a href="https://www.lucentsky.com/"&gt;Lucent Sky&lt;/a&gt;. Her company automatically finds
+vulnerabilities in your code and automatically fixes many of them (which is
+great for banks who have so many vulnerabilities that their security teams can't
+possibly fix them all &lt;code&gt;:)&lt;/code&gt;. Thanks Melinda!&lt;/p&gt;
+
+&lt;p&gt;Now, ask an engineer on your team and you'll get a detailed explanation of how some
+part of your product works.  If you &lt;strong&gt;&lt;em&gt;know&lt;/em&gt;&lt;/strong&gt; they left out something impressive, ask
+again after their initial answer:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;"I was really impressed with your work on Y, can you explain how that works too?"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Then you take their answers, &lt;a href="https://dtrejo.com/how-to-write-consistently-painlessly-and-without-writers-block.html#when-youre-ready-to-start-editing-these-writing-tools-will-come-in-handy"&gt;edit them with these tips&lt;/a&gt;,
+run it by them to see if they have any suggestions, and publish. If
+you're an engineer like me, I'd recommend you don't let them make the edits
+themselves–they may get hung up on them. Instead ask them for feedback over email
+or in a quick read-through and make the changes for them.&lt;/p&gt;
+
+&lt;p&gt;It's up to you to make remember to ask your team to write articles after
+they finish interesting projects. Remember, to an outsider, boring projects can
+be just as interesting (the project may be an example of boring technology&lt;sup&gt;†&lt;/sup&gt;. Projects with large business impact are also very interesting, especially to engineers who care about
+business results (and you definitely want to be hiring engineers like this).&lt;/p&gt;
+
+&lt;p&gt;Take a minute right now to add a link to this article in your sprint
+retrospectives (or planning cycle retrospectives), so you don't forget to put
+this advice into practice!&lt;/p&gt;
+
+&lt;h2 id="a-published-article-is-worth-more-than-1000-unpublished-articles"&gt;A published article is worth more than 1,000 unpublished articles&lt;/h2&gt;
+
+&lt;p&gt;Work on the article until you're 80% happy with it, then publish it. If you're
+being ruthless with yourself, one hour total invested in the article is a
+reasonable timeline. If you have extreme difficulty with a particular sentence,
+the easiest way to fix it is to delete it &lt;code&gt;:)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id="why-does-melindas-method-work-well"&gt;Why does Melinda's method work well?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;People write emails in complete sentences&lt;/li&gt;
+  &lt;li&gt;People write emails similar to how they speak, meaning it reads more naturally&lt;/li&gt;
+  &lt;li&gt;People rarely have writer's block when it comes to explaining things to coworkers&lt;/li&gt;
+  &lt;li&gt;People love to be recognized for their work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That's it, good luck!&lt;br /&gt;
+David&lt;/p&gt;
+
+&lt;p&gt;PS Do you have an engineering hiring tip you'd like me write up? Email me: david att dtrejo dot com.&lt;/p&gt;
+
+&lt;p&gt;† Boring Technology, for example &lt;a href="http://mcfunley.com/choose-boring-technology"&gt;Choose Boring Technology&lt;/a&gt; &lt;a href="http://mcfunley.com/choose-boring-technology-slides"&gt;(slides)&lt;/a&gt; by Dan McKinley, Founder at Skyliner;
+&lt;a href="https://www.slideshare.net/dianachow/marty-weiner-reddit-cto-sxswi-2016-everythings-harder-at-scale/1"&gt;"The boring tech revolution is here"&lt;/a&gt; by Reddit CTO Marty Weiner;
+&lt;a href="https://github.com/yoshuawuyts/tiny-guide-to-non-fancy-node"&gt;Non-fancy Node&lt;/a&gt; by Yoshua Wuyts, author of 372 node modules.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Why share salary?</title>
     <link rel="alternate" href="https://dtrejo.com/why-share-salary.html"/>
@@ -575,47 +656,6 @@ David Trejo&lt;br /&gt;
 EngineerOverflow.com&lt;/p&gt;
 
 &lt;p&gt;PS &lt;strong&gt;Want exact instructions on how to ask all your friends for referrals using Quickmail?&lt;/strong&gt; &lt;a href="https://gum.co/CSGETMONEY"&gt;Buy my book&lt;/a&gt;. The referrals chapter also includes the exact sequence I used. It's a considerate 2-step sequence and got me 30% reply-rate.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>How to Write Consistently, Painlessly, and Without Writer's Block</title>
-    <link rel="alternate" href="https://dtrejo.com/how-to-write-consistently-painlessly-and-without-writers-block.html"/>
-    <id>https://dtrejo.com//how-to-write-consistently-painlessly-and-without-writers-block.html</id>
-    <published>2016-07-04T04:41:00Z</published>
-    <updated>2016-07-04T04:41:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;The more of these you do, the more successful your writing session will be. I've marked the most important ones with a ★.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;★ Write in the morning.&lt;/li&gt;
-  &lt;li&gt;★ Close your eyes while you type&lt;/li&gt;
-  &lt;li&gt;Do not edit&lt;/li&gt;
-  &lt;li&gt;Do not reference your research&lt;/li&gt;
-  &lt;li&gt;Have your research done the day before you sit down to write.&lt;/li&gt;
-  &lt;li&gt;★ Write into &lt;a href="http://750words.com"&gt;http://750words.com&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Leave the 750words.com tab open even after you finish for the day&lt;/li&gt;
-  &lt;li&gt;Make it fullscreen so you're less easily distracted&lt;/li&gt;
-  &lt;li&gt;Disconnect your internet, or write on a plane, or outside (even if it's cold: this gives you a natural deadline).&lt;/li&gt;
-  &lt;li&gt;Write about whatever you feel like; once that's poured out, you can move on to whatever "productive" writing you wanted to do. This is also known as writing out the "noise."&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This list of tips is built from experience and Josh Seiden's article, &lt;a href="https://medium.com/neo-innovation-ideas/how-to-write-a016e5d898bc"&gt;How to Write&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id="when-youre-ready-to-start-editing-these-writing-tools-will-come-in-handy"&gt;When you're ready to start editing, these writing tools will come in handy.&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;★ &lt;a href="http://polishmywriting.com"&gt;http://polishmywriting.com&lt;/a&gt; is my favorite, despite its looks.&lt;/li&gt;
-  &lt;li&gt;★ &lt;a href="http://hemingwayapp.com"&gt;http://hemingwayapp.com&lt;/a&gt; is great for simplifying sentences. If you're doing sales writing, get it under grade 8 to increase conversion.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://alexjs.com/#demo"&gt;http://alexjs.com/#demo&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://labs.foxtype.com/politeness"&gt;http://labs.foxtype.com/politeness&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://grammarly.com"&gt;http://grammarly.com&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://paperrater.com/free_paper_grader"&gt;http://paperrater.com/free_paper_grader&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sincerely,&lt;br /&gt;
-David Trejo&lt;/p&gt;
 </content>
   </entry>
 </feed>
