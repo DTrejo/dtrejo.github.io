@@ -38,9 +38,9 @@ engineering articles:&lt;/p&gt;
 
 &lt;p&gt;This tip is from &lt;a href="https://twitter.com/melindakjacobs"&gt;Melinda Jacobs&lt;/a&gt;, CEO of
 &lt;a href="https://www.lucentsky.com/"&gt;Lucent Sky&lt;/a&gt;. Her company automatically finds
-vulnerabilities in your code and automatically fixes many of them (which is
+vulnerabilities in your code and fixes many of them (which is
 great for banks who have so many vulnerabilities that their security teams can't
-possibly fix them all &lt;code&gt;:)&lt;/code&gt;. Thanks Melinda!&lt;/p&gt;
+possibly fix them all manually &lt;code&gt;:)&lt;/code&gt;. Thanks Melinda!&lt;/p&gt;
 
 &lt;p&gt;Now, ask an engineer on your team and you'll get a detailed explanation of how some
 part of your product works.  If you &lt;strong&gt;&lt;em&gt;know&lt;/em&gt;&lt;/strong&gt; they left out something impressive, ask
@@ -56,14 +56,15 @@ you're an engineer like me, I'd recommend you don't let them make the edits
 themselves–they may get hung up on them. Instead ask them for feedback over email
 or in a quick read-through and make the changes for them.&lt;/p&gt;
 
-&lt;p&gt;It's up to you to make remember to ask your team to write articles after
-they finish interesting projects. Remember, to an outsider, boring projects can
-be just as interesting (the project may be an example of boring technology&lt;sup&gt;†&lt;/sup&gt;. Projects with large business impact are also very interesting, especially to engineers who care about
-business results (and you definitely want to be hiring engineers like this).&lt;/p&gt;
+&lt;p&gt;It's up to you to make remember to ask your team to write articles after they
+finish interesting projects. Remember, to an outsider, boring projects can be
+just as interesting because they demonstrate mature, boring
+technology&lt;sup&gt;†&lt;/sup&gt;. Projects with large business impact are also very
+interesting, especially to engineers who care about business results.&lt;/p&gt;
 
 &lt;p&gt;Take a minute right now to add a link to this article in your sprint
-retrospectives (or planning cycle retrospectives), so you don't forget to put
-this advice into practice!&lt;/p&gt;
+retrospectives (or planning cycle retrospectives). Otherwise you may forget to
+put this advice into practice.&lt;/p&gt;
 
 &lt;h2 id="a-published-article-is-worth-more-than-1000-unpublished-articles"&gt;A published article is worth more than 1,000 unpublished articles&lt;/h2&gt;
 
@@ -75,7 +76,7 @@ the easiest way to fix it is to delete it &lt;code&gt;:)&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="why-does-melindas-method-work-well"&gt;Why does Melinda's method work well?&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;People write emails in complete sentences&lt;/li&gt;
-  &lt;li&gt;People write emails similar to how they speak, meaning it reads more naturally&lt;/li&gt;
+  &lt;li&gt;People write like they speak, meaning it reads more naturally&lt;/li&gt;
   &lt;li&gt;People rarely have writer's block when it comes to explaining things to coworkers&lt;/li&gt;
   &lt;li&gt;People love to be recognized for their work&lt;/li&gt;
 &lt;/ul&gt;
