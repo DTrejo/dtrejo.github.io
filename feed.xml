@@ -5,10 +5,94 @@
   <id>https://dtrejo.com/</id>
   <link href="https://dtrejo.com/"/>
   <link href="https://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2017-04-23T21:54:00Z</updated>
+  <updated>2017-05-15T17:40:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>Tools for Hiring Engineers That Save Time and Increase Conversion</title>
+    <link rel="alternate" href="https://dtrejo.com/tools-for-hiring-engineers.html"/>
+    <id>https://dtrejo.com//tools-for-hiring-engineers.html</id>
+    <published>2017-05-15T17:40:00Z</published>
+    <updated>2017-05-15T17:40:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;Eric Zhang (CTO at Scalable Press) requested that I write him this article (thanks for the request Eric!).&lt;/p&gt;
+
+&lt;p&gt;The tools in this article will help you drop fewer referral candidates and normal candidates; get more applicants for positions for which aren't "open" yet; avoid scheduling hell; and increase your ratio of referrals hires to 40%+ (this is desirable because they are easier to hire).&lt;/p&gt;
+
+&lt;h2 id="open-prospects-and-referral-candidates-who-arent-ready-to-apply"&gt;Open Prospects and Referral Candidates Who Aren't Ready to Apply&lt;/h2&gt;
+&lt;p&gt;An open prospect is someone who has yet to be qualified or disqualified. There are a few kinds of people who are big fans of you and your company, but you probably don't talk to them:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Referrals who aren't ready to apply (this is the most important one)&lt;/li&gt;
+  &lt;li&gt;People who declined your offer&lt;/li&gt;
+  &lt;li&gt;People who applied to be interns years ago (and are now experienced)&lt;/li&gt;
+  &lt;li&gt;People from the internet who are amazing, but don't yet know enough about you or who suspect their online application will go into a black whole (as it is with most online applications)&lt;/li&gt;
+  &lt;li&gt;People you rejected years ago&lt;/li&gt;
+  &lt;li&gt;People from the internet who may or may not be good enough to pass your interviews (yet!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The idea behind this section is give you some tools to help you start talking to them. We want them to think of you and apply, or educate themselves to the point that they'd pass your interviews.&lt;/p&gt;
+
+&lt;p&gt;You can make them feel special and remember you with very little effort by giving all your open prospects access to your CTO…&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Email them engineering articles written by your team.&lt;/li&gt;
+  &lt;li&gt;Email them open positions; newly opened positions; and future positions along with your salary ranges. Why include salary for open positions? &lt;a href="https://dtrejo.com/why-share-salary.html"&gt;Because it is valuable to the reader to help them understand their market value&lt;/a&gt;. There are many more underpaid but good engineers than you imagine.&lt;/li&gt;
+  &lt;li&gt;Send from your CTO's email&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You'll also find this email list useful because right now, each of your referral candidates gets vastly different amounts of information about your company, depending on how much your engineer talks to them. By putting everyone interested in you on this list, you get every candidate to a base level of understanding (and interest) in your company. You'll also get a better feel for your top of funnel.&lt;/p&gt;
+
+&lt;h3 id="tools-to-nurture-open-prospects"&gt;Tools to Nurture Open Prospects&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;80% good enough option: &lt;a href="http://tinyletter.com/"&gt;Tinyletter.com&lt;/a&gt; (free). Since it doesn't do drip emails, you can include links to relevant engineering articles in the confirmation email.&lt;/li&gt;
+  &lt;li&gt;Pro option: &lt;a href="https://www.drip.co/"&gt;drip.co&lt;/a&gt;. Free for under 100 subscribers. Like Tinyletter, requires permission (a good thing).&lt;/li&gt;
+  &lt;li&gt;Pro option: &lt;a href="https://www.lever.co/nurture"&gt;Lever Nurture&lt;/a&gt;. Leans towards outreach, but also does nurturing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="coffee-and-scheduling-hell"&gt;Coffee and Scheduling Hell&lt;/h2&gt;
+&lt;p&gt;Every engineer on your team probably gets coffee, lunch, or drinks with people who're interested in working for you. Everyone on your team should have a &lt;a href="https://calendly.com/"&gt;Calendly.com&lt;/a&gt; link (free). Scheduling manually is worse for both your team and your candidate. From a candidate's perspective, scheduling is one of the most low value, time-consuming and annoying parts of the interview process.&lt;/p&gt;
+
+&lt;h2 id="stop-dropping-people"&gt;Stop Dropping People&lt;/h2&gt;
+&lt;p&gt;Everyone on your team should use a tool that returns emails to their inbox if they don't get a reply. You probably already use an applicant tracking system, but I suspect you still drop candidates.&lt;/p&gt;
+
+&lt;p&gt;An email reminder tool will help you avoid the following situations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Candidate expresses interest, but gets dropped by recruiting&lt;/li&gt;
+  &lt;li&gt;Engineer refers someone, but they get dropped&lt;/li&gt;
+  &lt;li&gt;Referral gets rejected, but engineer never gets told how their referral did (and engineer stops referring people–bad!)&lt;/li&gt;
+  &lt;li&gt;Recruiting forgets to reject a candidate, resulting in a bad experience for the candidate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As engineers we tend to be very sensitive about overloading other people's inboxes. This is not the time to be timid about cc'ing the referring engineer on every email. You &lt;strong&gt;want&lt;/strong&gt; to pay the candidate six figures, and you &lt;strong&gt;want&lt;/strong&gt; to pay the referrer their bonus. Archiving an email takes seconds. What's more important?&lt;/p&gt;
+
+&lt;h2 id="tools-to-avoid-dropping-candidates"&gt;Tools to Avoid Dropping Candidates&lt;/h2&gt;
+&lt;p&gt;I use &lt;a href="http://www.boomeranggmail.com/"&gt;Boomerang&lt;/a&gt; ($49/year). You may also like &lt;a href="https://mixmax.com/"&gt;Mixmax&lt;/a&gt; ($108/year, it does more). On my wish list is a "return &lt;strong&gt;every&lt;/strong&gt; 2 days if no reply" feature. Boomerang has this for more expensive plans. I don't believe Mixmax has this feature (hi Jen &amp;amp; Olof!). If you're too small to use a paid ATS, &lt;a href="https://www.streak.com/"&gt;Streak.com&lt;/a&gt; can be a good free option.&lt;/p&gt;
+
+&lt;p&gt;You have an SLA for your product, why not for your hiring process?&lt;/p&gt;
+
+&lt;h2 id="offer-letters"&gt;Offer Letters&lt;/h2&gt;
+&lt;p&gt;Check out &lt;a href="https://www.remarq.io/"&gt;Remarq.io&lt;/a&gt; ($19-$59/mo). Sending an offer shouldn't mean an exec needs to open Word. Remarq limits the number of unique documents (offers) you can send per month, which might be a problem for you.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, Google docs is a good option, as you can insert charts from Google Sheets into into your Google doc. Charts are useful to show growth trajectories and what they mean for the value of the candidate's equity.&lt;/p&gt;
+
+&lt;h2 id="engineering-referrals"&gt;Engineering Referrals&lt;/h2&gt;
+&lt;p&gt;Consider &lt;a href="http://teamable.com/"&gt;Teamable&lt;/a&gt;. Teamable prioritizes diverse referrals and helps companies reach 40%+ referral hires. I couldn't find public pricing. If you want a free option, email me and maybe I'll tell you my secrets :)&lt;/p&gt;
+
+&lt;p&gt;What tools do you and your engineering team use to make hiring easier? Send me an email :)&lt;/p&gt;
+
+&lt;p&gt;Yours,&lt;br /&gt;
+David&lt;br /&gt;
+david ått dtrejo.com&lt;/p&gt;
+
+&lt;p&gt;PS I've just finished reading Moneyball, which is about how the Oakland A's baseball team bought great players even with very little money. I'll be sending out a book review of it in the next couple days, along with a section on how it applies to engineering hiring (so you can hire better engineers for less).&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>How to Reliably Get Your Team to Write Articles for Your Engineering Blog</title>
     <link rel="alternate" href="https://dtrejo.com/how-to-reliably-get-your-team-to-write-articles-for-your-engineering-blog.html"/>
@@ -590,73 +674,6 @@ David Trejo&lt;/p&gt;
 &lt;p&gt;PS Special thanks to &lt;a href="https://expensiveproblem.com"&gt;Jonathan Stark&lt;/a&gt;, &lt;a href="https://taskdrive.com"&gt;Samir Said&lt;/a&gt;, &lt;a href="https://philipmorganconsulting.com"&gt;Philip Morgan&lt;/a&gt;, &lt;a href="http://doubleyourfreelancing.com/"&gt;Brennan Dunn&lt;/a&gt;, &lt;a href="https://unicornfree.com/"&gt;Amy Hoy, Alex Hillman&lt;/a&gt;, and &lt;a href="https://marcusblankenship.com/"&gt;Marcus Blankenship&lt;/a&gt; for their writing and advice. &lt;a href="http://peterlyons.com/"&gt;Peter Lyons&lt;/a&gt;, thanks for listening so closely this morning and saying it was insightful :).&lt;/p&gt;
 
 &lt;p&gt;‡ I offer to cook for my friends' dinner parties. I go to and get invited to WAY more dinner parties :)&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Overcome Cold-Email Procrastination</title>
-    <link rel="alternate" href="https://dtrejo.com/overcome-cold-email-procrastination.html"/>
-    <id>https://dtrejo.com//overcome-cold-email-procrastination.html</id>
-    <published>2016-10-04T20:16:00Z</published>
-    <updated>2016-10-04T20:16:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;It's child's play for me to write &amp;amp; send sequences on behalf of my clients. When I write for myself, I struggle. This article is meant to help future me, the next time I'm cold emailing for myself.&lt;/p&gt;
-
-&lt;h2 id="desired-outcomes-of-this-checklist"&gt;Desired Outcomes of This Checklist&lt;/h2&gt;
-
-&lt;h3 id="procrastinate-as-little-as-possible-while-putting-together-your-list-and-sequence"&gt;1) Procrastinate as little as possible while putting together your list and sequence.&lt;/h3&gt;
-
-&lt;h3 id="feel-good-about-your-progress-from-the-moment-youve-started-and-never-get-stuck"&gt;2) Feel good about your progress from the moment you've started, and never get stuck&lt;/h3&gt;
-
-&lt;h3 id="send-to-your-1st-prospect-as-soon-as-possible-starting-the-virtuous-cycle-between-your-effort--replies--sales-calls--new-business--cashed-checks"&gt;3) Send to your 1st prospect as soon as possible, starting the virtuous cycle between your effort &amp;lt;&amp;gt; replies &amp;lt;&amp;gt; sales calls &amp;lt;&amp;gt; new business &amp;lt;&amp;gt; cashed checks.&lt;/h3&gt;
-
-&lt;p&gt;Go through the following list and pick the easiest ones. Do the ones that feel easy to you. Check them off as you go. Don't do them in order. The idea is not to do all of these. It's to do &lt;strong&gt;anything at all.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id="sequence-writing"&gt;Sequence Writing&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Write 1 email, in gmail, to 1 prospect. Don't send it. Instead, load it into Quickmail, and start a sequence on that solitary prospect.&lt;/li&gt;
-  &lt;li&gt;Write 1 email step, and continue writing email steps as long as they flow from your fingers. Stop once they stop flowing. Don't force them out. Write to only one person. Don't try to write to both CTOs and CEOs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="list-building"&gt;List-Building&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Pick your 1st customer or your highest grossing customer&lt;/li&gt;
-  &lt;li&gt;Google for lists of their competitors&lt;/li&gt;
-  &lt;li&gt;Ask Fancyhands to find emails for all of their competitors&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="list-cleaning"&gt;List-Cleaning&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Separate the different types of prospects that you researched. Don't fall prey to the temptation to write one email sequence that works for more than one type of prospect!&lt;/li&gt;
-  &lt;li&gt;Clean 1 prospect. Add them to your sequence.&lt;/li&gt;
-  &lt;li&gt;Repeat.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="amazing-work-youve-sent-your-1st-quickmail-to-your-1st-prospect"&gt;Amazing work, you've sent your 1st Quickmail to your 1st prospect&lt;/h2&gt;
-&lt;p&gt;Take a moment to celebrate. Great, now it's time to send you second email. You're probably stressing right now about how you want to say something slightly different. That's okay.&lt;/p&gt;
-
-&lt;h2 id="handling-infinite-variations"&gt;Handling Infinite Variations&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Clone the old variation as a new variation that's exactly the same in Quickmail.&lt;/li&gt;
-  &lt;li&gt;Pause the old variation.&lt;/li&gt;
-  &lt;li&gt;Delete the sections of the old variation that you want to customize and replace them with variables. Gotcha: make sure to add them as custom variables.&lt;/li&gt;
-  &lt;li&gt;In your spreadsheet, make new columns to match the new variables, and &lt;strong&gt;put what you deleted from the old emails into every single cell of the corresponding column.&lt;/strong&gt; These are your defaults, for when you're too lazy to customize and want to send anyway.&lt;/li&gt;
-  &lt;li&gt;For this second prospect, customize the appropriate columns to match what you want to say.&lt;/li&gt;
-  &lt;li&gt;Preview that prospect by searching for their name in Quickmail, then click sequences, then choose your sequence.&lt;/li&gt;
-  &lt;li&gt;Looks good? Send it.&lt;/li&gt;
-  &lt;li&gt;Voila!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now you've sent to two people, and you're equipped to make any edits you want without messing up emails you've sent to past prospects. And you didn't have to make the decision to throw out any past writing.&lt;/p&gt;
-
-&lt;p&gt;Keep repeating the above process until you're done with all your prospects. Or, send to them with the defaults, that's perfectly okay too!&lt;/p&gt;
-
-&lt;p&gt;Yours,&lt;br /&gt;
-David Trejo&lt;br /&gt;
-EngineerOverflow.com&lt;/p&gt;
-
-&lt;p&gt;PS &lt;strong&gt;Want exact instructions on how to ask all your friends for referrals using Quickmail?&lt;/strong&gt; &lt;a href="https://gum.co/CSGETMONEY"&gt;Buy my book&lt;/a&gt;. The referrals chapter also includes the exact sequence I used. It's a considerate 2-step sequence and got me 30% reply-rate.&lt;/p&gt;
 </content>
   </entry>
 </feed>
