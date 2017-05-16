@@ -5,10 +5,192 @@
   <id>https://dtrejo.com/</id>
   <link href="https://dtrejo.com/"/>
   <link href="https://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2017-05-15T17:40:00Z</updated>
+  <updated>2017-05-16T21:32:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>Questions That Senior Systems Engineers Want Answered</title>
+    <link rel="alternate" href="https://dtrejo.com/questions-that-senior-systems-engineers-want-answered.html"/>
+    <id>https://dtrejo.com//questions-that-senior-systems-engineers-want-answered.html</id>
+    <published>2017-05-16T21:32:00Z</published>
+    <updated>2017-05-16T21:32:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;You know that interviewing is a painful and expensive problem when your friends
+send you pages worth of questions that they use to evaluate future employers.&lt;/p&gt;
+
+&lt;p&gt;These questions come from an experienced senior systems engineer friend of mine.
+They gave me permission to publish, but asked to remain anonymous. This person
+is currently interviewing.&lt;/p&gt;
+
+&lt;p&gt;If you're not looking to hire systems engineers, this article is less relevant
+to you, but I think you'll still find it valuable.&lt;/p&gt;
+
+&lt;p&gt;– David&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Anonymous writes…&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Things I want to know about a prospective employer. At the conclusion of this list, I will attempt to define questions that will elicit the answers to these questions. Note that the questions actually asked may not necessarily correspond to the questions that one wants to ask.&lt;/p&gt;
+
+&lt;h2 id="what-i-really-want-to-know"&gt;What I Really Want to Know&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Project prioritization
+    &lt;ul&gt;
+      &lt;li&gt;What metrics are used to guide prioritization efforts?&lt;/li&gt;
+      &lt;li&gt;What do project proposals look like? Are engineers forced to clearly define the problem or do they just propose various things they want to do?&lt;/li&gt;
+      &lt;li&gt;Does someone maintain a backlog of potential projects and reassess things periodically?&lt;/li&gt;
+      &lt;li&gt;Is there a centralized individual who selects what goes into a release from the top down, or are individual teams empowered to do their own prioritization?&lt;/li&gt;
+      &lt;li&gt;How are projects staffed? In particular, how are projects that nobody &lt;em&gt;wants&lt;/em&gt; to do staffed? It’s easy to find people to work on projects that will have high visibility or a technically rewarding environment, but the real test of culture is how gaps are identified and staffed.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Software development lifecycle process
+    &lt;ul&gt;
+      &lt;li&gt;What’s the code review process like?&lt;/li&gt;
+      &lt;li&gt;How strictly are requirements enforced when it comes to getting reviews and performing automated testing?&lt;/li&gt;
+      &lt;li&gt;Do developers write both code and tests, or is there an organizational split between development and QA?&lt;/li&gt;
+      &lt;li&gt;How are conflicts mediated, both on the design level and the implementation level?&lt;/li&gt;
+      &lt;li&gt;What’s the average time required to fix an “average sized” bug, from receiving the bug to closing it? Large times would reveal inefficiencies in the software development lifecycle. Over 8 hours saps motivation. Under 4 hours is a huge dopamine rush for highly productive developers. :)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Approach to quality &amp;amp; technical debt
+    &lt;ul&gt;
+      &lt;li&gt;Are people who introduce technical debt held accountable for removing it?&lt;/li&gt;
+      &lt;li&gt;Is technical debt tracked at all?&lt;/li&gt;
+      &lt;li&gt;When was the last time someone was promoted for their work on technical debt and other “hard to quantify” things (like developer productivity, internal infrastructure, build and test frameworks, etc.)&lt;/li&gt;
+      &lt;li&gt;Are corporate and cultural incentives set up for adding or removing technical debt?&lt;/li&gt;
+      &lt;li&gt;What is the ratio of short-term fixes to long-term fixes (and why)?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Remote work and WFH policy&lt;/li&gt;
+  &lt;li&gt;How do you grow engineers? How important is mentorship to company culture?&lt;/li&gt;
+  &lt;li&gt;How do you give constructive feedback…
+    &lt;ul&gt;
+      &lt;li&gt;…to managers?&lt;/li&gt;
+      &lt;li&gt;…to other engineers?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Are you hiring too fast or too slow?&lt;/li&gt;
+  &lt;li&gt;What is your policy towards brilliant jerks?&lt;/li&gt;
+  &lt;li&gt;What is your policy towards open source?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="be-careful"&gt;Be careful:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Don’t come across as lazy when asking about WFH policies&lt;/li&gt;
+  &lt;li&gt;Avoid using the phrase “technical debt” directly, as you don’t want to come across as an engineer who won’t provide high business value&lt;/li&gt;
+  &lt;li&gt;Avoid the phrase “unfortunately”, as you want to come across as someone who builds things up rather than puts things down&lt;/li&gt;
+  &lt;li&gt;Ask innocent, friendly, and natural questions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="safer-phrasings-that-get-at-the-same-answers"&gt;Safer Phrasings That Get at the Same Answers&lt;/h2&gt;
+
+&lt;p&gt;The following practical questions might provide insights into the above theoretical questions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Re: build and continuous integration system, test frameworks, and technical debt:
+    &lt;ul&gt;
+      &lt;li&gt;When was the last time someone made a meaningful contribution to software development lifecycle and developer productivity tooling? Tell me how they went about it (both organizationally and technically).&lt;/li&gt;
+      &lt;li&gt;Do developers push code and tests at the same time (to the same repository), or is there a separate QA organization that writes tests asynchronously from features being pushed?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Show me a “non trivial” code review (use this to asses quality standards, the review process, the no asshole rule, and testing requirements):
+    &lt;ul&gt;
+      &lt;li&gt;Ask how things are handled when you ask someone to make a change and they don’t want to do it. Is the default policy to “file a bug” and do it later? Do those bugs just get closed out in two months, or is action ever taken? When the problematic code ends up causing production issues, does the issue come back to the person who wrote it?&lt;/li&gt;
+      &lt;li&gt;How do you resolve arguments about code style? Do engineers waste colossal amounts of time arguing about style in reviews, or are there automated style checks and formatting tools that allow the discussion to shift toward matters of substance?&lt;/li&gt;
+      &lt;li&gt;Note: you can’t ask a new hire this question, you need to ask a long-time employee who has been around the block and seen how things play out&lt;/li&gt;
+      &lt;li&gt;Did the developer have to re-run tests due to flakiness? Is there a dashboard showing the state of the build? Are flaky tests tracked? Are there metrics regarding how often tests flake so that the most flaky areas can be addressed?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What are the attributes that get people promoted?
+    &lt;ul&gt;
+      &lt;li&gt;Be specific: Ask when the last time a close colleague was promoted and what they did to earn the promotion.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Whose responsibility, if any, is developer productivity?
+    &lt;ul&gt;
+      &lt;li&gt;“Everyone’s responsibility” is the worst possible answer to this question, as it means “nobody’s responsibility”&lt;/li&gt;
+      &lt;li&gt;If answers are vague, follow up with: “What was the last thing you did personally?”
+        &lt;ul&gt;
+          &lt;li&gt;Risk: This might embarrass the person if they did nothing.&lt;/li&gt;
+          &lt;li&gt;This is a bit hardball, only go this far if you must.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How does the culture change near the end of the release?
+    &lt;ul&gt;
+      &lt;li&gt;Does all hell break loose and people just push low quality code to get things out the door?&lt;/li&gt;
+      &lt;li&gt;If so, how is the remaining work to “do it right” tracked?&lt;/li&gt;
+      &lt;li&gt;What is the power relationship between engineers and managers? Do managers strongly imply you need to work late nights and long hours to ship a release?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How do engineers interact with customers?
+    &lt;ul&gt;
+      &lt;li&gt;A bit of a fluff question, but can reveal a fair amount about how the company works. Can engineers own a problem from customer interaction to solution, or are they just cogs in the wheel of a giant organization of salespeople and product managers?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;How much time have mentors spent with {interns&lt;/td&gt;
+          &lt;td&gt;new hires} this year?&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Goal should be to find a company where mentorship is valued. Mentors shouldn’t blink at the idea of dropping whatever they’re doing for 2 hours to help a mentee (assuming the mentee is worth their time investment).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is the weirdest bug that you’ve worked on recently?
+    &lt;ul&gt;
+      &lt;li&gt;Goal is to see how the organization responds to failure&lt;/li&gt;
+      &lt;li&gt;How did you fix it in the short-term?&lt;/li&gt;
+      &lt;li&gt;How did you fix it in the long-term?
+        &lt;ul&gt;
+          &lt;li&gt;This is the most interesting part&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;You ideally want to be at a company with good war stories, because then people are excited to do their job&lt;/li&gt;
+      &lt;li&gt;Do people actually debug things, or just work around them and restart it?&lt;/li&gt;
+      &lt;li&gt;Does the company have a culture of root causing issues on first failure, or do they just throw their hands in the air if they can’t reproduce the issue?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;– Anonymous&lt;br /&gt;
+Senior systems engineer in the SF bay area&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;David here. You may see the pattern: more senior people, even those who are
+extremely technical, want high autonomy work, and want to be involved in
+business decisions. They want to avoid teams and managers where they're just
+another pair of hands, where no one tracks the impact of engineering work. They
+want their engineering leaders to percieve the kinds of rot and dysfunction that
+are difficult to explain to non-technical decision-makers.&lt;/p&gt;
+
+&lt;p&gt;You'll also notice that even someone who is more senior is cautious about asking
+hard questions. Interestingly, I ask similar questions in my interviews for full
+stack growth engineering positions, although they lean towards growth.&lt;/p&gt;
+
+&lt;p&gt;Yours,&lt;br /&gt;
+David&lt;br /&gt;
+david ått dtrejo.com&lt;/p&gt;
+
+&lt;p&gt;PS Want to impress all your engineering candidates with how great you and your company are? Email me, I can help.&lt;/p&gt;
+
+&lt;p&gt;PPS Tomorrow I'll be writing and sending my book review of Moneyball–you're going to like it because you'll get a better feel for how to measure &amp;amp; value engineering work.&lt;/p&gt;
+
+&lt;p&gt;In the mean time, I made this tool for you: &lt;a href="http://engineerworth.com/"&gt;EngineerWorth.com&lt;/a&gt;–it helps you calculate whether an engineering feature will pay back the time investment. You can drag the numbers to adjust them to your situation.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Tools for Hiring Engineers That Save Time and Increase Conversion</title>
     <link rel="alternate" href="https://dtrejo.com/tools-for-hiring-engineers.html"/>
@@ -535,145 +717,6 @@ already be working.&lt;/p&gt;
 
 &lt;p&gt;Yours,&lt;br /&gt;
 David&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>How to Get Your Business to Pull You Forward</title>
-    <link rel="alternate" href="https://dtrejo.com/how-to-get-your-business-to-pull-you-forward.html"/>
-    <id>https://dtrejo.com//how-to-get-your-business-to-pull-you-forward.html</id>
-    <published>2017-02-11T04:03:00Z</published>
-    <updated>2017-02-11T04:03:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;For me, there are two major reserves of energy. Drawing on &lt;strong&gt;grind energy&lt;/strong&gt;
-drains you until you complete the task. The small hit of dopamine upon
-completion rarely feels worth it. You use grind energy to complete tedious but
-necessary tasks that you don't particularly enjoy. &lt;strong&gt;Pull energy&lt;/strong&gt; is how you
-feel when you look forward to the work and can't stop yourself from starting on
-it (and maybe even completing it!). Pull energy gives you joy and makes your
-work feel like play.&lt;/p&gt;
-
-&lt;h2 id="all-of-my-best-work-has-been-done-under-the-influence-of-pull-energy"&gt;All of my best work has been done under the influence of pull energy&lt;/h2&gt;
-
-&lt;p&gt;The goal of this article is to pick out the situations which created pull, so I can
-replicate them more consistently.&lt;/p&gt;
-
-&lt;p&gt;I've read about different kinds of authors, and there is a parallel
-between those who meticulously plan their book (grind) vs those who let it flow out of
-them fully formed (pull).&lt;/p&gt;
-
-&lt;h2 id="work-which-pulled-me-that-i-could-not-resist-doing"&gt;Work which pulled me, that I could not resist doing:&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Wrote a book for a client in ~2 weeks. Why? Had executed on the subject matter multiple times; client had already paid for it and needed it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Wrote ~50 pages of advice for computer science students in a few evenings. Why? I had posted an ask-me-anything in a facebook group. I had multiple students asking me specific questions who all needed my advice.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Wrote a book for computer science students in ~3 weeks. Why? I'd posted again in the facebook group and many students wanted the book. I'd already written the first pass of the material (above), and I also had another chapter on negotiation applied to job offers that was jumping to get out of me (because I knew students needed it so badly).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Wrote &lt;a href="https://dtrejo.com/lazytemplating"&gt;https://dtrejo.com/lazytemplating&lt;/a&gt; in an evening. Why? I saw a co-worker hand-editing massive copy-pasted HTML blobs in a tiny wordpress editor window, and making mistakes constantly. He wasn't an engineer so he needed an easy way to do string templating.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Wrote &lt;a href="https://dtrejo.com/streak-view"&gt;https://dtrejo.com/streak-view&lt;/a&gt; in a few sessions. Why? Viewing my sales pipeline in my inbox was destroying my productivity.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Finished reading good business books in only 1-2 days. Why? They were well-written and also taught me skills I knew I needed to improve (usually consulting/marketing/sales).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The new sales page for my 2nd niche. Why? As a result of sales calls I had a deepened understanding of my prospects and needed to better express what my service was about, so that I could feel better about offering it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Wrote &lt;a href="https://engineerworth.com"&gt;https://engineerworth.com&lt;/a&gt;. Why? I knew people were undervaluing their engineering time and needed a more accessible rule of thumb for calculating ROI.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;I've also been pulled by any work that I've dreamt about in a pleasant way.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="do-you-see-the-pattern-someone-had-paid-me-asked-for-my-help-or-i-felt-the-pain-myself"&gt;Do you see the pattern? Someone had paid me, asked for my help, or I felt the pain myself&lt;/h2&gt;
-
-&lt;p&gt;So, how can I create more pull energy?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Get more people to ask for my help, within my niche.&lt;/li&gt;
-  &lt;li&gt;Get more people to pre-pay me for work I haven't done yet, but only when all the material is already in my head, and needs a good reason to flow out onto paper.&lt;/li&gt;
-  &lt;li&gt;Not preferable: experience pain first-hand, and give in to the desire to automate or delegate it.&lt;/li&gt;
-  &lt;li&gt;Engage in work where &lt;strong&gt;one unit of action&lt;/strong&gt; results in &lt;strong&gt;one unit of outcome&lt;/strong&gt;. It's no wonder video games are so popular: you put in the work and then you actually succeed (idea via Amy Hoy). For example, when you answer someone's question, you've made that person happy, and you've also simultaneously written a new article, newsletter installment, or forum post which will help even more people and attract them to you.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="how-do-we-create-virtuous-cycles-of-pull-energy-that-never-run-out"&gt;How do we create virtuous cycles of pull energy that never run out?&lt;/h2&gt;
-
-&lt;p&gt;The best work is work you can't resist doing. The best marketing is marketing you
-can't resist doing. The best money is money you couldn't resist making.&lt;/p&gt;
-
-&lt;p&gt;They say content marketing takes 6 months to kick in. You may not realize it when you first start, but you're probably going to spend at least 12 months trying to make your niche work. It is worth starting right away, but how do we may writing enjoyable? I haven't taken Amy Hoy's 30x500, but I have read Year Of Hustle and both Jonathan Stark and Philip Morgan have told me how much they look forward to speaking to their audience.&lt;/p&gt;
-
-&lt;h2 id="how-id-create-pull-for-myself-in-my-next-business"&gt;How I'd create pull for myself in my next business:&lt;/h2&gt;
-&lt;p&gt;You'll notice this is almost exactly what Amy recommends.&lt;/p&gt;
-
-&lt;p&gt;A very low amount of grind activation energy is needed to begin:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Pull: Monitor the watering holes at which my niche audience gathers.&lt;/li&gt;
-  &lt;li&gt;Pull: Answer questions that are posed in my audience's watering holes, with email list call to action.&lt;/li&gt;
-  &lt;li&gt;Pull: Use my answers to write articles (with email list CTA).&lt;/li&gt;
-  &lt;li&gt;Pull: Use my answers to email my list (with "buy or pre-order my product or service" CTA).&lt;/li&gt;
-  &lt;li&gt;Pull: When I get replies from email list readers, answer their questions and use the answers for more articles, newsletters, and potentially book material.&lt;/li&gt;
-  &lt;li&gt;Pull: People pay you for your product/book or ask for your consulting help.&lt;/li&gt;
-  &lt;li&gt;Repeat.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Once you have set up the preceding virtuous cycle, you can repeat it with new products and services, and only include CTAs to what people haven't already bought. This idea is Brennan's. Brennan: thanks for coming over for steak before I'd even begun solo-consulting and recommending that I read The Brain Audit (my #2 favorite book); Getting Everything You Can Out of Everything You've Got (partially read); The Sticking Point Solution (unread still); Influence (unread still); and Inc Yourself (partially read). I really enjoyed the Double Your Freelancing Rate book (née The Blueprint).&lt;/p&gt;
-
-&lt;p&gt;The above compares very favorably to my main strategy for making sales, cold outreach emails:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Grind: Building a target list of names and researching their emails.&lt;/li&gt;
-  &lt;li&gt;Pull: Writing an email outreach sequence. It's only pull if… you've read the good marketing books; know how to write cold emails; and know what your prospects desire.&lt;/li&gt;
-  &lt;li&gt;Grind: Cleaning and loading your target list's contact details.&lt;/li&gt;
-  &lt;li&gt;(Minor) Grind: Loading your email sequence into a tool like Quickmail. If you didn't use a tool, the grind of following up on first emails would kill you.&lt;/li&gt;
-  &lt;li&gt;Grind: Following up after they've replied and each answer requires a custom reply.&lt;/li&gt;
-  &lt;li&gt;Grind: Scheduling a sales call (thank you calendly.com!).&lt;/li&gt;
-  &lt;li&gt;Pull: Getting on sales calls that you've scheduled.&lt;/li&gt;
-  &lt;li&gt;Grind: Modifying your latest proposal to fit a new client.&lt;/li&gt;
-  &lt;li&gt;Pull: Your client pays you.&lt;/li&gt;
-  &lt;li&gt;Repeat.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Amy Hoy has said that she and Alex Hillman have spent loads of time figuring out how to get 30x500 students to actually finish the course. I imagine they figured out how to break the process of building a business into stacking bricks which each give well-defined satisfaction and accomplishment (I stole and maybe warped her analogy :).&lt;/p&gt;
-
-&lt;h2 id="remove-grind-from-your-life"&gt;Remove grind from your life&lt;/h2&gt;
-&lt;p&gt;Ask yourself: what's painful? Then ask yourself if you can delegate it, buy a tool/book/service to help you, or quit altogether (and renegotiate).&lt;/p&gt;
-
-&lt;p&gt;If you have high expectations for yourself, you'll frequently need to quit certain work and renegotiate with &lt;strong&gt;yourself.&lt;/strong&gt; Why? The tyrant dictator part of your brain is pushing you to grind out work that is so low ROI or doomed to fail that your gut rebels. Then the rest of your brain notices your gut, catches up, and realizes it has to make a change.&lt;/p&gt;
-
-&lt;h2 id="grind-that-you-should-remove-from-your-life"&gt;Grind that you should remove from your life:&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Contracts (use a lawyer or get paid 100% up front)&lt;/li&gt;
-  &lt;li&gt;Accounting (use an accountant and have a friend teach you the basics of book-keeping–thanks Samir!)&lt;/li&gt;
-  &lt;li&gt;Anything a virtual assistant could do&lt;/li&gt;
-  &lt;li&gt;Ideally: anything that's not a crucial source of revenue for you and your business. My crucial sources of revenue are writing, copywriting (cold emails, proposals, sales pages), and coding.&lt;/li&gt;
-  &lt;li&gt;Coding when it's not for yourself and no one has paid you yet. Even if you are coding for yourself, you'd better only be doing it for you, for fun, and not for money. Pre-sell first! More easily said than done.&lt;/li&gt;
-  &lt;li&gt;Scheduling&lt;/li&gt;
-  &lt;li&gt;Your Sales and Discovery Process: this is why tripwires and Roadmapping sessions work so well. They shift the energy balance from just you, to both you and your client (because they've paid for something small).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="go-forth-and-create-a-virtuous-cycle-of-energy-creation-in-your-business"&gt;Go forth and create a virtuous cycle of energy creation in your business&lt;/h2&gt;
-
-&lt;p&gt;Your thoughts on this would be much appreciated. What virtuous cycles drive your business? What virtuous cycles drive your personal life‡? My email is david å† dtrejo.com.&lt;/p&gt;
-
-&lt;p&gt;Yours,&lt;br /&gt;
-David Trejo&lt;/p&gt;
-
-&lt;p&gt;PS Special thanks to &lt;a href="https://expensiveproblem.com"&gt;Jonathan Stark&lt;/a&gt;, &lt;a href="https://taskdrive.com"&gt;Samir Said&lt;/a&gt;, &lt;a href="https://philipmorganconsulting.com"&gt;Philip Morgan&lt;/a&gt;, &lt;a href="http://doubleyourfreelancing.com/"&gt;Brennan Dunn&lt;/a&gt;, &lt;a href="https://unicornfree.com/"&gt;Amy Hoy, Alex Hillman&lt;/a&gt;, and &lt;a href="https://marcusblankenship.com/"&gt;Marcus Blankenship&lt;/a&gt; for their writing and advice. &lt;a href="http://peterlyons.com/"&gt;Peter Lyons&lt;/a&gt;, thanks for listening so closely this morning and saying it was insightful :).&lt;/p&gt;
-
-&lt;p&gt;‡ I offer to cook for my friends' dinner parties. I go to and get invited to WAY more dinner parties :)&lt;/p&gt;
 </content>
   </entry>
 </feed>
