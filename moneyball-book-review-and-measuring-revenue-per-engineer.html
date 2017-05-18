@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8" /><meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><link href="/images/favicon.png?1467608548" rel="icon" type="image/png" /><link href="https://dtrejo.com/feed.xml" rel="alternate" title="David Trejo | Developer and Consultant Feed" type="application/atom+xml" /><title>Moneyball Book Review and Measuring Revenue per Engineer by David Trejo | Developer and Consultant</title><link href="https://dtrejo.com/moneyball-book-review-and-measuring-revenue-per-engineer.html" rel="canonical" /><meta content="hiring" name="keywords" /><link href="/stylesheets/application.css?1492155547" media="screen" rel="stylesheet" type="text/css" /><link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script><script src="/javascripts/application.js?1467608550" type="text/javascript"></script>
+<script async="" defer="" src="https://www.google.com/recaptcha/api.js"></script></head><body><script type="text/javascript">      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-11131137-1', 'dtrejo.com');
+      ga('send', 'pageview');
+</script><nav class="navbar navbar-default navbar-static-top"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".bs-navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><h2><a class="navbar-brand" href="https://dtrejo.com/">dtrejo.com</a></h2></div><div class="collapse navbar-collapse"><ul class="navbar-nav nav navbar-right"><li><a href="https://twitter.com/ddtrejo"><i class='fa fa-twitter fa-inline'></i> ddtrejo</a></li></ul></div></div></nav><div class="container"><article><h1 class="article-title">Moneyball Book Review and Measuring Revenue per Engineer</h1><div class="article-body"><p>First, I wrote a book review of Moneyball, which talks about how the Oakland A's
+baseball team buys players who are undervalued by the rest of the league.</p>
+
+<p>Second, we'll look at ways to measure revenue per engineer, and related numbers we'd want to know. Are you an engineering leaders with 20+ people in your organization? You'll like this section because you're always trying to give headcount to the teams who'll most favorably improve revenue. You're also trying to hire engineers who care about your business.</p>
+
+<p><em>Reading time: 11 minutes, 2 seconds–but don't let that scare you away.</em></p>
+
+<h2 id="moneyball-book-review">1. Moneyball Book Review</h2>
+<p>My style of book review is to pull out the best sections, so here they are:</p>
+
+<blockquote>
+  <p>[…] baseball, more than other sports, gave you meaningful things to count, and that by counting them you could determine the value of the people who played the game
+<br />– page 69</p>
+</blockquote>
+
+<blockquote>
+  <p>As the thirty-fifth pick approaches, Erik once again leans into the speaker phone. If he leaned in just a bit more closely he might hear phones around the league cliciking off, so that people could laugh without being heard. For they do laugh. They will make fun of what the A's are about to do, and there will be a lesson in that. The inability to envision a certain kind of person doing a certain kind of thing because you've never seen someone who looks like him do it before is not just a vice. It's a luxury. What begins as a failure of imagination ends as a market inefficiency: when you rule out an entire class of people from doing a job simply by their appearance, you are less likely to find the best person for the job.
+<br />– page 115</p>
+</blockquote>
+
+<blockquote>
+  <p>A set of Platonic ideas is one of the gifts the Wall Street traders gave to Paul DePodesta. The precision of the AVM system, copied by Paul, enabled him to think about every event that ocurred on a basedball field in a new and more satisfying way. Any ball hit anyplace on a baseball field had been hit just that way thousands of times before: the average of all those hits was the Platonic idea. Call it a line drive hit at <em>x</em> trajectory and <em>y</em> sp speed to point #968. From the ten years worth of data you ca see that there have been 8,642 practically identical hits. You can see that 92 percent of the time the hit went for a double, 4 percent for a single, and 4 percent it was caught. Suppose the average value of that event is .50 of a run. <em>No matter what actually happened,</em> the system credits the hitter with having generated .50 of a run, and the pitcher with having given up .50 of a run. If Johnny Damon happens to get one of his trademark jumps and makes a sprawling catch, he is credited with saving his team .50 of a run.</p>
+
+  <p>The beauty of the value of a hit (or catch) was that the game gave it to you, the game <em>told</em> you how valuable every event was, by telling you how valuable it had been, on average, over the past ten years. By listening to what the game told him about the value of events, Paul could take every ball hit in the area broadly defined as center field and determine its "expected run value".
+<br />– page 135</p>
+</blockquote>
+
+<p>Author notices that the A's in the video room watch the game in a completely different manner. They reply:
+&gt; "It's looking at process rather than outcomes," Paul says. "Too many people make decisions based on outcomes rather than process."
+&gt; 
+&gt; The route a pitch takes to the cather's mitt <em>is</em> an outcome, I say. It's just a more subtle outcome.
+&gt; 
+&gt; "It's not what happened," says Paul, "it's how our guy approached it."
+<br />– page 146</p>
+
+<blockquote>
+  <p>[]…] meant little to the Oakland A's, who were forever looking for dirt-cheap opportunities to accept bad defense for an ability to get on base. One trick of theirs was to pound on a player just after he'd had what appeared to be a career-threatening injury. Billy beane had a favorite saying, which he'd borrowed from the Wall Street investor Warren Buffet: the hardest thing to find is a good investment. 
+<br />– page 161</p>
+</blockquote>
+
+<p>I can already think of a few life events that devalue engineers for most employers.</p>
+
+<blockquote>
+  <p>The reason the Oakland A's, as run by Billy Beane, played as if they were a different team in the second half of a season is that they <em>were</em> a different team. As spring turned to summer the market allowed Billy to do things that he could do at no other time of the year. The bad teams lost hope. With the loss of hope came a desire to cut costs. With the desire to cut costs came the dumping of players. As the supply of players rose, their prices fell. By midsummer, Billy Beane was able to acquire players he could never have afforded at the start of the season.
+<br />– page 193-194</p>
+</blockquote>
+
+<p>Make me think that every engineering leader should have very friendly relationships with both their reports and their peers at other companies. When an engineer is ready to leave, and isn't interested moving internally, why let them quit when you might be able to call a friend and trade them for someone else, leaving everyone happier?</p>
+
+<blockquote>
+  <p>His reduced circumstances had forced Billy Beane to embrace a different mental model of the BIg League Pitcher. In Billy Beane's mind, pitchers were nothing like high-performance sports cars, or thoroughbred racehorses, or any other metaphor that implied a cool, inbuilt superiority. They were more like writers. LIke writers, pitchers pitchers initiated action, and set the tone for their games. THey had all sorts of ways of achieving their effects and they needed to be judged by those effects, rather than by their outward appearance, or their technique. To place a premium on velocity for its own sake was like placing a premium on big vocabulary for its own sake. […] Good pitchers were pithcers who got outs; how they did it was beside the point.</p>
+
+  <p>Good pitchers were like writers in another way too: their output was harder than it should have been to predict.
+<br />– page 222</p>
+</blockquote>
+
+<blockquote>
+  <p>[…] Jackie Robinson was exactly the sort of player the A's and the Jays salivate over. He had stats they tended to stress–high on-base, plate discipline, great power for a second baseman, etc.–<em>plus he was undervalued.</em> Indeed, one way of looking at the revolution in baseball management is a search for less dramatic version fo Jackie Robinsonºplayers who, for one unfair reason or another, often because of their appearance, had been maligned and undervalued by the market.
+<br />– page 297</p>
+</blockquote>
+
+<hr />
+
+<h2 id="measuring-revenue-per-engineer-applying-moneyball-to-engineers">2. Measuring Revenue per Engineer: Applying Moneyball to Engineers</h2>
+
+<p>We want to track the engineering equivalent of runs-scored, not fastball speed or whether they have a good body.</p>
+
+<h2 id="what-are-the-engineer-equivalents-of-moneyballs-baseball-stats">What are the engineer equivalents of Moneyball's baseball stats?</h2>
+
+<p>Raw engineering skill does not necessarily correlate with revenue.</p>
+
+<p>Many still try (and fail) to gauge engineering skill using whiteboard interviews. </p>
+
+<p>Another set of companies test engineering skill with live coding, pair programming, homework projects, and coding challenges.</p>
+
+<p>I've yet to hear of someone who has explicitly said they hire based on the candidate's future value to their company.</p>
+
+<p>How do we measure engineering <strong>value</strong> (not skill) for various roles?</p>
+
+<ul>
+  <li>Frontend</li>
+  <li>Backend</li>
+  <li>Systems</li>
+  <li>Growth</li>
+  <li>Native</li>
+</ul>
+
+<h3 id="what-do-we-wish-we-knew">What do we wish we knew?</h3>
+
+<ul>
+  <li>Cost per line of code (bugs + churn + initial-time-cost-to-write). NASA measured this, they paid $1,000 per LOC related to the <em>Challenger</em> accident.*</li>
+  <li>Revenue generated per line of code</li>
+  <li>Revenue generated over time</li>
+  <li>Time to ship (from e.g. design phase until production)</li>
+  <li>Amount of time code spends in inventory before sale (code in branches awaiting deployment count as inventory; production counts as sale)</li>
+  <li>Server costs saved (number of servers + cost for servers + number of pager alerts + revenue per server-dollar)</li>
+  <li>Client-side device costs saved (latency + CPU + energy + data + value of customer's time)</li>
+  <li>Customer value created (usually we use revenue as a proxy for customer value)</li>
+</ul>
+
+<h3 id="secondary-metrics-that-correlate-in-well-known-ways-with-the-above">Secondary metrics that correlate in well-known ways with the above:</h3>
+
+<ul>
+  <li>Page speed increases</li>
+  <li>Test suite speed increases</li>
+  <li>Team efficiency increases</li>
+  <li>Lines of code deleted</li>
+  <li>Number of deploys per week</li>
+  <li>Amount of downtime</li>
+  <li>Improved new engineer onboarding speed</li>
+  <li>Bugs fixed</li>
+  <li>Bugs fixed <em>before anyone else knew they existed.</em> Communicating and getting credit for these is a very difficult problem for some of my friends.</li>
+</ul>
+
+<p>You and your company have certain things you value. If you're not sure what you
+value, survey your current
+team's resumes and past performance reviews for what stats got them noticed. You
+can turn these into questions to ask before a phone screen or instead of a
+resume. Personally I don't believe in resumes, because as engineers we usually aren't good at
+reducing our value down to bullet points.</p>
+
+<h2 id="measuring-the-value-of-your-teams">Measuring the Value of Your Teams</h2>
+
+<p>You can work numbers for the metrics above from the front or from the back.</p>
+
+<p>Working the numbers from the back means looking at…</p>
+
+<ul>
+  <li>Profit and loss for company → P &amp; L for team → team size → single team-member → fraction of impact</li>
+  <li>Team shape, e.g. who worked on a particular feature: number engineers of each type, number of designers, number of PMs</li>
+</ul>
+
+<p>Even if you can't quantify the value of a single engineer, you can still
+understand the value of a department or a team. Then you can use the amount you pay
+each person to <em>estimate</em> the fraction of value they bring. The amount you pay a
+person doesn't always correlate with how much value they bring, but
+it's a start.</p>
+
+<p>Working the numbers forward means you evaluate existing teammates based on any stat that the person had the presence of mind to track and share, then convert it to a dollar amount.</p>
+
+<p>As for discovering new and promising engineers, you might look at…</p>
+
+<ul>
+  <li>Ruby gems stats</li>
+  <li>Github repo stats</li>
+  <li>npm module stats</li>
+  <li>Bullet points on their resume, adjusted to fit your company's situation and reduced to dollar figures. For example, a 20% reduction in server fleet size, applied to your 2000 servers which cost you $Y per year, means if you hire this devops person and they do the same optimization, you stand to save… $Y-(Y*.2) annually.)</li>
+</ul>
+
+<p>Ideally, we want a technique that works well on people without public
+work. Thus a questionnaire would work well, assuming they can give us stats or at
+least rough numbers. For people without past industry experience, the best we can do is measure engineering skill and potential in an unbiased way.</p>
+
+<h3 id="what-increases-the-value-of-an-engineer">What increases the value of an engineer?</h3>
+
+<p>Someone who has the same stats, but is from a historically underpaid group in
+tech, or who has work experience that no one else knows how to assess or value. This is why Matasano has such success with their CTFs*.</p>
+
+<h3 id="what-are-other-people-measuring">What are other people measuring?</h3>
+
+<p>Some teams measure as part of how they lead/manage:</p>
+
+<blockquote>
+  <p>I want everyone on my team to be able to go home confident they’ve done their job well, and not worry if I’ve just had a bad day. […] 
+Our team pays attention to:</p>
+
+  <ul>
+    <li>Commit frequency: we encourage everyone to check in multiple times daily</li>
+    <li>Commit size: keeping work surface area small to lower risk</li>
+    <li>Code churn: in retrospectives and to notice when someone is stuck</li>
+    <li>Legacy refactoring: to notice when people are cleaning up the codebase</li>
+    <li>Helping others: to recognize team players</li>
+    <li>Review Speed: because it can be tied directly to business value delivered</li>
+  </ul>
+
+  <p>– Andrew Templeton, Engineering Director (<a href="https://twitter.com/ayetempleton">@ayetempleton</a>)*</p>
+</blockquote>
+
+<h2 id="choosing-what-to-measure">Choosing what to measure</h2>
+
+<p>You <strong>don't</strong> want to measure business outcomes on a day-to-day basis, because
+that is demotivating. You want to measure activities that you know lead to good
+business outcomes. For example, you wouldn't only give people credit for
+successful A/B tests, instead you'd know that 1 in 6 A/B tests were successful last year,
+and encourage people to run more (within reason).</p>
+
+<p>What do you wish you could measure? How are your measurements coming along?</p>
+
+<p>Yours,<br />
+David<br />
+david åt dtrejo.com</p>
+
+<h3 id="ps-why-are-some-engineers-undervalued">P.S. Why are some engineers undervalued?</h3>
+
+<p>Are you running a business or an acquisition target? If you're running a business, you don't care whether your team looks like a typical startup.</p>
+
+<p>Jackie Robinson was the first black baseball player. Hiring your first Jackie Robinson engineer is an amazing investment because everyone else is filling their teams with Ivy League+ educated white men (whether by accident or by intent).</p>
+
+<p>It's well known that investors let their bias influence their decisions quite often, which has a big effect on the kinds of leaders we see at funded startups. When companies rely heavily on referral hiring (because it's so much easier), it can lead to more homogeneity.</p>
+
+<p>I believe that engineers from under-represented groups in tech have the best value with the highest ratio of engineering prowess to dollar spent. Black women are probably at the top of the pyramid if you were going compare them.</p>
+
+<p>Am I a racist? No, I'm pointing out that everyone else is a racist, and this is why you should hire black/latinx/women engineers.</p>
+
+<h3 id="who-else-do-i-think-is-undervalued">Who else do I think is undervalued?</h3>
+
+<p>Anyone overly enterprisey. Anyone who isn't young (whiteboarding favors the young). Easiest example? Middle-aged indian Java engineers. Might as well throw in anyone who primarily works with a Microsoft stack as well.</p>
+
+<h4 id="footnotes">Footnotes</h4>
+
+<p>* <a href="https://history.nasa.gov/sts1/pages/computer.html">NASA's cost per LOC</a></p>
+
+<p>* <a href="https://sockpuppet.org/blog/2015/07/13/starfighter/">Erin on Matasano's CTFs</a>; <a href="https://sockpuppet.org/blog/2015/03/06/the-hiring-post/">Thomas' article on hiring</a></p>
+
+<p>* <a href="https://blog.gitprime.com/why-kpis-matter-for-software-engineering-andrew-templeton">Andrew Templeton on what KPIs he tracks in an interview with GitPrime</a></p>
+
+<p>Related articles:</p>
+
+<ul>
+  <li><a href="http://danluu.com/programmer-moneyball/">Dan Luu on programmer moneyball</a></li>
+  <li><a href="http://danluu.com/hiring-lemons/">Dan Luu on information asymmetry in hiring (who is great?)</a></li>
+</ul>
+</div></article><div class="media author"><div class="pull-left"><img class="media-object img-circle author-avatar" src="/images/dtrejo.jpg" /></div><div class="media-body"><h4 class="media-heading author-name"><a href="/">David Trejo</a></h4><span class="author-desc">Engineer &amp; Consultant. Past clients include Neo, Presentate, Brown Computer Science Department, Voxer, Cloudera, and the Veteran's Benefits Administration.</span></div></div><div class="comments"><div class="article-footer"><form action="https://www.getdrip.com/forms/31263417/submissions" data-drip-embedded-form="31263417" method="post"><h2 data-drip-attribute="headline"><strong>Want to Attract Engineers?</strong></h2><div data-drip-attribute="description">Learn exactly how I help my clients attract &amp; hire software engineers.</div><br /><p>I am <input type="text" placeholder="First Name" name="fields[firstname]"> and my email is <input type="text" placeholder="Email" type="email" name="fields[email]">.</p><div class="g-recaptcha" data-sitekey="6Lde4yAUAAAAAJmNA-cp7ySkBKDmf3NhprEn8Y8Z"></div><p style="margin-bottom:0"><input data-drip-attribute="sign-up-button" type="submit" name="submit" class="btn-6 btn-6a" value="Teach Me"></p></form></div></div></div><footer><div class="container"><div class="col-md-6"><em>Find me</em><br /><br /><a href="https://github.com/DTrejo">Github</a><br /><a href="https://twitter.com/ddtrejo">Twitter</a><br /><a href="#" id="email" title="david at this domain">Email</a></div><span class="fin col-md-12 text-center"><a href="404.html">fin</a></span></div></footer><script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script><script type="text/javascript">$(document).ready(function() {
+  // Show email to humans.
+  var me = 'david'
+  var atDomain = '@dtrejo.com'
+  $('a#email').click(function() {
+    $(this).attr('href', 'mailto:' + me + atDomain).text(me + atDomain)
+  })
+})</script></body></html>

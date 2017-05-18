@@ -5,10 +5,243 @@
   <id>https://dtrejo.com/</id>
   <link href="https://dtrejo.com/"/>
   <link href="https://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2017-05-16T21:32:00Z</updated>
+  <updated>2017-05-18T02:40:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>Moneyball Book Review and Measuring Revenue per Engineer</title>
+    <link rel="alternate" href="https://dtrejo.com/moneyball-book-review-and-measuring-revenue-per-engineer.html"/>
+    <id>https://dtrejo.com//moneyball-book-review-and-measuring-revenue-per-engineer.html</id>
+    <published>2017-05-18T02:40:00Z</published>
+    <updated>2017-05-18T02:40:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;First, I wrote a book review of Moneyball, which talks about how the Oakland A's
+baseball team buys players who are undervalued by the rest of the league.&lt;/p&gt;
+
+&lt;p&gt;Second, we'll look at ways to measure revenue per engineer, and related numbers we'd want to know. Are you an engineering leaders with 20+ people in your organization? You'll like this section because you're always trying to give headcount to the teams who'll most favorably improve revenue. You're also trying to hire engineers who care about your business.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Reading time: 11 minutes, 2 seconds–but don't let that scare you away.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="moneyball-book-review"&gt;1. Moneyball Book Review&lt;/h2&gt;
+&lt;p&gt;My style of book review is to pull out the best sections, so here they are:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[…] baseball, more than other sports, gave you meaningful things to count, and that by counting them you could determine the value of the people who played the game
+&lt;br /&gt;– page 69&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As the thirty-fifth pick approaches, Erik once again leans into the speaker phone. If he leaned in just a bit more closely he might hear phones around the league cliciking off, so that people could laugh without being heard. For they do laugh. They will make fun of what the A's are about to do, and there will be a lesson in that. The inability to envision a certain kind of person doing a certain kind of thing because you've never seen someone who looks like him do it before is not just a vice. It's a luxury. What begins as a failure of imagination ends as a market inefficiency: when you rule out an entire class of people from doing a job simply by their appearance, you are less likely to find the best person for the job.
+&lt;br /&gt;– page 115&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A set of Platonic ideas is one of the gifts the Wall Street traders gave to Paul DePodesta. The precision of the AVM system, copied by Paul, enabled him to think about every event that ocurred on a basedball field in a new and more satisfying way. Any ball hit anyplace on a baseball field had been hit just that way thousands of times before: the average of all those hits was the Platonic idea. Call it a line drive hit at &lt;em&gt;x&lt;/em&gt; trajectory and &lt;em&gt;y&lt;/em&gt; sp speed to point #968. From the ten years worth of data you ca see that there have been 8,642 practically identical hits. You can see that 92 percent of the time the hit went for a double, 4 percent for a single, and 4 percent it was caught. Suppose the average value of that event is .50 of a run. &lt;em&gt;No matter what actually happened,&lt;/em&gt; the system credits the hitter with having generated .50 of a run, and the pitcher with having given up .50 of a run. If Johnny Damon happens to get one of his trademark jumps and makes a sprawling catch, he is credited with saving his team .50 of a run.&lt;/p&gt;
+
+  &lt;p&gt;The beauty of the value of a hit (or catch) was that the game gave it to you, the game &lt;em&gt;told&lt;/em&gt; you how valuable every event was, by telling you how valuable it had been, on average, over the past ten years. By listening to what the game told him about the value of events, Paul could take every ball hit in the area broadly defined as center field and determine its "expected run value".
+&lt;br /&gt;– page 135&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Author notices that the A's in the video room watch the game in a completely different manner. They reply:
+&amp;gt; "It's looking at process rather than outcomes," Paul says. "Too many people make decisions based on outcomes rather than process."
+&amp;gt; 
+&amp;gt; The route a pitch takes to the cather's mitt &lt;em&gt;is&lt;/em&gt; an outcome, I say. It's just a more subtle outcome.
+&amp;gt; 
+&amp;gt; "It's not what happened," says Paul, "it's how our guy approached it."
+&lt;br /&gt;– page 146&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[]…] meant little to the Oakland A's, who were forever looking for dirt-cheap opportunities to accept bad defense for an ability to get on base. One trick of theirs was to pound on a player just after he'd had what appeared to be a career-threatening injury. Billy beane had a favorite saying, which he'd borrowed from the Wall Street investor Warren Buffet: the hardest thing to find is a good investment. 
+&lt;br /&gt;– page 161&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I can already think of a few life events that devalue engineers for most employers.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The reason the Oakland A's, as run by Billy Beane, played as if they were a different team in the second half of a season is that they &lt;em&gt;were&lt;/em&gt; a different team. As spring turned to summer the market allowed Billy to do things that he could do at no other time of the year. The bad teams lost hope. With the loss of hope came a desire to cut costs. With the desire to cut costs came the dumping of players. As the supply of players rose, their prices fell. By midsummer, Billy Beane was able to acquire players he could never have afforded at the start of the season.
+&lt;br /&gt;– page 193-194&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Make me think that every engineering leader should have very friendly relationships with both their reports and their peers at other companies. When an engineer is ready to leave, and isn't interested moving internally, why let them quit when you might be able to call a friend and trade them for someone else, leaving everyone happier?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;His reduced circumstances had forced Billy Beane to embrace a different mental model of the BIg League Pitcher. In Billy Beane's mind, pitchers were nothing like high-performance sports cars, or thoroughbred racehorses, or any other metaphor that implied a cool, inbuilt superiority. They were more like writers. LIke writers, pitchers pitchers initiated action, and set the tone for their games. THey had all sorts of ways of achieving their effects and they needed to be judged by those effects, rather than by their outward appearance, or their technique. To place a premium on velocity for its own sake was like placing a premium on big vocabulary for its own sake. […] Good pitchers were pithcers who got outs; how they did it was beside the point.&lt;/p&gt;
+
+  &lt;p&gt;Good pitchers were like writers in another way too: their output was harder than it should have been to predict.
+&lt;br /&gt;– page 222&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[…] Jackie Robinson was exactly the sort of player the A's and the Jays salivate over. He had stats they tended to stress–high on-base, plate discipline, great power for a second baseman, etc.–&lt;em&gt;plus he was undervalued.&lt;/em&gt; Indeed, one way of looking at the revolution in baseball management is a search for less dramatic version fo Jackie Robinsonºplayers who, for one unfair reason or another, often because of their appearance, had been maligned and undervalued by the market.
+&lt;br /&gt;– page 297&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="measuring-revenue-per-engineer-applying-moneyball-to-engineers"&gt;2. Measuring Revenue per Engineer: Applying Moneyball to Engineers&lt;/h2&gt;
+
+&lt;p&gt;We want to track the engineering equivalent of runs-scored, not fastball speed or whether they have a good body.&lt;/p&gt;
+
+&lt;h2 id="what-are-the-engineer-equivalents-of-moneyballs-baseball-stats"&gt;What are the engineer equivalents of Moneyball's baseball stats?&lt;/h2&gt;
+
+&lt;p&gt;Raw engineering skill does not necessarily correlate with revenue.&lt;/p&gt;
+
+&lt;p&gt;Many still try (and fail) to gauge engineering skill using whiteboard interviews. &lt;/p&gt;
+
+&lt;p&gt;Another set of companies test engineering skill with live coding, pair programming, homework projects, and coding challenges.&lt;/p&gt;
+
+&lt;p&gt;I've yet to hear of someone who has explicitly said they hire based on the candidate's future value to their company.&lt;/p&gt;
+
+&lt;p&gt;How do we measure engineering &lt;strong&gt;value&lt;/strong&gt; (not skill) for various roles?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Frontend&lt;/li&gt;
+  &lt;li&gt;Backend&lt;/li&gt;
+  &lt;li&gt;Systems&lt;/li&gt;
+  &lt;li&gt;Growth&lt;/li&gt;
+  &lt;li&gt;Native&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="what-do-we-wish-we-knew"&gt;What do we wish we knew?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cost per line of code (bugs + churn + initial-time-cost-to-write). NASA measured this, they paid $1,000 per LOC related to the &lt;em&gt;Challenger&lt;/em&gt; accident.*&lt;/li&gt;
+  &lt;li&gt;Revenue generated per line of code&lt;/li&gt;
+  &lt;li&gt;Revenue generated over time&lt;/li&gt;
+  &lt;li&gt;Time to ship (from e.g. design phase until production)&lt;/li&gt;
+  &lt;li&gt;Amount of time code spends in inventory before sale (code in branches awaiting deployment count as inventory; production counts as sale)&lt;/li&gt;
+  &lt;li&gt;Server costs saved (number of servers + cost for servers + number of pager alerts + revenue per server-dollar)&lt;/li&gt;
+  &lt;li&gt;Client-side device costs saved (latency + CPU + energy + data + value of customer's time)&lt;/li&gt;
+  &lt;li&gt;Customer value created (usually we use revenue as a proxy for customer value)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="secondary-metrics-that-correlate-in-well-known-ways-with-the-above"&gt;Secondary metrics that correlate in well-known ways with the above:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Page speed increases&lt;/li&gt;
+  &lt;li&gt;Test suite speed increases&lt;/li&gt;
+  &lt;li&gt;Team efficiency increases&lt;/li&gt;
+  &lt;li&gt;Lines of code deleted&lt;/li&gt;
+  &lt;li&gt;Number of deploys per week&lt;/li&gt;
+  &lt;li&gt;Amount of downtime&lt;/li&gt;
+  &lt;li&gt;Improved new engineer onboarding speed&lt;/li&gt;
+  &lt;li&gt;Bugs fixed&lt;/li&gt;
+  &lt;li&gt;Bugs fixed &lt;em&gt;before anyone else knew they existed.&lt;/em&gt; Communicating and getting credit for these is a very difficult problem for some of my friends.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You and your company have certain things you value. If you're not sure what you
+value, survey your current
+team's resumes and past performance reviews for what stats got them noticed. You
+can turn these into questions to ask before a phone screen or instead of a
+resume. Personally I don't believe in resumes, because as engineers we usually aren't good at
+reducing our value down to bullet points.&lt;/p&gt;
+
+&lt;h2 id="measuring-the-value-of-your-teams"&gt;Measuring the Value of Your Teams&lt;/h2&gt;
+
+&lt;p&gt;You can work numbers for the metrics above from the front or from the back.&lt;/p&gt;
+
+&lt;p&gt;Working the numbers from the back means looking at…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Profit and loss for company → P &amp;amp; L for team → team size → single team-member → fraction of impact&lt;/li&gt;
+  &lt;li&gt;Team shape, e.g. who worked on a particular feature: number engineers of each type, number of designers, number of PMs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Even if you can't quantify the value of a single engineer, you can still
+understand the value of a department or a team. Then you can use the amount you pay
+each person to &lt;em&gt;estimate&lt;/em&gt; the fraction of value they bring. The amount you pay a
+person doesn't always correlate with how much value they bring, but
+it's a start.&lt;/p&gt;
+
+&lt;p&gt;Working the numbers forward means you evaluate existing teammates based on any stat that the person had the presence of mind to track and share, then convert it to a dollar amount.&lt;/p&gt;
+
+&lt;p&gt;As for discovering new and promising engineers, you might look at…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ruby gems stats&lt;/li&gt;
+  &lt;li&gt;Github repo stats&lt;/li&gt;
+  &lt;li&gt;npm module stats&lt;/li&gt;
+  &lt;li&gt;Bullet points on their resume, adjusted to fit your company's situation and reduced to dollar figures. For example, a 20% reduction in server fleet size, applied to your 2000 servers which cost you $Y per year, means if you hire this devops person and they do the same optimization, you stand to save… $Y-(Y*.2) annually.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ideally, we want a technique that works well on people without public
+work. Thus a questionnaire would work well, assuming they can give us stats or at
+least rough numbers. For people without past industry experience, the best we can do is measure engineering skill and potential in an unbiased way.&lt;/p&gt;
+
+&lt;h3 id="what-increases-the-value-of-an-engineer"&gt;What increases the value of an engineer?&lt;/h3&gt;
+
+&lt;p&gt;Someone who has the same stats, but is from a historically underpaid group in
+tech, or who has work experience that no one else knows how to assess or value. This is why Matasano has such success with their CTFs*.&lt;/p&gt;
+
+&lt;h3 id="what-are-other-people-measuring"&gt;What are other people measuring?&lt;/h3&gt;
+
+&lt;p&gt;Some teams measure as part of how they lead/manage:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I want everyone on my team to be able to go home confident they’ve done their job well, and not worry if I’ve just had a bad day. […] 
+Our team pays attention to:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Commit frequency: we encourage everyone to check in multiple times daily&lt;/li&gt;
+    &lt;li&gt;Commit size: keeping work surface area small to lower risk&lt;/li&gt;
+    &lt;li&gt;Code churn: in retrospectives and to notice when someone is stuck&lt;/li&gt;
+    &lt;li&gt;Legacy refactoring: to notice when people are cleaning up the codebase&lt;/li&gt;
+    &lt;li&gt;Helping others: to recognize team players&lt;/li&gt;
+    &lt;li&gt;Review Speed: because it can be tied directly to business value delivered&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;– Andrew Templeton, Engineering Director (&lt;a href="https://twitter.com/ayetempleton"&gt;@ayetempleton&lt;/a&gt;)*&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id="choosing-what-to-measure"&gt;Choosing what to measure&lt;/h2&gt;
+
+&lt;p&gt;You &lt;strong&gt;don't&lt;/strong&gt; want to measure business outcomes on a day-to-day basis, because
+that is demotivating. You want to measure activities that you know lead to good
+business outcomes. For example, you wouldn't only give people credit for
+successful A/B tests, instead you'd know that 1 in 6 A/B tests were successful last year,
+and encourage people to run more (within reason).&lt;/p&gt;
+
+&lt;p&gt;What do you wish you could measure? How are your measurements coming along?&lt;/p&gt;
+
+&lt;p&gt;Yours,&lt;br /&gt;
+David&lt;br /&gt;
+david åt dtrejo.com&lt;/p&gt;
+
+&lt;h3 id="ps-why-are-some-engineers-undervalued"&gt;P.S. Why are some engineers undervalued?&lt;/h3&gt;
+
+&lt;p&gt;Are you running a business or an acquisition target? If you're running a business, you don't care whether your team looks like a typical startup.&lt;/p&gt;
+
+&lt;p&gt;Jackie Robinson was the first black baseball player. Hiring your first Jackie Robinson engineer is an amazing investment because everyone else is filling their teams with Ivy League+ educated white men (whether by accident or by intent).&lt;/p&gt;
+
+&lt;p&gt;It's well known that investors let their bias influence their decisions quite often, which has a big effect on the kinds of leaders we see at funded startups. When companies rely heavily on referral hiring (because it's so much easier), it can lead to more homogeneity.&lt;/p&gt;
+
+&lt;p&gt;I believe that engineers from under-represented groups in tech have the best value with the highest ratio of engineering prowess to dollar spent. Black women are probably at the top of the pyramid if you were going compare them.&lt;/p&gt;
+
+&lt;p&gt;Am I a racist? No, I'm pointing out that everyone else is a racist, and this is why you should hire black/latinx/women engineers.&lt;/p&gt;
+
+&lt;h3 id="who-else-do-i-think-is-undervalued"&gt;Who else do I think is undervalued?&lt;/h3&gt;
+
+&lt;p&gt;Anyone overly enterprisey. Anyone who isn't young (whiteboarding favors the young). Easiest example? Middle-aged indian Java engineers. Might as well throw in anyone who primarily works with a Microsoft stack as well.&lt;/p&gt;
+
+&lt;h4 id="footnotes"&gt;Footnotes&lt;/h4&gt;
+
+&lt;p&gt;* &lt;a href="https://history.nasa.gov/sts1/pages/computer.html"&gt;NASA's cost per LOC&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;* &lt;a href="https://sockpuppet.org/blog/2015/07/13/starfighter/"&gt;Erin on Matasano's CTFs&lt;/a&gt;; &lt;a href="https://sockpuppet.org/blog/2015/03/06/the-hiring-post/"&gt;Thomas' article on hiring&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;* &lt;a href="https://blog.gitprime.com/why-kpis-matter-for-software-engineering-andrew-templeton"&gt;Andrew Templeton on what KPIs he tracks in an interview with GitPrime&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Related articles:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://danluu.com/programmer-moneyball/"&gt;Dan Luu on programmer moneyball&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://danluu.com/hiring-lemons/"&gt;Dan Luu on information asymmetry in hiring (who is great?)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>Questions That Senior Systems Engineers Want Answered</title>
     <link rel="alternate" href="https://dtrejo.com/questions-that-senior-systems-engineers-want-answered.html"/>
@@ -534,181 +767,6 @@ rates with you.&lt;/p&gt;
 David&lt;/p&gt;
 
 &lt;!-- PS Learn exactly how I hire: enter your email below. --&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Chaos in Your Product Prototyping</title>
-    <link rel="alternate" href="https://dtrejo.com/chaos-in-your-product-prototyping.html"/>
-    <id>https://dtrejo.com//chaos-in-your-product-prototyping.html</id>
-    <published>2017-02-17T04:50:00Z</published>
-    <updated>2017-02-17T04:50:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;Note: &lt;strong&gt;I no longer believe that product ideas should be &lt;em&gt;validated&lt;/em&gt;.&lt;/strong&gt; One should only
-build after one has pre-sold or collected signed letters of intent to buy at
-a specific price-point.&lt;/p&gt;
-
-&lt;p&gt;I wrote this for the rest of the team at Neo, where we built new lines of
-business for Fortune 500 companies. Our projects were 12 weeks long. We
-designed, built, and launched new products for our clients.&lt;/p&gt;
-
-&lt;p&gt;This article is an amalgamation of tactical advice, written for teams of at least one
-designer and one engineer who want to build a new product more quickly. It can
-be applied to building a new feature as well.&lt;/p&gt;
-
-&lt;h2 id="what-is-chaos"&gt;What is Chaos?&lt;/h2&gt;
-
-&lt;p&gt;It's this strange feeling that you're not as productive as you could be because
-the flow of work and coordination and communication with your team is not at its
-best. It's the feeling that you are occasionally doing inefficient things, or
-that you don't know what's going to happen next, or taking steps backward. Your
-"chaos" as an engineer is different from that of a designer, something to be
-aware of.&lt;/p&gt;
-
-&lt;h2 id="areas-of-chaos"&gt;Areas of Chaos&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Design flow – flow of a design from whiteboard to code&lt;/li&gt;
-  &lt;li&gt;Experiment choice – given what's already been built, your team's decision on what fidelity the next experiment should be&lt;/li&gt;
-  &lt;li&gt;Figuring out the definition of "MVP"&lt;/li&gt;
-  &lt;li&gt;Figuring out what the "MVP" is for this solution space&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="reducing-chaos"&gt;Reducing Chaos&lt;/h2&gt;
-&lt;p&gt;Here we explain each area of chaos, along with some ways to reduce chaos.&lt;/p&gt;
-
-&lt;h2 id="less-chaos-design-flow"&gt;Less Chaos: Design Flow&lt;/h2&gt;
-
-&lt;p&gt;As an engineer, it's difficult to know when to jump in and code. Has the design
-undergone enough feedback from users? Is it at a high-enough fidelity? Will the
-design change drastically soon? Is there a major flaw that won't be noticed
-until it gets coded up? These are difficult questions to answer–I'll outline a
-full flow, and then I'll outline an "ideal" flow that might help us move faster
-on future designs. Having this conversation with Alex (designer of the project)
-was very helpful for us.&lt;/p&gt;
-
-&lt;p&gt;Each bolded step includes some feedback from the Engineer, if needed. And
-possibly feedback from another Neo designer, but not too much! Too much feedback
-leads to more chaos. Advice can make you regress to a previous step in the flow,
-and it takes much longer to finish it. Also, not all advice is worth taking even
-though it may be "better," so you may have done yourself a disservice. It all
-depends on the situation.&lt;/p&gt;
-
-&lt;h3 id="full-flow"&gt;Full Flow&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Whiteboard the design&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Customer feedback&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Paper prototype&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Customer feedback&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Put design into proto.io or invisionapp.com&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Customer feedback&lt;/li&gt;
-  &lt;li&gt;Make a psd of the design&lt;/li&gt;
-  &lt;li&gt;Customer feedback&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CODE the design&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Customer feedback&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="fast-flow"&gt;Fast flow&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Whiteboard the design&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Co-worker feedback (3 people)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Put design into proto.io or invisionapp.com&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Customer feedback, co-worker feedback&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Make a psd of the design&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CODE the design&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Customer feedback&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="you-really-should"&gt;You really should…&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Include real copy in the design(s)–this can change information hierarchy, the
-sizes of page elements, what design works or doesn't work, etc&lt;/li&gt;
-  &lt;li&gt;Consider choosing standard widths and sizes for your code and design. Alex and
-I chose the following: 1rem = 16px, and the height/width/spacing of
-everything on the page is a multiple 16px, or 8px. This makes coding the page
-much easier. Don't forget that line-height is not the same as the top of the
-letter "M", this means not every number in your design/code will be pretty (b/c
-CSS typography doesn't directly map to visual beauty: Ask Gon for more
-information about this, he can draw you a picture to show you what I mean).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="less-chaos-experiment-choice"&gt;Less Chaos: Experiment Choice&lt;/h2&gt;
-&lt;p&gt;It is difficult to choose the next experiment. It is difficult to assess how
-"confident" you are about the product. Are you truly confident enough to build
-the MVP right now? Here's the rough progression of experiments that eventually
-help you get comfortable enough to build the MVP. It is expected that you will
-run an experiment, it will fail, and you could return even to the first few
-bullet points! I don't recommend choosing to validate two ideas at once. Ask and
-share common conversion numbers for each step.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[Optional] Find/Validate the problem
-    &lt;ul&gt;
-      &lt;li&gt;Do customer development and figure out what their problems are&lt;/li&gt;
-      &lt;li&gt;Figure out which is the most painful&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Find/Validate the solution to the problem
-    &lt;ul&gt;
-      &lt;li&gt;Come up with solutions&lt;/li&gt;
-      &lt;li&gt;Do customer development to see which one people want more, discounted by the fact that customer's don't always know what they want&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Do a lean canvas on the top problems, eliminating the ones that don't have good ROI&lt;/li&gt;
-  &lt;li&gt;Do customer development on the remaining most-painful problem&lt;/li&gt;
-  &lt;li&gt;Make a landing page for the problem, drive traffic to it. 
-    &lt;ul&gt;
-      &lt;li&gt;e.g. fit experiment: Adwords CTR: 0.54%, email signup conversion: 24.5%; Style experiment: Adwords CTR: 0.19% email signup conversation: 10.17%&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Make a concierge MVP&lt;/li&gt;
-  &lt;li&gt;Make an MVP&lt;/li&gt;
-  &lt;li&gt;Make a real Product&lt;/li&gt;
-  &lt;li&gt;Optionally A/B tests if you have enough traffic, to improve the copy/product&lt;/li&gt;
-  &lt;li&gt;Acquire more and more users&lt;/li&gt;
-  &lt;li&gt;Success!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="less-chaos-mvp-choice"&gt;Less Chaos: MVP Choice&lt;/h3&gt;
-&lt;p&gt;This is hard. No way around it. Think about it for a really long time. Here's a list of ways you can make your product simpler:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Cut down on your audience until it is only one person
-    &lt;ul&gt;
-      &lt;li&gt;E.g. women, in the bay area, buying pants, and only plus-sizes. Jane Doe.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Cut down to only one value prop
-    &lt;ul&gt;
-      &lt;li&gt;E.g. "I want to know how it will fit and look on someone like me": show variously sized models in the same pair of pants&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Do things by hand, only program at the last moment, use spreadsheets&lt;/li&gt;
-  &lt;li&gt;Deliver less product less often
-    &lt;ul&gt;
-      &lt;li&gt;E.g. we will send you one look (on four different models) every week&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Only one problem&lt;/li&gt;
-  &lt;li&gt;Only one solution to one problem&lt;/li&gt;
-  &lt;li&gt;Only something you could do yourself manually&lt;/li&gt;
-  &lt;li&gt;Only what you can get done in 7 days / 100 days&lt;/li&gt;
-  &lt;li&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="client-gotchas"&gt;Client Gotchas&lt;/h2&gt;
-
-&lt;p&gt;It's really best to 100% ignore the fact that your client has an existing
-audience. You certainly can send an email to a segment of their audience, but
-this will take weeks to make happen and won't make a significant difference to
-whether people use/need your product. Your other acquisition channels should
-already be working.&lt;/p&gt;
-
-&lt;p&gt;Thanks &lt;a href="https://twitter.com/wakeupmrkim"&gt;Alex Kim&lt;/a&gt;,
-&lt;a href="https://twitter.com/gonzif"&gt;Gon Zifroni&lt;/a&gt;, and everyone else at Neo!&lt;/p&gt;
-
-&lt;p&gt;Yours,&lt;br /&gt;
-David&lt;/p&gt;
 </content>
   </entry>
 </feed>
