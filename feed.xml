@@ -18,8 +18,9 @@
     <author>
       <name>DTrejo</name>
     </author>
-    <content type="html">&lt;p&gt;First, I wrote a book review of Moneyball, which talks about how the Oakland A's
-baseball team buys players who are undervalued by the rest of the league.&lt;/p&gt;
+    <content type="html">&lt;p&gt;First, I've pulled out the highlights of Moneyball for you. The book is about
+how the Oakland A's baseball team buys players who are undervalued by the rest
+of the league. This allows them to build an amazing team despite their budget.&lt;/p&gt;
 
 &lt;p&gt;Second, we'll look at ways to measure revenue per engineer, and related numbers we'd want to know. Are you an engineering leaders with 20+ people in your organization? You'll like this section because you're always trying to give headcount to the teams who'll most favorably improve revenue. You're also trying to hire engineers who care about your business.&lt;/p&gt;
 
@@ -45,16 +46,19 @@ baseball team buys players who are undervalued by the rest of the league.&lt;/p&
 &lt;br /&gt;– page 135&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Author notices that the A's in the video room watch the game in a completely different manner. They reply:
-&amp;gt; "It's looking at process rather than outcomes," Paul says. "Too many people make decisions based on outcomes rather than process."
-&amp;gt; 
-&amp;gt; The route a pitch takes to the cather's mitt &lt;em&gt;is&lt;/em&gt; an outcome, I say. It's just a more subtle outcome.
-&amp;gt; 
-&amp;gt; "It's not what happened," says Paul, "it's how our guy approached it."
-&lt;br /&gt;– page 146&lt;/p&gt;
+&lt;p&gt;Author notices that the A's in the video room watch the game in a completely different manner. They reply:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;[]…] meant little to the Oakland A's, who were forever looking for dirt-cheap opportunities to accept bad defense for an ability to get on base. One trick of theirs was to pound on a player just after he'd had what appeared to be a career-threatening injury. Billy Beane had a favorite saying, which he'd borrowed from the Wall Street investor Warren Buffet: the hardest thing to find is a good investment. 
+  &lt;p&gt;"It's looking at process rather than outcomes," Paul says. "Too many people make decisions based on outcomes rather than process."&lt;/p&gt;
+
+  &lt;p&gt;The route a pitch takes to the cather's mitt &lt;em&gt;is&lt;/em&gt; an outcome, I say. It's just a more subtle outcome.&lt;/p&gt;
+
+  &lt;p&gt;"It's not what happened," says Paul, "it's how our guy approached it."
+&lt;br /&gt;– page 146&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[…] meant little to the Oakland A's, who were forever looking for dirt-cheap opportunities to accept bad defense for an ability to get on base. One trick of theirs was to pound on a player just after he'd had what appeared to be a career-threatening injury. Billy Beane had a favorite saying, which he'd borrowed from the Wall Street investor Warren Buffet: the hardest thing to find is a good investment.
 &lt;br /&gt;– page 161&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -89,7 +93,7 @@ baseball team buys players who are undervalued by the rest of the league.&lt;/p&
 
 &lt;p&gt;Raw engineering skill does not necessarily correlate with revenue.&lt;/p&gt;
 
-&lt;p&gt;Many still try (and fail) to gauge engineering skill using whiteboard interviews. &lt;/p&gt;
+&lt;p&gt;Many still try (and fail) to gauge engineering skill using whiteboard interviews.&lt;/p&gt;
 
 &lt;p&gt;Another set of companies test engineering skill with live coding, pair programming, homework projects, and coding challenges.&lt;/p&gt;
 
@@ -174,14 +178,14 @@ least rough numbers. For people without past industry experience, the best we ca
 &lt;h3 id="what-increases-the-value-of-an-engineer"&gt;What increases the value of an engineer?&lt;/h3&gt;
 
 &lt;p&gt;Someone who has the same stats, but is from a historically underpaid group in
-tech, or who has work experience that no one else knows how to assess or value. This is why Matasano has such success with their CTFs*.&lt;/p&gt;
+tech, or who has work experience that no one else knows how to assess or value. This is why Matasano has such success with their CTFs.*&lt;/p&gt;
 
 &lt;h3 id="what-are-other-people-measuring"&gt;What are other people measuring?&lt;/h3&gt;
 
 &lt;p&gt;Some teams measure as part of how they lead/manage:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;I want everyone on my team to be able to go home confident they’ve done their job well, and not worry if I’ve just had a bad day. […] 
+  &lt;p&gt;I want everyone on my team to be able to go home confident they’ve done their job well, and not worry if I’ve just had a bad day. […]
 Our team pays attention to:&lt;/p&gt;
 
   &lt;ul&gt;
