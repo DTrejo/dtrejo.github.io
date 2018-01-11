@@ -5,10 +5,103 @@
   <id>https://dtrejo.com/</id>
   <link href="https://dtrejo.com/"/>
   <link href="https://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2018-01-11T04:55:00Z</updated>
+  <updated>2018-01-11T05:26:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>Everything You Should Do in the First 30 Days of a New Growth Engineering Job</title>
+    <link rel="alternate" href="https://dtrejo.com/30-days-as-a-growth-engineer.html"/>
+    <id>https://dtrejo.com//30-days-as-a-growth-engineer.html</id>
+    <published>2018-01-11T05:26:00Z</published>
+    <updated>2018-01-11T05:26:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;I’m going to lay out the things I did and wanted to do in the first 30 days of my growth engineering job at Credit Karma. I work on acquisition: getting us more traffic and more signups. My engineering work contributes to our efforts across SEO, conversation rate optimization, UX, and page speed optimization.&lt;/p&gt;
+
+&lt;p&gt;The following areas are important to me:&lt;/p&gt;
+
+&lt;p&gt;1) I wanted to gauge the amount of A/B testing and experimentation we've done across the key areas of the site. Neglected areas which are still in the conversion flow probably have easy conversion wins waiting for me.&lt;/p&gt;
+
+&lt;p&gt;2) I wanted to measure our copywriting skill and amount of copy testing, because as patio11&lt;sup&gt;⁂&lt;/sup&gt; points out, a good homepage headline can create a 20% site-wide lift.&lt;/p&gt;
+
+&lt;p&gt;3) I wanted to tap into the voice and exact words used by our members so that I can find good headlines and copy and understand their painful, expensive problems†. This gives me the background I need to read a page and know how well it connects, and what CTAs will resonate best.&lt;/p&gt;
+
+&lt;p&gt;4) I wanted to understand WTF people are actually doing on our site. What pages do they visit most. Where do they bounce. What pages are dead ends without a CTA. What pages load like molasses. What pages suck on mobile. What pages look like when logged out vs logged in. What personalization can be shown when logged out, to continue to achieve the goal of the page. What other proven conversion tactics can we steal from other parts of the site and easily reuse. Where does the “scent,” aka intent, of a conversion flow get confusing for members. Where do they put their trust in us the most, and how can we reassure them at these key moments or ask for less (sensitive) information. And so on.&lt;/p&gt;
+
+&lt;p&gt;And here’s how I’ve gone about figuring out the above.&lt;/p&gt;
+
+&lt;h2 id="finding-less-optimized-areas-of-the-conversion-flow"&gt;#1 Finding Less Optimized Areas of the Conversion Flow&lt;/h2&gt;
+&lt;p&gt;This is difficult because our particular team is on the newer side and we don’t have a well organized log of completed experiments, their results, and what parts of the site they were run on. Maybe if you use optimizely this would be easier to figure out.&lt;/p&gt;
+
+&lt;h2 id="gauging-copywriting-skill"&gt;#2 Gauging Copywriting Skill&lt;/h2&gt;
+&lt;p&gt;We have certain phrases that have certainly undergone testing in TV ads. I have noticed that we have very few tests for headlines or button copy. I sense we have a lot of wins waiting for us here :) I suspect that our paid revenue marketing teams have some great copy in their Facebook and Google ads, but I’ve yet to request access so I can read what they’re running.&lt;/p&gt;
+
+&lt;h2 id="understanding-how-our-members-talk-and-their-expensive-problems"&gt;#3 Understanding How Our Members Talk and Their Expensive Problems&lt;/h2&gt;
+&lt;p&gt;The best way to do this is with an Amy Hoy&lt;sup&gt;※&lt;/sup&gt; Sales Safari. Because I haven’t bought the course (yet) and I was feeling lazy, I just signed up for f5bot.com and set up keyword searches for Credit Karma and the names of our competitors to see what people are saying about us on Reddit/HN. You can also use littlebirdie for this. I also asked member support to give me access to any places where they post feedback from our members (for us that is the #all-the-feels channel and the #bad-iOS-reviews / #bad-android-reviews channels).&lt;/p&gt;
+
+&lt;p&gt;Of course I want more than that, but I haven’t been super focused on conversion copywriting and sales writing lately, so it hasn’t been the highest priority. I wish I had more good words from our members because we have a lot of different services and I feel I don’t understand people well enough yet (and I suspect my coworkers are in a similar boat).&lt;/p&gt;
+
+&lt;h1 id="figuring-out-wtf-people-are-doing-on-our-site"&gt;#4 Figuring out WTF People Are Doing on Our Site&lt;/h1&gt;
+&lt;p&gt;To accomplish this I did the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Used Google Analytics to identify the top 20 pages by total sessions&lt;/li&gt;
+  &lt;li&gt;For each page, I printed that page's…
+    &lt;ul&gt;
+      &lt;li&gt;Desktop authenticated appearance (with one of those full page screenshotting tools)&lt;/li&gt;
+      &lt;li&gt;Desktop unauthenticated appearance&lt;/li&gt;
+      &lt;li&gt;Google analytics behavior flow (play around with the settings because yours might not display right by default: make sure you've set it to "automatically group pages").&lt;/li&gt;
+      &lt;li&gt;Still TODO: mobile appearance&lt;/li&gt;
+      &lt;li&gt;Still TODO: lighthouse page speed performance stats while 3G throttled&lt;/li&gt;
+      &lt;li&gt;Labeled each printed screenshot with the traffic range (1-20)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I also printed out our registration flow and did the same&lt;/li&gt;
+  &lt;li&gt;I also printed the emails we send to rescue incomplete signups. And I also pointed out how many people are in this state. After three emails we send them nothing at all, when we could be sending emails to increase trust. Lots of improvement here too).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is very helpful because behavior flows tell you what pages someone visits before and after a page, as well as the dropoff rate. So you can get a high level feel for what people are doing.&lt;/p&gt;
+
+&lt;p&gt;I put all of these printouts on one of our large whiteboard walls. While giving people a tour of the wall and discussing it with coworkers, we found a lot of improvements to be made. We still have tests to run to see whether the improvements create lift. There are some that will create lifts with 100% certainty, such as adding a call to action at the end of a page that lacks one :)&lt;/p&gt;
+
+&lt;p&gt;I have yet to make a more exhaustive list of tests to run, and prioritize them. But I'm sure we'll get to it eventually.&lt;/p&gt;
+
+&lt;p&gt;I'd highly recommend this one for any growth team, because it gives you all shared context and lets you really SEE your site again. Looking at your site on a screen just shuts down your brain. Also, you likely don't frequently visit many of the top pages and flows that drive your business.&lt;/p&gt;
+
+&lt;h2 id="bonus-make-yourself-a-model-to-translate-your-top-metrics-into-revenue-numbers"&gt;Bonus: Make Yourself a Model to Translate Your Top Metrics into Revenue Numbers!&lt;/h2&gt;
+
+&lt;p&gt;Someone on our team made a spreadsheet where you can plug in an incremental lift to any of the following metrics and it will spit out a revenue lift. I'd highly recommend you make one of these for yourself because it makes
+back-of-the-napkin impact sizing MUCH easier. &lt;/p&gt;
+
+&lt;p&gt;Here's what we can easily convert to revenue:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;New signups&lt;/li&gt;
+  &lt;li&gt;Returning member logins&lt;/li&gt;
+  &lt;li&gt;Revenue (duh)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="here-are-the-tactical-things-ive-been-doing-that-have-contributed-to-my-productivity-and-overall-happiness"&gt;Here Are the Tactical Things I've Been Doing That Have Contributed to My Productivity and Overall Happiness:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Have an expensive problem-style "why" conversation with the person who wants the project to happen, before writing any code. This lays out the business motivations of the project and helps you explore the solution-space for something satisfactory, rather than the PERFECT solution which would take forever to build.&lt;/li&gt;
+  &lt;li&gt;Size the expected impact of the project: +revenue, +signups, hours of saved, etc. This helps you prioritize and helps you guard your project and continue to invest in it. When you know it would be worth it to work on your project for a year, you’ll be able to defend continued investment even if factors outside your control delay or slow down your project.&lt;/li&gt;
+  &lt;li&gt;Wherever possible, I try to ship as soon as possible and cut scope as much as necessary to make this happen. Code in production is worth infinitely more than code langouring in a branch, picked over by code reviews (as patio11 also says). &lt;/li&gt;
+  &lt;li&gt;Is it 80% done / good enough? Ship it. This isn't my advice, this is advice from my friend who founded three profitable bootstrapped businesses and exited two of them :) It works.&lt;/li&gt;
+  &lt;li&gt;I always, always, go talk to people in person if I have more than a few words to say over slack. You can't solve across the whole solution-space if you haven't given the other person complete knowledge of what you're trying to accomplish. Make sure to mention the words "experiment" and "prototype," so they give you the easy routes too. Also, ask if anyone else at the company is already using the API they suggest you use. You don't want to be on the bleeding edge of technology: boring technology&lt;sup&gt;‡&lt;/sup&gt; is the way to go.&lt;/li&gt;
+  &lt;li&gt;Whenever I need a code review: immediately slack message everyone who I need approvals from. Or even stop by their desk if I know the review is a doozy (I do try to keep my PRs under 50 insertions though–Dan McKinley: I was listening!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Good luck out there, may your tests win! &lt;br /&gt;
+David Trejo&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;⁂&lt;/sup&gt; &lt;a href="http://www.kalzumeus.com/"&gt;http://www.kalzumeus.com/&lt;/a&gt; &lt;br /&gt;
+† &lt;a href="https://ExpensiveProblem.com"&gt;https://ExpensiveProblem.com&lt;/a&gt; &lt;br /&gt;
+&lt;sup&gt;※&lt;/sup&gt; &lt;a href="http://yearofhustle.com/"&gt;http://yearofhustle.com/&lt;/a&gt;&lt;br /&gt;
+&lt;sup&gt;‡&lt;/sup&gt; &lt;a href="http://mcfunley.com/choose-boring-technology"&gt;http://mcfunley.com/choose-boring-technology&lt;/a&gt;  &lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>How to Hustle on Your Referrals So They Actually Get Hired</title>
     <link rel="alternate" href="https://dtrejo.com/referrals.html"/>
@@ -77,7 +170,7 @@ $yourName
   &lt;li&gt;💫 Ask your friend to ping you if 1) you haven’t updated them in 2 days, or, 2) the other people in the company haven’t gotten back to them in 2 days. If you really wanted to hustle and be quick, you could do 1 day. Make sure your referral has your number so they can text or call you, which is way easier and better than having them email you.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id="for-quicker-turnaround"&gt;For quicker turnaround…&lt;/h2&gt;
+&lt;h2 id="for-quicker-turnaround"&gt;For Quicker Turnaround…&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;💫 Always always always, even if you feel it may be a bit inconsiderate, visit the desk of the recruiter or hiring manager to talk with them. You will get better, faster, more thorough answers to your questions. And they will thank you for it, because this is how they operate (unlike us engineers, they don’t mind interruptions).&lt;/li&gt;
 &lt;/ul&gt;
@@ -665,52 +758,6 @@ David&lt;/p&gt;
 &lt;p&gt;† Boring Technology, for example &lt;a href="http://mcfunley.com/choose-boring-technology"&gt;Choose Boring Technology&lt;/a&gt; &lt;a href="http://mcfunley.com/choose-boring-technology-slides"&gt;(slides)&lt;/a&gt; by Dan McKinley, Founder at Skyliner;
 &lt;a href="https://www.slideshare.net/dianachow/marty-weiner-reddit-cto-sxswi-2016-everythings-harder-at-scale/1"&gt;"The boring tech revolution is here"&lt;/a&gt; by Reddit CTO Marty Weiner;
 &lt;a href="https://github.com/yoshuawuyts/tiny-guide-to-non-fancy-node"&gt;Non-fancy Node&lt;/a&gt; by Yoshua Wuyts, author of 372 node modules.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Why share salary?</title>
-    <link rel="alternate" href="https://dtrejo.com/why-share-salary.html"/>
-    <id>https://dtrejo.com//why-share-salary.html</id>
-    <published>2017-04-12T18:53:00Z</published>
-    <updated>2017-04-12T18:53:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;Sharing salary ranges for engineering positions is delicate. You don't want
-candidates to see the top end of the range and think that they left money on the
-table. This creates awkwardness and unmet expectations. You also don't want
-current engineers to feel they are being underpaid, making them ask for a raise.&lt;/p&gt;
-
-&lt;h2 id="sharing-salary-ranges-is-beneficial-because"&gt;Sharing salary ranges is beneficial because…&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Job posts with salary get 75% more clicks than those that don't.&lt;sup&gt;†&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;Engineers will love you for it, which means way more applicants.&lt;/li&gt;
-  &lt;li&gt;You won't waste thousands of dollars on interviews with candidates who you can't afford.&lt;/li&gt;
-  &lt;li&gt;You differentiate yourself from underpaying employers and the legion of shitty startups (there's way more of these than you realize). You might think that in today's climate, no respectable startup would lowball solid candidates. Your candidates have no idea whether you're respectable. The burden is on you to demonstrate respectability.&lt;/li&gt;
-  &lt;li&gt;Sharing salary is "you-focused." If you appear selfish and only talk about what your company needs, everyone will tune out. Readers only care about themselves.&lt;/li&gt;
-  &lt;li&gt;You won't melt into the sea of recruiter emails which almost never have salary information.&lt;/li&gt;
-  &lt;li&gt;You catch the attention of undervalued engineers who are great at what they do.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You may already be publishing salary ranges to some job sites, so you might as
-well share the range on your site as well.&lt;/p&gt;
-
-&lt;h2 id="youre-still-hesitant-about-sharing-salary-bands"&gt;You're still hesitant about sharing salary bands…&lt;/h2&gt;
-&lt;p&gt;Here are some options to reduce risk.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;List a few salary ranges so it's clear you're hiring junior/mid/senior people. This way, the junior person won't expect to earn at the top end of the range.&lt;/li&gt;
-  &lt;li&gt;Test it: run two identical job descriptions, one with a salary range and one without. See which gets more applicants and interest.&lt;/li&gt;
-  &lt;li&gt;List only the bottom end of the range. Listing only the minimum could backfire because people may expect you to pay only +$20,000.00 USD above the minimum.&lt;/li&gt;
-  &lt;li&gt;Do compensation research to learn about what the market pays. Work the numbers backwards from how much revenue you want them to make you (for this, I made you &lt;a href="https://EngineerWorth.com"&gt;EngineerWorth.com&lt;/a&gt;). When you have a solid business case for the hire, you'll feel good about the range you end up sharing.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;What's stopping you from sharing salary ranges? Email me and tell me: david åt dtrejo dot com.&lt;/p&gt;
-
-&lt;p&gt;Best,&lt;br /&gt;
-David&lt;/p&gt;
-
-&lt;p&gt;† &lt;a href="https://blog.stackoverflow.com/2016/07/salary-transparency/"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
