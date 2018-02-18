@@ -5,10 +5,62 @@
   <id>https://dtrejo.com/</id>
   <link href="https://dtrejo.com/"/>
   <link href="https://dtrejo.com/feed.xml" rel="self"/>
-  <updated>2018-01-11T05:26:00Z</updated>
+  <updated>2018-02-18T01:02:00Z</updated>
   <author>
     <name>DTrejo</name>
   </author>
+  <entry>
+    <title>How Do You Transition from Rails Lead Engineer to Growth Engineer?</title>
+    <link rel="alternate" href="https://dtrejo.com/how-do-you-transition-from-rails-lead-engineer-to-growth-engineer.html"/>
+    <id>https://dtrejo.com//how-do-you-transition-from-rails-lead-engineer-to-growth-engineer.html</id>
+    <published>2018-02-18T01:02:00Z</published>
+    <updated>2018-02-18T01:02:00Z</updated>
+    <author>
+      <name>DTrejo</name>
+    </author>
+    <content type="html">&lt;p&gt;Timothy Johnson* asks:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;"I've recently come across the "growth" hacker" designation and am wondering how to make the transition to work in this capacity at a startup?"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I just did this transition, from engineer/consultant to growth engineer at Credit Karma. What worked for me was focusing specifically on interviewing for growth engineering positions. I also focused heavily on my personal criteria for a company with big opportunity: profitable; &amp;gt;50 engineers; ideally B2B; some amount of React and Node; based in San Francisco.&lt;/p&gt;
+
+&lt;p&gt;The easiest way to find a company like this is to ask all your friends. Alternatively,&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Search for growth engineering meetups and conferences&lt;/li&gt;
+  &lt;li&gt;Make a list of all companies who speak there or attend or advertise there&lt;/li&gt;
+  &lt;li&gt;Filter by your criteria&lt;/li&gt;
+  &lt;li&gt;Contact your friends at those companies&lt;/li&gt;
+  &lt;li&gt;If you need to cold contact a company and there aren't any growth engineers who work there on linkedin, target your emails in this order: CEO, CTO, CMO, VP of Engineering, VP of Marketing. They'll be very happy to hear from you because finding growth engineers is very difficult.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id="but-how-do-i-transition-while-staying-at-my-current-job"&gt;But how do I transition while staying at my current job?&lt;/h2&gt;
+
+&lt;p&gt;In that case I'd recommend you pick a growth project you think will have large impact for your current company (or ask a marketer, or ask your manager). Put on your business-person hat and think about all the ways it might help the company. Take your best guesses or give a range for…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Increases to revenue&lt;/li&gt;
+  &lt;li&gt;Increases to signups&lt;/li&gt;
+  &lt;li&gt;Increases to traffic&lt;/li&gt;
+  &lt;li&gt;Time saved for your customers, your team&lt;/li&gt;
+  &lt;li&gt;Reduced pain for your customers, your team&lt;/li&gt;
+  &lt;li&gt;Amount of engineering time it'd take you (smaller projects are better)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then bring the rough sizing of the project back to your manager, and see if you can prioritize the project to be worked on next. If they shoot that idea down, ask them how they'd feel about you working on it during your downtime, when you wouldn't be making progress on your main project anyway.&lt;/p&gt;
+
+&lt;p&gt;Good luck!&lt;br /&gt;
+David&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Questions?&lt;/strong&gt; Send me an email: david ått dtrejo.com&lt;br /&gt;
+&lt;strong&gt;Want to be a growth engineer?&lt;/strong&gt; My company is hiring, email me :)&lt;br /&gt;
+&lt;strong&gt;Want to hire me?&lt;/strong&gt; Let's talk, I might even try to recruit you!  &lt;/p&gt;
+
+&lt;p&gt;* &lt;a href="https://growthhackers.com/articles/why-its-impossible-to-hire-good-growth-engineers/#comment-10660"&gt;Timothy Johnson's comment on "Growth Hackers: Why It's Impossible to Hire Good Growth Engineers"&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Everything You Should Do in the First 30 Days of a New Growth Engineering Job</title>
     <link rel="alternate" href="https://dtrejo.com/30-days-as-a-growth-engineer.html"/>
@@ -676,88 +728,6 @@ david ått dtrejo.com&lt;/p&gt;
 
 &lt;p&gt;PS I've just finished reading Moneyball, which is about how the Oakland A's baseball team bought great players even with very little money. I'll be sending out a book review of it in the next couple days, along with a section on how it applies to engineering hiring (so you can hire better engineers for less).&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>How to Reliably Get Your Team to Write Articles for Your Engineering Blog</title>
-    <link rel="alternate" href="https://dtrejo.com/how-to-reliably-get-your-team-to-write-articles-for-your-engineering-blog.html"/>
-    <id>https://dtrejo.com//how-to-reliably-get-your-team-to-write-articles-for-your-engineering-blog.html</id>
-    <published>2017-04-23T21:54:00Z</published>
-    <updated>2017-04-23T21:54:00Z</updated>
-    <author>
-      <name>DTrejo</name>
-    </author>
-    <content type="html">&lt;p&gt;You probably already know why it's so helpful to have your team write
-engineering articles:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;They're massively useful for recruiting, even if only a few people read them&lt;/li&gt;
-  &lt;li&gt;If many people read your articles, you'll get tons more applicants&lt;/li&gt;
-  &lt;li&gt;If you sell to developers, your articles create trust and lead to more
-  sales, on top of the above&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id="how-do-you-get-an-engineer-to-write-an-article"&gt;How do you get an engineer to write an article?&lt;/h2&gt;
-
-&lt;p&gt;You don't. Instead you ask them over email:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;"How does X work?"&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This tip is from &lt;a href="https://twitter.com/melindakjacobs"&gt;Melinda Jacobs&lt;/a&gt;, CEO of
-&lt;a href="https://www.lucentsky.com/"&gt;Lucent Sky&lt;/a&gt;. Her company automatically finds
-vulnerabilities in your code and fixes many of them (which is
-great for banks who have so many vulnerabilities that their security teams can't
-possibly fix them all manually &lt;code&gt;:)&lt;/code&gt;. Thanks Melinda!&lt;/p&gt;
-
-&lt;p&gt;Now, ask an engineer on your team and you'll get a detailed explanation of how some
-part of your product works.  If you &lt;strong&gt;&lt;em&gt;know&lt;/em&gt;&lt;/strong&gt; they left out something impressive, ask
-again after their initial answer:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;"I was really impressed with your work on Y, can you explain how that works too?"&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Then you take their answers, &lt;a href="https://dtrejo.com/how-to-write-consistently-painlessly-and-without-writers-block.html#when-youre-ready-to-start-editing-these-writing-tools-will-come-in-handy"&gt;edit them with these tips&lt;/a&gt;,
-run it by them to see if they have any suggestions, and publish. If
-you're an engineer like me, I'd recommend you don't let them make the edits
-themselves–they may get hung up on them. Instead ask them for feedback over email
-or in a quick read-through and make the changes for them.&lt;/p&gt;
-
-&lt;p&gt;It's up to you to make remember to ask your team to write articles after they
-finish interesting projects. Remember, to an outsider, boring projects can be
-just as interesting because they demonstrate mature, boring
-technology&lt;sup&gt;†&lt;/sup&gt;. Projects with large business impact are also very
-interesting, especially to engineers who care about business results.&lt;/p&gt;
-
-&lt;p&gt;Take a minute right now to add a link to this article in your sprint
-retrospectives (or planning cycle retrospectives). Otherwise you may forget to
-put this advice into practice.&lt;/p&gt;
-
-&lt;h2 id="a-published-article-is-worth-more-than-1000-unpublished-articles"&gt;A published article is worth more than 1,000 unpublished articles&lt;/h2&gt;
-
-&lt;p&gt;Work on the article until you're 80% happy with it, then publish it. If you're
-being ruthless with yourself, one hour total invested in the article is a
-reasonable timeline. If you have extreme difficulty with a particular sentence,
-the easiest way to fix it is to delete it &lt;code&gt;:)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id="why-does-melindas-method-work-well"&gt;Why does Melinda's method work well?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;People write emails in complete sentences&lt;/li&gt;
-  &lt;li&gt;People write like they speak, meaning it reads more naturally&lt;/li&gt;
-  &lt;li&gt;People rarely have writer's block when it comes to explaining things to coworkers&lt;/li&gt;
-  &lt;li&gt;People love to be recognized for their work&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That's it, good luck!&lt;br /&gt;
-David&lt;/p&gt;
-
-&lt;p&gt;PS Do you have an engineering hiring tip you'd like me write up? Email me: david att dtrejo dot com.&lt;/p&gt;
-
-&lt;p&gt;† Boring Technology, for example &lt;a href="http://mcfunley.com/choose-boring-technology"&gt;Choose Boring Technology&lt;/a&gt; &lt;a href="http://mcfunley.com/choose-boring-technology-slides"&gt;(slides)&lt;/a&gt; by Dan McKinley, Founder at Skyliner;
-&lt;a href="https://www.slideshare.net/dianachow/marty-weiner-reddit-cto-sxswi-2016-everythings-harder-at-scale/1"&gt;"The boring tech revolution is here"&lt;/a&gt; by Reddit CTO Marty Weiner;
-&lt;a href="https://github.com/yoshuawuyts/tiny-guide-to-non-fancy-node"&gt;Non-fancy Node&lt;/a&gt; by Yoshua Wuyts, author of 372 node modules.&lt;/p&gt;
 </content>
   </entry>
 </feed>
