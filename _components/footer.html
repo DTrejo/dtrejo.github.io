@@ -1,0 +1,69 @@
+<div id="footer" class="footer mt5 pt5 pb4">
+<div class="mw7 ph2 center">
+  <h3>Hiring Engineers? You'll like these articles</h3>
+  ${''/* TODO simplify; try to use components the same everywhere, via require?
+    or a custom version of require e.g. the existing template function just with
+    caching
+  */}
+  ${this.require('./_components/articles.js')(this.pages, 'hiring')}
+
+  <h3>Growth Engineering Articles</h3>
+  ${this.require('./_components/articles.js')(this.pages, 'growth')}
+
+  <h3>How to...</h3>
+  ${this.require('./_components/articles.js')(this.pages, 'howto', 'archived, hiring, growth, git, nodejs')}
+
+  <h3>Node.js</h3>
+  ${this.require('./_components/articles.js')(this.pages, 'nodejs', 'archived, hiring, growth')}
+
+  <h3>Git</h3>
+  ${this.require('./_components/articles.js')(this.pages, 'git', 'archived, hiring, growth, nodejs')}
+
+  <h3>Top Projects</h3>
+  <ul>
+  <li>
+    <a href="https://EngineerWorth.com">EngineerWorth.com</a> Is that
+    product feature worth coding? Run a quick ROI calculation and find out.
+  </li>
+  <li>
+    <a href="/qlock/qlock.html">jQuery Qlock2</a> Tell time with this $800 clock, for free.
+  </li>
+  <li>
+    <a href="/colorslice/">ColorSlice</a>
+    Wish it were easier to steal and create color schemes?
+    Colorslice helps front-end developers <span class="amp">&amp;</span>
+    designers with color.
+  </li>
+  <li>
+    <a href="/colorpreview/">ColorPreview</a>
+    Vet color combinations and pick only the ones with enough contrast,
+    that your eye finds pleasing.
+  </li>
+  <li>
+    <a href="/lazytemplating/">Lazy Templating</a>
+    What if you could do HTML templating using a spreadsheet? Now you
+  can.
+  </li>
+  <li>
+    <a href="http://github.com/DTrejo/ampline">Ampline</a>
+    Tired of copy-pasting or tab-completing long file paths? Accelerate yourself
+  on the command-line.
+  </li>
+  </ul>
+
+  <h4><a href="/archived.html">Archived</a></h4>
+
+  <h3>Find me</h3>
+  <ul>
+  <li><a href="https://github.com/DTrejo">Github</a></li>
+  <li><a href="https://twitter.com/ddtrejo">Twitter</a></li>
+  <li>
+    ${this.compiled.email}
+  </li>
+  </ul>
+
+  <div>
+    Copyright © 2009-${(new Date()).getFullYear()} David Trejo
+  </div>
+</div>
+</div>

@@ -1,0 +1,19 @@
+{
+  "name": "blah",
+  "version": "1.0.0",
+  "description": "Generate a site from markdown files and _layout.html",
+  "main": "blah.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node blah.js",
+    "deploy": "./_deploy.sh"
+  },
+  "author": "David Trejo",
+  "license": "ISC",
+  "dependencies": {
+    "gray-matter": "^4.0.1",
+    "marked": "^0.4.0",
+    "prismjs": "^1.15.0",
+    "shelljs": "^0.8.2"
+  }
+}
