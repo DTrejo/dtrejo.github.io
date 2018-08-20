@@ -35,11 +35,11 @@ jobs:
 
       # run tests!
       - deploy:
-        name: Build, Deploy, & Release to Github
-        command: |
-          if [ $CIRCLE_BRANCH == 'develop' ]; then
-            npm run deploy
-          fi
+          name: Build, Deploy, & Release to Github
+          command: |
+            if [ $CIRCLE_BRANCH == 'develop' ]; then
+              npm run deploy
+            fi
 workflows:
   version: 2
   build:
