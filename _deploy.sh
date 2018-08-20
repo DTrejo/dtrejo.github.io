@@ -10,7 +10,7 @@ npm run build
 cd ./dist
 
 git init
-# git config core.sshCommand 'ssh -i ~/.ssh/id_rsa -F /dev/null'
+git config core.sshCommand 'ssh -i ~/.ssh/id_rsa -F /dev/null'
 git config github.user = "DTrejo"
 git config user.name "DTrejo"
 git config user.email "david.daniel.trejo@gmail.com"

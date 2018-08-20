@@ -38,7 +38,26 @@ jobs:
           name: Build, Deploy, & Release to Github
           command: |
             if [ $CIRCLE_BRANCH == 'develop' ]; then
-              npm run deploy
+              # abort on errors
+              set -e
+
+              # build
+              npm run build
+
+              # navigate into the build output directory
+              cd ./dist
+
+              git init
+              # git config core.sshCommand 'ssh -i ~/.ssh/id_rsa -F /dev/null'
+              git config github.user = "DTrejo"
+              git config user.name "DTrejo"
+              git config user.email "david.daniel.trejo@gmail.com"
+              git add -A
+              git commit -m 'deploy'
+
+              # if you are deploying to https://<USERNAME>.github.io
+              git push -q -f ${DTREJO_GITHUB_IO_ACCESS_TOKEN}@github.com:dtrejo/dtrejo.github.io.git master
+              cd -
             fi
 workflows:
   version: 2
