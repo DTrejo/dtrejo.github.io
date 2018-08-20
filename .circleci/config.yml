@@ -34,5 +34,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: npm run build
-      - run: npm run deploy
+      deploy:
+        name: Build, Deploy, & Release to Github
+        command: |
+          if [ $CIRCLE_BRANCH == 'develop' ]; then
+            npm run deploy
+          fi
