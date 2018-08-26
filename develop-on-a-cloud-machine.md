@@ -24,7 +24,7 @@ I found rsync to be the most straightforward. Back at Voxer, CJ Silverio, now th
 
 Using our this script, which we call `pushuat`, we are able to develop at least 3x faster than in a local VM. We even see 10x+ development speed improvements for some parts of the codebase, where it is practically impossible to make changes because the app is so glacial & resource intensive.
 
-[more writing coming soon! please wait :) ]
+[more writing coming soon! please wait :) !!! ]
 
 Thanks in advance,  
 _David Trejo_  
