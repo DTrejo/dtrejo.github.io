@@ -39,7 +39,7 @@ I personally only need one development environment at any given moment. When it 
 
 Based on my meetings with the team that maintains the build process for the AWS machines, it is worth it for them too. After my talk at our engineering summit, we had so many new machines spun up that we ran out of our IP range. Thankfully, they opened up more IPs for us :)
 
-From a developer experience perspective, they’ve made the process of requesting a new machine very smooth. You visit a shortlink, enter a few parameters into a jenkins build, and then wait for an email saying your machhine is ready. They’ve done a great job on this.
+From a developer experience perspective, they’ve made the process of requesting a new machine very smooth. You visit a shortlink, enter a few parameters into a jenkins build, and then wait for an email saying your machine is ready. They’ve done a great job on this.
 
 That’s all for now—I highly recommend you try working on a cloud machine. Email if you have questions :)
 
