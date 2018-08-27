@@ -9,4 +9,4 @@ test
 
 Thanks in advance,  
 _David Trejo_  
-<Email/>
+${this.email || ''}

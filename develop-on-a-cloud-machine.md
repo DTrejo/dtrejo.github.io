@@ -45,4 +45,4 @@ That’s all for now—I highly recommend you try working on a cloud machine. Em
 
 Cheers,  
 _David Trejo_  
-<Email/>
+${this.email || ''}
