@@ -8,7 +8,7 @@ tags: howto, git
 
 I'm a full stack growth engineer at Credit Karma, and my team has recently made some changes to how we work, and I wanted to share how positive the results have been.
 
-We’ve found that doing our development work on AWS machines is much faster than working locally, especially for projects which involve our monolithic PHP application.
+We’ve found that doing our development work on AWS machines is much faster than working locally, especially for projects that involve our monolithic PHP application.
 
 For us, developing on AWS machines is better than developing in a local VM, but it depends on the size of your company and how much memory/CPU your app needs.
 
