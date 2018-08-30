@@ -30,7 +30,7 @@ I’m planning to open source the script and I hope to link to it soon. The scri
 
 Here are a few of the symptoms you and your team should watch out for, to tip you towards working on cloud machines:
 
-- It take 15+ seconds for certain page loads (due to the constrained resources of your VM & laptop)
+- It takes 15+ seconds for certain page loads (due to the constrained resources of your VM & laptop)
 - You frequently lose your place or get interrupted during complex testing flows, and forget where you were
 - You find yourself budgeting for local VM breakages in your feature estimates
 
