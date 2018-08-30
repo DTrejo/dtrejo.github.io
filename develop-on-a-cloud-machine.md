@@ -6,7 +6,7 @@ tags: howto, git
 ---
 # ${this.title}
 
-I'm a full stack growth engineer at Credit Karma, and my team has recently made some changes to how we work, and I wanted to share how positive the results have been.
+I'm a full stack growth engineer at Credit Karma. My team has recently made some changes to how we work, so I wanted to share how positive the results have been.
 
 We’ve found that doing our development work on AWS machines is much faster than working locally, especially for projects that involve our monolithic PHP application.
 
