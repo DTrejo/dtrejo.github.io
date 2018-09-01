@@ -114,6 +114,10 @@ function md(f) {
   //     return l('skip md', f, d)
   // }
 
+  if (data.title && f !== 'index.md') {
+    data.ogImage = socialImage(data.href)
+  }
+
   // TODO components need to go in AFTER markdown processing, so their HTML
   // doesn't get messed up :/ ??? Or is that a feature???
   const componentScope = { require, pages, ...data }
@@ -241,6 +245,15 @@ function runComponents(scope) {
   for (let c in components) compiled[c] = components[c]({ compiled, ...scope })
   // for (let c in components) compiled[c] = components[c](scope)
   return compiled
+}
+
+// Given canonical URL, use the imgix motif to create a social image for embeds
+function socialImage(href) {
+  const backgroundImage = 'https://images.unsplash.com/photo-1515951834549-4172b316de7e?fit=crop&h=630&w=1200&txt=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20By%20David%20Trejo%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20DTrejo.com&txtclr=fff&txtsize=40&txtfont=Avenir%20Next%20Demi%20Bold&txtalign=left%2Cbottom&txtpad=150'
+  const logo = 'https://dtrejo.com/images/dtrejo-round.png?a'
+  const ogImage =
+    `https://motif.imgix.com/i?url=${encodeURIComponent(href)}&image_url=${encodeURIComponent(backgroundImage)}&color=&logo_url=${encodeURIComponent(logo)}&logo_alignment=bottom%2Cleft&text_alignment=top%2Cleft&logo_padding=80&font_family=Avenir%20Next%20Demi%2CBold&text_color=dcd9d6`
+  return ogImage
 }
 
 // things we want to do
