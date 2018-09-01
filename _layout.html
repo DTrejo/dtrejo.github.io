@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>${this.title || ''}</title>
+  <meta itemprop="name" content="${this.title || ''}">
+  <meta name="og:title" content="${this.title || ''}">
   <link rel="icon" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   ${this.description
     ? '<meta name="description" content="' + this.description + '">'
     : ''
   }
+  ${this.description
+    ? '<meta itemprop="description" content="' + this.description + '">'
+    : ''
+  }
+  ${this.description
+    ? '<meta name="og:description" content="' + this.description + '">'
+    : ''
+  }
   ${this.href
     ? '<link rel="canonical" href=' + JSON.stringify(this.href) + '>'
+    : ''
+  }
+  ${this.href
+    ? '<meta name="og:url" content=' + JSON.stringify(this.href) + '>'
     : ''
   }
   ${this.ogImage
     ? '<meta property="og:image" content="'+ this.ogImage + '"/>'
     : ''
+  }
+  ${this.ogImage
+    ? '<meta name="og:type" content="article">'
+    : '<meta name="og:type" content="website">'
   }
   ${''/* https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css */}
   <link rel="stylesheet" href="/css/tachyons.min.css" />
