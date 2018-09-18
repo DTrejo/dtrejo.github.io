@@ -8,7 +8,7 @@ tags: howto, weight lifting
 Here’s how I got started with weightlifting in just 2 years ;) As I write this, it’s been a little over a year, and I still enjoy it a lot.
 
 ## Step by Step
-1. I watched tens of videos on the Starting Strength channel
+1. I watched tons of videos on the Starting Strength YouTube channel
 2. Did my own non-weightlifting workouts at home, and felt a bit better, but still felt that my body and strength overall were on a slow decline
 3. Went to the climbing gym regularly, but not enough
 4. Started a new job where I felt I ready to invest in my physical growth
