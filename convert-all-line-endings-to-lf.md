@@ -20,7 +20,7 @@ And then use it:
 dos2unix filetoconvert.js
 ```
 
-Or if there are many offending files:
+## To fix all line endings in many files...
 
 ```bash
 find path/to/bad/files/ | xargs dos2unix
