@@ -11,7 +11,7 @@ Here’s how I got started with weightlifting in just 2 years ;) As I write this
 1. I watched tons of videos on the Starting Strength YouTube channel
 2. Did my own non-weightlifting workouts at home, and felt a bit better, but still felt that my body and strength overall were on a slow decline
 3. Went to the climbing gym regularly, but not enough
-4. Started a new job where I felt I ready to invest in my physical growth
+4. Started a new job where I felt I was ready to invest in my physical growth
 5. Went to the gym with my friend Devin Finzer who showed me around and helped me feel more comfortable there, and signed up
 6. Continued going every M W F in the morning, and made sure I slept early the night before
 
