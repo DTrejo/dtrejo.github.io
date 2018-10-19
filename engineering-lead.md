@@ -20,6 +20,7 @@ The way the team lead uses these lists, is that for every new project, they make
 - Review each checklist executed by teammates with respective teammate to gain shared understanding on how they will help. Ask them to create their own checklist ahead of time, so they thought about their work and feel less pressured to simply day “yes.” 
 - Meet with the managers of new teammates and/or ask said teammates how they like working together best
 - Ask yourself whether you or your team or company have trouble investing the right amount to really finish projects you start. If the answer feels like a “yes”, these checklists are for you: you need to communicate the investment needed in the project otherwise management may become antsy and interrupt you, because they didn’t make an investment decision knowing it would take as much effort as it does.
+- As much as possible, get you and your team close to the business reasons for the project. You need to fully understand the problem to choose the least wasteful solution. This also means you should try and get your designer and/or analyst and/or business person to sit with you and your engineers.
 - Start working through your project’s estimation checklist
 
 ## Estimation checklist
@@ -38,6 +39,7 @@ The way the team lead uses these lists, is that for every new project, they make
 - Ask for a similar plan document for their portion of the project if you didn’t already write it (you should lean towards NOT writing it yourself if you can)
 - Copy any other relevant estimation checklist items here
 - Share updates with your team lead daily on your progress
+- If working with a designer, have them sit next to you and discuss how you will work together. Use this [article on prototyping](https://dtrejo.com/chaos-in-your-product-prototyping) so you’re both on tbe same page.
 
 ## Pull request checklist 
 - TODO based on checklists I’ve written for myself in the past, and

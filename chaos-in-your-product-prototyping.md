@@ -42,7 +42,7 @@ undergone enough feedback from users? Is it at a high-enough fidelity? Will the
 design change drastically soon? Is there a major flaw that won't be noticed
 until it gets coded up? These are difficult questions to answer–I'll outline a
 full flow, and then I'll outline an "ideal" flow that might help us move faster
-on future designs. Having this conversation with Alex (designer of the project)
+on future designs. Having this conversation with Alex (the designer on the project)
 was very helpful for us.
 
 Each bolded step includes some feedback from the Engineer, if needed. And
