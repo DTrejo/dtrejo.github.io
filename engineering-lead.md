@@ -7,7 +7,7 @@ tags: howto, growth
 
 Let’s say that our definition of engineering lead is someone who can lead an engineering project that spans multiple engineers/teams/months.
 
-This article attempts to describe  how to replicate the decision making processes that a smart/lean engineering team lead would want from their coworkers.
+This article attempts to describe  how to replicate the decision making processes that a lean-ish engineering team lead would want from their coworkers.
 
 
 The way the team lead uses these lists, is that for every new project, they make a copy of the lists and then whenever the list is being executed by another person, they review it together to add/delete/reword items so that the person agrees and understands the work requested of them. Ideally this helps people feel they have decision-making power on their own work, and aren’t blindly executing.
