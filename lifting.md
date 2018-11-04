@@ -14,13 +14,15 @@ Here’s how I got started with weightlifting in just 2 years ;) As I write this
 - You start feeling the results and back strength and seeing new muscles within a month (at least for me)
 - Lifting is proven and sustainable long term—you can start no matter your age with just a modified program
 
-## Step by Step
+## How I Started, Step by Step
 1. I watched tons of videos on the Starting Strength YouTube channel
 2. Did my own non-weightlifting workouts at home, and felt a bit better, but still felt that my body and strength overall were on a slow decline
 3. Went to the climbing gym regularly, but not enough
 4. Started a new job where I felt I was ready to invest in my physical growth
 5. Went to the gym with my friend Devin Finzer who showed me around and helped me feel more comfortable there, and signed up
 6. Continued going every M W F in the morning, and made sure I slept early the night before
+
+Hopefully you can skip steps 1-4 by reading this article. Creating habit changes in your life is really difficult, so don't be hard on yourself at any point in your 720+ day journey.
 
 ## “What do I do? Where can I find form videos?”
 
@@ -38,7 +40,7 @@ Form videos, check 'em out:
 - Very detailed: The Deadlift Teaching Method with Niki Sims
 https://youtu.be/BOfdUFenqws 
 
-## Lifting is for Women too
+## Lifting Is for Women Too
 - Doing the program and losing weight with Crystal Riner | Starting Strength Podcast
 https://www.youtube.com/watch?v=LwdyKMLfEfw   
   Video of woman who used to weigh a lot but is very fit now. She is now more fit than her identical sister, who weighs **less** than her but whose clothes are way larger (because muscle weighs more than fat).
