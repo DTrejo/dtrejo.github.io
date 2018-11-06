@@ -5,7 +5,7 @@ tags: howto, growth
 ---
 # ${this.title}
 
-This article attempts to describe  how to replicate the decision making processes that a lean-ish engineering team lead would make, along with how they’d want their coworkers to help. 
+This article attempts to describe  how to replicate the decision making processes that a lean-ish engineering team lead would make, along with how they’d want their coworkers to help.
 
 Let’s say that our definition of engineering lead is someone who leads an engineering project that spans multiple engineers/teams/months.
 
