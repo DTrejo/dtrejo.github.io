@@ -21,6 +21,7 @@ Please note these checklists are very specific to Credit Karma—you’d definit
 - Meet with the managers of new teammates and/or ask said teammates how they like working together best
 - Ask yourself whether you or your team or company have trouble investing the right amount to really finish projects you start. If the answer feels like a “yes”, these checklists are for you: you need to communicate the investment needed in the project otherwise management may become antsy and interrupt you, because they didn’t make an investment decision knowing it would take as much effort as it does.
 - As much as possible, get you and your team close to the business reasons for the project. You need to fully understand the problem to choose the least wasteful solution. This also means you should try and get your designer and/or analyst and/or business person to sit with you and your engineers.
+- If this is a multi-part project that will be involve another team later, make efforts to involve them right away, find their point person, and plan holistically, all the way to the end of their part of the work. This may reveal hidden work you do / don’t need to complete. 
 - Start working through your project’s estimation checklist
 
 ## Estimation checklist
@@ -44,6 +45,7 @@ Please note these checklists are very specific to Credit Karma—you’d definit
 ## Pull request checklist 
 - TODO based on checklists I’ve written for myself in the past, and
 https://dtrejo.com/pull-requests
+- Squash to 1 commit before merging to make rollback easier.
 - Save intense testing for last, after PR feedback, so you have energy for doing a thorough good job of it and catch bugs introduced by review feedback.
 
 ## Release & Deploy Checklist
