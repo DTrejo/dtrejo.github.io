@@ -4,6 +4,7 @@ date: 2017-02-17 05:50 CET
 tags: lean, prototyping, growth
 ---
 # ${this.title}
+## Tips for better collaboration between engineers and designers
 
 Note: **I no longer believe that product ideas should be _validated_.** One should only
 build after one has pre-sold or collected signed letters of intent to buy at
