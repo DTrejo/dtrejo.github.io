@@ -83,6 +83,7 @@ much easier. Don't forget that line-height is not the same as the top of the
 letter "M", this means not every number in your design/code will be pretty (b/c
 CSS typography doesn't directly map to visual beauty: Ask Gon for more
 information about this, he can draw you a picture to show you what I mean).
+- No redlining nor annoying back and forth. Prefer to sit and review it together. Your second best option is to get the sketch file or a mobile and desktop png, then compare the page in one tab with the design open in another tab. By swapping back and forth quickly with your tab hotkeys you can see what needs adjustment.
 
 ## Less Chaos: Experiment Choice
 It is difficult to choose the next experiment. It is difficult to assess how
