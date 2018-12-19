@@ -35,6 +35,14 @@
     : ''
   }
   ${this.ogImage
+    ? '<meta name="image" content="'+ this.ogImage + '"/>'
+    : ''
+  }
+  ${this.ogImage
+    ? '<meta itemprop="image" content="'+ this.ogImage + '"/>'
+    : ''
+  }
+  ${this.ogImage
     ? '<meta name="twitter:image:src" content="' + this.ogImage + '">'
     : ''
   }
