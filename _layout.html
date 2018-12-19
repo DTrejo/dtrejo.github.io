@@ -8,6 +8,7 @@
   <meta name="og:title" content="${this.title || ''}">
   <link rel="icon" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:creator" content="@ddtrejo">
   ${this.description
     ? '<meta name="description" content="' + this.description + '">'
     : ''
@@ -30,6 +31,10 @@
   }
   ${this.ogImage
     ? '<meta property="og:image" content="'+ this.ogImage + '"/>'
+    : ''
+  }
+  ${this.ogImage
+    ? '<meta name="twitter:card" content="summary_large_image">'
     : ''
   }
   ${this.ogImage
