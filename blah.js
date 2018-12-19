@@ -113,9 +113,12 @@ function md(f) {
   // if (!changed(f, d) && !changed(layoutPath, d)) {
   //     return l('skip md', f, d)
   // }
-
+  
+  // This won't work right if I start using directories of posts
   if (data.title && f !== 'index.md') {
     data.ogImage = socialImage(data.href)
+  } else if (data.title && f === 'index.md') {
+    data.ogImage = data.href + '/images/dtrejo.jpg'
   }
 
   // TODO components need to go in AFTER markdown processing, so their HTML
