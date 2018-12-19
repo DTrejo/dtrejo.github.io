@@ -118,7 +118,7 @@ function md(f) {
   if (data.title && f !== 'index.md') {
     data.ogImage = socialImage(data.href)
   } else if (data.title && f === 'index.md') {
-    data.ogImage = data.href + '/images/dtrejo.jpg'
+    data.ogImage = data.href + 'images/dtrejo.jpg'
   }
 
   // TODO components need to go in AFTER markdown processing, so their HTML
