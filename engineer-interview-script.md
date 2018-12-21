@@ -18,6 +18,8 @@ My good friend [Sudhee](https://sudheendra.com/) points out that this coding int
    - "Please choose whichever language you feel most comfortable with"
    - "Run your code as often as you want, I don't care about typos, I just want us to catch stuff early"
    - "Ask me any questions you have, and I'll help you get unstuck, think of this like a pairing session"
+   - My coworker [Preston Guillot](https://www.linkedin.com/in/prestonguillot/) also says it’s okay to google:
+   > "I explicitly tell candidates that if they need to open browser tabs to google things they should, because I’m not trying to test anyone’s memorization skills"
 - 10 mins for questions
 - "Thanks {{firstname}}, we'll be in touch soon :)"
 
