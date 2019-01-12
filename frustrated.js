@@ -30,7 +30,7 @@ details.frustrated > summary:first-of-type {
   <summary class="f1 icon pointer outline-0">😠<span class="close dn f2 o-40">❌</span></summary>
   <div class="f4 bg-black-80 pa3 br2">
     <div class="step1">
-        <input type="button" value="Your service pisses me off."
+        <input type="button" value="Your service ticks me off."
             class="db bg-red white pa2 br2 bn grow"
             onclick="
                 document.querySelector('.frustrated .step1').classList.add('dn');
@@ -44,7 +44,7 @@ details.frustrated > summary:first-of-type {
         <div class="red">✅ Got it, we'll get our act together soon, we hope.</div>
 
         <label class="mt3"><!--<div>If we may ask, tell us why:</div>-->
-            <textarea placeholder="What's pissing you off?"
+            <textarea placeholder="What's making you angry?"
                 class="h3 mt2 db w-100 pa1"
             ></textarea>
             <input type="button" value="Send" class="db mt2 bg-red white pv2 ph3 br2 bn"
