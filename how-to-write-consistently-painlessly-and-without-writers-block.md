@@ -18,7 +18,7 @@ The more of these you do, the more successful your writing session will be. I've
 - Disconnect your internet, or write on a plane, or outside (even if it's cold: this gives you a natural deadline).
 - Write about whatever you feel like; once that's poured out, you can move on to whatever "productive" writing you wanted to do. This is also known as writing out the "noise."
 
-This list of tips is built from experience and Josh Seiden's article, [How to Write](https://medium.com/neo-innovation-ideas/how-to-write-a016e5d898bc)
+This list of tips is built from experience and Josh Seiden's article, [How to Write](https://medium.com/neo-innovation-ideas/how-to-write-a016e5d898bc).
 
 ## When you're ready to start editing, these writing tools will come in handy.
 
@@ -27,7 +27,7 @@ These are also great for people who aren't native english speakers.
 - ★ [polishmywriting.com](http://polishmywriting.com) is my favorite, despite its looks.
 - ★ [hemingwayapp.com](http://hemingwayapp.com) is great for simplifying sentences. If you're doing sales writing, get it under grade 8 to increase conversion.
 - [alexjs.com/#demo](http://alexjs.com/#demo)
-- [labs.foxtype.com/politeness]([http://labs.foxtype.com/politeness])
+- [labs.foxtype.com/politeness](http://labs.foxtype.com/politeness)
 - [grammarly.com](http://grammarly.com)
 - [paperrater.com/free_paper_grader](http://paperrater.com/free_paper_grader)
 
