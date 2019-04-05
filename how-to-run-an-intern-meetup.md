@@ -131,6 +131,8 @@ organized didn't have these problems :).
 Have fun!<br>
 David
 
+PS Here’s an [article on how Cloudera ran their internship program](https://dtrejo.com/how-to-run-an-intern-program-like-cloudera-s).
+
 [sean]:https://twitter.com/seanzawi
 [chris]:https://medium.com/tech-talk/d823af31f7c
 [dave]:http://daveeddy.com/
