@@ -1,15 +1,18 @@
 ---
 title: David Trejo
 description: Growth Engineer at Credit Karma & Consultant
+author: false
 ---
 <div class="tc">
-  <img 
-    src="/images/dtrejo.jpg" 
-    alt="hero"
-    class="w4 h4 br-100"
-  >
-  <h1>${this.title}</h1>
-  <h2 class="fw4">Growth Engineer at Credit Karma <span class="amp">&</span> Consultant</h2>
+  <div class="flex items-center justify-center">
+    <img
+      src="/images/dtrejo.jpg"
+      alt="hero"
+      class="w3 h3 br-100"
+    >
+    <h1 class="ma0 ml3 f3 fw4" style="color: inherit">${this.title}</h1>
+  </div>
+  <h2 class="f2 fw4">Growth Engineer at Credit Karma <span class="amp">&</span> Consultant</h2>
 </div>
 
 <hr />
@@ -36,7 +39,7 @@ Which of these articles would you want me to write next? :)
 
 **Or, what would you like me to write about?** Your questions about growth
 engineering & conversion rate optimization will help me write more–talk to you
-soon! ${this.email || ''}.
+soon!
 
 Thanks in advance,  
 <span class="serif i">David Trejo</span><br/>
