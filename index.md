@@ -8,7 +8,7 @@ author: false
     <img
       src="/images/dtrejo.jpg"
       alt="hero"
-      class="w3 h3 br-100"
+      class="w4 h4 br-100"
     >
     <h1 class="ma0 ml3 f3 fw4" style="color: inherit">${this.title}</h1>
   </div>
