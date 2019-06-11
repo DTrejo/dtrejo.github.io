@@ -40,7 +40,7 @@ Please note these checklists are very specific to Credit Karma—you’d definit
 - Ask for a similar plan document for their portion of the project if you didn’t already write it (you should lean towards NOT writing it yourself if you can)
 - Copy any other relevant estimation checklist items here
 - Share updates with your team lead daily on your progress
-- If working with a designer, have them sit next to you and discuss how you will work together. Use this [article on prototyping](https://dtrejo.com/chaos-in-your-product-prototyping) so you’re both on tbe same page.
+- If working with a designer, have them sit next to you and discuss how you will work together. Use this [article on prototyping](https://dtrejo.com/chaos-in-your-product-prototyping) so you’re both on the same page.
 
 ## Pull request checklist 
 - TODO based on checklists I’ve written for myself in the past, and
