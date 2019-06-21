@@ -1,12 +1,10 @@
 // @ts-check
 const { extname, basename, join, relative, parse } = require('path')
 const { statSync } = require('fs')
-const sh = require('shelljs')
+const { cat, ShellString, exec, cp, test, mkdir } = require('shelljs')
 const matter = require('gray-matter')
 const marked = require('marked')
-const prism = require('prismjs');
-
-if (!process.version.includes('v10')) console.warn('Works best on node >= 10')
+const prism = require('prismjs')
 
 const DEBUG = process.argv.includes('-v')
 if (DEBUG) function l() { console.log.apply(console.log, arguments) }
@@ -27,7 +25,7 @@ const dirs = {}
 function mkdirp(f) {
   if (dirs[f]) return
   dirs[f] = true
-  return sh.mkdir('-p', f)
+  return mkdir('-p', f)
 }
 
 // TODO always use absolute paths from the root of the project?
@@ -38,16 +36,17 @@ l('DIST', DIST)
 l('mkdir -p', DIST)
 mkdirp(DIST)
 
-const CNAME = exists('CNAME') && sh.cat('CNAME').toString().trim() || 'localhost'
+const CNAME = exists('CNAME') && cat('CNAME').toString().trim() || 'localhost'
 const DEFAULT_LAYOUT = '_layout.html'
 const components = {}
 
 const files =
-  // untracked
-  sh.exec('git ls-files -o --exclude-standard', { silent: true }).toString().trim().split('\n')
+  [ // untracked
+    ...exec('git ls-files -o --exclude-standard', { silent: true }).toString().trim().split('\n')
     // tracked
-    .concat(sh.exec('git ls-files', { silent: true }).toString().trim().split('\n'))
-    .filter(f => exists(f))
+  , ...exec('git ls-files', { silent: true }).toString().trim().split('\n')
+  ]
+  .filter(f => exists(f))
 
 l('files', files)
 
@@ -68,7 +67,7 @@ for (let f, i = 0; f = files[i]; i++) {
   const ext = extname(f)
   if (ext === '.md') {
     mds.push(f)
-    const { content, ...rest } = matter(sh.cat(f).toString())
+    const { content, ...rest } = matter(cat(f).toString())
     // TODO: remove .html extensions from pages?
     const url = '/' + relative(ROOT, basename(f, '.md') /*+ '.html'*/).replace(/\/?index$/, '')
     pages.push({
@@ -94,7 +93,7 @@ function md(f) {
   const d = join(DIST, relative(ROOT, basename(f, '.md') + '.html'))
   l('md', f, '-->', d)
 
-  const { content, data, excerpt } = matter(sh.cat(f).toString())
+  const { content, data, excerpt } = matter(cat(f).toString())
   // TODO consolidate this with the pages logic.
   data.url = '/' + relative(ROOT, basename(f, '.md') /*+ '.html'*/).replace(/\/?index$/, '')
   data.href = (new URL(data.url, `https://${CNAME}`)).href
@@ -113,7 +112,7 @@ function md(f) {
   // if (!changed(f, d) && !changed(layoutPath, d)) {
   //     return l('skip md', f, d)
   // }
-  
+
   // This won't work right if I start using directories of posts
   if (data.title && f !== 'index.md') {
     data.ogImage = socialImage(data.href)
@@ -129,14 +128,14 @@ function md(f) {
   const markdown = template(content, scope)
   const contentHTML = marked(markdown)
   const page = layout(scope, contentHTML)
-  sh.ShellString(page).to(d)
+  ShellString(page).to(d)
 }
 
 function layout(data, contentHTML) {
   const layoutPath = data.layout || DEFAULT_LAYOUT
   if (!exists(layoutPath)) return contentHTML
 
-  const layoutHTML = sh.cat(layoutPath).toString()
+  const layoutHTML = cat(layoutPath).toString()
   const page = template(layoutHTML, { ...data, contentHTML, layoutPath })
   // l('layout', page)
   return page
@@ -159,7 +158,7 @@ function redirect(f, d, data) {
   const html = layout({ title, head, bodyEnd }, contentHTML)
   l('redirect', f, d)
   l('redirect html', html)
-  sh.ShellString(html).to(d)
+  ShellString(html).to(d)
 }
 
 function asset(f) {
@@ -175,12 +174,12 @@ function asset(f) {
   }
 
   l('cp', f, d)
-  sh.cp(f, d)
+  cp(f, d)
 }
 
 function sitemap(pages) {
   // l('sitemap pages[0]', JSON.stringify(pages[0], null, 2))
-  sh.ShellString(
+  ShellString(
     `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${pages
@@ -211,7 +210,7 @@ function changed(file, dest) {
 }
 
 function exists(f) {
-  return f && sh.test('-e', f)
+  return f && test('-e', f)
 }
 
 // TODO: this strategy means that template variables in someone's code blocks
@@ -231,7 +230,7 @@ function component(f) {
   l('component', f)
   const name = basename(f, '.html')
   // newlines mess up html in markdown, so we remove them.
-  const content = sh.cat(f).toString().replace(/\n/g, '').trim()
+  const content = cat(f).toString().replace(/\n/g, '').trim()
   if (content.includes('<script>')) {
     console.warn(`Make sure your <script> in ${name} uses semicolons!`)
   }
