@@ -8,7 +8,8 @@
     "build": "node blah.js",
     "deploy": "./_deploy.sh",
     "// development only": "true",
-    "start": "serve ."
+    "start": "serve .",
+    "watch": "runjs blah.js -v"
   },
   "author": "David Trejo",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "shelljs": "^0.8.2"
   },
   "devDependencies": {
+    "run": "1.4.0",
     "serve": "11.0.2"
   }
 }

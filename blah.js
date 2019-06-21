@@ -27,6 +27,7 @@ function mkdirp(f) {
   dirs[f] = true
   return mkdir('-p', f)
 }
+const exists = f => f && test('-e', f)
 
 // TODO always use absolute paths from the root of the project?
 const ROOT = process.cwd()
@@ -36,7 +37,7 @@ l('DIST', DIST)
 l('mkdir -p', DIST)
 mkdirp(DIST)
 
-const CNAME = exists('CNAME') && cat('CNAME').toString().trim() || 'localhost'
+const CNAME = (exists('CNAME') && cat('CNAME').toString().trim()) || 'localhost'
 const DEFAULT_LAYOUT = '_layout.html'
 const components = {}
 
@@ -55,21 +56,20 @@ let assets = []
 let pages = []
 for (let f, i = 0; f = files[i]; i++) {
   if (f === 'blah.js') continue
-  if (f.indexOf('dist/') === 0) continue
+  if (f.startsWith('dist/')) continue
 
   const base = basename(f)
   if (base[0] === '.') continue
-  if (f.indexOf('_components/') === 0 && extname(f) === '.html') {
+  if (f.startsWith('_components/') && extname(f) === '.html') {
     component(f) // also processes these before .md
     continue
   }
-  if (f[0] === '_' || base[0] === '_') continue
+  if (f.startsWith(' ') || base.startsWith(' ')) continue
   const ext = extname(f)
   if (ext === '.md') {
     mds.push(f)
     const { content, ...rest } = matter(cat(f).toString())
-    // TODO: remove .html extensions from pages?
-    const url = '/' + relative(ROOT, basename(f, '.md') /*+ '.html'*/).replace(/\/?index$/, '')
+    const url = '/' + relative(ROOT, basename(f, '.md')).replace(/\/?index$/, '')
     pages.push({
       ...rest,
       url,
@@ -104,14 +104,8 @@ function md(f) {
 
   // frontmatter with a "redirect: /blah" link in it.
   if (data.redirect) {
-    /*if (!changed(f, d)) return*/
     return redirect(f, d, data)
   }
-
-  // TODO add this back in. also check that dependent components haven't changed
-  // if (!changed(f, d) && !changed(layoutPath, d)) {
-  //     return l('skip md', f, d)
-  // }
 
   // This won't work right if I start using directories of posts
   if (data.title && f !== 'index.md') {
@@ -183,8 +177,8 @@ function sitemap(pages) {
     `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${pages
-        .filter((page) => !page.data.redirect)
-        .map((page) =>
+        .filter(page => !page.data.redirect)
+        .map(page =>
       `<url>
         <loc>${page.href}</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
@@ -201,16 +195,10 @@ function changed(file, dest) {
   try {
     dm = statSync(dest).mtime
   } catch (_) {
-    // No dest file? need to generate it.
-    return true
+    return true // No dest file? need to generate it.
   }
-
   const fm = statSync(file).mtime
   return fm > dm
-}
-
-function exists(f) {
-  return f && test('-e', f)
 }
 
 // TODO: this strategy means that template variables in someone's code blocks
@@ -245,11 +233,10 @@ function runComponents(scope) {
   const compiled = {}
   // add compiled to scope so components can use each other, if named well ;)
   for (let c in components) compiled[c] = components[c]({ compiled, ...scope })
-  // for (let c in components) compiled[c] = components[c](scope)
   return compiled
 }
 
-// Given canonical URL, use the imgix motif to create a social image for embeds
+// Given canonical URL, use imgix motif to create a social image for embeds
 // Based on https://motif.imgix.com/?d=eyJ1cmwiOiJodHRwOi8vcXouY29tLzYyNDQ5MC9leHBsb3JlLXRoZS13b3JsZC1saWtlLWEtZmlzaC13aXRoLXRoZS1iZXN0LXVuZGVyd2F0ZXItcGhvdG9zLW9mLXRoZS15ZWFyIiwidGl0bGUiOiIiLCJhY2NlbnRDb2xvciI6IiIsIm9nSW1hZ2VVUkwiOiJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTUxNTk1MTgzNDU0OS00MTcyYjMxNmRlN2U%2FZml0PWNyb3AmaD02MzAmdz0xMjAwJnR4dD0lMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBCeSUyMERhdmlkJTIwVHJlam8lMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBkdHJlam8uY29tJnR4dGNscj1mZmYmdHh0c2l6ZT00MCZ0eHRmb250PUF2ZW5pciUyME5leHQlMjBEZW1pJTIwQm9sZCZ0eHRhbGlnbj1sZWZ0JTJDYm90dG9tJnR4dHBhZD0xNTAiLCJsb2dvVVJMIjoiaHR0cHM6Ly9kdHJlam8uY29tL2ltYWdlcy9kdHJlam8tcm91bmQucG5nIiwibG9nb0FsaWdubWVudCI6ImJvdHRvbSxsZWZ0IiwidGV4dFBvc2l0aW9uIjoidG9wIiwidGV4dEFsaWdubWVudCI6ImxlZnQiLCJmb250RmFtaWx5IjoiQXZlbmlyIE5leHQgRGVtaSxCb2xkIiwidGV4dENvbG9yIjoiZmZmZmZmIiwibG9nb1BhZGRpbmciOiI4MCIsImxvYWRpbmciOmZhbHNlLCJlcnJvcjQyMiI6ZmFsc2V9
 function socialImage(href) {
   const backgroundImage = 'https://images.unsplash.com/photo-1515951834549-4172b316de7e?fit=crop&h=630&w=1200&txt=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20By%20David%20Trejo%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20DTrejo.com&txtclr=fff&txtsize=40&txtfont=Avenir%20Next%20Demi%20Bold&txtalign=left%2Cbottom&txtpad=150'
@@ -277,8 +264,7 @@ function socialImage(href) {
 // √reimplement CTA and author components
 // √fix 404.html, use box2d.
 // add asserts all over the place
-// set up CI to publish it, check the vuepress suggested config
-// replace the vue site. push this to the master branch.
+// √set up CI to publish it
 
 // far future, or never
 // [No] can include vue component for site search?
@@ -302,7 +288,7 @@ function socialImage(href) {
 // - √new color theme? or just improve the orange accentcolor? and improve the gold
 //   on the CTA form? saturation.
 // - √check cta form works
-// - better headshot image?
+// - √better headshot image?
 // - √get my projects to load right: copy to public/; check em?
 // - GA
 // - link audit
