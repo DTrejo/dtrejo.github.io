@@ -31,7 +31,7 @@ yo
 <br>disregard, top sirloin, round, chuck, 7 bone, tri tip, all of those, they don't exist, they suck
 <br>good steak is new york rib eye or tbone
 <br>you may have also heard of filet mignon
-<br>it's fucking expesive and hard to cook right, don't bother, safeway doesn't offer good filet mignon
+<br>it's fucking expensive and hard to cook right, don't bother, safeway doesn't offer good filet mignon
 <br>filet mignon simply means a steak cut from the tenderloin
 <br>t-bone is a combo cut of new york and tenderloin steak together, so t bone is tasty
 <br>rib eye is easiest to cook cuz it has best marbling
@@ -89,7 +89,7 @@ included at the end of the post.
   on the outside. The moisture shed from being cold prevents crusting.
   - What is crusting? It's when the surface of the steak becomes cow bacon —
   it's massively tasty.
-- Coat the steak with olive oil. Then season.
+- Coat the steak with olive oil (or ghee, which I now prefer b/c of its high smoke point). Then season.
 - Salt and pepper both sides very heavily. It's almost impossible to put too much
   salt. Please stop reading now if you are concerned about salt intake.
 - Push and rub seasoning into the meat.
@@ -110,10 +110,10 @@ included at the end of the post.
 - Use tongs to turn the steak on its side. You'll want a good crispiness on all sides.
 - Don't grab too hard—you don't want the juices to escape.
 - Poke the steak with your finger. It should be firm.
-  - Don't cut into it yet— this will release the tasty juices.
+  - Don't cut into it yet—this will release the tasty juices.
 - Take it off the heat, put it on an unheated grill, and let it rest for 2 minutes.
-- Heat your plates on the burner, on the lowest heat. You don't want cold plates
-  sapping the heat from your perfectly cooked steak.
+- Heat your (empty) plates by putting a tiny bit of water on them, microwaving them, then pouring off the water.
+  You don't want cold plates sapping the heat from your perfectly cooked steak.
 
 WHILE THE STEAK IS RESTING, CHOOSE YOUR ADVENTURE:
 
@@ -126,3 +126,10 @@ WHILE THE STEAK IS RESTING, CHOOSE YOUR ADVENTURE:
 2.  
     - Add lemon.
     - Drizzle a bit of good olive oil.
+
+Enjoy!
+David Trejo
+
+PS How can you tell if olive oil is real? Good signs include:
+1. The olive oil is made in California and is not "mixed." (some labels try to trick you)
+2. When you smell it, it smells like olives (if doesn't smell like anything, be suspicious)
