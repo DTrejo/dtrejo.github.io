@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node blah.js",
-    "deploy": "./_deploy.sh"
+    "deploy": "./_deploy.sh",
+    "// development only": "true",
+    "start": "serve ."
   },
   "author": "David Trejo",
   "license": "ISC",
@@ -15,5 +17,8 @@
     "marked": "^0.4.0",
     "prismjs": "^1.15.0",
     "shelljs": "^0.8.2"
+  },
+  "devDependencies": {
+    "serve": "11.0.2"
   }
 }
