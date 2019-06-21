@@ -37,6 +37,6 @@ Good luck,
 <span class="serif i">David Trejo</span><br/>
 ${this.email || ''}
 
-PS One suggestion from Sudhee, is to say something to personalize it and break the ice at the start of the call. For example, "I saw you committing on github on saturday night and I knew we had to talk!!"
+PS One suggestion from <a href="https://sudheendra.com/">Sudhee</a>, is to say something to personalize it and break the ice at the start of the call. For example, "I saw you committing on github on saturday night and I knew we had to talk!!"
 
 The phone interview is an opportunity to build a relationship with the candidate, not just something mechanical that your boss forces you to administer. You want to make a connection. This won't be easy to do in every company.
