@@ -1,0 +1,3 @@
+---
+redirect: /why-go-carnivore
+---
