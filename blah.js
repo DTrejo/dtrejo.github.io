@@ -238,9 +238,10 @@ function runComponents(scope) {
 
 // Given canonical URL, use imgix motif to create a social image for embeds
 // Based on https://motif.imgix.com/?d=eyJ1cmwiOiJodHRwOi8vcXouY29tLzYyNDQ5MC9leHBsb3JlLXRoZS13b3JsZC1saWtlLWEtZmlzaC13aXRoLXRoZS1iZXN0LXVuZGVyd2F0ZXItcGhvdG9zLW9mLXRoZS15ZWFyIiwidGl0bGUiOiIiLCJhY2NlbnRDb2xvciI6IiIsIm9nSW1hZ2VVUkwiOiJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTUxNTk1MTgzNDU0OS00MTcyYjMxNmRlN2U%2FZml0PWNyb3AmaD02MzAmdz0xMjAwJnR4dD0lMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBCeSUyMERhdmlkJTIwVHJlam8lMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBkdHJlam8uY29tJnR4dGNscj1mZmYmdHh0c2l6ZT00MCZ0eHRmb250PUF2ZW5pciUyME5leHQlMjBEZW1pJTIwQm9sZCZ0eHRhbGlnbj1sZWZ0JTJDYm90dG9tJnR4dHBhZD0xNTAiLCJsb2dvVVJMIjoiaHR0cHM6Ly9kdHJlam8uY29tL2ltYWdlcy9kdHJlam8tcm91bmQucG5nIiwibG9nb0FsaWdubWVudCI6ImJvdHRvbSxsZWZ0IiwidGV4dFBvc2l0aW9uIjoidG9wIiwidGV4dEFsaWdubWVudCI6ImxlZnQiLCJmb250RmFtaWx5IjoiQXZlbmlyIE5leHQgRGVtaSxCb2xkIiwidGV4dENvbG9yIjoiZmZmZmZmIiwibG9nb1BhZGRpbmciOiI4MCIsImxvYWRpbmciOmZhbHNlLCJlcnJvcjQyMiI6ZmFsc2V9
+// When you update your photo, make sure to create the rounded one too!
 function socialImage(href) {
   const backgroundImage = 'https://images.unsplash.com/photo-1515951834549-4172b316de7e?fit=crop&h=630&w=1200&txt=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20By%20David%20Trejo%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20DTrejo.com&txtclr=fff&txtsize=40&txtfont=Avenir%20Next%20Demi%20Bold&txtalign=left%2Cbottom&txtpad=150'
-  const logo = 'https://dtrejo.com/images/dtrejo-round.png?a'
+  const logo = 'https://dtrejo.com/images/dtrejo-round.png?b'
   const ogImage =
     `https://motif.imgix.com/i?url=${encodeURIComponent(href)}&image_url=${encodeURIComponent(backgroundImage)}&color=&logo_url=${encodeURIComponent(logo)}&logo_alignment=bottom%2Cleft&text_alignment=top%2Cleft&logo_padding=80&font_family=Avenir%20Next%20Demi%2CBold&text_color=dcd9d6`
   return ogImage
