@@ -1,3 +1,3 @@
 ---
-redirect: /why-go-carnivore
+redirect: /why-go-carnivore-aka-zero-carb
 ---
