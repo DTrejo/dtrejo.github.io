@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>${this.title || ''}</title>
   <meta itemprop="name" content="${this.title || ''}">
-  <meta name="og:title" content="${this.title || ''}">
+  <meta property="og:title" content="${this.title || ''}">
   <link rel="icon" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:creator" content="@ddtrejo">
@@ -19,7 +19,7 @@
     : ''
   }
   ${this.description
-    ? '<meta name="og:description" content="' + this.description + '">'
+    ? '<meta property="og:description" content="' + this.description + '">'
     : ''
   }
   ${this.href
@@ -27,7 +27,7 @@
     : ''
   }
   ${this.href
-    ? '<meta name="og:url" content=' + JSON.stringify(this.href) + '>'
+    ? '<meta property="og:url" content=' + JSON.stringify(this.href) + '>'
     : ''
   }
   ${this.ogImage
@@ -51,8 +51,8 @@
     : ''
   }
   ${this.ogImage && this.href !== 'https://dtrejo.com/'
-    ? '<meta name="og:type" content="article">'
-    : '<meta name="og:type" content="website">'
+    ? '<meta property="og:type" content="article">'
+    : '<meta property="og:type" content="website">'
   }
   ${''/* https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css */}
   <link rel="stylesheet" href="/css/tachyons.min.css" />
