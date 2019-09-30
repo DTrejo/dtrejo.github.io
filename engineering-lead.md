@@ -17,7 +17,7 @@ Please note these checklists are very specific to Credit Karma—you’d definit
 - Make a copy of all the checklists
 - Set up 30min 1-1s with all teammates weekly, to solicit and give feedback, and understand how things are going overall
 - Set up 1 hour weekly project coordination time block for getting yourself organized, thinking about how the project is going, thinking about what course corrections to make, etc
-- Review each checklist executed by teammates with respective teammate to gain shared understanding on how they will help. Ask them to create their own checklist ahead of time, so they thought about their work and feel less pressured to simply say “yes.” 
+- Review each checklist executed by teammates with respective teammate to gain shared understanding on how they will help. Ask them to create their own checklist ahead of time, so they think about their work and feel less pressured to simply say “yes.” 
 - Meet with the managers of new teammates and/or ask said teammates how they like working together best
 - Ask yourself whether you or your team or company have trouble investing the right amount to really finish projects you start. If the answer feels like a “yes”, these checklists are for you: you need to communicate the investment needed in the project otherwise management may become antsy and interrupt you, because they didn’t make an investment decision knowing it would take as much effort as it does.
 - As much as possible, get you and your team close to the business reasons for the project. You need to fully understand the problem to choose the least wasteful solution. This also means you should try and get your designer and/or analyst and/or business person to sit with you and your engineers.
