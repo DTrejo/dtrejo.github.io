@@ -9,18 +9,19 @@
     "deploy": "./_deploy.sh",
     "// development only": "true",
     "start": "serve .",
+    "debug": "node blah.js -v",
     "watch": "runjs blah.js -v"
   },
   "author": "David Trejo",
   "license": "ISC",
   "dependencies": {
     "gray-matter": "^4.0.1",
-    "marked": "^0.4.0",
-    "prismjs": "^1.15.0",
+    "marked": "0.7.0",
+    "prismjs": "1.17.1",
     "shelljs": "^0.8.2"
   },
   "devDependencies": {
     "run": "1.4.0",
-    "serve": "11.0.2"
+    "serve": "11.2.0"
   }
 }

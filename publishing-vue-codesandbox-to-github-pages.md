@@ -29,7 +29,7 @@ put it on my site.
 - Here's the fix for that: 
   https://github.com/DTrejo/colorpreview/commit/fe4a316e82d9d29a3444b470b09a7835c60522d9#diff-c8c5ee8e781f831e4927a392fa3565e6L53
   Make sure you edit only the prod configuration.
-    ``` js
+    ```js
     // for github pages off dtrejo.com/colorpreview/*
     assetsPublicPath: '/colorpreview/',
     ```

@@ -1,45 +1,68 @@
 // @ts-check
+/*
+  Refactoring steps:
+  - wrap all fs write calls, and also write the output to memory
+  - write a test suite that does assertions based on what's in memory afterwards
+  - make a subdirectory with some test markdown files to be used for this purpose
+*/
 const { extname, basename, join, relative, parse } = require('path')
 const { statSync } = require('fs')
 const { cat, ShellString, exec, cp, test, mkdir } = require('shelljs')
 const matter = require('gray-matter')
 const marked = require('marked')
 const prism = require('prismjs')
+const loadLanguages = require('prismjs/components/')
 
 const DEBUG = process.argv.includes('-v')
 if (DEBUG) function l() { console.log.apply(console.log, arguments) }
-else function l() { }
+else function l(){}
 
-console.time('blah.js')
-
-const loadLanguages = require('prismjs/components/')
-marked.setOptions({
-  highlight: function (code, language) {
-    const lang = language || 'markup'
-    if (!['js', 'css', 'markup'].includes(lang)) loadLanguages([ lang ])
-    return prism.highlight(code, prism.languages[lang], lang)
-  }
-})
-
-const dirs = {}
-function mkdirp(f) {
-  if (dirs[f]) return
-  dirs[f] = true
-  return mkdir('-p', f)
-}
-const exists = f => f && test('-e', f)
-
-// TODO always use absolute paths from the root of the project?
 const ROOT = process.cwd()
 l('ROOT', ROOT)
 const DIST = join(ROOT, 'dist')
 l('DIST', DIST)
-l('mkdir -p', DIST)
-mkdirp(DIST)
+
+console.time('blah.js')
+
+const memoize = fn => {
+  const m = new Map()
+  const memoized = (...args) => {
+    if (!m.has(args)) {
+      m.set(args, fn(...args))
+    }
+    return m.get(args)
+  }
+  memoized.memo = m
+  return memoized
+}
+
+const mkdirp = memoize((f) => mkdir('-p', f))
+const exists = f => f && test('-e', f)
+ // No https? too bad.
+const href = url => (new URL(url, `https://${CNAME}`)).href
+const written = new Map()
+const write = (s, d) => {
+  if (written.get(d)) {
+    console.warn('caution: overwriting', d)
+  }
+  written.set(d, s)
+  ShellString(s).to(d)
+}
+
+marked.setOptions({
+  highlight: (code, lang) => {
+    lang = lang || 'markup'
+    const preloaded = ['markup', 'css', 'clike', 'javascript', 'js']
+    if (!preloaded.includes(lang)) loadLanguages([ lang ])
+    return prism.highlight(code, prism.languages[lang], lang)
+  }
+})
 
 const CNAME = (exists('CNAME') && cat('CNAME').toString().trim()) || 'localhost'
 const DEFAULT_LAYOUT = '_layout.html'
 const components = {}
+l('mkdir -p', DIST)
+mkdirp(DIST)
 
 const files =
   [ // untracked
@@ -47,14 +70,14 @@ const files =
     // tracked
   , ...exec('git ls-files', { silent: true }).toString().trim().split('\n')
   ]
-  .filter(f => exists(f))
+  .filter(exists)
 
 l('files', files)
 
-let mds = []
-let assets = []
-let pages = []
-for (let f, i = 0; f = files[i]; i++) {
+const mds = []
+const assets = []
+const pages = []
+for (const f of files) {
   if (f === 'blah.js') continue
   if (f.startsWith('dist/')) continue
 
@@ -73,7 +96,7 @@ for (let f, i = 0; f = files[i]; i++) {
     pages.push({
       ...rest,
       url,
-      href: (new URL(url, `https://${CNAME}`)).href
+      href: href(url)
     })
     continue
   }
@@ -96,7 +119,7 @@ function md(f) {
   const { content, data, excerpt } = matter(cat(f).toString())
   // TODO consolidate this with the pages logic.
   data.url = '/' + relative(ROOT, basename(f, '.md') /*+ '.html'*/).replace(/\/?index$/, '')
-  data.href = (new URL(data.url, `https://${CNAME}`)).href
+  data.href = href(data.url)
   const layoutPath = data.layout || DEFAULT_LAYOUT
   if (!exists(layoutPath)) return console.warn('no such layout', layoutPath)
   // l('content', content)
@@ -122,7 +145,7 @@ function md(f) {
   const markdown = template(content, scope)
   const contentHTML = marked(markdown)
   const page = layout(scope, contentHTML)
-  ShellString(page).to(d)
+  write(page, d)
 }
 
 function layout(data, contentHTML) {
@@ -140,25 +163,23 @@ function redirect(f, d, data) {
   // TODO: handle offsite redirects
   l('redirect', f, data.redirect)
 
-  const url = new URL(data.redirect, `https://${CNAME}`) // No https? too bad.
-  l('redirect url ', url)
+  const canonical = href(data.redirect)
+  l('redirect canonical', canonical)
 
-  const title = 'Redirecting...'
+  const title = `Redirecting you to ${canonical}...`
   const contentHTML = title
-  // TODO make a default rel=canonical that points to the pretty link.
-  // TODO use same url and put it in the page's context.
-  const head = `<link rel="canonical" href=${JSON.stringify(url.href)}>`
-  const bodyEnd = `<script>window.location.href = ${JSON.stringify(url.href)}</script>`
+  const head = `<link rel="canonical" href=${JSON.stringify(canonical)}>`
+  const bodyEnd = `<script>window.location.href = ${JSON.stringify(canonical)}</script>`
   const html = layout({ title, head, bodyEnd }, contentHTML)
   l('redirect', f, d)
   l('redirect html', html)
-  ShellString(html).to(d)
+  write(html, d)
 }
 
 function asset(f) {
   const relpath = relative(ROOT, f)
   const d = join(DIST, relpath)
-  const dir = parse(d).dir
+  const { dir } = parse(d)
   l('asset', f, '-> dest', d)
   if (!changed(f, d)) return l('skip cp', f, d)
 
@@ -173,7 +194,7 @@ function asset(f) {
 
 function sitemap(pages) {
   // l('sitemap pages[0]', JSON.stringify(pages[0], null, 2))
-  ShellString(
+  write(
     `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${pages
@@ -187,7 +208,7 @@ function sitemap(pages) {
       </url>`
       ).join('')}
     </urlset>
-  `).to(join(DIST, 'sitemap.xml'))
+  `, join(DIST, 'sitemap.xml'))
 }
 
 function changed(file, dest) {
@@ -232,7 +253,9 @@ function component(f) {
 function runComponents(scope) {
   const compiled = {}
   // add compiled to scope so components can use each other, if named well ;)
-  for (let c in components) compiled[c] = components[c]({ compiled, ...scope })
+  for (const c of Object.keys(components)) {
+    compiled[c] = components[c]({ compiled, ...scope })
+  }
   return compiled
 }
 
@@ -246,6 +269,9 @@ function socialImage(href) {
     `https://motif.imgix.com/i?url=${encodeURIComponent(href)}&image_url=${encodeURIComponent(backgroundImage)}&color=&logo_url=${encodeURIComponent(logo)}&logo_alignment=bottom%2Cleft&text_alignment=top%2Cleft&logo_padding=80&font_family=Avenir%20Next%20Demi%2CBold&text_color=dcd9d6`
   return ogImage
 }
+
+console.timeEnd('blah.js')
+l('done')
 
 // things we want to do
 // √list documents
@@ -297,6 +323,7 @@ function socialImage(href) {
 // - turn workshop proposal(s) into a sales page
 // - migrate engineeroverflow to here? w/ redirect.
 // - migrate yelp rescues page to here? w/ redirect. fix yelp sales page
+// - migrate 1st 3 chapters of book here, with half chapter teasers for the rest?
 // - get samir's feedback and the maybe hide even more stuff / further focus it.
 
 // - [ignore] use subdirectories to create prev/next? dunno. ignore it.
@@ -305,8 +332,13 @@ function socialImage(href) {
 // - [ignore] give the visitor a quiz and only show them what they're interested in?
 // - [ignore] image to color scheme library?
 
-console.timeEnd('blah.js')
-l('done')
+// if (process.env.argv.includes('-t')) {
+//   const add = memoize((a, b) => {
+//     return a + b
+//   })
+//   console.assert(add(1, 2) === 3)
+//   console.assert(add(1, 2) === 3)
+//   console.assert(add(1, 3) === 4)
 
-// if (!process.env.argv.includes('-t')) return
-// TODO: add tests
+//   // TODO assert redirects were made properly
+// }

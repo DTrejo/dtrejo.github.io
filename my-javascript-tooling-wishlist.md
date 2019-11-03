@@ -5,7 +5,7 @@ tags: javascript, nodejs, tools
 ---
 # ${this.title}
 
-<img src="./images/js-logo.png" height="120px" style="float:right; padding: 0 0 3.2rem 3.2rem;" />
+<img src="./images/js-logo.png" height="120px" class="mt0 fr p0 pl4 pb4"/>
 
 What follows is a wishlist of features I'd want in my perfect javascript
 dev environment (I don't care whether each of these things is a separate command

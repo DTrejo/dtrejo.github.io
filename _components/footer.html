@@ -1,10 +1,6 @@
 <div id="footer" class="footer mt5 pt5 pb4">
 <div class="mw7 ph2 center">
   <h3>Hiring Engineers? You'll like these articles</h3>
-  ${''/* TODO simplify; try to use components the same everywhere, via require?
-    or a custom version of require e.g. the existing template function just with
-    caching
-  */}
   ${this.require('./_components/articles.js')(this.pages, 'hiring')}
 
   <h3>Growth Engineering Articles</h3>

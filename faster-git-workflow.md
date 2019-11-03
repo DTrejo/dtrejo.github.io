@@ -5,7 +5,7 @@ tags: git, productivity
 ---
 # ${this.title}
 
-<img alt="git logo" src="./images/00000000-Git-Logo-2Color.png" style="height: 75px; float:right; padding: 0 0 1rem 1rem;" />
+<img alt="git logo" src="./images/00000000-Git-Logo-2Color.png" class="mt0 fr p0 pl3 pb3" style="height:75px" />
 
 I find myself copy-pasting long filenames way too often when I work with
 git. Tab completing deep paths is just as annoying. What might be a better way?

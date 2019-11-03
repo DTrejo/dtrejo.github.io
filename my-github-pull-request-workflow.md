@@ -5,7 +5,7 @@ tags: git, howto
 ---
 # ${this.title}
 
-<img alt="git logo" src="./images/00000000-Git-Logo-2Color.png" style="height: 75px; float:right; padding: 0 0 1rem 1rem;" />
+<img alt="git logo" src="./images/00000000-Git-Logo-2Color.png" class="mt0 fr p0 pl3 pb3" style="height:75px"/>
 
 Let's say I'm taking pull requests for [node_redis][1].
 
@@ -45,7 +45,7 @@ curl -s https://github.com/dtrejo/readmetree/pull/$NUM.patch | git am --signoff
 
 Or even add this to your `~/.gitconfig` (via [piscisaureus][3])
 
-```
+```ini
 [alias]
   # via https://gist.github.com/piscisaureus/3342247
   pullify = config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
