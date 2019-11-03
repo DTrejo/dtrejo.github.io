@@ -20,7 +20,7 @@ There are a couple less obvious risks that a workflow like this helps you defuse
 
 The secondary risk reduction has to do with your testing energy as an engineer. By making incremental changes and saving your intense testing session for the end, you conserve a lot energy. Frequently we introduce bugs that make it to production because we make a change based on a code review. Then, something breaks when we are not expecting it to, and because we are so close to merging it, and have already done so much testing (and are tired out), we don’t catch the bug.
 
-You’ve probably heard the saying that fixing a bug in production is 10x more expensive than fixing it in development, so an apporoah like this is very worth it.
+You’ve probably heard the saying that fixing a bug in production is 10x more expensive than fixing it in development, so an approach like this is very worth it.
 
 What practices do you and your team benefit from in your pull request process?
 
