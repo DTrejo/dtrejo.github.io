@@ -1,7 +1,7 @@
 ---
 title: Why go Carnivore? (aka Zero Carb)
 date: 2019-7-18 05:55 CEST
-tags: howto, carnivore
+tags: howto, carnivore, health
 ---
 # ${this.title}
 

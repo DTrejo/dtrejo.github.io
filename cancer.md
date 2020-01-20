@@ -18,6 +18,8 @@ A few articles to check out:
     **Summary**: Ecuadorian dwarf's with Laron syndrome have no IGF-1. They have little to no cancer, nor Alzheimer’s.
 - [Meatheals report: man experiences no chemo side effects](https://meatheals.com/2019/03/03/matthew-s/)  
     **Summary**: Man experienced no chemo side effects while eating carnivore, except for when he ate carbs/sugar. Also, check out the [rest of the Meatheals reports which mention cancer](https://meatheals.com/?s=Cancer). If you actually want to eat, rather than fast, I've found that [carnivore](https://dtrejo.com/why-go-carnivore-aka-zero-carb) is an easy way to maintain ketogenesis. The carnivore way of eating consists of zero carbs/sugar, unlike keto as commonly practiced. I've also found carnivore is easy to maintain, with no intense cravings.
+- [Dawn Lemanne - Using Evolution in the Cancer Clinic - Ancestral Health Symposium 2019](https://www.youtube.com/watch?v=dAdrBwB4sOA)  
+   **Summary**: cancer in young people is different than in older people and reacts differently to standard chemo treatments. It discusses "new research evaluating advances in drug scheduling, fasting, and diet combinations that may circumvent tumor treatment resistance and prolong life."
 
 I wish the best health for you, your family, and your friends.
 
