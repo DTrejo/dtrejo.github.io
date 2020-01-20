@@ -5,14 +5,14 @@ tags: howto, bookreview, health
 ---
 # ${this.title}
 
-ROUGH DRAFT
+[ROUGH DRAFT]
 
 I've really been enjoying this book by Weston A. Price:
 
 [Nutrition and Physical Degeneration:  
 A Comparison of Primitive and Modern Diets
 and Their Effects by Weston A. Price![](images/westonaprice/cover.jpg)](http://gutenberg.net.au/ebooks02/0200251h.html)
-
+(I reading it with Safari's Reader mode for maximum legibility.)
 
 ## <a name='AncestralWisdomRediscovered'></a>Ancestral Wisdom Rediscovered
 You've probably read or watched a number of stories where the main character tries to rediscover the lost technology or magic of their ancestors. This book gives you the same exhilaration, except in real life. 
