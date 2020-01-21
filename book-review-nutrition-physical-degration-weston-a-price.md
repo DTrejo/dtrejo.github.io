@@ -12,7 +12,7 @@ I've really been enjoying this book by Weston A. Price:
 [Nutrition and Physical Degeneration:  
 A Comparison of Primitive and Modern Diets
 and Their Effects by Weston A. Price![](images/westonaprice/cover.jpg)](http://gutenberg.net.au/ebooks02/0200251h.html)
-(I reading it with Safari's Reader mode for maximum legibility.)
+(I recommend Safari's Reader mode for maximum legibility.)
 
 ## <a name='AncestralWisdomRediscovered'></a>Ancestral Wisdom Rediscovered
 You've probably read or watched a number of stories where the main character tries to rediscover the lost technology or magic of their ancestors. This book gives you the same exhilaration, except in real life. 
@@ -27,6 +27,7 @@ My favorite topics from the book include...
 - Tribes in Africa whose people regularly grow 6-7 feet tall
 - Villages with low to non-existent rates of crime
 - Natives in South America who dip their food in special types of mud to protect themselves from water-borne disease
+- Miscarriages are frequently a result of a deformed fetus. Improved nutrition can reduce the rate of deformities and thus reduce the rate of miscarriage.
 
 Feel free to skip to the sections that interest you:
 
@@ -37,6 +38,7 @@ Feel free to skip to the sections that interest you:
 * [On the importance of green feed, still containing vitamin A, for animals](#OntheimportanceofgreenfeedstillcontainingvitaminAforanimals)
 * [Cleft palate and vitamin A](#CleftpalateandvitaminA)
 * [On paternal responsibility for defects in the offspring](#Onpaternalresponsibilityfordefectsintheoffspring)
+* [On Miscarriage](#OnMiscarriage)
 
 <!-- vscode-markdown-toc-config
 	numbering=false
@@ -84,6 +86,11 @@ Weston A. Price also draws a line between lack of Vitamin A and human overbites,
 > A practical case from my field studies includes a full-blooded Eskimo woman who was married twice, the second time to a white man, by whom she had several children. She had insisted on selecting and preparing the native foods for herself, though she prepared the white man's imported foods for him. With a total of twenty-six pregnancies she did not have any tooth decay. He had rampant tooth decay, and a marked abnormality in the development of face and of the dental arches. Several of the children had incomplete development of the face and of the dental arches. One of the girls who was married had very narrow dental arches and nostrils and a typical boyish type of body build. Unlike her mother, this girl had a very severe experience in the birth of her only child and insisted that she would not take the risk of having another. Several daughters have narrow arches. The question arises whether the deficient nutrition of the father may have been the contributing factor in the injury of their children.
 
 ---
+
+## <a name='OnMiscarriage'></a>On Miscarriage
+> In tracing the development of the human embryo, he tells why the growth process is very different from that of the development of embryos of lower forms. He states regarding deformed ova: "Ova that survive the eighth week tend to live on to term, and are born as monsters." I have referred previously to a personal communication from Professor Shute, of the University of Western Ontario, which states that he had been impressed with the high percentage of deformities in aborted fetuses. This seems to be Nature's method of eliminating defective individuals. Harris says further:
+
+> It is sometimes suggested that threatened abortions in early pregnancy should not be treated by rest and quiet, as it is quite possible that the uterus is attempting to rid itself of a pathological ovum which might become a monster in the future.
 
 To be continued...
 
