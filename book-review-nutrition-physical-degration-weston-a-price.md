@@ -1,5 +1,5 @@
 ---
-title: Book Review of Nutrition and Physical Degeneration
+title: Book Review of Nutrition and Physical Degeneration by Weston A. Price
 date: 2020-1-12 05:55 CEST
 tags: howto, bookreview, health
 ---
