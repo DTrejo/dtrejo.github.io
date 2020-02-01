@@ -111,8 +111,7 @@ This passage makes me wonder whether we don't need to lose bone as we age, if on
 
 <!-- TODO: GP murdock ethnographic atlas -->
 <!-- TODO: comparative nutrition -->
-<!-- TODO: hunter gatherers as models of public health
-to compare your own test results etc with them -->
+<!-- TODO: hunter gatherers as models of public health to compare your own test results etc with them -->
 
 To be continued...
 
