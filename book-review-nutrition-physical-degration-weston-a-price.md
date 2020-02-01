@@ -33,12 +33,14 @@ Feel free to skip to the sections that interest you:
 
 <!-- vscode-markdown-toc -->
 * [Motherhood spacing](#Motherhoodspacing)
-* [Wild animals' instinctual understanding of what they need to eat](#Wildanimalsinstinctualunderstandingofwhattheyneedtoeat)
+* [Wild animals' understanding of what they need to eat](#Wildanimalsunderstandingofwhattheyneedtoeat)
 * [On too little vitamin A and birth](#OntoolittlevitaminAandbirth)
 * [On the importance of green feed, still containing vitamin A, for animals](#OntheimportanceofgreenfeedstillcontainingvitaminAforanimals)
 * [Cleft palate and vitamin A](#CleftpalateandvitaminA)
 * [On paternal responsibility for defects in the offspring](#Onpaternalresponsibilityfordefectsintheoffspring)
-* [On Miscarriage](#OnMiscarriage)
+* [On miscarriage](#Onmiscarriage)
+* [On shrinking height with age](#Onshrinkingheightwithage)
+* [On soil depletion and calving rate](#Onsoildepletionandcalvingrate)
 
 <!-- vscode-markdown-toc-config
 	numbering=false
@@ -59,7 +61,9 @@ Feel free to skip to the sections that interest you:
 
 ---
 
-## <a name='Wildanimalsinstinctualunderstandingofwhattheyneedtoeat'></a>Wild animals' instinctual understanding of what they need to eat
+## <a name='Wildanimalsunderstandingofwhattheyneedtoeat'></a>Wild animals' understanding of what they need to eat
+
+Update: it seems that [animals learn what to eat from their parents and peers](https://onpasture.com/2014/10/27/can-animals-figure-out-what-minerals-they-need/), and eat to counteract deficiencies, rather than preventatively.
 
 >The story is told of a trip to Africa made by a wild animal specialist from the London zoo for the purpose of obtaining additional lions and studying this problem. While in the lion country, he observed the lion kill a zebra. The lion proceeded then to tear open the abdomen of the zebra and eat the entrails at the right flank. This took him directly to the liver. After spending some time selecting different internal organs, the lion backed away and turned and pawed dirt over the carcass which he abandoned to the jackals. The scientist hurried to the carcass and drove away the jackals to study the dead zebra to note what tissues had been taken. This gave him the clue which when put into practice has entirely changed the history of the reproduction of the cat family in captivity. The addition of the organs to the foods of the captive animals born in the jungle supplied them with foods needed to make reproduction possible. Their young, too, could reproduce efficiently. As I studied this matter with the director of a large lion colony, he listed in detail the organs and tissues that were particularly selected by animals in the wilds and also those that were provided for animals reproducing in captivity.  
 
@@ -77,7 +81,7 @@ Feel free to skip to the sections that interest you:
 
 ## <a name='CleftpalateandvitaminA'></a>Cleft palate and vitamin A
 
-Weston A. Price also draws a line between lack of Vitamin A and human overbites, underbites, and lack of room for wisdom teeth. In another section he discusses "overshot" and "undershot" sheep jaws.
+Weston A. Price also draws a line between lack of Vitamin A and human overbites, underbites, and lack of room for wisdom teeth. In another section he discusses "overshot" and "undershot" sheep jaws. Update: based on my follow-up research it seems vitamin K2 is partially responsible for full jaw growth.
 
 > Matings were made between blind pigs. These were fed rations containing ample vitamin A, and normal pigs with normal eyeballs were produced. Even the mating of a blind son with his mother who had produced him when on deficient diet, produced only normal pigs when both had ample vitamin A. He states, "If an hereditary factor had been the cause of this congenital blindness, these matings would have produced some blind pigs, even if vitamin A were present in the ration." The problem of congenital cleft palate has been very embarrassing to those parents whose children have been so afflicted. It is of interest that breeders of fancy dogs are frequently embarrassed by having this problem develop in their kennels or among litters born to parent stock obtained from their kennels.
 
@@ -87,15 +91,31 @@ Weston A. Price also draws a line between lack of Vitamin A and human overbites,
 
 ---
 
-## <a name='OnMiscarriage'></a>On Miscarriage
+## <a name='Onmiscarriage'></a>On miscarriage
 > In tracing the development of the human embryo, he tells why the growth process is very different from that of the development of embryos of lower forms. He states regarding deformed ova: "Ova that survive the eighth week tend to live on to term, and are born as monsters." I have referred previously to a personal communication from Professor Shute, of the University of Western Ontario, which states that he had been impressed with the high percentage of deformities in aborted fetuses. This seems to be Nature's method of eliminating defective individuals. Harris says further:
 
 > It is sometimes suggested that threatened abortions in early pregnancy should not be treated by rest and quiet, as it is quite possible that the uterus is attempting to rid itself of a pathological ovum which might become a monster in the future.
 
+---
+
+## <a name='Onshrinkingheightwithage'></a>On shrinking height with age
+
+This passage makes me wonder whether we don't need to lose bone as we age, if only we were eating better. And of course resistence training wouldn't hurt either.
+
+> Another important aspect of this problem of borrowing has to do with the progressive shrinking of the skeleton as evidenced by the shortening of the stature. I have measured many individuals who have lost from two to six inches in height in a decade or two. I have seen a few individuals who have lost as much as ten inches of their height by this process of borrowing from the skeleton. Our bodies need a certain amount of fresh minerals every day with which to manufacture blood. The days that these minerals are not provided in the foods they will be taken from our storage depots, the skeleton.
+
+---
+
+## <a name='Onsoildepletionandcalvingrate'></a>On soil depletion and calving rate
+> In one of my trips to the Western States I visited a large ranch of some fifty thousand acres. I asked the rancher whether he was conscious of a depletion in the soil of the ranch in its ability to carry pasture cattle. He said that it was very greatly depleted, that whereas formerly the cows on the ranch were able to produce from ninety-three to ninety-five healthy calves per hundred cows annually, nearly all of sufficiently high physical quality to be available for reproductive purposes, now he was getting only forty to forty-four calves per hundred cows annually and usually only ten or eleven of these were physically fit for reproductive purposes. He stated also that he was able to raise as many calves for restocking the ranch on the plant food produced on the fifty acres to which he was applying a high fertilization program as on the rest of the fifty-thousand-acre ranch. Of late most of the calves for the ranch had to be imported from other states.
+
+<!-- TODO: GP murdock ethnographic atlas -->
+<!-- TODO: comparative nutrition -->
+<!-- TODO: hunter gatherers as models of public health
+to compare your own test results etc with them -->
+
 To be continued...
 
-
 To health!  
-<span class=
-'"serif i">David Trejo</span><br/>
+<span class="serif i">David Trejo</span><br/>
 ${this.email || ''}
