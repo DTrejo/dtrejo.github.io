@@ -115,6 +115,6 @@ This passage makes me wonder whether we don't need to lose bone as we age, if on
 
 To be continued...
 
-To health!  
+To health!<br>
 <span class="serif i">David Trejo</span><br/>
 ${this.email || ''}
