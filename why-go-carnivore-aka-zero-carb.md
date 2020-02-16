@@ -24,7 +24,7 @@ Since then, my mood has reached a new much higher baseline, which I love. As I w
 My weight lifting continues to go well, although I don’t lift in the morning while fasted anymore. 
 
 ## Is Carnivore Worth Trying for *You*?
-Many people report great benefits from eating zero carb / carnivore. You can read some of the [success stories here](https://meatrx.com/category/success-stories/) (and some [research here](https://meatrx.com/category/research-articles/)). A three day trial seems pretty low risk to me. If you want any of the benefits listed above, I’d say it’s worth a try. 
+Many people report great benefits from eating zero carb / carnivore. You can read some of the [success stories here](https://meatrx.com/category/success-stories/) (and some [research here](https://meatrx.com/category/research-articles/)). A three day trial seems pretty low risk to me. If you want any of the benefits listed above, I’d say it’s worth a try.
 
 If you are still liking it after three days, consider extending it to a month to see how it feels. Week two is when you get into keto adaption (flu-like symptoms which go away after a few days).
 
