@@ -178,6 +178,6 @@ It's given me a few books and subjects I want to investigate:
 
 To health!<br>
 <span class="serif i">David Trejo</span><br/>
-\${this.email || ''}
+${this.email || ''}
 
 PS **Please send me an email about any other books which impressed you with their ancestral wisdom!**
