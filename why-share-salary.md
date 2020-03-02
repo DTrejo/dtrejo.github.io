@@ -1,5 +1,5 @@
 ---
-title: Why Share Salary Ranges with Candidates?
+title: Why share salary ranges with candidates?
 date: 2017-04-12 20:53 CEST
 tags: hiring
 ---
