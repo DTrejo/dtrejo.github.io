@@ -1,5 +1,5 @@
 ---
-title: Overcome Cold-Email Procrastination
+title: Overcome cold-email procrastination
 date: 2016-10-04 22:16 CEST
 tags: howto, email, cold email
 ---
