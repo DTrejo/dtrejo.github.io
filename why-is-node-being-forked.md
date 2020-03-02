@@ -1,5 +1,5 @@
 ---
-title: Why is Node Being Forked?
+title: Why is Node being forked?
 date: 2014-10-09 21:11 CEST
 tags: nodejs, forked, archived
 ---
