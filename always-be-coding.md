@@ -1,5 +1,5 @@
 ---
-title: Always be Coding
+title: Always be coding
 date: 2010-11-22 00:00 CET
 tags: productivity, archived
 ---
