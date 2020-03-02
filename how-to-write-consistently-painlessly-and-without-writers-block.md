@@ -1,5 +1,5 @@
 ---
-title: How to Write Consistently, Painlessly, and Without Writer's Block
+title: How to write consistently, painlessly, and without writer's block
 date: 2016-07-04 06:41 CEST
 tags: writing, howto
 ---
