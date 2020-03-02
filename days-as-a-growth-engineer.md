@@ -1,5 +1,5 @@
 ---
-title: Everything You Should Do in the First 30 Days of a New Growth Engineering Job
+title: Everything you should do in the first 30 days of a new growth engineering job
 date: 2018-01-11 06:26 CET
 tags: howto, growth, marketing, engineering
 ---
