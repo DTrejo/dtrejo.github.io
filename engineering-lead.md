@@ -1,5 +1,5 @@
 ---
-title: Engineering Lead Checklists
+title: Engineering lead checklists
 date: 2018-10-19 05:55 CEST
 tags: howto, growth
 ---
