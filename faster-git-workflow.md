@@ -1,5 +1,5 @@
 ---
-title: A Faster Git Workflow with Ampline
+title: A faster Git workflow with Ampline
 date: 2013-10-12 00:00 CET
 tags: git, productivity
 ---
