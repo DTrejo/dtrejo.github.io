@@ -1,5 +1,5 @@
 ---
-title: How to Reliably Get Your Team to Write Articles for Your Engineering Blog
+title: How to reliably get your team to write articles for your engineering blog
 date: 2017-04-23 23:54 CEST
 tags: hiring, writing
 ---
