@@ -1,5 +1,5 @@
 ---
-title: Meta Rules
+title: Meta rules
 date: 2010-07-27 00:00 CET
 tags: brentpottenger, archived
 ---
