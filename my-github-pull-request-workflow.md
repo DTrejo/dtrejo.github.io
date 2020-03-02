@@ -1,5 +1,5 @@
 ---
-title: My Github Pull Request Workflow
+title: My Github pull request workflow
 date: 2012-07-06 00:00 CET
 tags: git, howto
 ---
