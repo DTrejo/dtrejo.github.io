@@ -1,5 +1,5 @@
 ---
-title: Salary Negotiation Resources (CS focused)
+title: Salary negotiation resources (CS focused)
 date: 2013-01-06 00:00 CET
 tags: salary negotiation, archived
 ---
