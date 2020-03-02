@@ -1,5 +1,5 @@
 ---
-title: Moneyball Book Review and Measuring Revenue per Engineer
+title: Moneyball book review and measuring revenue per engineer
 date: 2017-05-18 04:40 CEST
 tags: hiring
 ---
