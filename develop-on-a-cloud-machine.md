@@ -1,5 +1,5 @@
 ---
-title: Develop on a Cloud Machine
+title: Develop on a cloud machine
 date: 2018-08-26 05:55 CET
 tags: howto, git
 
