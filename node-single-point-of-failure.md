@@ -1,5 +1,5 @@
 ---
-title: Node Single Point of Failure
+title: Node single point of failure
 date: 2013-01-18 00:00 CET
 tags: nodejs, voxer
 ---
