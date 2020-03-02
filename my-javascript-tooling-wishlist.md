@@ -1,5 +1,5 @@
 ---
-title: My Javascript Tooling Wishlist
+title: My Javascript tooling wishlist
 date: 2014-03-21 07:06 CET
 tags: javascript, nodejs, tools
 ---
