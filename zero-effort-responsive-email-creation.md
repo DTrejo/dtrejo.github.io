@@ -1,5 +1,5 @@
 ---
-title: Zero Effort Responsive Email Creation
+title: Zero effort responsive email creation
 date: 2014-07-19 23:32 CEST
 tags: howto, nodejs
 ---
