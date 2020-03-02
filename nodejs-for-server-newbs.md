@@ -1,5 +1,5 @@
 ---
-title: Node.js for Server Newbs
+title: Node.js for server newbs
 date: 2010-09-03 00:00 CET
 tags: howto, nodejs, archived
 ---
