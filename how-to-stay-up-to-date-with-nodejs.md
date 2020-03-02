@@ -1,5 +1,5 @@
 ---
-title: How to Stay Up-to-date with Node.js
+title: How to stay up-to-date with Node.js
 date: 2010-08-02 00:00 CET
 tags: nave, nodejs, npm, archived
 ---
