@@ -1,5 +1,5 @@
 ---
-title: Massive List of Engineering Recruiting Channels
+title: Massive list of engineering recruiting channels
 date: 2017-03-28 08:15 CEST
 tags: hiring
 ---
