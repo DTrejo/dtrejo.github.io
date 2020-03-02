@@ -1,5 +1,5 @@
 ---
-title: Growth & Full Stack Engineering Interview Script
+title: Growth & full stack engineering interview script
 date: 2018-12-14 05:55 CEST
 tags: howto, growth, hiring
 ---
