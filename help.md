@@ -1,5 +1,5 @@
 ---
-title: How I Can Help You
+title: How I can help you
 date: 2015-11-13 03:36 CET
 tags: consulting, self care, marketing, sales, writing, food, software engineering, archived
 ---
