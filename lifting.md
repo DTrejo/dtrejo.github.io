@@ -1,5 +1,5 @@
 ---
-title: Start Weightlifting in Just 720 Days
+title: Start weightlifting in just 720 days
 date: 2018-06-14 05:55 CET
 tags: howto, weight lifting, health
 ---
