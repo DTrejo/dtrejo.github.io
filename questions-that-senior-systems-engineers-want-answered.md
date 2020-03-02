@@ -1,5 +1,5 @@
 ---
-title: Questions That Senior Systems Engineers Want Answered
+title: Questions that Senior Systems Engineers want answered
 date: 2017-05-16 23:32 CEST
 tags: hiring
 ---
