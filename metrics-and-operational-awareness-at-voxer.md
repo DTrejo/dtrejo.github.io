@@ -1,5 +1,5 @@
 ---
-title: Metrics and Operational Awareness at Voxer
+title: Metrics and operational awareness at Voxer
 date: 2013-01-18 00:00 CET
 tags: nodejs, voxer
 ---
