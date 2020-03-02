@@ -1,5 +1,5 @@
 ---
-title: How to Get Your Business to Pull You Forward
+title: How to get your business to pull you forward
 date: 2017-02-11 05:03 CET
 tags: howto, business
 ---
