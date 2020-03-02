@@ -1,5 +1,5 @@
 ---
-title: How to Run an Intern Program Like Cloudera's
+title: How to run an intern program like Cloudera's
 date: 2014-03-31 21:14 CET
 tags: hiring, intern, howto
 ---
