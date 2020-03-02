@@ -1,5 +1,5 @@
 ---
-title: Why go Carnivore? (aka Zero Carb)
+title: Why go carnivore? (aka zero carb)
 date: 2019-7-18 05:55 CEST
 tags: howto, carnivore, health
 ---
