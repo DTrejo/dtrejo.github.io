@@ -1,5 +1,5 @@
 ---
-title: Chaos in Your Product Prototyping
+title: Chaos in your product prototyping
 date: 2017-02-17 05:50 CET
 tags: lean, prototyping, growth
 ---
