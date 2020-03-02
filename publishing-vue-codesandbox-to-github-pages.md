@@ -1,5 +1,5 @@
 ---
-title: How to Publish a Vue CodeSandbox.io to Github Pages on a Custom Domain
+title: How to publish a Vue CodeSandbox.io to Github Pages on a custom domain
 date: 2018-05-25 05:55 CET
 tags: howto, js
 ---
