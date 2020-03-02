@@ -1,5 +1,5 @@
 ---
-title: How to Hustle on Your Referrals So They Actually Get Hired
+title: How to hustle on your referrals so they actually get hired
 date: 2018-01-11 05:55 CET
 tags: howto, referrals, hiring
 ---
