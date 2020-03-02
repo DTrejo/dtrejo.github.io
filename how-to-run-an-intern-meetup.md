@@ -1,5 +1,5 @@
 ---
-title: How to Run an Intern Meetup
+title: How to run an intern meetup
 date: 2014-03-22 00:33 CET
 tags: howto, checklist, intern, hiring
 ---
