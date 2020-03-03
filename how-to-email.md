@@ -1,5 +1,5 @@
 ---
-title: How to Email
+title: How to email
 date: 2016-04-30 00:51 CEST
 tags: howto, email
 ---
