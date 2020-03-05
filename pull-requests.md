@@ -28,7 +28,7 @@ Cheers,
 _David Trejo_  
 ${this.email || ''}
 
-PS Here are a couple more tips I’ve found very useful in my engineering work at Credit Karma:
+PS Here are a couple more tips I’ve found very useful in my engineering work:
 
 - Prototype: create a terribly written version of the thing in 1-2 hours which demonstrates the concept and forces you to familiarize yourself with the parts of the codebase you'll be working in. This uncovers engineering risks, security risks, and compliance risks early in the process so you can have those conversations before you build something that won't work or won't get approved. Open a PR as soon as you have this and add experienced engineers on your team and other teams.
 - Experiment: use the words "experiment" and "prototype" in ALL your conversations about the feature, because even for security sensitive features, they may approve you to ramp until you have significance. This is enough to help you justify further investment and reimplementation in a more secure way.
