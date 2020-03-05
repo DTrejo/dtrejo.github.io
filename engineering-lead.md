@@ -11,7 +11,7 @@ Let’s say that our definition of engineering lead is someone who leads an engi
 
 The way the team lead uses these lists, is that for every new project, they make a copy of the lists and then whenever the list is being executed by another person, they review it together to add/delete/reword items so that the person agrees and understands the work requested of them. Ideally this helps people feel they have decision-making power over their own work, and aren’t blindly executing.
 
-Please note these checklists are very specific to Credit Karma—you’d definitely want to customize them to match your workplace.
+Please note these checklists are very specific to my particular workplace(s)—you’d definitely want to customize them to match your workplace.
 
 ## Team Lead’s Checklist
 - Make a copy of all the checklists
