@@ -35,7 +35,7 @@ Here are a few of the symptoms you and your team should watch out for, to tip yo
 - You find yourself budgeting for local VM breakages in your feature estimates
 
 # How expensive is it to develop on an AWS machine?
-At Credit Karma we run two machines in concert to create one development environment. That comes out to about $X00/mo. 
+We run two machines in concert to create one development environment. That comes out to about $X00/mo. 
 
 I personally only need one development environment at any given moment. When it comes to my happiness and productivity as an engineer, I find it very worth it.
 
