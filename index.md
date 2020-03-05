@@ -22,9 +22,6 @@ Which of these articles would you want me to write next? :)
 
 <ol type="A">
   <li>
-    ~10 A/B tests which earn us ~+$10MM/year at Credit Karma (along with conversion numbers)
-  </li>
-  <li>
     How to keep shipping A/B tests while reducing technical debt from old dead experiment code
   </li>
   <li>
