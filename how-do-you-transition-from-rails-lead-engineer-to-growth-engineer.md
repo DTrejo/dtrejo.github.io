@@ -9,7 +9,7 @@ Timothy Johnson* asks:
 
 > "I've recently come across the "growth" hacker" designation and am wondering how to make the transition to work in this capacity at a startup?"
 
-I just did this transition, from engineer/consultant to growth engineer at Credit Karma. What worked for me was focusing specifically on interviewing for growth engineering positions. I also focused heavily on my personal criteria for a company with big opportunity: profitable; >50 engineers; ideally B2B; some amount of React and Node; based in San Francisco.
+I just did this transition, from engineer/consultant to growth engineer at a large tech company. What worked for me was focusing specifically on interviewing for growth engineering positions. I also focused heavily on my personal criteria for a company with big opportunity: profitable; >50 engineers; ideally B2B; some amount of React and Node; based in San Francisco.
 
 The easiest way to find a company like this is to ask all your friends. Alternatively,
 
