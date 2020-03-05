@@ -5,7 +5,7 @@ tags: howto, growth, marketing, engineering
 ---
 # ${this.title}
 
-I’m going to lay out the things I did and wanted to do in the first 30 days of my growth engineering job at Credit Karma. I work on acquisition: getting us more traffic and more signups. My engineering work contributes to our efforts across SEO, conversation rate optimization, UX, and page speed optimization.
+I’m going to lay out the things I did and wanted to do in the first 30 days of my growth engineering job. I work on acquisition: getting us more traffic and more signups. My engineering work contributes to our efforts across SEO, conversation rate optimization, UX, and page speed optimization.
 
 The following areas are important to me:
 
@@ -26,7 +26,7 @@ This is difficult because our particular team is on the newer side and we don’
 We have certain phrases that have certainly undergone testing in TV ads. I have noticed that we have very few tests for headlines or button copy. I sense we have a lot of wins waiting for us here :) I suspect that our paid revenue marketing teams have some great copy in their Facebook and Google ads, but I’ve yet to request access so I can read what they’re running.
 
 ## #3 Understanding How Our Members Talk and Their Expensive Problems
-The best way to do this is with an Amy Hoy<sup>※</sup> Sales Safari. Because I haven’t bought the course (yet) and I was feeling lazy, I just signed up for f5bot.com and set up keyword searches for Credit Karma and the names of our competitors to see what people are saying about us on Reddit/HN. You can also use littlebirdie for this. I also asked member support to give me access to any places where they post feedback from our members (for us that is the #all-the-feels channel and the #bad-iOS-reviews / #bad-android-reviews channels).
+The best way to do this is with an Amy Hoy<sup>※</sup> Sales Safari. Because I haven’t bought the course (yet) and I was feeling lazy, I just signed up for f5bot.com and set up keyword searches for our company name and the names of our competitors to see what people are saying about us on Reddit/HN. You can also use littlebirdie for this. I also asked member support to give me access to any places where they post feedback from our members (for us that is the #all-the-feels channel and the #bad-iOS-reviews / #bad-android-reviews channels).
 
 Of course I want more than that, but I haven’t been super focused on conversion copywriting and sales writing lately, so it hasn’t been the highest priority. I wish I had more good words from our members because we have a lot of different services and I feel I don’t understand people well enough yet (and I suspect my coworkers are in a similar boat).
 
