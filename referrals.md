@@ -31,7 +31,7 @@ Here are all the ways that my friend hustled to get me hired as his referral, as
 - When the hiring manager says yes, introduce them:  
     ```
     Subject:  
-    $friendname <> $hiringmanagername re Growth Engineering @ Credit Karma
+    $friendname <> $hiringmanagername re Growth Engineering @ $company
     
     $friendname meet $hiringmanager name.
     $hiringmanagername meet $friendname.
