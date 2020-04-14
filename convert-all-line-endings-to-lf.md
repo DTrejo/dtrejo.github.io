@@ -1,7 +1,7 @@
 ---
 title: Convert all line endings to LF
 date: 2012-01-02 00:00 CET
-tags: git, line endings, node.js
+tags: git, line endings, node.js, archive
 ---
 # ${this.title}
 
