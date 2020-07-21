@@ -58,7 +58,8 @@ The Savory Institute has just launched a new program, in partnership with brands
 I hope this article or the videos I've linked have given you some hope for our future. Maybe you'll feel like donating too, or maybe you'll share [Alan's TED talk][ted] with your rancher friend, or just explain how this all works to someone over drinks. Maybe, just maybe, you'll convince your company and its data centers to go carbon neutral or negative, or match employee donations.
 
 To the health of our land & planet,<br>
-<span class="serif i">David Trejo</span>
+<span class="serif i">David Trejo</span><br>
+${this.email || ''}
 
 ## Follow-up resources
 - [Alan Savory's TED talk, "How to fight desertification and reverse climate change"][ted]
