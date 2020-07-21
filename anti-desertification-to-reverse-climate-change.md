@@ -1,6 +1,12 @@
+---
+title: 'Regenerative anti-desertification vs "plant more trees": why does Regenerative feel more promising?'
+date: 2020-7-20 05:55 CEST
+tags: health, climatechange
+---
+
 [Rough draft, stat checks & corrections are very welcome – DTrejo]
 
-# Regenerative anti-desertification vs "plant more trees": why does Regenerative feel more promising?
+# ${this.title}
 
 There have been, and continue to be, many efforts to plant trees to combat climate change. Where they work, I support them. These efforts will not work in places with infrequent rain, and that's where regenerative land management comes in.
 
