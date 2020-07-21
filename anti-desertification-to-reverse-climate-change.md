@@ -1,5 +1,5 @@
 ---
-title: 'Regenerative anti-desertification vs "plant more trees": why does Regenerative feel more promising?'
+title: "Regenerative anti-desertification vs plant more trees: why does Regenerative feel more promising?"
 date: 2020-7-20 05:55 CEST
 tags: health, climatechange
 ---
