@@ -6,6 +6,8 @@ tags: health, climatechange
 
 [Rough draft, stat checks & corrections are very welcome – DTrejo]
 
+<div class="tr i">This article was written with <a href="https://duskk.com">Duskk.com</a></div>
+
 # ${this.title}
 
 There have been, and continue to be, many efforts to plant trees to combat climate change. Where they work, I support them. These efforts will not work in places with infrequent rain, and that's where regenerative land management comes in.
