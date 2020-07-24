@@ -18,25 +18,17 @@ author: false
 <hr />
 
 Hey there,  
-Which of these articles would you want me to write next? :)
+Lately I've been working on a writing & journaling app called [Duskk.com][duskk]. Our goal is to help you use daily writing to improve yourself and achieve your goals. For example, your goal might be to...
 
-<ol type="A">
-  <li>
-    How to keep shipping A/B tests while reducing technical debt from old dead experiment code
-  </li>
-  <li>
-    How to involve your analyst/engineering manager/marketing manager in the prioritization, opportunity finding, and sizing which needs to happen before you can build an experiment
-    <!-- 
-      <a href="mailto:me?subject="Write about A"&body="Hey David, write about A!">
-        Idea: Send Vote :emailicon:
-      </a>
-     -->
-  </li>
-</ol>
+- write more articles
+- write a book
+- pen your memoir
+- type out the noise to get prepared for creative writing
+- put a stop to repetitive negative thoughts & improve performance (writing can be more effective than a therapist!)
 
-**Or, what would you like me to write about?** Your questions about growth
-engineering & conversion rate optimization will help me write more–talk to you
-soon!
+Take a look and [sign up for Duskk to journal daily][duskk] and [be a pre-alpha user][duskk]. We can't wait to hear your feedback.
+
+[duskk]: https://duskk.com
 
 Thanks in advance,  
 <span class="serif i">David Trejo</span><br/>
