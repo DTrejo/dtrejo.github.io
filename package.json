@@ -17,7 +17,7 @@
   "dependencies": {
     "gray-matter": "^4.0.1",
     "marked": "0.7.0",
-    "prismjs": "1.17.1",
+    "prismjs": "1.21.0",
     "shelljs": "^0.8.2"
   },
   "devDependencies": {
