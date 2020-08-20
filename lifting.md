@@ -53,7 +53,9 @@ Other super interesting videos
   - Higher birth weight
   - Back up on your feet after labor much more quickly
 
-- Parkinson's Disease and Training for Strength https://youtube.com/watch?v=D-zIUCCJf68
+- [Parkinson's Disease and Training for Strength (video)](https://youtube.com/watch?v=D-zIUCCJf68)
+
+- [Starting Strength - It's Never Too Late, even if you're 91 years old (video)](https://www.youtube.com/watch?v=b7__IdzVuyQ)
 
 Your bones will thank you when you successfully get out of your rocking chair to pick up three of your grandchildren at the same time!
 
