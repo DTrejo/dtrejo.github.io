@@ -59,6 +59,6 @@ Other super interesting videos
 
 Your bones will thank you when you successfully get out of your rocking chair to pick up three of your grandchildren at the same time!
 
-You’ve got this, I believe in you!  
+You’ve got this, I believe in you!<br>
 _David Trejo_  
 ${this.email || ''}
