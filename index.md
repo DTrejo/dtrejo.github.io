@@ -1,6 +1,6 @@
 ---
 title: David Trejo
-description: Growth Engineer at Credit Karma & Consultant
+description: Engineer at Chime & Consultant
 author: false
 ---
 <div class="tc">
@@ -12,7 +12,7 @@ author: false
     >
     <h1 class="ma0 ml3 f3 fw4" style="color: inherit">${this.title}</h1>
   </div>
-  <h2 class="f2 fw4">Growth Engineer at Credit Karma <span class="amp">&</span> Consultant</h2>
+  <h2 class="f2 fw4">Engineer at Chime <span class="amp">&</span> Consultant</h2>
 </div>
 
 <hr />
