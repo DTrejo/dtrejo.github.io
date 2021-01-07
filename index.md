@@ -18,7 +18,7 @@ author: false
 <hr />
 
 Hey there,  
-Lately I've been working on a writing & journaling app called [Duskk.com][duskk]. Our goal is to help you use daily writing to improve yourself and achieve your goals. For example, your goal might be to...
+Lately I've been working on a writing & journaling app called [Duskk.com][duskk]. Our goal is to help you use daily writing to improve yourself and achieve your goals. For example, your goal might be to... 
 
 - write more articles
 - write a book
