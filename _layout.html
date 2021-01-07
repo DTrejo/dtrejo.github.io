@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>${this.title || ''}</title>
+  <meta itemprop="name" content="${this.title || ''}">
+  <meta property="og:title" content="${this.title || ''}">
+  <link rel="icon" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:creator" content="@ddtrejo">
+  <meta name="twitter:site" content="@ddtrejo">
+  ${this.description
+    ? '<meta name="description" content="' + this.description + '">'
+    : ''
+  }
+  ${this.description
+    ? '<meta itemprop="description" content="' + this.description + '">'
+    : ''
+  }
+  ${this.description
+    ? '<meta property="og:description" content="' + this.description + '">'
+    : ''
+  }
+  ${this.href
+    ? '<link rel="canonical" href=' + JSON.stringify(this.href) + '>'
+    : ''
+  }
+  ${this.href
+    ? '<meta property="og:url" content=' + JSON.stringify(this.href) + '>'
+    : ''
+  }
+  ${this.ogImage
+    ? '<meta property="og:image" content="'+ this.ogImage + '"/>'
+    : ''
+  }
+  ${this.ogImage
+    ? '<meta name="image" content="'+ this.ogImage + '"/>'
+    : ''
+  }
+  ${this.ogImage
+    ? '<meta itemprop="image" content="'+ this.ogImage + '"/>'
+    : ''
+  }
+  ${this.ogImage
+    ? '<meta name="twitter:image:src" content="' + this.ogImage + '">'
+    : ''
+  }
+  ${this.ogImage && this.href !== 'https://dtrejo.com/'
+    ? '<meta name="twitter:card" content="summary_large_image">'
+    : ''
+  }
+  ${this.ogImage && this.href !== 'https://dtrejo.com/'
+    ? '<meta property="og:type" content="article">'
+    : '<meta property="og:type" content="website">'
+  }
+  ${''/* https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css */}
+  <link rel="stylesheet" href="/css/tachyons.min.css" />
+  ${this.contentHTML && this.contentHTML.includes('language-') ?
+    '<style>' + this.require('shelljs').cat('./node_modules/prismjs/themes/prism-twilight.css').toString() + ' </style>'
+    : ''
+  }
+  <style>
+    * { margin-top: 0 }
+    * + * { margin-top: 1.5em }
+    li li { margin-top: 1.5em }
+    html { scroll-behavior: smooth }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6; /*rgb(220, 217, 214)*/
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.25;
+      font-weight: 600;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:focus, a:active, a:hover {
+      color: #ff6300;
+    }
+    .footer {
+      border-top: 1px solid rgb(25, 73, 110);
+      background-color: #021928;
+    }
+    .amp {
+      font-family: Baskerville, "Goudy Old Style", "Palatino", "Palatino Linotype", "Book Antiqua", serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+    h1, h2, h3, h4, h5, h6, li, p, span, blockquote, pre, code {
+      text-rendering: optimizeLegibility;
+    }
+    hr {
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      border-top: 1px solid rgba(220, 217, 214, .1);
+    }
+    /* improve prism styles */
+    pre, pre[class*=language-] {
+      line-height: 1.4;
+      padding: 1.25rem 1.5rem;
+      margin: .85rem 0;
+      background-color: #282c34;
+      background-color: #191919;
+      border-radius: 6px;
+      overflow: auto;
+    }
+    blockquote {
+      margin-left: 0;
+      border-left: .5rem solid rgba(0, 0, 0, .5);
+      padding-left: 1.5em;
+    }
+    .customcolor { color: #013250 }
+    .b--customcolor { border-color: #013250 }
+    ${
+      ''/*
+    TODO https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/
+    https://sustywp.com/wp-content/cache/autoptimize/css/autoptimize_acdd9f07ab899c539c573bd8a05502fe.css
+    */
+      /* $bgColor = #013250
+    $accentColor = #f57a59//#63bbb9
+    $textColor = #dcd9d6//#9fa2ae
+    $borderColor = #4d637a //#f00//darken(#522427, 50%)
+    $searchBgColor = #021928 //darken($borderColor, 25%)
+    $headingColor = #a3a071
+    $secondaryAccentColor = #63bbb9
+
+    // doesnt look that good
+    .footer {
+      box-shadow: 0 -20px 15px -20px #000; make it prettier
+    }
+
+    // cool 3d css text
+    https://codepen.io/noahblon/pen/CsxfH
+
+    cool hr
+    https://codepen.io/lrenhrda/pen/hkLIe
+
+    https://codepen.io/lbebber/pen/BzoHi
+    dashed text shadow with animation
+
+    divider with turned section marker
+    https://codepen.io/danburrows/pen/vhJqK
+
+    http://codepen.io/nw/pen/jhKtk
+    text perspective. gold text on black background
+    */
+    }
+  </style>
+  ${this.head || ''}
+</head>
+<body class="pt2 lh-copy">
+  ${this.nav || ''}
+
+  <article class="content mw7 ph2 center">
+    ${this.contentHTML || ''}
+  </article>
+
+  ${this.author || ''}
+
+  ${/*this.cta || */''}
+
+  ${this.footer || ''}
+
+  ${this.bodyEnd || ''}
+</body>
+</html>
