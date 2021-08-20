@@ -87,16 +87,15 @@ This is why you don't want to limit your search by any criteria other than locat
 - If you don't have a friend, you could even bring an inspector with you (sounds like a pain to arrange / pay for to me though)
 - Look in the attic
 - Look at the roof with a ladder (or use google maps)
-- Get under the house and look at the foundation with the flashlight on your phone
+- Get under the house and look at the foundation with the flashlight on your phone. Watch for cracks, wet spots, mold, mud, dirt that obviously used to be mud and is now dry, earthquake reinforcement (or not), pipes (copper is best quality).
 - Read all the disclosures and the inspection report, take note of the cost of repairs
-
 
 ## Less orthodox strategies
 There are other, less orthodox strategies for finding a home, although I won't go into them here.
 They really depend on how much of a fixer your family can handle. 
 Be very careful that you've done tons of research about the process if you pursue foreclosed homes.
 
-That's it! Wishing you patience. 
+## That's it! Wishing you patience. 
 
 Good luck and I'm sure you'll find a home you're excited about 😄  
 _David Trejo_  
