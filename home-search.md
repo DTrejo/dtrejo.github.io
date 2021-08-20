@@ -6,7 +6,7 @@ tags: homes, howto
 # ${this.title}
 
 Here are some tips on home searching that I picked up during my recent search.
-Much of this advice is from my father, who has built hundreds of houses as a contractor and contractor in the Bay Area.
+Much of this advice is from my father, who has built hundreds of houses as a contractor and architect in the Bay Area.
 You can see two houses he designed and built for himself at [TrejoDesign.com](https://trejodesign.com).
 
 ## Home searching
