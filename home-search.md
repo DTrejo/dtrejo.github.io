@@ -82,6 +82,19 @@ This is why you don't want to limit your search by any criteria other than locat
   - Don't pay so much for a house that it wouldn't be worth it to improve it and resell it. 
   - This profit is your comfort room, in case the market does poorly and you are in the unfortunate situation where you NEED to sell at a bad time.
 
+### Competitive offers
+In a seller's market, sellers care about speed and risk. The most competitive offer would...
+
+- Waive contingencies for: inspection, loan, and appraisal (if it comes short, show you can cover the difference to reduce percieved risk)
+- Fastest time to close, time to get appraisal (ask your broker for these when you first talk to them)
+- Offer to get rid of whatever belongings are left in the home
+- Offer to pay all the closing fees (50/50 is typical I think. Research what this amounts to for your area, closing fees and taxes are not insignificant)
+- Include all your offer details on the same page as your personal letter to the seller. This way, there's no digging needed by a potentially lazy seller's agent, and the buyer can see the total value of the offer.
+- Sum up all the value you have in your offer to create a number, and write it in. This number is bigger than what the house actually costs, because you're paying the fees).
+- Have your realtor ask the seller's agent about what's on the seller's mind, both numbers-wise, and about the other offers, and about what conditions they care about. You might discover something important you can add that's easy for you to do but which matters a lot to the seller.
+
+Note that your area may not be this competitive, however you can still use these tactics to win a bid while paying less for a house (because you've provided value in these other areas). By paying the fees yourself, you could theoretically have the highest offer value, but a lower purchase price, lowering the property taxes you pay.
+
 ### Be fully informed when you make your bid
 - Once you're calibrated, invite a friend who knows a lot about houses to join you on a 2nd tour of homes you want to bid on.
 - If you don't have a friend, you could even bring an inspector with you (sounds like a pain to arrange / pay for to me though)
