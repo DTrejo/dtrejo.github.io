@@ -52,11 +52,11 @@ And of course if you have good to neutral feelings about a house, consider biddi
 once you feel you're calibrated (30+ homes seen).
 
 ## Pricing advice
-A house that has a price increase OR decrease is signalling to you that
+A house that has a price increase OR decrease, or that has been on the market for longer than normal is signalling to you that...
 
-A. They didn't get an offer they liked within the first 9ish days of listing
-B. You should definitely bid below their asking price
-C. Something is probably wrong with the house, as always, read the disclosures
+- A. They didn't get an offer they liked within the first 9ish days of listing
+- B. You should definitely bid below their asking price
+- C. Something is probably wrong with the house, as always, read the disclosures
 
 Also, a house that has a poorly constructed listing, or without photos, may be a great deal. 
 Use street view to check on it, also, make sure to look at the livable sqft, as even if there's 
