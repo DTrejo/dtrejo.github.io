@@ -29,6 +29,8 @@ You can see two houses he designed and built for himself at [TrejoDesign.com](ht
   While at least they aren't giving BAD advice, it doesn't feel like they are being as helpful as they could be.
 
 ## Positive qualities in a home
+Of course, these are mine, as I was looking for a single family home in the East Bay.
+
 - Location (close to work)
 - Location (close to shops and groceries)
 - Location (close to good schools)
@@ -105,7 +107,7 @@ Note that your area may not be this competitive, however you can still use these
 
 ## Less orthodox strategies
 There are other, less orthodox strategies for finding a home, although I won't go into them here.
-They really depend on how much of a fixer your family can handle. 
+They really depend on how much of a fixer your family can handle.
 Be very careful that you've done tons of research about the process if you pursue foreclosed homes.
 
 ## That's it! Wishing you patience. 
