@@ -16,9 +16,9 @@
   "license": "ISC",
   "dependencies": {
     "gray-matter": "4.0.3",
-    "marked": "0.7.0",
+    "marked": "4.0.10",
     "prismjs": "1.25.0",
-    "shelljs": "0.8.4"
+    "shelljs": "0.8.5"
   },
   "devDependencies": {
     "run": "1.4.0",
