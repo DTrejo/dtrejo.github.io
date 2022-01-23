@@ -143,7 +143,7 @@ function md(f) {
   const scope = { ...runComponents(componentScope), ...componentScope }
   // l('scope with components', scope)
   const markdown = template(content, scope)
-  const contentHTML = marked(markdown)
+  const contentHTML = marked.parse(markdown)
   const page = layout(scope, contentHTML)
   write(page, d)
 }
