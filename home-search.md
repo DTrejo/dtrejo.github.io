@@ -67,7 +67,8 @@ This is why you don't want to limit your search by any criteria other than locat
 - When you think you've seen enough places, put in a bid on a house you feel okay about. 
 - An early test bid will vet your team:
   - How fast is your realtor? Do they prepare docs for speedy docusign/digital signing? Do they give good advice about how to put in a competitive offer?
-  - How fast is your broker? Do they give you a clear list of requirements? Do they tell you the prevailing rate for conforming loans? For jumbo loans? 
+  - How fast is your broker? Do they give you a clear list of requirements? Do they tell you the prevailing rate for conforming 
+  s? For jumbo loans? Do you qualify for first time home buyer or low income loan programs?
     How many days do they need to close? How accurate is their estimate? Do they give you good advice about how it works to waive loan contingencies?
   - How on-board is your family? Be sure to make it VERY clear to your contributing family members, where the money is coming from, and from who, 
     and how much it adds up to. This will help to prevent last-minute miscommunication.
@@ -109,6 +110,7 @@ Note that your area may not be this competitive, however you can still use these
 There are other, less orthodox strategies for finding a home, although I won't go into them here.
 They really depend on how much of a fixer your family can handle.
 Be very careful that you've done tons of research about the process if you pursue foreclosed homes.
+Private sales could be worth investigating as well, as there is likely to be fewer bidders.
 
 ## That's it! Wishing you patience. 
 
