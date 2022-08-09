@@ -24,11 +24,11 @@ This list of tips is built from experience and Josh Seiden's article, [How to Wr
 
 These are also great for people who aren't native english speakers.
 
-- ★ [polishmywriting.com](http://polishmywriting.com) is my favorite, despite its looks.
+- ★ ~polishmywriting.com~ is my favorite, despite its looks. (defunct)
 - ★ [hemingwayapp.com](http://hemingwayapp.com) is great for simplifying sentences. If you're doing sales writing, get it under grade 8 to increase conversion.
+- ★ [grammarly.com](http://grammarly.com) very popular
 - [alexjs.com/#demo](http://alexjs.com/#demo)
 - [labs.foxtype.com/politeness](http://labs.foxtype.com/politeness)
-- [grammarly.com](http://grammarly.com)
 - [paperrater.com/free_paper_grader](http://paperrater.com/free_paper_grader)
 
 Sincerely,  
