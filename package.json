@@ -16,7 +16,10 @@
   "license": "ISC",
   "dependencies": {
     "gray-matter": "4.0.3",
+    "html-react-parser": "3.0.1",
     "marked": "4.0.10",
+    "preact": "10.10.1",
+    "preact-render-to-string": "5.2.1",
     "prismjs": "1.25.0",
     "shelljs": "0.8.5"
   },
