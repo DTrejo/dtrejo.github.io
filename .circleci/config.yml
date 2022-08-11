@@ -56,7 +56,7 @@ jobs:
               git commit -m 'deploy'
 
               # if you are deploying to https://<USERNAME>.github.io
-              git push -q -f https://${DTREJO_GITHUB_IO_ACCESS_TOKEN}@github.com/dtrejo/dtrejo.github.io.git master
+              git push -q -f https://${DTREJO_GITHUB_IO_ACCESS_TOKEN}@github.com/DTrejo/dtrejo.github.io.git master
               cd -
             fi
 workflows:
