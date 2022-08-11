@@ -13,7 +13,7 @@ git init
 git config core.sshCommand 'ssh -i ~/.ssh/id_rsa -F /dev/null'
 git config github.user = "DTrejo"
 git config user.name "DTrejo"
-git config user.email "david.daniel.trejo@gmail.com"
+git config user.email "56119+DTrejo@users.noreply.github.com"
 git add -A
 git commit -m 'deploy'
 
