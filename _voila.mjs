@@ -25,6 +25,7 @@ function parsejsx(jsx, components = {}) {
 if (import.meta.url.endsWith(process.argv[1])) {
   test1()
   test2()
+  test3()
 }
 // jsx parsing
 function test1() {
@@ -55,6 +56,10 @@ function test2() {
   console.assert(html.includes('md jsx text</h1>'))
   console.assert(html.includes('<h1>hi</h1>'))
   console.log('done')
+}
+
+function test3(){
+  //
 }
 
 /* 
