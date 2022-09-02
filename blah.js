@@ -343,7 +343,7 @@ l('done')
 //   // TODO assert redirects were made properly
 // }
 
-/*
+/* 
 TODOs
 - use htm instead of homegrown templating
 - create home photo inspiration image gallery
