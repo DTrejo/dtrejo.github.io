@@ -7,7 +7,7 @@ tags: howto
 
 Stable diffusion is super fun. You can get some free credits using [beta.dreamstudio.ai](https://beta.dreamstudio.ai/dream) ([dreamstudio discord](https://discord.gg/stablediffusion)). You can find prompt inspiration on [lexica.art](https://lexica.art/) ([lexica discord](https://discord.gg/bMHBjJ9wRh)). I also recommend joining the discord chats.
 
-For higher quality images you definitely want inpainting, outpainting, and to increase the resolution. It seems like this [photoshop extension called alpaca](https://old.reddit.com/r/StableDiffusion/comments/wyduk1/show_rstablediffusion_integrating_sd_in_photoshop/) would help.
+For higher quality images you definitely want inpainting, outpainting, and to increase the resolution. It seems like this [photoshop extension called alpaca](https://old.reddit.com/r/StableDiffusion/comments/wyduk1/show_rstablediffusion_integrating_sd_in_photoshop/) would help. There's also this [list of "Awesome AI image synthesis" tools](https://github.com/altryne/awesome-ai-art-image-synthesis).
 
 ## Stable diffusion examples
 Here are a couple prompts and images I made with Stable Diffusion.
