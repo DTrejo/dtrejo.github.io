@@ -6,7 +6,7 @@ tags: homes, howto, archived
 # ${this.title}
 Here's a selection of homes, materials, colors, fixtures, and patterns that I found interesting. – _David Trejo_
 
-<style>article * { margin-top: revert } article * + * { margin-top: revert } a > img { aspect-ratio: auto 16 / 10; height:13rem; }</style>
+<style>#spotlight {margin-top: revert } #spotlight * { margin-top: revert } #spotlight * + * { margin-top: revert } a > img { aspect-ratio: auto 16 / 10; height:13rem; }</style>
 <script src="/js/spotlight.bundle.js"></script>
 
 <div style="width: 100vw; position: relative; left: calc(-50vw + 50%); padding-left: 1.5rem; padding-right: 1.5rem;">
