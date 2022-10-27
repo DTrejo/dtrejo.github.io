@@ -1,7 +1,7 @@
 ---
 title: Stable diffusion is lots of fun
 date: 2022-09-02 05:55 CET
-tags: howto
+tags: howto, archived
 ---
 # ${this.title}
 
