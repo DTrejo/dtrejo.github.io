@@ -18,7 +18,7 @@ I'm very happy to be able to share our approach to security with you.
 2. [Mitigating Risky Pull Requests with Monocle Risk Advisor (Part 2)](https://medium.com/life-at-chime/mitigating-risky-pull-requests-with-monocle-risk-advisor-part-2-7013e1485bf2)
 3. [Coming soon] Monocle: Security Training and Completion
 
-Feel free to ask me questions over email (sorry I don't check it much) or Mastodon [@dtrejo@infosec.exchange](https://infosec.exchange/@dtrejo)
+Feel free to ask me questions over email (sorry I don't check it much) or Mastodon [@dtrejo@infosec.exchange](https://infosec.exchange/@dtrejo).
 
 🥂 May we all be cocooned in a more secure future,  
 _David Trejo_  
