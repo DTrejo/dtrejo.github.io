@@ -5,7 +5,7 @@ cta: false
 ---
 # ${this.title}
 
-## Hiring: Coming Soon
+## Hiring: Coming Soon [update: probably not 😅]
 <!-- <Articles tag="hiring book" expanded /> -->
 
 ## All My Advice for CS Students and New Grads
@@ -13,7 +13,7 @@ cta: false
 
 Note: currently not for sale as it needs a new edition.
 
-## Yelp Rescues: Coming Soon
+## Yelp Rescues: Coming Soon [update: probably not 😅]
 <!-- <Articles tag="yelprescues" expanded /> -->
 
 [1]:https://gumroad.com/l/CSGETMONEY
