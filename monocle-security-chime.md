@@ -10,7 +10,7 @@ I've been working on Monocle for a few years now, on the Security Engineering te
 I'm very happy to be able to share our approach to security with you.
 
 ## Talks about Monocle and Security
-- [Coming soon] Slides for BSides SF '23
+- [🎉 🥳 🆕 Slides for BSides SF '23](https://docs.google.com/presentation/d/1Jy-SvTuXItTH7Vpqq8O0anp4-FQKiZUShOcBeWxYowk/edit)
 - [How Chime creates a proactive security & engineering culture by David Trejo at RailsConf '22](https://www.youtube.com/watch?v=TmRyZ7FB-HA) – the Monocle section starts at the 5 minute mark (length: 5 mins)
 
 ## Articles about Monocle and Security
