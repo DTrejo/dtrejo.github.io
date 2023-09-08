@@ -1,5 +1,5 @@
 ---
-title: "Monocle at Chime: three security articles and BSides SF Conference slides"
+title: "Monocle at Chime: two security articles and BSides SF conference video and slides"
 date: 2023-04-12 05:55 CET
 tags: monocle, security
 ---
