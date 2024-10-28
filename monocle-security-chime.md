@@ -18,7 +18,7 @@ I'm very happy to be able to share our approach to security with you.
 1. [Monocle: How Chime creates a proactive security & engineering culture (Part 1)](https://medium.com/life-at-chime/monocle-how-chime-creates-a-proactive-security-engineering-culture-part-1-dedd3846127f)
 2. [Mitigating Risky Pull Requests with Monocle Risk Advisor (Part 2)](https://medium.com/life-at-chime/mitigating-risky-pull-requests-with-monocle-risk-advisor-part-2-7013e1485bf2)
 
-Feel free to ask me questions over email (sorry I don't check it much) or Mastodon [@dtrejo@infosec.exchange](https://infosec.exchange/@dtrejo).
+Feel free to ask me questions over email (sorry I don't check it much) or  [linkedin.com/in/dtrejo](https://www.linkedin.com/in/dtrejo) (send a connection message/note because otherwise I only add people I know!).
 
 🥂 May we all be cocooned in a more secure future,  
 _David Trejo_  
