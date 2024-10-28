@@ -18,18 +18,14 @@ author: false
 <hr />
 
 Hey there,  
-Lately I've been working on a writing & journaling app called [Duskk.com][duskk]. Our goal is to help you use daily writing to improve yourself and achieve your goals. For example, your goal might be to... 
+Lately I've been working on [😺 Monocle][monocle], an app which guides engineers to write more secure services and gives engineering leaders visibility into our security posture here at Chime.
 
-- write more articles
-- write a book
-- pen your memoir
-- type out the noise to get prepared for creative writing
-- put a stop to repetitive negative thoughts & improve performance (writing can be more effective than a therapist!)
+Check out the two-part [article series about 😺 Monocle][monocle] on the Chime engineering blog, or the [talks at RailsConf and BSides SF][monocle].
 
-Take a look and [sign up for Duskk to journal daily][duskk] and [be a pre-alpha user][duskk]. We can't wait to hear your feedback.
+Are you building an internal security tool at your company? Let's talk and share ideas!
 
-[duskk]: https://duskk.com
-
-Thanks in advance,  
+🥂 To a more secure future,  
 <span class="serif i">David Trejo</span><br/>
 ${this.email || ''}
+
+[monocle]:https://dtrejo.com/monocle-security-chime
