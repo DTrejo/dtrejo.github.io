@@ -80,9 +80,9 @@ const generateSocialMediaImage = async ({
     ctx.drawImage(image, x, y, radius * 2, radius * 2)
 
     generateJPEG({ canvas, outputPath })
-    // const src = canvas.toDataURL()
     if (DEBUG) {
-      html = generateHtml({ src: 'output.jpg', fontWeight, fontFamily })
+      // const src = canvas.toDataURL()
+      html = generateHtml({ src: 'output.jpeg', fontWeight, fontFamily })
       fs.writeFileSync('output.html', html)
       sh.exec('open output.html')
     }
