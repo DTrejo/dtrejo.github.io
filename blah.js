@@ -268,10 +268,11 @@ function runComponents(scope) {
 // `https://images.unsplash.com/photo-1515951834549-4172b316de7e?fit=crop&h=630&w=1200&txt=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20By%20David%20Trejo%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20DTrejo.com&txtclr=fff&txtsize=40&txtfont=Avenir%20Next%20Demi%20Bold&txtalign=left%2Cbottom&txtpad=150`
 function socialImage({ title, url }) {
   const slug = parse(url).base
-  const socialDir = join(DIST, "images", "social")
+  const socialDir = join("images", "social")
   mkdirp(socialDir)
+  const socialPath = join(socialDir, `${slug}.jpg`)
 
-  const outputPath = join(socialDir, `${slug}.jpg`)
+  const outputPath = join(DIST, socialPath)
   if (!exists(outputPath)) {
     generateSocialMediaImage({
       title: title,
@@ -282,7 +283,7 @@ function socialImage({ title, url }) {
       outputPath,
     })
   }
-  return outputPath
+  return href(socialPath)
 }
 
 console.timeEnd('blah.js')
