@@ -1,0 +1,66 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  run:
+    docker:
+      # specify the version you desire here
+      - image: cimg/node:20.18.0
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      # run tests!
+      - run:
+          name: Build, Deploy, & Release to Github
+          command: |
+            if [ $CIRCLE_BRANCH == 'develop' ]; then
+              # abort on errors
+              set -e
+
+              # build
+              npm run build
+
+              # navigate into the build output directory
+              cd ./dist
+
+              git init
+              # git config core.sshCommand 'ssh -i ~/.ssh/id_rsa -F /dev/null'
+              git config github.user = "DTrejo"
+              git config user.name "DTrejo"
+              git config user.email ""56119+DTrejo@users.noreply.github.com""
+              git add -A
+              git commit -m 'deploy'
+
+              # if you are deploying to https://<USERNAME>.github.io
+              git push -q -f https://${DTREJO_GITHUB_IO_ACCESS_TOKEN}@github.com/DTrejo/dtrejo.github.io.git master
+              cd -
+            fi
+workflows:
+  version: 2
+  build:
+    jobs:
+      - run
