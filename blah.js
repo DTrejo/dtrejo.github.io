@@ -272,14 +272,16 @@ function socialImage({ title, url }) {
   mkdirp(socialDir)
 
   const outputPath = join(socialDir, `${slug}.jpg`)
-  generateSocialMediaImage({
-    title: title,
-    author: "David Trejo",
-    domain: "DTrejo.com",
-    authorAvatar: "images/dtrejo.jpg",
-    backgroundImage: "images/social-background.jpeg",
-    outputPath,
-  })
+  if (!exists(outputPath)) {
+    generateSocialMediaImage({
+      title: title,
+      author: "David Trejo",
+      domain: "DTrejo.com",
+      authorAvatar: "images/dtrejo.jpg",
+      backgroundImage: "images/social-background.jpeg",
+      outputPath,
+    })
+  }
   return outputPath
 }
 
