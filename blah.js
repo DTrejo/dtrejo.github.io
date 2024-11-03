@@ -12,6 +12,7 @@ const matter = require('gray-matter')
 const marked = require('marked')
 const prism = require('prismjs')
 const loadLanguages = require('prismjs/components/')
+const generateSocialMediaImage = require('./motif')
 
 const DEBUG = process.argv.includes('-v')
 if (DEBUG) function l() { console.log.apply(console.log, arguments) }
@@ -79,6 +80,7 @@ const assets = []
 const pages = []
 for (const f of files) {
   if (f === 'blah.js') continue
+  if (f === 'motif.js') continue
   if (f.startsWith('dist/')) continue
 
   const base = basename(f)
@@ -132,7 +134,7 @@ function md(f) {
 
   // This won't work right if I start using directories of posts
   if (data.title && f !== 'index.md') {
-    data.ogImage = socialImage(data.href)
+    data.ogImage = socialImage({ title: data.title, url: data.url })
   } else if (data.title && f === 'index.md') {
     data.ogImage = data.href + 'images/dtrejo.jpg'
   }
@@ -259,15 +261,26 @@ function runComponents(scope) {
   return compiled
 }
 
-// Given canonical URL, use imgix motif to create a social image for embeds
-// Based on https://motif.imgix.com/?d=eyJ1cmwiOiJodHRwOi8vcXouY29tLzYyNDQ5MC9leHBsb3JlLXRoZS13b3JsZC1saWtlLWEtZmlzaC13aXRoLXRoZS1iZXN0LXVuZGVyd2F0ZXItcGhvdG9zLW9mLXRoZS15ZWFyIiwidGl0bGUiOiIiLCJhY2NlbnRDb2xvciI6IiIsIm9nSW1hZ2VVUkwiOiJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTUxNTk1MTgzNDU0OS00MTcyYjMxNmRlN2U%2FZml0PWNyb3AmaD02MzAmdz0xMjAwJnR4dD0lMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBCeSUyMERhdmlkJTIwVHJlam8lMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBkdHJlam8uY29tJnR4dGNscj1mZmYmdHh0c2l6ZT00MCZ0eHRmb250PUF2ZW5pciUyME5leHQlMjBEZW1pJTIwQm9sZCZ0eHRhbGlnbj1sZWZ0JTJDYm90dG9tJnR4dHBhZD0xNTAiLCJsb2dvVVJMIjoiaHR0cHM6Ly9kdHJlam8uY29tL2ltYWdlcy9kdHJlam8tcm91bmQucG5nIiwibG9nb0FsaWdubWVudCI6ImJvdHRvbSxsZWZ0IiwidGV4dFBvc2l0aW9uIjoidG9wIiwidGV4dEFsaWdubWVudCI6ImxlZnQiLCJmb250RmFtaWx5IjoiQXZlbmlyIE5leHQgRGVtaSxCb2xkIiwidGV4dENvbG9yIjoiZmZmZmZmIiwibG9nb1BhZGRpbmciOiI4MCIsImxvYWRpbmciOmZhbHNlLCJlcnJvcjQyMiI6ZmFsc2V9
-// When you update your photo, make sure to create the rounded one too!
-function socialImage(href) {
-  const backgroundImage = 'https://images.unsplash.com/photo-1515951834549-4172b316de7e?fit=crop&h=630&w=1200&txt=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20By%20David%20Trejo%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20DTrejo.com&txtclr=fff&txtsize=40&txtfont=Avenir%20Next%20Demi%20Bold&txtalign=left%2Cbottom&txtpad=150'
-  const logo = 'https://dtrejo.com/images/dtrejo-round.png?b'
-  const ogImage =
-    `https://motif.imgix.com/i?url=${encodeURIComponent(href)}&image_url=${encodeURIComponent(backgroundImage)}&color=&logo_url=${encodeURIComponent(logo)}&logo_alignment=bottom%2Cleft&text_alignment=top%2Cleft&logo_padding=80&font_family=Avenir%20Next%20Demi%2CBold&text_color=dcd9d6`
-  return ogImage
+// Generate a social image if not already in dist/images/social/*, then return the
+// URL for the image.
+//
+// Based on the following unsplash image:
+// `https://images.unsplash.com/photo-1515951834549-4172b316de7e?fit=crop&h=630&w=1200&txt=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20By%20David%20Trejo%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20DTrejo.com&txtclr=fff&txtsize=40&txtfont=Avenir%20Next%20Demi%20Bold&txtalign=left%2Cbottom&txtpad=150`
+function socialImage({ title, url }) {
+  const slug = parse(url).base
+  const socialDir = join(DIST, "images", "social")
+  mkdirp(socialDir)
+
+  const outputPath = join(socialDir, `${slug}.jpg`)
+  generateSocialMediaImage({
+    title: title,
+    author: "David Trejo",
+    domain: "DTrejo.com",
+    authorAvatar: "images/dtrejo.jpg",
+    backgroundImage: "images/social-background.jpeg",
+    outputPath,
+  })
+  return outputPath
 }
 
 console.timeEnd('blah.js')
