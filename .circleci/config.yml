@@ -7,7 +7,7 @@ jobs:
   deploy:
     docker:
       # specify the version you desire here
-      - image: circleci/node:16 # TODO upgrade this
+      - image: circleci/node:20
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
