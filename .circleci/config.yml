@@ -42,12 +42,6 @@ jobs:
               # abort on errors
               set -e
 
-              # this won't work b/c we're in docker, and we don't build a custom image.
-              # apt-get update
-              # apt-get install -y fontconfig
-              # fc-cache -f -v
-              # export FONTCONFIG_PATH=/etc/fonts
-
               # build
               npm run build
 
