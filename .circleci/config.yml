@@ -43,6 +43,7 @@ jobs:
 
               # apt-get install -y fontconfig
               # fc-cache -f -v
+              export FONTCONFIG_PATH=/etc/fonts
 
               # build
               npm run build
