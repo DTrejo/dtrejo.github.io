@@ -41,8 +41,8 @@ jobs:
               # abort on errors
               set -e
 
-              apt-get install -y fontconfig
-              fc-cache -f -v
+              # apt-get install -y fontconfig
+              # fc-cache -f -v
 
               # build
               npm run build
