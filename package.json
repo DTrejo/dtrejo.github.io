@@ -1,0 +1,28 @@
+{
+  "name": "blah",
+  "version": "1.0.0",
+  "description": "Generate a site from markdown files and _layout.html",
+  "main": "blah.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node blah.js",
+    "deploy": "./_deploy.sh",
+    "// development only": "true",
+    "start": "serve .",
+    "debug": "node blah.js -v",
+    "watch": "runjs blah.js -v"
+  },
+  "author": "David Trejo",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "2.11.2",
+    "gray-matter": "4.0.3",
+    "marked": "4.0.10",
+    "prismjs": "1.25.0",
+    "shelljs": "0.8.5"
+  },
+  "devDependencies": {
+    "run": "1.4.0",
+    "serve": "13.0.2"
+  }
+}
