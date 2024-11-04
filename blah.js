@@ -81,6 +81,7 @@ const pages = []
 for (const f of files) {
   if (f === 'blah.js') continue
   if (f === 'motif.js') continue
+  if (f.startsWith('server-fonts/')) continue
   if (f.startsWith('dist/')) continue
 
   const base = basename(f)
