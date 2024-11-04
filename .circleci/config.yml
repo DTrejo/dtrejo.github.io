@@ -7,7 +7,8 @@ jobs:
   run:
     docker:
       # specify the version you desire here
-      - image: cimg/node:20.18.0
+      # we need browsers b/c we need fonts.
+      - image: cimg/node:20.18.0-browsers
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -41,9 +42,11 @@ jobs:
               # abort on errors
               set -e
 
+              # this won't work b/c we're in docker, and we don't build a custom image.
+              # apt-get update
               # apt-get install -y fontconfig
               # fc-cache -f -v
-              export FONTCONFIG_PATH=/etc/fonts
+              # export FONTCONFIG_PATH=/etc/fonts
 
               # build
               npm run build
