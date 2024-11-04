@@ -38,9 +38,8 @@ const generateSocialMediaImage = async ({
   // Write article title
   const fontWeight = '600'
   // `'Avenir Next', sans-serif`
-  // `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif`
   // `Ubuntu, sans-serif`
-  const fontFamily = ""
+  const fontFamily = `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif`
   ctx.font = `${fontWeight} 3rem ${fontFamily}`
   const white = '#dcd9d6'
   ctx.fillStyle = `color: ${white}`
