@@ -270,9 +270,9 @@ function runComponents(scope) {
 function socialImage({ title, url }) {
   const slug = parse(url).base
   const socialDir = join("images", "social")
-  mkdirp(socialDir)
   const socialPath = join(socialDir, `${slug}.jpg`)
 
+  mkdirp(join(DIST, socialDir))
   const outputPath = join(DIST, socialPath)
   if (!exists(outputPath)) {
     generateSocialMediaImage({
