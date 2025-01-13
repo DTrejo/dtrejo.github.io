@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Moneyball book review and measuring revenue per engineer</title>
+  <meta itemprop="name" content="Moneyball book review and measuring revenue per engineer">
+  <meta property="og:title" content="Moneyball book review and measuring revenue per engineer">
+  <link rel="icon" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:creator" content="@ddtrejo">
+  <meta name="twitter:site" content="@ddtrejo">
+  <link rel="me" href="https://infosec.exchange/@dtrejo">
+  
+  
+  
+  <link rel="canonical" href="https://dtrejo.com/moneyball-book-review-and-measuring-revenue-per-engineer">
+  <meta property="og:url" content="https://dtrejo.com/moneyball-book-review-and-measuring-revenue-per-engineer">
+  <meta property="og:image" content="https://dtrejo.com/images/social/moneyball-book-review-and-measuring-revenue-per-engineer.jpg"/>
+  <meta name="image" content="https://dtrejo.com/images/social/moneyball-book-review-and-measuring-revenue-per-engineer.jpg"/>
+  <meta itemprop="image" content="https://dtrejo.com/images/social/moneyball-book-review-and-measuring-revenue-per-engineer.jpg"/>
+  <meta name="twitter:image:src" content="https://dtrejo.com/images/social/moneyball-book-review-and-measuring-revenue-per-engineer.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="article">
+  
+  <link rel="stylesheet" href="/css/tachyons.min.css" />
+  
+  <style>
+    * { margin-top: 0 }
+    * + * { margin-top: 1.5em }
+    li li { margin-top: 1.5em }
+    html { scroll-behavior: smooth }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6; /*rgb(220, 217, 214)*/
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.25;
+      font-weight: 600;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:focus, a:active, a:hover {
+      color: #ff6300;
+    }
+    .footer {
+      border-top: 1px solid rgb(25, 73, 110);
+      background-color: #021928;
+    }
+    .amp {
+      font-family: Baskerville, "Goudy Old Style", "Palatino", "Palatino Linotype", "Book Antiqua", serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+    h1, h2, h3, h4, h5, h6, li, p, span, blockquote, pre, code {
+      text-rendering: optimizeLegibility;
+    }
+    hr {
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      border-top: 1px solid rgba(220, 217, 214, .1);
+    }
+    /* improve prism styles */
+    pre, pre[class*=language-] {
+      line-height: 1.4;
+      padding: 1.25rem 1.5rem;
+      margin: .85rem 0;
+      background-color: #282c34;
+      background-color: #191919;
+      border-radius: 6px;
+      overflow: auto;
+    }
+    blockquote {
+      margin-left: 0;
+      border-left: .5rem solid rgba(0, 0, 0, .5);
+      padding-left: 1.5em;
+    }
+    .customcolor { color: #013250 }
+    .b--customcolor { border-color: #013250 }
+    
+  </style>
+  
+  <meta name="cf-2fa-verify" content="27f0edaf36e9d24">
+</head>
+<body class="pt2 lh-copy">
+  <nav class="mw7 ph2 center flex flex-column flex-row-l">  <a class="fw5 link flex self-center self-start-l" href="/">    <img src="/images/dtrejo.jpg" class="w2 h2 br-100 mr3" alt="David Trejo">    dtrejo  </a>  <div class="flex self-center ml-auto-l mt0-l">    <a class="f5 fw5 link mt0 mr3 ttu" href="#footer">Articles</a>    <a class="f5 fw5 link mt0 mr0 ttu" href="/books">Books</a>    <!-- <a class="f5 fw5 link mt0 ttu" href="https://engineeroverflow.com"      >Hire Engineers</a    > -->  </div></nav>
+
+  <article class="content mw7 ph2 center">
+    <h1 id="moneyball-book-review-and-measuring-revenue-per-engineer">Moneyball book review and measuring revenue per engineer</h1>
+<p>First, I&#39;ve pulled out the highlights of Moneyball for you. The book is about
+how the Oakland A&#39;s baseball team buys players who are undervalued by the rest
+of the league. This allows them to build an amazing team despite their budget.</p>
+<p>Second, we&#39;ll look at ways to measure revenue per engineer, and related numbers we&#39;d want to know. Are you an engineering leader with 20+ people in your organization? You&#39;ll like this section because you&#39;re always trying to give headcount to the teams who&#39;ll most favorably improve revenue. You&#39;re also trying to hire engineers who care about your business.</p>
+<p><em>Reading time: 11 minutes, 2 seconds–but don&#39;t let that scare you away.</em></p>
+<h2 id="1-moneyball-book-review">1. Moneyball Book Review</h2>
+<p>My style of book review is to pull out the best sections, so here they are:</p>
+<blockquote>
+<p>[…] baseball, more than other sports, gave you meaningful things to count, and that by counting them you could determine the value of the people who played the game
+<br>– page 69</p>
+</blockquote>
+<blockquote>
+<p>As the thirty-fifth pick approaches, Erik once again leans into the speaker phone. If he leaned in just a bit more closely he might hear phones around the league cliciking off, so that people could laugh without being heard. For they do laugh. They will make fun of what the A&#39;s are about to do, and there will be a lesson in that. The inability to envision a certain kind of person doing a certain kind of thing because you&#39;ve never seen someone who looks like him do it before is not just a vice. It&#39;s a luxury. What begins as a failure of imagination ends as a market inefficiency: when you rule out an entire class of people from doing a job simply by their appearance, you are less likely to find the best person for the job.
+<br>– page 115</p>
+</blockquote>
+<blockquote>
+<p>A set of Platonic ideas is one of the gifts the Wall Street traders gave to Paul DePodesta. The precision of the AVM system, copied by Paul, enabled him to think about every event that ocurred on a basedball field in a new and more satisfying way. Any ball hit anyplace on a baseball field had been hit just that way thousands of times before: the average of all those hits was the Platonic idea. Call it a line drive hit at <em>x</em> trajectory and <em>y</em> sp speed to point #968. From the ten years worth of data you ca see that there have been 8,642 practically identical hits. You can see that 92 percent of the time the hit went for a double, 4 percent for a single, and 4 percent it was caught. Suppose the average value of that event is .50 of a run. <em>No matter what actually happened,</em> the system credits the hitter with having generated .50 of a run, and the pitcher with having given up .50 of a run. If Johnny Damon happens to get one of his trademark jumps and makes a sprawling catch, he is credited with saving his team .50 of a run.</p>
+<p>The beauty of the value of a hit (or catch) was that the game gave it to you, the game <em>told</em> you how valuable every event was, by telling you how valuable it had been, on average, over the past ten years. By listening to what the game told him about the value of events, Paul could take every ball hit in the area broadly defined as center field and determine its &quot;expected run value&quot;.
+<br>– page 135</p>
+</blockquote>
+<p>Author notices that the A&#39;s in the video room watch the game in a completely different manner. They reply:</p>
+<blockquote>
+<p>&quot;It&#39;s looking at process rather than outcomes,&quot; Paul says. &quot;Too many people make decisions based on outcomes rather than process.&quot;</p>
+<p>The route a pitch takes to the cather&#39;s mitt <em>is</em> an outcome, I say. It&#39;s just a more subtle outcome.</p>
+<p>&quot;It&#39;s not what happened,&quot; says Paul, &quot;it&#39;s how our guy approached it.&quot;
+<br>– page 146</p>
+</blockquote>
+<blockquote>
+<p>[…] meant little to the Oakland A&#39;s, who were forever looking for dirt-cheap opportunities to accept bad defense for an ability to get on base. One trick of theirs was to pound on a player just after he&#39;d had what appeared to be a career-threatening injury. Billy Beane had a favorite saying, which he&#39;d borrowed from the Wall Street investor Warren Buffet: the hardest thing to find is a good investment.
+<br>– page 161</p>
+</blockquote>
+<p>I can already think of a few life events that devalue engineers for most employers.</p>
+<blockquote>
+<p>The reason the Oakland A&#39;s, as run by Billy Beane, played as if they were a different team in the second half of a season is that they <em>were</em> a different team. As spring turned to summer the market allowed Billy to do things that he could do at no other time of the year. The bad teams lost hope. With the loss of hope came a desire to cut costs. With the desire to cut costs came the dumping of players. As the supply of players rose, their prices fell. By midsummer, Billy Beane was able to acquire players he could never have afforded at the start of the season.
+<br>– page 193-194</p>
+</blockquote>
+<p>Makes me think that every engineering leader should have very friendly relationships with both their reports and their peers at other companies. When an engineer is ready to leave, and isn&#39;t interested in moving internally, why let them quit when you might be able to call a friend and trade them for someone else, leaving everyone happier?</p>
+<blockquote>
+<p>His reduced circumstances had forced Billy Beane to embrace a different mental model of the BIg League Pitcher. In Billy Beane&#39;s mind, pitchers were nothing like high-performance sports cars, or thoroughbred racehorses, or any other metaphor that implied a cool, inbuilt superiority. They were more like writers. LIke writers, pitchers pitchers initiated action, and set the tone for their games. THey had all sorts of ways of achieving their effects and they needed to be judged by those effects, rather than by their outward appearance, or their technique. To place a premium on velocity for its own sake was like placing a premium on big vocabulary for its own sake. […] Good pitchers were pithcers who got outs; how they did it was beside the point.</p>
+<p>Good pitchers were like writers in another way too: their output was harder than it should have been to predict.
+<br>– page 222</p>
+</blockquote>
+<blockquote>
+<p>[…] Jackie Robinson was exactly the sort of player the A&#39;s and the Jays salivate over. He had stats they tended to stress–high on-base, plate discipline, great power for a second baseman, etc.–<em>plus he was undervalued.</em> Indeed, one way of looking at the revolution in baseball management is a search for less dramatic version fo Jackie Robinsonºplayers who, for one unfair reason or another, often because of their appearance, had been maligned and undervalued by the market.
+<br>– page 297</p>
+</blockquote>
+<hr>
+<h2 id="2-measuring-revenue-per-engineer-applying-moneyball-to-engineers">2. Measuring Revenue per Engineer: Applying Moneyball to Engineers</h2>
+<p>We want to track the engineering equivalent of expected runs, not fastball speed or whether they have a good body.</p>
+<h2 id="what-are-the-engineer-equivalents-of-moneyballs-baseball-stats">What are the engineer equivalents of Moneyball&#39;s baseball stats?</h2>
+<p>Raw engineering skill does not necessarily correlate with revenue.</p>
+<p>Many still try (and fail) to gauge engineering skill using whiteboard interviews.</p>
+<p>Another set of companies test engineering skill with live coding, pair programming, homework projects, and coding challenges.</p>
+<p>I&#39;ve yet to hear of someone who has explicitly said they hire based on the candidate&#39;s future value to their company.</p>
+<p>How do we measure engineering <strong>value</strong> (not skill) for various roles?</p>
+<ul>
+<li>Frontend</li>
+<li>Backend</li>
+<li>Systems</li>
+<li>Growth</li>
+<li>Native</li>
+</ul>
+<h3 id="what-do-we-wish-we-knew">What do we wish we knew?</h3>
+<ul>
+<li>Cost per line of code (bugs + churn + initial-time-cost-to-write). NASA measured this, they paid $1,000 per LOC related to the <em>Challenger</em> accident.*</li>
+<li>Revenue generated per line of code</li>
+<li>Revenue generated over time</li>
+<li>Time to ship (from e.g. design phase until production)</li>
+<li>Amount of time code spends in inventory before sale (code in branches awaiting deployment count as inventory; production counts as sale)</li>
+<li>Server costs saved (number of servers + cost for servers + number of pager alerts + revenue per server-dollar)</li>
+<li>Client-side device costs saved (latency + CPU + energy + data + value of customer&#39;s time)</li>
+<li>Customer value created (usually we use revenue as a proxy for customer value)</li>
+</ul>
+<h3 id="secondary-metrics-that-correlate-in-well-known-ways-with-the-above">Secondary metrics that correlate in well-known ways with the above:</h3>
+<ul>
+<li>Page speed increases</li>
+<li>Test suite speed increases</li>
+<li>Team efficiency increases</li>
+<li>Lines of code deleted</li>
+<li>Number of deploys per week</li>
+<li>Amount of downtime</li>
+<li>Improved new engineer onboarding speed</li>
+<li>Bugs fixed (ideally in a way that isn&#39;t gameable)</li>
+<li>Bugs fixed <em>before anyone else knew they existed.</em> Communicating and getting credit for these is a very difficult problem for some of my friends.</li>
+</ul>
+<p>You and your company have certain things you value. If you&#39;re not sure what you
+value, survey your current
+team&#39;s resumes and past performance reviews for what stats got them noticed. You
+can turn these into questions to ask before a phone screen or instead of a
+resume. Personally I don&#39;t believe in resumes, because as engineers we usually aren&#39;t good at
+reducing our value down to bullet points.</p>
+<h2 id="measuring-the-value-of-your-teams">Measuring the Value of Your Teams</h2>
+<p>You can work numbers for the metrics above from the front or from the back.</p>
+<p>Working the numbers from the back means looking at...</p>
+<ul>
+<li>Profit and loss for company &rarr; P &amp; L for team &rarr; team size &rarr; single team-member &rarr; fraction of impact</li>
+<li>Team shape, e.g. who worked on a particular feature: number engineers of each type, number of designers, number of PMs</li>
+</ul>
+<p>Even if you can&#39;t quantify the value of a single engineer, you can still
+understand the value of a department or a team. Then you can use the amount you pay
+each person to <em>estimate</em> the fraction of value they bring. The amount you pay a
+person doesn&#39;t always correlate with how much value they bring, but
+it&#39;s a start.</p>
+<p>Working the numbers forward means you evaluate existing teammates based on any stat that the person had the presence of mind to track and share, then convert it to a dollar amount.</p>
+<p>As for discovering new and promising engineers, you might look at…</p>
+<ul>
+<li>Ruby gems stats</li>
+<li>Github repo stats</li>
+<li>npm module stats</li>
+<li>Bullet points on their resume, adjusted to fit your company&#39;s situation and reduced to dollar figures. For example, a 20% reduction in server fleet size, applied to your 2000 servers which cost you $Y per year, means if you hire this devops person and they do the same optimization, you stand to save... $Y-(Y*.2) annually.)</li>
+</ul>
+<p>Ideally, we want a technique that works well on people without public
+work. Thus a questionnaire would work well, assuming they can give us stats or at
+least rough numbers. For people without past industry experience, the best we can do is measure engineering skill and potential in an unbiased way.</p>
+<h3 id="onboarding-for-newly-hired-engineers">Onboarding for Newly Hired Engineers</h3>
+<p>Zach Millman, Senior Product Engineer at Lever, throws in:</p>
+<blockquote>
+<p>Onboarding/retraining can be a large cost. Someone who isn&#39;t fully comfortable with browser and web stack might still have productivity similar to a junior engineer, even after half a year.</p>
+<p>There&#39;s also a danger in measurement. Any time someone is incentivized to increase a number, they&#39;ll do it–even if it&#39;s not sustainable long term (e.g salespeople promising features that don&#39;t exist).</p>
+<p>I think one of the things that makes engineering really different from baseball is how much the knowledge of the particular team and stack matter in actual productivity. A hitter will have roughly the same &quot;productivity&quot; on any team. A junior engineer who&#39;s been working at a company for two years is often much more productive than a senior engineer who&#39;s been there for half a year and hasn&#39;t seen all the codebase.</p>
+<p>Switching costs are brutal :(</p>
+<p>– Zach Millman</p>
+</blockquote>
+<h3 id="what-increases-the-value-of-an-engineer">What increases the value of an engineer?</h3>
+<p>Someone who has the same stats, but is from a historically underpaid group in
+tech, or who has work experience that no one else knows how to assess or value. This is why Matasano has such success with their CTFs.*</p>
+<h3 id="what-are-other-people-measuring">What are other people measuring?</h3>
+<p>Some teams measure as part of how they lead/manage:</p>
+<blockquote>
+<p>I want everyone on my team to be able to go home confident they’ve done their job well, and not worry if I’ve just had a bad day. [...]
+Our team pays attention to:</p>
+</blockquote>
+<ul>
+<li>Commit frequency: we encourage everyone to check in multiple times daily</li>
+<li>Commit size: keeping work surface area small to lower risk</li>
+<li>Code churn: in retrospectives and to notice when someone is stuck</li>
+<li>Legacy refactoring: to notice when people are cleaning up the codebase</li>
+<li>Helping others: to recognize team players</li>
+<li>Review Speed: because it can be tied directly to business value delivered<blockquote>
+<p>– Andrew Templeton, Engineering Director (<a href="https://twitter.com/ayetempleton">@ayetempleton</a>)*</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="choosing-what-to-measure">Choosing what to measure</h2>
+<p>You <strong>don&#39;t</strong> want to measure business outcomes on a day-to-day basis, because
+that is demotivating. You want to measure activities that you know lead to good
+business outcomes. For example, you wouldn&#39;t only give people credit for
+successful A/B tests, instead you&#39;d know that 1 in 6 A/B tests were successful last year,
+and encourage people to run more (within reason).</p>
+<p>What do you wish you could measure? How are your measurements coming along?</p>
+<p>Yours,<br>
+David<br>
+david åt dtrejo.com</p>
+<p>P.S. Thank you <a href="https://www.linkedin.com/in/chyheim-jackson-burgess-507b3930/">Chy</a> and <a href="https://twitter.com/zmillman">Zach</a> for your critique!</p>
+<h4 id="footnotes">Footnotes</h4>
+<ul>
+<li><p><a href="https://history.nasa.gov/sts1/pages/computer.html">NASA&#39;s cost per LOC</a></p>
+</li>
+<li><p><a href="https://sockpuppet.org/blog/2015/07/13/starfighter/">Erin on Matasano&#39;s CTFs</a>; <a href="https://sockpuppet.org/blog/2015/03/06/the-hiring-post/">Thomas&#39; article on hiring</a></p>
+</li>
+<li><p><a href="https://blog.gitprime.com/why-kpis-matter-for-software-engineering-andrew-templeton">Andrew Templeton on what KPIs he tracks in an interview with GitPrime</a></p>
+</li>
+</ul>
+<p>Related articles:</p>
+<ul>
+<li><a href="http://danluu.com/programmer-moneyball/">Dan Luu on programmer moneyball</a></li>
+<li><a href="http://danluu.com/hiring-lemons/">Dan Luu on information asymmetry in hiring (who is great?)</a></li>
+</ul>
+
+  </article>
+
+  <div class="mw7 ph2 center">    <img        src="/images/dtrejo.jpg"        title="David Trejo"        class="br-100 fl ml2 mr2"        height="80"    />    <div class="overflow-hidden mr2">        <h4>David Trejo</h4>        <p>Engineer at Chime <span class="amp">&</span> consultant. Past clients include Credit Karma, Aconex, Triplebyte, Neo, the Brown Computer Science Department, Voxer, Cloudera, and the Veteran's Benefits Administration.</p>    </div></div>
+
+  
+
+  <div id="footer" class="footer mt5 pt5 pb4"><div class="mw7 ph2 center">  <h3>Hiring Engineers? You'll like these articles</h3>  <ol><li><a href="/engineer-interview-script">Growth & full stack engineering interview script</a></li><li><a href="/referrals">How to hustle on your referrals so they actually get hired</a></li><li><a href="/moneyball-book-review-and-measuring-revenue-per-engineer">Moneyball book review and measuring revenue per engineer</a></li><li><a href="/questions-that-senior-systems-engineers-want-answered">Questions that Senior Systems Engineers want answered</a></li><li><a href="/tools-for-hiring-engineers">Tools for hiring engineers that save time and increase conversion</a></li><li><a href="/how-to-reliably-get-your-team-to-write-articles-for-your-engineering-blog">How to reliably get your team to write articles for your engineering blog</a></li><li><a href="/why-share-salary">Why share salary ranges with candidates?</a></li><li><a href="/massive-list-of-engineering-recruiting-channels">Massive list of engineering recruiting channels</a></li><li><a href="/how-to-run-an-intern-program-like-cloudera-s">How to run an intern program like Cloudera's</a></li><li><a href="/how-to-replicate-the-warmth-of-referral-hires">How do you replicate the warmth and friendliness of a referral hire, even with a stranger engineer? By treating hiring like dating.</a></li><li><a href="/how-to-run-an-intern-meetup">How to run an intern meetup</a></li></ol>
+  <h3>Growth Engineering Articles</h3>  <ol><li><a href="/engineer-interview-script">Growth & full stack engineering interview script</a></li><li><a href="/engineering-lead">Engineering lead checklists</a></li><li><a href="/days-as-a-growth-engineer">Everything you should do in the first 30 days of a new growth engineering job</a></li><li><a href="/how-do-you-transition-from-rails-lead-engineer-to-growth-engineer">How do you transition from Rails lead engineer to growth engineer?</a></li><li><a href="/chaos-in-your-product-prototyping">Chaos in your product prototyping</a></li></ol>
+  <h3>How to...</h3>  <ol><li><a href="/tailoring-perfect-shirt-pants-jacket">Tailoring the perfect shirt, pants, and jacket</a></li><li><a href="/home-search">Home Searching Advice</a></li><li><a href="/publishing-vue-codesandbox-to-github-pages">How to publish a Vue CodeSandbox.io to Github Pages on a custom domain</a></li><li><a href="/how-to-get-your-business-to-pull-you-forward">How to get your business to pull you forward</a></li><li><a href="/overcome-cold-email-procrastination">Overcome cold-email procrastination</a></li><li><a href="/how-to-write-consistently-painlessly-and-without-writers-block">How to write consistently, painlessly, and without writer's block</a></li><li><a href="/how-to-email">How to email</a></li><li><a href="/how-to-buy-and-cook-steak">How to Buy and Cook Steak</a></li></ol>
+  <h3>Health</h3>  <ol><li><a href="/why-go-carnivore-aka-zero-carb">Why go carnivore? (aka zero carb)</a></li><li><a href="/cancer">Cancer, fasting, carnivore, and chemotherapy side effects</a></li><li><a href="/lifting">Start weightlifting in just 720 days</a></li></ol>
+  <h3>Node.js</h3>  <ol><li><a href="/my-javascript-tooling-wishlist">My Javascript tooling wishlist</a></li><li><a href="/metrics-and-operational-awareness-at-voxer">Metrics and operational awareness at Voxer</a></li><li><a href="/zero-effort-responsive-email-creation">Zero effort responsive email creation</a></li><li><a href="/node-single-point-of-failure">Node single point of failure</a></li></ol>
+  <h3>Git</h3>  <ol><li><a href="/pull-requests">How Open Source People Do Pull Requests and What We Can Learn from Them</a></li><li><a href="/develop-on-a-cloud-machine">Develop on a cloud machine</a></li><li><a href="/faster-git-workflow">A faster Git workflow with Ampline</a></li><li><a href="/my-github-pull-request-workflow">My Github pull request workflow</a></li></ol>
+  <h3>Top Projects</h3>  <ul>  <li>    <a href="https://duskk.com">Duskk.com</a> Want to unlock the power of your writing?    Discover greatness inside yourself with <a href="https://duskk.com">Duskk, a journaling app</a>.  </li>  <li>    <a href="https://EngineerWorth.com">EngineerWorth.com</a> Is that    product feature worth coding? Run a quick ROI calculation and find out.  </li>  <li>    <a href="/qlock/qlock.html">jQuery Qlock2</a> Tell time with this $800 clock, for free.  </li>  <li>    <a href="/colorslice/">ColorSlice</a>    Wish it were easier to steal and create color schemes?    Colorslice helps front-end developers <span class="amp">&amp;</span>    designers with color.  </li>  <li>    <a href="/colorpreview/">ColorPreview</a>    Vet color combinations and pick only the ones with enough contrast,    that your eye finds pleasing.  </li>  <li>    <a href="/lazytemplating/">Lazy Templating</a>    What if you could do HTML templating using a spreadsheet? Now you  can.  </li>  <li>    <a href="http://github.com/DTrejo/ampline">Ampline</a>    Tired of copy-pasting or tab-completing long file paths? Accelerate yourself  on the command-line.  </li>  </ul>  <h4><a href="/archived">Archived</a></h4>  <h3>Find me</h3>  <ul>  <li><a href="https://github.com/DTrejo">Github</a></li>  <li><a rel="me" href="https://infosec.exchange/@dtrejo">Mastodon (infosec.exchange)</a></li>  <li><a href="https://twitter.com/ddtrejo">Twitter</a></li>  <li>    <a  href="#david åt dtrejo.com"  title="david åt dtrejo.com"  onclick="event.preventDefault(); this.href = 'mailto:' + (this.innerText = 'david' + '@dtrejo.com')">  Email me ✉️</a>  </li>  </ul>  <div>    Copyright © 2009-2025 David Trejo. Opinions mine.  </div></div></div>
+
+  
+</body>
+</html>

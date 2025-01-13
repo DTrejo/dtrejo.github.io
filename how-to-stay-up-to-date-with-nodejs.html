@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>How to stay up-to-date with Node.js</title>
+  <meta itemprop="name" content="How to stay up-to-date with Node.js">
+  <meta property="og:title" content="How to stay up-to-date with Node.js">
+  <link rel="icon" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:creator" content="@ddtrejo">
+  <meta name="twitter:site" content="@ddtrejo">
+  <link rel="me" href="https://infosec.exchange/@dtrejo">
+  
+  
+  
+  <link rel="canonical" href="https://dtrejo.com/how-to-stay-up-to-date-with-nodejs">
+  <meta property="og:url" content="https://dtrejo.com/how-to-stay-up-to-date-with-nodejs">
+  <meta property="og:image" content="https://dtrejo.com/images/social/how-to-stay-up-to-date-with-nodejs.jpg"/>
+  <meta name="image" content="https://dtrejo.com/images/social/how-to-stay-up-to-date-with-nodejs.jpg"/>
+  <meta itemprop="image" content="https://dtrejo.com/images/social/how-to-stay-up-to-date-with-nodejs.jpg"/>
+  <meta name="twitter:image:src" content="https://dtrejo.com/images/social/how-to-stay-up-to-date-with-nodejs.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="article">
+  
+  <link rel="stylesheet" href="/css/tachyons.min.css" />
+  <style>/**
+ * prism.js Twilight theme
+ * Based (more or less) on the Twilight theme originally of Textmate fame.
+ * @author Remy Bach
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+	color: white;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	text-shadow: 0 -.1em .2em black;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"],
+:not(pre) > code[class*="language-"] {
+	background: hsl(0, 0%, 8%); /* #141414 */
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	border-radius: .5em;
+	border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
+	box-shadow: 1px 1px .5em black inset;
+	margin: .5em 0;
+	overflow: auto;
+	padding: 1em;
+}
+
+pre[class*="language-"]::-moz-selection {
+	/* Firefox */
+	background: hsl(200, 4%, 16%); /* #282A2B */
+}
+
+pre[class*="language-"]::selection {
+	/* Safari */
+	background: hsl(200, 4%, 16%); /* #282A2B */
+}
+
+/* Text Selection colour */
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	border-radius: .3em;
+	border: .13em solid hsl(0, 0%, 33%); /* #545454 */
+	box-shadow: 1px 1px .3em -.1em black inset;
+	padding: .15em .2em .05em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: hsl(0, 0%, 47%); /* #777777 */
+}
+
+.token.punctuation {
+	opacity: .7;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.tag,
+.token.boolean,
+.token.number,
+.token.deleted {
+	color: hsl(14, 58%, 55%); /* #CF6A4C */
+}
+
+.token.keyword,
+.token.property,
+.token.selector,
+.token.constant,
+.token.symbol,
+.token.builtin {
+	color: hsl(53, 89%, 79%); /* #F9EE98 */
+}
+
+.token.attr-name,
+.token.attr-value,
+.token.string,
+.token.char,
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable,
+.token.inserted {
+	color: hsl(76, 21%, 52%); /* #8F9D6A */
+}
+
+.token.atrule {
+	color: hsl(218, 22%, 55%); /* #7587A6 */
+}
+
+.token.regex,
+.token.important {
+	color: hsl(42, 75%, 65%); /* #E9C062 */
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/* Markup */
+.language-markup .token.tag,
+.language-markup .token.attr-name,
+.language-markup .token.punctuation {
+	color: hsl(33, 33%, 52%); /* #AC885B */
+}
+
+/* Make the tokens sit above the line highlight so the colours don't look faded. */
+.token {
+	position: relative;
+	z-index: 1;
+}
+
+.line-highlight.line-highlight {
+	background: hsla(0, 0%, 33%, 0.25); /* #545454 */
+	background: linear-gradient(to right, hsla(0, 0%, 33%, .1) 70%, hsla(0, 0%, 33%, 0)); /* #545454 */
+	border-bottom: 1px dashed hsl(0, 0%, 33%); /* #545454 */
+	border-top: 1px dashed hsl(0, 0%, 33%); /* #545454 */
+	margin-top: 0.75em; /* Same as .prism’s padding-top */
+	z-index: 0;
+}
+
+.line-highlight.line-highlight:before,
+.line-highlight.line-highlight[data-end]:after {
+	background-color: hsl(215, 15%, 59%); /* #8794A6 */
+	color: hsl(24, 20%, 95%); /* #F5F2F0 */
+}
+ </style>
+  <style>
+    * { margin-top: 0 }
+    * + * { margin-top: 1.5em }
+    li li { margin-top: 1.5em }
+    html { scroll-behavior: smooth }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6; /*rgb(220, 217, 214)*/
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.25;
+      font-weight: 600;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:focus, a:active, a:hover {
+      color: #ff6300;
+    }
+    .footer {
+      border-top: 1px solid rgb(25, 73, 110);
+      background-color: #021928;
+    }
+    .amp {
+      font-family: Baskerville, "Goudy Old Style", "Palatino", "Palatino Linotype", "Book Antiqua", serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+    h1, h2, h3, h4, h5, h6, li, p, span, blockquote, pre, code {
+      text-rendering: optimizeLegibility;
+    }
+    hr {
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      border-top: 1px solid rgba(220, 217, 214, .1);
+    }
+    /* improve prism styles */
+    pre, pre[class*=language-] {
+      line-height: 1.4;
+      padding: 1.25rem 1.5rem;
+      margin: .85rem 0;
+      background-color: #282c34;
+      background-color: #191919;
+      border-radius: 6px;
+      overflow: auto;
+    }
+    blockquote {
+      margin-left: 0;
+      border-left: .5rem solid rgba(0, 0, 0, .5);
+      padding-left: 1.5em;
+    }
+    .customcolor { color: #013250 }
+    .b--customcolor { border-color: #013250 }
+    
+  </style>
+  
+  <meta name="cf-2fa-verify" content="27f0edaf36e9d24">
+</head>
+<body class="pt2 lh-copy">
+  <nav class="mw7 ph2 center flex flex-column flex-row-l">  <a class="fw5 link flex self-center self-start-l" href="/">    <img src="/images/dtrejo.jpg" class="w2 h2 br-100 mr3" alt="David Trejo">    dtrejo  </a>  <div class="flex self-center ml-auto-l mt0-l">    <a class="f5 fw5 link mt0 mr3 ttu" href="#footer">Articles</a>    <a class="f5 fw5 link mt0 mr0 ttu" href="/books">Books</a>    <!-- <a class="f5 fw5 link mt0 ttu" href="https://engineeroverflow.com"      >Hire Engineers</a    > -->  </div></nav>
+
+  <article class="content mw7 ph2 center">
+    <h1 id="how-to-stay-up-to-date-with-nodejs">How to stay up-to-date with Node.js</h1>
+<p><img src="./images/13088489-node.js_logo.png" alt="node.js logo"></p>
+<p>Node.js is changing every day and new releases are very frequent.&nbsp;Here is how I stay up to date with the latest release version of Node.js.&nbsp;</p>
+<p>This guide assumes you already have node.js installed and you are familiar with the command line.</p>
+<p>1. Install&nbsp;<a href="http://github.com/isaacs/npm">npm</a>&nbsp;(<a href="http://github.com/isaacs/npm">full npm install guide</a>)</p>
+
+<pre><code class="language-bash"><span class="token function">curl</span> http://npmjs.org/install.sh <span class="token operator">|</span> <span class="token function">sh</span>
+</code></pre>
+<p>Or update it if you've already installed it</p>
+
+<pre><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token function">npm</span>
+</code></pre>
+<p>2. Install <a href="http://github.com/isaacs/nave">nave</a> with npm</p>
+
+<pre><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> nave
+</code></pre>
+<p>3. Use nave to run the version of your choice in a subshell</p>
+
+<pre><code class="language-bash">nave use <span class="token number">0.1</span>.102
+</code></pre>
+<p>4. All done! &nbsp;Repeat from step 3 whenever a new version of node is released. By the way, npm is great, you can even use it to update itself :)</p>
+<p>&nbsp;</p>
+<p>What tools do you use to stay up to date? If there is a better way, please let me know!</p>
+
+<h3 id="comments">Comments</h3>
+<h4 id="aug--2-2010-1140-am">Aug  2 2010, 11:40 AM</h4>
+<h4 id="isaac-schlueter-responded">Isaac Schlueter responded:</h4>
+<blockquote>
+<p>Haha, this post is basically &quot;Use Isaac&#39;s stuff.&quot;<br><br>
+Nave is great for release versions, but it&#39;s also good to keep a git repo up to date with ry/master if you hack on node itself or submit patches.  In my &quot;main&quot; shell, I&#39;m running the latest HEAD, and then drop into the nave subshell to test on release versions.<br><br>
+Minor point: you don&#39;t have to do &quot;nave install&quot; before doing &quot;nave use&quot;.  If the version isn&#39;t already installed, it&#39;ll install it for you.</p>
+</blockquote>
+<h4 id="aug--2-2010-1148-am">Aug  2 2010, 11:48 AM</h4>
+<h4 id="david-trejo-responded">David Trejo responded:</h4>
+<blockquote>
+<p>Thanks for the tip — I&#39;ve made it one step shorter :)</p>
+</blockquote>
+
+  </article>
+
+  <div class="mw7 ph2 center">    <img        src="/images/dtrejo.jpg"        title="David Trejo"        class="br-100 fl ml2 mr2"        height="80"    />    <div class="overflow-hidden mr2">        <h4>David Trejo</h4>        <p>Engineer at Chime <span class="amp">&</span> consultant. Past clients include Credit Karma, Aconex, Triplebyte, Neo, the Brown Computer Science Department, Voxer, Cloudera, and the Veteran's Benefits Administration.</p>    </div></div>
+
+  
+
+  <div id="footer" class="footer mt5 pt5 pb4"><div class="mw7 ph2 center">  <h3>Hiring Engineers? You'll like these articles</h3>  <ol><li><a href="/engineer-interview-script">Growth & full stack engineering interview script</a></li><li><a href="/referrals">How to hustle on your referrals so they actually get hired</a></li><li><a href="/moneyball-book-review-and-measuring-revenue-per-engineer">Moneyball book review and measuring revenue per engineer</a></li><li><a href="/questions-that-senior-systems-engineers-want-answered">Questions that Senior Systems Engineers want answered</a></li><li><a href="/tools-for-hiring-engineers">Tools for hiring engineers that save time and increase conversion</a></li><li><a href="/how-to-reliably-get-your-team-to-write-articles-for-your-engineering-blog">How to reliably get your team to write articles for your engineering blog</a></li><li><a href="/why-share-salary">Why share salary ranges with candidates?</a></li><li><a href="/massive-list-of-engineering-recruiting-channels">Massive list of engineering recruiting channels</a></li><li><a href="/how-to-run-an-intern-program-like-cloudera-s">How to run an intern program like Cloudera's</a></li><li><a href="/how-to-replicate-the-warmth-of-referral-hires">How do you replicate the warmth and friendliness of a referral hire, even with a stranger engineer? By treating hiring like dating.</a></li><li><a href="/how-to-run-an-intern-meetup">How to run an intern meetup</a></li></ol>
+  <h3>Growth Engineering Articles</h3>  <ol><li><a href="/engineer-interview-script">Growth & full stack engineering interview script</a></li><li><a href="/engineering-lead">Engineering lead checklists</a></li><li><a href="/days-as-a-growth-engineer">Everything you should do in the first 30 days of a new growth engineering job</a></li><li><a href="/how-do-you-transition-from-rails-lead-engineer-to-growth-engineer">How do you transition from Rails lead engineer to growth engineer?</a></li><li><a href="/chaos-in-your-product-prototyping">Chaos in your product prototyping</a></li></ol>
+  <h3>How to...</h3>  <ol><li><a href="/tailoring-perfect-shirt-pants-jacket">Tailoring the perfect shirt, pants, and jacket</a></li><li><a href="/home-search">Home Searching Advice</a></li><li><a href="/publishing-vue-codesandbox-to-github-pages">How to publish a Vue CodeSandbox.io to Github Pages on a custom domain</a></li><li><a href="/how-to-get-your-business-to-pull-you-forward">How to get your business to pull you forward</a></li><li><a href="/overcome-cold-email-procrastination">Overcome cold-email procrastination</a></li><li><a href="/how-to-write-consistently-painlessly-and-without-writers-block">How to write consistently, painlessly, and without writer's block</a></li><li><a href="/how-to-email">How to email</a></li><li><a href="/how-to-buy-and-cook-steak">How to Buy and Cook Steak</a></li></ol>
+  <h3>Health</h3>  <ol><li><a href="/why-go-carnivore-aka-zero-carb">Why go carnivore? (aka zero carb)</a></li><li><a href="/cancer">Cancer, fasting, carnivore, and chemotherapy side effects</a></li><li><a href="/lifting">Start weightlifting in just 720 days</a></li></ol>
+  <h3>Node.js</h3>  <ol><li><a href="/my-javascript-tooling-wishlist">My Javascript tooling wishlist</a></li><li><a href="/metrics-and-operational-awareness-at-voxer">Metrics and operational awareness at Voxer</a></li><li><a href="/zero-effort-responsive-email-creation">Zero effort responsive email creation</a></li><li><a href="/node-single-point-of-failure">Node single point of failure</a></li></ol>
+  <h3>Git</h3>  <ol><li><a href="/pull-requests">How Open Source People Do Pull Requests and What We Can Learn from Them</a></li><li><a href="/develop-on-a-cloud-machine">Develop on a cloud machine</a></li><li><a href="/faster-git-workflow">A faster Git workflow with Ampline</a></li><li><a href="/my-github-pull-request-workflow">My Github pull request workflow</a></li></ol>
+  <h3>Top Projects</h3>  <ul>  <li>    <a href="https://duskk.com">Duskk.com</a> Want to unlock the power of your writing?    Discover greatness inside yourself with <a href="https://duskk.com">Duskk, a journaling app</a>.  </li>  <li>    <a href="https://EngineerWorth.com">EngineerWorth.com</a> Is that    product feature worth coding? Run a quick ROI calculation and find out.  </li>  <li>    <a href="/qlock/qlock.html">jQuery Qlock2</a> Tell time with this $800 clock, for free.  </li>  <li>    <a href="/colorslice/">ColorSlice</a>    Wish it were easier to steal and create color schemes?    Colorslice helps front-end developers <span class="amp">&amp;</span>    designers with color.  </li>  <li>    <a href="/colorpreview/">ColorPreview</a>    Vet color combinations and pick only the ones with enough contrast,    that your eye finds pleasing.  </li>  <li>    <a href="/lazytemplating/">Lazy Templating</a>    What if you could do HTML templating using a spreadsheet? Now you  can.  </li>  <li>    <a href="http://github.com/DTrejo/ampline">Ampline</a>    Tired of copy-pasting or tab-completing long file paths? Accelerate yourself  on the command-line.  </li>  </ul>  <h4><a href="/archived">Archived</a></h4>  <h3>Find me</h3>  <ul>  <li><a href="https://github.com/DTrejo">Github</a></li>  <li><a rel="me" href="https://infosec.exchange/@dtrejo">Mastodon (infosec.exchange)</a></li>  <li><a href="https://twitter.com/ddtrejo">Twitter</a></li>  <li>    <a  href="#david åt dtrejo.com"  title="david åt dtrejo.com"  onclick="event.preventDefault(); this.href = 'mailto:' + (this.innerText = 'david' + '@dtrejo.com')">  Email me ✉️</a>  </li>  </ul>  <div>    Copyright © 2009-2025 David Trejo. Opinions mine.  </div></div></div>
+
+  
+</body>
+</html>
