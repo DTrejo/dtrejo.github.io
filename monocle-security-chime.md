@@ -15,8 +15,8 @@ I'm very happy to be able to share our approach to security with you.
 - [How Chime creates a proactive security & engineering culture by David Trejo](https://www.youtube.com/watch?v=TmRyZ7FB-HA) mini talk at RailsConf '22. The Monocle section starts at the 5 minute mark (length: 5 mins).
 
 ## Articles about 😺 Monocle and Security
-1. [Monocle: How Chime creates a proactive security & engineering culture (Part 1)](https://medium.com/life-at-chime/monocle-how-chime-creates-a-proactive-security-engineering-culture-part-1-dedd3846127f)
-2. [Mitigating Risky Pull Requests with Monocle Risk Advisor (Part 2)](https://medium.com/life-at-chime/mitigating-risky-pull-requests-with-monocle-risk-advisor-part-2-7013e1485bf2)
+1. [Monocle: How Chime creates a proactive security & engineering culture (Part 1)](https://careers.chime.com/en/life-at-chime/engineering-at-chime/monocle-how-chime-creates-a-proactive-security-engineering-culture-part-1/)
+2. [Mitigating Risky Pull Requests with Monocle Risk Advisor (Part 2)](https://careers.chime.com/en/life-at-chime/engineering-at-chime/mitigating-risky-pull-requests-with-monocle-risk-advisor-part-2/)
 
 Feel free to ask me questions over email (sorry I don't check it much) or  [linkedin.com/in/dtrejo](https://www.linkedin.com/in/dtrejo) (send a connection message/note because otherwise I only add people I know!).
 
