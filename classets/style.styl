@@ -1,0 +1,70 @@
+html
+  font-size: 125%
+
+$color = #2F1C00
+$background-color = #faebd7
+
+body
+  width 33em
+  margin 0 auto
+  color $color
+  // TODO need same x-height for all font fallbacks
+  background-color $background-color
+
+body, h1, h2, h3, h4, h5, h6
+  font-family Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
+h1, h2, h3, h4, h5, h6
+  font-variant: small-caps
+  // font-family "AdobeGaramondPremierPro", "Garamond", "Hoefler Text", Palatino,
+  //   "Palatino Linotype", Georgia, serif
+  // text-align center
+
+aside
+  position fixed
+  // bottom 2%
+  right 2%
+  width 157px
+  a >
+    img
+      display block
+      margin-bottom: .5rem
+  z-index -1
+
+.book
+  background-color $background-color // hides the aside if screen is too small
+
+h1, h2, h3, h4, h5, h6
+  & + p:first-letter
+    float left
+    font-size 3.24rem
+    line-height 3.24rem
+    font-family "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
+
+.d-a, .d-f, .d-i, .d-k, .d-l, .d-p, .d-q, .d-r, .d-t, .d-v, .d-w, .d-x, .d-y, .d-z
+  &:first-letter
+    padding-right .25rem
+
+h1, h2, h3, h4, h5, h6, li, p
+  // MASSIVELY slows down page load when on body element :(
+  text-rendering optimizeLegibility
+
+// table of contents
+.toc
+  list-style none
+.toc a
+  margin-right .5rem
+.toc li
+  text-indent -1rem
+
+pre
+  font-style italic
+  font-family inherit
+  overflow inherit
+  margin-left 2rem
+pre i
+  // font-weight bold
+  // font-style normal
+
+pre.dedication
+  margin-left 0
