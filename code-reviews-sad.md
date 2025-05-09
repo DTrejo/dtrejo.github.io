@@ -29,11 +29,11 @@ Here is my wish list as a code reviewer:
 3. Allow me to see code coverage of each part of the code.
 4. Show me the full file as I am navigating through the program execution so that I can feel the level of abstraction and notice nearby repetition or code that would benefit from being cleaned up.
 
-Yes, I know that I have essentially described a debugger; however, it is more accurate to say that I am describing saved and replayable debugger sessions based on the tests. Reviewing the code needs to be fast and browser-browser to eliminate setup friction.
+Yes, I know that I have essentially described a debugger; however, it is more accurate to say that I am describing saved and replayable debugger sessions based on the tests. Reviewing the code needs to be fast and browser-based to eliminate setup friction.
 
 Good news: if you want something like this in development, tidewave is doing this for Rails, which makes their AI a lot smarter.
 
-Good news: I just discovered that if you press “.” on a GitHub pull request you can see all the code in a browser-based VSCode editor. You can comment, commit, approve, and see the full diff in its full file context. I’ll be trying this out a lot more and see if it improves my code review quality.
+Good news: I just discovered that if you press `.` on a GitHub pull request you can see all the code in a browser-based VSCode editor. You can comment, commit, approve, and see the full diff in its full file context. I’ll be trying this out a lot more and see if it improves my code review quality.
 
 I strongly believe that if we had tooling like this, our human code reviews would improve a huge amount. If we plug AI into a similar workflow, it will be able to give much better code review feedback. We are already seeing AI embedded next to language servers and debuggers while engineers write their code (tidewave); this is a logical next step. Why should AI be the only one to have a superior working environment? Humans need this too.
 
