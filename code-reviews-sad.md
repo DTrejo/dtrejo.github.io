@@ -1,7 +1,7 @@
 ---
 title: Code reviews are sad
 date: 2025-05-09 05:55 CET
-tags: archived
+tags: git
 ---
 # ${this.title}
 
