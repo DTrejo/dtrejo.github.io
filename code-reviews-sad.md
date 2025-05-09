@@ -37,6 +37,6 @@ Good news: I just discovered that if you press “.” on a GitHub pull request 
 
 I strongly believe that if we had tooling like this, our human code reviews would improve a huge amount. If we plug AI into a similar workflow, it will be able to give much better code review feedback. We are already seeing AI embedded next to language servers and debuggers while engineers write their code (tidewave); this is a logical next step. Why should AI be the only one to have a superior working environment? Humans need this too.
 
-Wishing you a deep and valuable code review experience!
+Wishing you a deep and valuable code review experience!  
 _David Trejo_  
 ${this.email || ''}
