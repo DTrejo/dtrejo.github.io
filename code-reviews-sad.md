@@ -40,3 +40,5 @@ I strongly believe that if we had tooling like this, our human code reviews woul
 Wishing you a deep and valuable code review experience!  
 _David Trejo_  
 ${this.email || ''}
+
+P.S. Overall, today, I think humans need to stay in control of writing code so it can hit our quality bars. I want humans to do the most creative work and let AI help with things we are less good at or which are too tedious.
