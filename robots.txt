@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /feed.html
+Disallow: /feed.xml
+
+# TODO fix
+# Sitemap: https://dtrejo.com/sitemap.xml

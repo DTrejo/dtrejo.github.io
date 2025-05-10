@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Because I didn't want to write this in more than one file :) -->
+<style>
+  body {
+    width: 36em;
+    margin: 0 auto;
+    padding: 3em;
+    font-size: 125%;
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+  }
+  input, .total, button {
+    font-size: 1em;
+    font-family: Tahoma, sans-serif;
+  }
+  .light {
+    background-color: yellow;
+  }
+  label { width: 8em; display: inline-block; }
+</style>
+</head>
+<body>
+
+<p>Offer calculator, specialized for interns (3 months, 40 hour work-weeks)</p>
+
+<div class="offer">
+  <!-- $/hr $/wk $/month $/year -->
+  <label for="hr">$/hr</label>
+  <input type="text" class="hr" placeholder="$/hr">
+  <br>
+  <label for="wk">$/wk</label>
+  <input type="text" class="wk" placeholder="$/wk">
+  <br>
+  <label for="summer">$/summer</label>
+  <input type="text" class="summer" placeholder="$/yr">
+  <br>
+  <label for="yr">$/yr</label>
+  <input type="text" class="yr" placeholder="$/yr">
+
+  <br>
+  <br>
+  <!-- $housing/3months -->
+  <label for="housing3months">$housing/3months</label>
+  <input type="text" class="housing3months" placeholder="$housing/3months">
+
+  <p>Total (summer + housing/3months): <span class="total"></span>
+    <br>
+    <input class="save" type="text" placeholder="company name">
+    <button class="save">save</button>
+  </p>
+
+  <p>To compare more than one offer, I recommend opening another tab :)</p>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+$(function() {
+  $('.hr, .wk, .summer, .yr').on('keyup', salaryChange)
+  function salaryChange(e) {
+    var el = $(e.target)
+    console.log('calcing based on', el.val())
+    el.siblings().removeClass('light')
+    el.addClass('light')
+
+    var time = el.attr('class').split(' ')[0];
+    var rate = text2number(el.val())
+    var offer = calculate({ time: time, rate: rate });
+    for (var time in offer) {
+      el.siblings('.'+time)
+        .first()
+        .val(number2text(offer[time]))
+    }
+    housingChange()
+  }
+  $('.housing3months').on('keyup', housingChange)
+  function housingChange(e) {
+    // hardcoded so can be called from salaryChange
+    var el = $('.housing3months')
+    var housing3months = text2number(el.val())
+    el.val(housing3months)
+
+    var summer = text2number($('.summer').val());
+    var total = housing3months + summer
+    $('.total').text(number2text(total))
+  }
+  function calculate(opts) {
+    opts.rate = opts.rate || 0
+    var multiplier = 1
+    // hour takes you to week, week takes you to summer,
+    // summer takes you to year
+    switch(opts.time) {
+      case 'hr': multiplier *= 40
+      case 'wk': multiplier *= 12
+      case 'summer': multiplier *= 4
+      case 'yr': multiplier *= 1
+    }
+
+    var offer = {}
+    offer.yr = multiplier * opts.rate
+    offer.summer = offer.yr / 4
+    offer.wk = offer.summer / 12
+    offer.hr = offer.wk / 40
+    return offer
+  }
+  function text2number(t) {
+    t = t || '0'
+    return parseFloat(t.split(',').join(''), 10)
+  }
+  function number2text(n) {
+    var chunks = []
+    var text = n + ''
+    var decimal = text.indexOf('.') > -1 && text.substring(text.indexOf('.'))
+    decimal = decimal || ''
+    if (decimal) text = text.substring(0, text.length - decimal.length)
+
+    if (text.length <= 3) return text + decimal
+    var count = text.length
+    while (count >= 0) {
+      chunks.unshift(text.substring(count-3, count))
+      count -= 3
+    }
+
+    return chunks.filter(function(c) { return c }).join(',') + decimal
+  }
+  salaryChange({ target: $('.hr')[0] })
+  $('.hr').focus();
+
+  // saving functionality
+  $('input.save').on('keypress', function(e) { if (e.which == 13) onSave() })
+  $('button.save').on('click', onSave)
+  function onSave(e) {
+    var name = $('input.save').val()
+    var total = $('.total').text()
+    $('.offer').append($('<p></p>').text(name+': '+total))
+  }
+})
+</script>
+
+</body>
+</html>
