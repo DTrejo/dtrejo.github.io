@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Code reviews are sad</title>
+  <meta itemprop="name" content="Code reviews are sad">
+  <meta property="og:title" content="Code reviews are sad">
+  <link rel="icon" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:creator" content="@ddtrejo">
+  <meta name="twitter:site" content="@ddtrejo">
+  <link rel="me" href="https://infosec.exchange/@dtrejo">
+  
+  
+  
+  <link rel="canonical" href="https://dtrejo.com/code-reviews-sad">
+  <meta property="og:url" content="https://dtrejo.com/code-reviews-sad">
+  <meta property="og:image" content="https://dtrejo.com/images/social/code-reviews-sad.jpg"/>
+  <meta name="image" content="https://dtrejo.com/images/social/code-reviews-sad.jpg"/>
+  <meta itemprop="image" content="https://dtrejo.com/images/social/code-reviews-sad.jpg"/>
+  <meta name="twitter:image:src" content="https://dtrejo.com/images/social/code-reviews-sad.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="article">
+  
+  <link rel="stylesheet" href="/css/tachyons.min.css" />
+  
+  <style>
+    * { margin-top: 0 }
+    * + * { margin-top: 1.5em }
+    li li { margin-top: 1.5em }
+    html { scroll-behavior: smooth }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6; /*rgb(220, 217, 214)*/
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.25;
+      font-weight: 600;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:focus, a:active, a:hover {
+      color: #ff6300;
+    }
+    .footer {
+      border-top: 1px solid rgb(25, 73, 110);
+      background-color: #021928;
+    }
+    .amp {
+      font-family: Baskerville, "Goudy Old Style", "Palatino", "Palatino Linotype", "Book Antiqua", serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+    h1, h2, h3, h4, h5, h6, li, p, span, blockquote, pre, code {
+      text-rendering: optimizeLegibility;
+    }
+    hr {
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      border-top: 1px solid rgba(220, 217, 214, .1);
+    }
+    /* improve prism styles */
+    pre, pre[class*=language-] {
+      line-height: 1.4;
+      padding: 1.25rem 1.5rem;
+      margin: .85rem 0;
+      background-color: #282c34;
+      background-color: #191919;
+      border-radius: 6px;
+      overflow: auto;
+    }
+    blockquote {
+      margin-left: 0;
+      border-left: .5rem solid rgba(0, 0, 0, .5);
+      padding-left: 1.5em;
+    }
+    .customcolor { color: #013250 }
+    .b--customcolor { border-color: #013250 }
+    
+  </style>
+  
+  <meta name="cf-2fa-verify" content="27f0edaf36e9d24">
+</head>
+<body class="pt2 lh-copy">
+  <nav class="mw7 ph2 center flex flex-column flex-row-l">  <a class="fw5 link flex self-center self-start-l" href="/">    <img src="/images/dtrejo.jpg" class="w2 h2 br-100 mr3" alt="David Trejo">    dtrejo  </a>  <div class="flex self-center ml-auto-l mt0-l">    <a class="f5 fw5 link mt0 mr3 ttu" href="#footer">Articles</a>    <a class="f5 fw5 link mt0 mr0 ttu" href="/books">Books</a>    <!-- <a class="f5 fw5 link mt0 ttu" href="https://engineeroverflow.com"      >Hire Engineers</a    > -->  </div></nav>
+
+  <article class="content mw7 ph2 center">
+    <h1 id="code-reviews-are-sad">Code reviews are sad</h1>
+<p>The current state of code review best practices and tooling is somewhat sad. We have been using the same GitHub pull request UI for years. We give code reviews of varying levels of quality from a quick scan to simulating every line of code in our heads and running the tests and viewing the code in our editors. With the advent of AI, which can write very low-quality code, we need to get much better at reviewing, rejecting, and improving code before it gets into our codebase, clogs up our context, and makes everything more difficult to read and debug. Soon, everyone in the company will be writing apps, and we are going to need to get way better at giving code reviews, both as humans and with AI-assisted reviews.</p>
+<h2 id="current-state-of-human-code-reviews">Current state of human code reviews</h2>
+<p>Before we can talk about how to improve code reviews done by humans, we need to talk about what the best practices are for code reviews, as well as how people currently do code reviews.</p>
+<h2 id="code-reviewers-quality-investment-from-least-to-most">Code reviewer’s quality investment from least to most</h2>
+<ul>
+<li>Quick scan of the side-by-side or vertical diff</li>
+<li>Read over functions and logic and think about issues</li>
+<li>Look at the complete files and functions, possibly in your editor with syntax highlighting, and mentally simulate a run of the modified code paths, and imagine ways it can go wrong.</li>
+<li>Run the code locally along with tests and set the debugger break points to inspect and validate the data at various points in the program execution.</li>
+</ul>
+<p>The majority of advice around code reviews focuses on standards for the author of the pull request to follow. This is good, but not enough because it is important for the code reviewer to deeply understand the new code, maintain their expertise in the codebase, and find problems with the pull request. Deep understanding of a codebase allows an engineer to contribute to it much more quickly and easily.</p>
+<p>Those of you who use debuggers frequently know that you can fix an issue at least twice as quickly when you use a debugger compared to when you do print-line debugging. How long does it take you to figure out a bug when simply reading the code and without executing it at all? That is where we are today with code reviews.</p>
+<h2 id="bringing-code-reviews-into-the-21st-century">Bringing code reviews into the 21st century</h2>
+<p>Here is my wish list as a code reviewer:</p>
+<ol>
+<li>Allow me to step through the code execution paths that have been modified in the pull request, based on the tests that have been modified. </li>
+<li>Allow me to see the data being handled in variables as I look through the code.</li>
+<li>Allow me to see code coverage of each part of the code.</li>
+<li>Show me the full file as I am navigating through the program execution so that I can feel the level of abstraction and notice nearby repetition or code that would benefit from being cleaned up.</li>
+</ol>
+<p>Yes, I know that I have essentially described a debugger; however, it is more accurate to say that I am describing saved and replayable debugger sessions based on the tests. Reviewing the code needs to be fast and browser-based to eliminate setup friction.</p>
+<p>Good news: if you want something like this in development, tidewave is doing this for Rails, which makes their AI a lot smarter.</p>
+<p>Good news: I just discovered that if you press <code>.</code> on a GitHub pull request you can see all the code in a browser-based VSCode editor. You can comment, commit, approve, and see the full diff in its full file context. I’ll be trying this out a lot more and see if it improves my code review quality.</p>
+<p>I strongly believe that if we had tooling like this, our human code reviews would improve a huge amount. If we plug AI into a similar workflow, it will be able to give much better code review feedback. We are already seeing AI embedded next to language servers and debuggers while engineers write their code (tidewave); this is a logical next step. Why should AI be the only one to have a superior working environment? Humans need this too.</p>
+<p>Wishing you a deep and valuable code review experience!<br><em>David Trejo</em><br><a  href="#david åt dtrejo.com"  title="david åt dtrejo.com"  onclick="event.preventDefault(); this.href = 'mailto:' + (this.innerText = 'david' + '@dtrejo.com')">  Email me ✉️</a></p>
+<p>P.S. Overall, today, I think humans need to stay in control of writing code so it can hit our quality bars. I want humans to do the most creative work and let AI help with things we are less good at or which are too tedious.</p>
+
+  </article>
+
+  <div class="mw7 ph2 center">    <img        src="/images/dtrejo.jpg"        title="David Trejo"        class="br-100 fl ml2 mr2"        height="80"    />    <div class="overflow-hidden mr2">        <h4>David Trejo</h4>        <p>Engineer at Chime <span class="amp">&</span> consultant. Past clients include Credit Karma, Aconex, Triplebyte, Neo, the Brown Computer Science Department, Voxer, Cloudera, and the Veteran's Benefits Administration.</p>    </div></div>
+
+  
+
+  <div id="footer" class="footer mt5 pt5 pb4"><div class="mw7 ph2 center">  <h3>Hiring Engineers? You'll like these articles</h3>  <ol><li><a href="/engineer-interview-script">Growth & full stack engineering interview script</a></li><li><a href="/referrals">How to hustle on your referrals so they actually get hired</a></li><li><a href="/moneyball-book-review-and-measuring-revenue-per-engineer">Moneyball book review and measuring revenue per engineer</a></li><li><a href="/questions-that-senior-systems-engineers-want-answered">Questions that Senior Systems Engineers want answered</a></li><li><a href="/tools-for-hiring-engineers">Tools for hiring engineers that save time and increase conversion</a></li><li><a href="/how-to-reliably-get-your-team-to-write-articles-for-your-engineering-blog">How to reliably get your team to write articles for your engineering blog</a></li><li><a href="/why-share-salary">Why share salary ranges with candidates?</a></li><li><a href="/massive-list-of-engineering-recruiting-channels">Massive list of engineering recruiting channels</a></li><li><a href="/how-to-run-an-intern-program-like-cloudera-s">How to run an intern program like Cloudera's</a></li><li><a href="/how-to-replicate-the-warmth-of-referral-hires">How do you replicate the warmth and friendliness of a referral hire, even with a stranger engineer? By treating hiring like dating.</a></li><li><a href="/how-to-run-an-intern-meetup">How to run an intern meetup</a></li></ol>
+  <h3>Growth Engineering Articles</h3>  <ol><li><a href="/engineer-interview-script">Growth & full stack engineering interview script</a></li><li><a href="/engineering-lead">Engineering lead checklists</a></li><li><a href="/how-do-you-transition-from-rails-lead-engineer-to-growth-engineer">How do you transition from Rails lead engineer to growth engineer?</a></li><li><a href="/days-as-a-growth-engineer">Everything you should do in the first 30 days of a new growth engineering job</a></li><li><a href="/chaos-in-your-product-prototyping">Chaos in your product prototyping</a></li></ol>
+  <h3>How to...</h3>  <ol><li><a href="/chicha-recipe">How to make Chicha, a Venezuelan rice drink</a></li><li><a href="/tailoring-perfect-shirt-pants-jacket">Tailoring the perfect shirt, pants, and jacket</a></li><li><a href="/home-search">Home Searching Advice</a></li><li><a href="/publishing-vue-codesandbox-to-github-pages">How to publish a Vue CodeSandbox.io to Github Pages on a custom domain</a></li><li><a href="/how-to-get-your-business-to-pull-you-forward">How to get your business to pull you forward</a></li><li><a href="/overcome-cold-email-procrastination">Overcome cold-email procrastination</a></li><li><a href="/how-to-write-consistently-painlessly-and-without-writers-block">How to write consistently, painlessly, and without writer's block</a></li><li><a href="/how-to-email">How to email</a></li><li><a href="/how-to-buy-and-cook-steak">How to Buy and Cook Steak</a></li></ol>
+  <h3>Health</h3>  <ol><li><a href="/why-go-carnivore-aka-zero-carb">Why go carnivore? (aka zero carb)</a></li><li><a href="/cancer">Cancer, fasting, carnivore, and chemotherapy side effects</a></li><li><a href="/lifting">Start weightlifting in just 720 days</a></li></ol>
+  <h3>Node.js</h3>  <ol><li><a href="/my-javascript-tooling-wishlist">My Javascript tooling wishlist</a></li><li><a href="/metrics-and-operational-awareness-at-voxer">Metrics and operational awareness at Voxer</a></li><li><a href="/zero-effort-responsive-email-creation">Zero effort responsive email creation</a></li><li><a href="/node-single-point-of-failure">Node single point of failure</a></li></ol>
+  <h3>Git</h3>  <ol><li><a href="/code-reviews-sad">Code reviews are sad</a></li><li><a href="/pull-requests">How Open Source People Do Pull Requests and What We Can Learn from Them</a></li><li><a href="/develop-on-a-cloud-machine">Develop on a cloud machine</a></li><li><a href="/faster-git-workflow">A faster Git workflow with Ampline</a></li><li><a href="/my-github-pull-request-workflow">My Github pull request workflow</a></li></ol>
+  <h3>Top Projects</h3>  <ul>  <li>    <a href="https://EngineerWorth.com">EngineerWorth.com</a> Is that    product feature worth coding? Run a quick ROI calculation and find out.  </li>  <li>    <a href="/qlock/qlock.html">jQuery Qlock2</a> Tell time with this $800 clock, for free.  </li>  <li>    <a href="/colorslice/">ColorSlice</a>    Wish it were easier to steal and create color schemes?    Colorslice helps front-end developers <span class="amp">&amp;</span>    designers with color.  </li>  <li>    <a href="/colorpreview/">ColorPreview</a>    Vet color combinations and pick only the ones with enough contrast,    that your eye finds pleasing.  </li>  <li>    <a href="/lazytemplating/">Lazy Templating</a>    What if you could do HTML templating using a spreadsheet? Now you  can.  </li>  <li>    <a href="http://github.com/DTrejo/ampline">Ampline</a>    Tired of copy-pasting or tab-completing long file paths? Accelerate yourself  on the command-line.  </li>  </ul>  <h4><a href="/archived">Archived</a></h4>  <h3>Find me</h3>  <ul>  <li><a href="https://github.com/DTrejo">Github</a></li>  <li><a rel="me" href="https://infosec.exchange/@dtrejo">Mastodon (infosec.exchange)</a></li>  <li><a href="https://twitter.com/ddtrejo">Twitter</a></li>  <li>    <a  href="#david åt dtrejo.com"  title="david åt dtrejo.com"  onclick="event.preventDefault(); this.href = 'mailto:' + (this.innerText = 'david' + '@dtrejo.com')">  Email me ✉️</a>  </li>  </ul>  <div>    Copyright © 2009-2025 David Trejo. Opinions mine.  </div></div></div>
+
+  
+</body>
+</html>
