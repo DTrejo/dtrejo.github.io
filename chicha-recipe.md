@@ -60,5 +60,5 @@ For when you're in a hurry! Makes 1 pitcher.
 1. Allow chicha to cool in refrigerator (cover with plastic wrap to maintain freshness)
 1. Serve chilled and enjoy!
 
-Enjoy!  
-*David Trejo*
+Enjoy!<br>
+_David Trejo_  
