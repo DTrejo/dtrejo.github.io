@@ -1,6 +1,6 @@
 ---
 title: How to make Chicha, a Venezuelan rice drink
-date: 2025-08-08
+date: 2025-08-08 05:50 CET
 tags: howto, chicha, cooking
 ---
 
