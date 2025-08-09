@@ -4,7 +4,7 @@ date: 2025-08-08 05:50 CET
 tags: howto, chicha, cooking
 ---
 
-# ${title}
+# ${this.title}
 
 ## Lightspeed Chicha Recipe
 
