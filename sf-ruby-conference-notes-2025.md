@@ -5,7 +5,7 @@ tags: ruby, rails, ai, engineering
 ---
 # ${this.title}
 
-My SF Ruby notes (with tons of AI engineering homework for me 🤩📚). Most exciting items are 🌟 starred (both headings and bullets).
+My SF Ruby notes (with tons of AI engineering homework for me 🤩📚). Most exciting items are 🌟 starred (both headings and bullets). There were plenty of cool things I didn't write down–see the full conference lineup on <https://sfruby.com/schedule/#day1> (click through days 1-3).
 ​
 - [SF Ruby Conference 2025 Notes](#ruby-conference-sf-2025-notes-by-dtrejo)
   - [AI apps](#ai-apps)
@@ -29,9 +29,9 @@ My SF Ruby notes (with tons of AI engineering homework for me 🤩📚). Most ex
 ​
 - Async / reducing sidekick usage - more popular: concurrent ruby . Also, [https://paolino.me/async-ruby-is-the-future/](https://paolino.me/async-ruby-is-the-future/)
 ​
-## Testing with realistic data 
+## Testing with realistic data
 ​
-- [https://github.com/kaspth/oaken](https://github.com/kaspth/oaken) - set up all the test scenarios once as seed data for the rails app so everyone always has a good setup locally. Also, seed data is used for the tests which greatly reduces test DB setup time and test time. 
+- [https://github.com/kaspth/oaken](https://github.com/kaspth/oaken) - set up all the test scenarios once as seed data for the rails app so everyone always has a good setup locally. Also, seed data is used for the tests which greatly reduces test DB setup time and test time.
 ​
 - What Gusto did: 1) Sampling and sanitizing prod data 2) tool to describe describe scenario then pull data into dev and sanitize and use it for testing
 ​
@@ -39,7 +39,7 @@ My SF Ruby notes (with tons of AI engineering homework for me 🤩📚). Most ex
 ​
 - [https://terminalwire.com/](https://terminalwire.com/) - auto-updating CLI that doesn’t need any update tooling - best for talking to APIs or a SaaS product
 ​
-- Ubicloud CLI has a very cool thin client approach that allows a web API to be exposed as a CLI and kept up to date just like a webapp. 
+- Ubicloud CLI has a very cool thin client approach that allows a web API to be exposed as a CLI and kept up to date just like a webapp.
 ​
 ## 🌟 Vibe engineering
 
@@ -62,7 +62,7 @@ Met a guy who hasn't been typing his code for 3 years, who shared his workflow a
 ​
 - Use HERB not .html.erb - it’s not just a big string, has autoformatting, etc.
 ​
-- [https://github.com/socketry/async-cable](https://github.com/socketry/async-cable) - better actioncable option 
+- [https://github.com/socketry/async-cable](https://github.com/socketry/async-cable) - better actioncable option
 ​
 - 🌟 [https://github.com/spinel-coop/rv](https://github.com/spinel-coop/rv)  - Install new ruby versions in 1-2 seconds without building (rbenv replacement)
 ​
@@ -74,20 +74,20 @@ Met a guy who hasn't been typing his code for 3 years, who shared his workflow a
 ​
 - Ruby AI newsletter [https://rubyai.beehiiv.com/](https://rubyai.beehiiv.com/)
 ​
-- Bad dave's robot army, https://github.com/dgriffith/bad-daves-robot-army?tab=readme-ov-file#-command-categories, e.g. https://davegriffith.substack.com/p/sometimes-it-really-is-that-easy
+- Bad Dave's robot army, https://github.com/dgriffith/bad-daves-robot-army?tab=readme-ov-file#-command-categories, e.g. https://davegriffith.substack.com/p/sometimes-it-really-is-that-easy
 ​
 ## Concepts/talks people liked which I didn’t catch
 
 - “Rails riffing” a creative design and project typing process done in a single Ruby file [https://www.youtube.com/watch?v=vH-mNygyXs0](https://www.youtube.com/watch?v=vH-mNygyXs0)
 ​
 ## Upcoming events
+
 - [https://www.blastoffrails.com/](https://www.blastoffrails.com/)
 ​
 ## Personal finance
 
 - [https://tend.cash/](https://tend.cash/) - extremely simple mint based on a budgeting strategy used for 100 years
 
-Enjoy!    
+Enjoy!  
 _David Trejo_  
 ${this.email || ''}
-
