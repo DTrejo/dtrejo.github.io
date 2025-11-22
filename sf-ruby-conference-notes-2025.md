@@ -42,6 +42,7 @@ My SF Ruby notes (with tons of AI engineering homework for me 🤩📚). Most ex
 - Ubicloud CLI has a very cool thin client approach that allows a web API to be exposed as a CLI and kept up to date just like a webapp. 
 ​
 ## 🌟 Vibe engineering
+
 Met a guy who hasn't been typing his code for 3 years, who shared his workflow and what he's excited about.
 ​
 - [https://github.com/EveryInc/every-marketplace/tree/main/plugins/compounding-engineering](https://github.com/EveryInc/every-marketplace/tree/main/plugins/compounding-engineering)  - Claude skills from Every and compound engineering prompts
@@ -76,12 +77,14 @@ Met a guy who hasn't been typing his code for 3 years, who shared his workflow a
 - Bad dave's robot army, https://github.com/dgriffith/bad-daves-robot-army?tab=readme-ov-file#-command-categories, e.g. https://davegriffith.substack.com/p/sometimes-it-really-is-that-easy
 ​
 ## Concepts/talks people liked which I didn’t catch
+
 - “Rails riffing” a creative design and project typing process done in a single Ruby file [https://www.youtube.com/watch?v=vH-mNygyXs0](https://www.youtube.com/watch?v=vH-mNygyXs0)
 ​
 ## Upcoming events
 - [https://www.blastoffrails.com/](https://www.blastoffrails.com/)
 ​
-## Personal finance 
+## Personal finance
+
 - [https://tend.cash/](https://tend.cash/) - extremely simple mint based on a budgeting strategy used for 100 years
 
 Enjoy!    
