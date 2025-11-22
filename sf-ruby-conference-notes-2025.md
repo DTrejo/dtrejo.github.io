@@ -1,6 +1,13 @@
+---
+title: SF Ruby Conference 2025 Notes
+date: 2025-11-19 05:55 CET
+tags: ruby, rails, ai, engineering
+---
+# ${this.title}
+
 My SF Ruby notes (with tons of AI engineering homework for me 🤩📚). Most exciting items are 🌟 starred (both headings and bullets).
 ​
-- [Ruby Conference SF 2025 Notes by DTrejo](#ruby-conference-sf-2025-notes-by-dtrejo)
+- [SF Ruby Conference 2025 Notes](#ruby-conference-sf-2025-notes-by-dtrejo)
   - [AI apps](#ai-apps)
   - [Testing with realistic data](#testing-with-realistic-data)
   - [Terminal](#terminal)
@@ -76,3 +83,7 @@ Met a guy who hasn't been typing his code for 3 years, who shared his workflow a
 ​
 ## Personal finance 
 - [https://tend.cash/](https://tend.cash/) - extremely simple mint based on a budgeting strategy used for 100 years
+
+Enjoy!    
+_David Trejo_  
+${this.email || ''}
