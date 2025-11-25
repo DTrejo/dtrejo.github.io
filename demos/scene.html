@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Scene</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    camera.position.set(0, 2, 10);
+    camera.lookAt(0, 0, 0);
+
+    // Sky with stars
+    const starGeometry = new THREE.BufferGeometry();
+    const starCount = 3000;
+    const starPositions = new Float32Array(starCount * 3);
+    const starSizes = new Float32Array(starCount);
+    
+    for (let i = 0; i < starCount; i++) {
+      const i3 = i * 3;
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos((Math.random() * 2) - 1);
+      const radius = 200 + Math.random() * 300;
+      
+      starPositions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+      starPositions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+      starPositions[i3 + 2] = radius * Math.cos(phi);
+      starSizes[i] = Math.random() * 2 + 0.5;
+    }
+    
+    starGeometry.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
+    starGeometry.setAttribute('size', new THREE.BufferAttribute(starSizes, 1));
+    
+    const starMaterial = new THREE.PointsMaterial({
+      color: 0xffffff,
+      size: 1.5,
+      sizeAttenuation: true,
+      transparent: true,
+      opacity: 0.8
+    });
+    
+    const stars = new THREE.Points(starGeometry, starMaterial);
+    scene.add(stars);
+
+    // Scattered whispy clouds
+    const cloudGroup = new THREE.Group();
+    for (let i = 0; i < 20; i++) {
+      const cloudGeometry = new THREE.SphereGeometry(3 + Math.random() * 2, 8, 8);
+      const cloudMaterial = new THREE.MeshBasicMaterial({
+        color: 0xffffff,
+        transparent: true,
+        opacity: 0.15,
+        fog: false
+      });
+      const cloud = new THREE.Mesh(cloudGeometry, cloudMaterial);
+      
+      cloud.position.x = (Math.random() - 0.5) * 80;
+      cloud.position.y = 15 + Math.random() * 20;
+      cloud.position.z = (Math.random() - 0.5) * 80;
+      cloud.scale.x = 2 + Math.random();
+      cloud.scale.y = 0.3 + Math.random() * 0.3;
+      cloud.scale.z = 1 + Math.random();
+      
+      cloudGroup.add(cloud);
+    }
+    scene.add(cloudGroup);
+
+    // Four arcing auroras
+    const auroraShader = {
+      vertexShader: `
+        varying vec2 vUv;
+        varying vec3 vPosition;
+        uniform float time;
+        
+        void main() {
+          vUv = uv;
+          vPosition = position;
+          vec3 pos = position;
+          pos.y += sin(pos.x * 0.5 + time) * 2.0;
+          pos.y += sin(pos.x * 0.3 + time * 0.7) * 1.0;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
+        }
+      `,
+      fragmentShader: `
+        varying vec2 vUv;
+        varying vec3 vPosition;
+        uniform float time;
+        uniform vec3 color1;
+        uniform vec3 color2;
+        
+        void main() {
+          float wave1 = sin(vUv.x * 10.0 + time) * 0.5 + 0.5;
+          float wave2 = sin(vUv.x * 7.0 - time * 0.8) * 0.5 + 0.5;
+          float pattern = wave1 * wave2;
+          
+          float alpha = pattern * (1.0 - vUv.y) * 0.6;
+          vec3 color = mix(color1, color2, vUv.x);
+          
+          gl_FragColor = vec4(color, alpha);
+        }
+      `
+    };
+
+    const auroraColors = [
+      { c1: new THREE.Vector3(0.0, 1.0, 0.5), c2: new THREE.Vector3(0.5, 0.0, 1.0) },
+      { c1: new THREE.Vector3(0.0, 0.8, 1.0), c2: new THREE.Vector3(1.0, 0.2, 0.8) },
+      { c1: new THREE.Vector3(0.2, 1.0, 0.3), c2: new THREE.Vector3(0.8, 0.3, 1.0) },
+      { c1: new THREE.Vector3(0.0, 1.0, 0.8), c2: new THREE.Vector3(1.0, 0.0, 0.6) }
+    ];
+
+    const auroras = [];
+    for (let i = 0; i < 4; i++) {
+      const auroraGeometry = new THREE.PlaneGeometry(40, 30, 32, 16);
+      const auroraMaterial = new THREE.ShaderMaterial({
+        uniforms: {
+          time: { value: 0 },
+          color1: { value: auroraColors[i].c1 },
+          color2: { value: auroraColors[i].c2 }
+        },
+        vertexShader: auroraShader.vertexShader,
+        fragmentShader: auroraShader.fragmentShader,
+        transparent: true,
+        side: THREE.DoubleSide,
+        blending: THREE.AdditiveBlending
+      });
+      
+      const aurora = new THREE.Mesh(auroraGeometry, auroraMaterial);
+      aurora.position.y = 20;
+      aurora.position.z = -20 - i * 10;
+      aurora.position.x = (i - 1.5) * 15;
+      aurora.rotation.x = Math.PI * 0.3;
+      
+      auroras.push(aurora);
+      scene.add(aurora);
+    }
+
+    // Sea
+    const seaGeometry = new THREE.PlaneGeometry(200, 200, 64, 64);
+    const seaMaterial = new THREE.ShaderMaterial({
+      uniforms: {
+        time: { value: 0 }
+      },
+      vertexShader: `
+        varying vec3 vPosition;
+        uniform float time;
+        
+        void main() {
+          vPosition = position;
+          vec3 pos = position;
+          pos.z += sin(pos.x * 0.3 + time) * 0.5;
+          pos.z += sin(pos.y * 0.2 + time * 0.7) * 0.3;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
+        }
+      `,
+      fragmentShader: `
+        varying vec3 vPosition;
+        
+        void main() {
+          vec3 color = vec3(0.0, 0.05, 0.15);
+          gl_FragColor = vec4(color, 1.0);
+        }
+      `
+    });
+    
+    const sea = new THREE.Mesh(seaGeometry, seaMaterial);
+    sea.rotation.x = -Math.PI / 2;
+    sea.position.y = -5;
+    scene.add(sea);
+
+    // Snow-covered ground (foreground)
+    const snowGroundGeometry = new THREE.PlaneGeometry(80, 60, 32, 32);
+    const vertices = snowGroundGeometry.attributes.position.array;
+    for (let i = 0; i < vertices.length; i += 3) {
+      vertices[i + 2] = Math.random() * 0.3 + Math.sin(vertices[i] * 0.3) * 0.2;
+    }
+    snowGroundGeometry.attributes.position.needsUpdate = true;
+    
+    const snowGroundMaterial = new THREE.MeshBasicMaterial({
+      color: 0xffffff,
+      side: THREE.DoubleSide
+    });
+    
+    const snowGround = new THREE.Mesh(snowGroundGeometry, snowGroundMaterial);
+    snowGround.rotation.x = -Math.PI / 2;
+    snowGround.position.set(0, -4, 15);
+    scene.add(snowGround);
+
+    // Animation
+    let time = 0;
+    function animate() {
+      requestAnimationFrame(animate);
+      time += 0.01;
+
+      // Update auroras
+      auroras.forEach((aurora, i) => {
+        aurora.material.uniforms.time.value = time + i * 0.5;
+      });
+
+      // Update sea
+      seaMaterial.uniforms.time.value = time;
+
+      // Subtle cloud drift
+      cloudGroup.children.forEach((cloud, i) => {
+        cloud.position.x += Math.sin(time * 0.1 + i) * 0.01;
+      });
+
+      // Gentle star twinkle
+      stars.rotation.y = time * 0.01;
+
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+</body>
+</html>
