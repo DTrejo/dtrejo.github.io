@@ -5,11 +5,12 @@
   "main": "blah.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node blah.js",
+    "build": "npm run build:css && node blah.js",
+    "build:css": "npx @tailwindcss/cli -i ./css/input.css -o ./dist/css/output.css --minify",
     "deploy": "./_deploy.sh",
     "// development only": "true",
-    "start": "serve .",
-    "debug": "node blah.js -v",
+    "start": "concurrently \"npx @tailwindcss/cli -i ./css/input.css -o ./dist/css/output.css --watch\" \"serve .\"",
+    "debug": "npm run build:css && node blah.js -v",
     "watch": "runjs blah.js -v"
   },
   "author": "David Trejo",
@@ -22,7 +23,10 @@
     "shelljs": "0.8.5"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "4.1.17",
+    "concurrently": "9.2.1",
     "run": "1.4.0",
-    "serve": "14.2.5"
+    "serve": "14.2.5",
+    "tailwindcss": "4.1.17"
   }
 }

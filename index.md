@@ -3,16 +3,16 @@ title: David Trejo
 description: Engineer at Chime & Consultant
 author: false
 ---
-<div class="tc">
+<div class="text-center">
   <div class="flex items-center justify-center">
     <img
       src="/images/dtrejo.jpg"
       alt="hero"
-      class="w4 h4 br-100"
+      class="w-16 h-16 rounded-full"
     >
-    <h1 class="ma0 ml3 f3 fw4" style="color: inherit">${this.title}</h1>
+    <h1 class="m-0 ml-3 text-3xl font-normal" style="color: inherit">${this.title}</h1>
   </div>
-  <h2 class="f2 fw4">Engineer at Chime <span class="amp">&</span> Consultant</h2>
+  <h2 class="text-4xl font-normal">Engineer at Chime <span class="amp">&</span> Consultant</h2>
 </div>
 
 <hr />
