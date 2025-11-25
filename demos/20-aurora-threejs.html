@@ -311,9 +311,15 @@
       uniforms.u_resolution.value.y = renderer.domElement.height;
     }
 
+    let startTime = Date.now();
+    const STOP_AFTER_MS = 5000;
+
     function animate() {
-      requestAnimationFrame(animate);
-      render();
+      const elapsed = Date.now() - startTime;
+      if (elapsed < STOP_AFTER_MS) {
+        requestAnimationFrame(animate);
+        render();
+      }
     }
 
     function render() {
