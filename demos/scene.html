@@ -120,125 +120,101 @@
     }
     scene.add(cloudGroup);
 
-    // Four arcing auroras
-    const auroraShader = {
-      vertexShader: `
-        varying vec2 vUv;
-        varying vec3 vPosition;
-        uniform float time;
-        
-        void main() {
-          vUv = uv;
-          vPosition = position;
-          vec3 pos = position;
-          pos.y += sin(pos.x * 0.5 + time) * 2.0;
-          pos.y += sin(pos.x * 0.3 + time * 0.7) * 1.0;
-          gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
-        }
-      `,
-      fragmentShader: `
-        varying vec2 vUv;
-        varying vec3 vPosition;
-        uniform float time;
-        uniform vec3 color1;
-        uniform vec3 color2;
-        
-        void main() {
-          float wave1 = sin(vUv.x * 10.0 + time) * 0.5 + 0.5;
-          float wave2 = sin(vUv.x * 7.0 - time * 0.8) * 0.5 + 0.5;
-          float pattern = wave1 * wave2;
-          
-          float alpha = pattern * (1.0 - vUv.y) * 0.6;
-          vec3 color = mix(color1, color2, vUv.x);
-          
-          gl_FragColor = vec4(color, alpha);
-        }
-      `
-    };
-
-    const auroraColors = [
-      { c1: new THREE.Vector3(0.0, 1.0, 0.5), c2: new THREE.Vector3(0.5, 0.0, 1.0) },
-      { c1: new THREE.Vector3(0.0, 0.8, 1.0), c2: new THREE.Vector3(1.0, 0.2, 0.8) },
-      { c1: new THREE.Vector3(0.2, 1.0, 0.3), c2: new THREE.Vector3(0.8, 0.3, 1.0) },
-      { c1: new THREE.Vector3(0.0, 1.0, 0.8), c2: new THREE.Vector3(1.0, 0.0, 0.6) }
-    ];
-
-    const auroras = [];
-    for (let i = 0; i < 4; i++) {
-      const auroraGeometry = new THREE.PlaneGeometry(40, 30, 32, 16);
-      const auroraMaterial = new THREE.ShaderMaterial({
-        uniforms: {
-          time: { value: 0 },
-          color1: { value: auroraColors[i].c1 },
-          color2: { value: auroraColors[i].c2 }
-        },
-        vertexShader: auroraShader.vertexShader,
-        fragmentShader: auroraShader.fragmentShader,
-        transparent: true,
-        side: THREE.DoubleSide,
-        blending: THREE.AdditiveBlending
-      });
-      
-      const aurora = new THREE.Mesh(auroraGeometry, auroraMaterial);
-      aurora.position.y = 20;
-      aurora.position.z = -20 - i * 10;
-      aurora.position.x = (i - 1.5) * 15;
-      aurora.rotation.x = Math.PI * 0.3;
-      
-      auroras.push(aurora);
-      scene.add(aurora);
-    }
-
-    // Sea
-    const seaGeometry = new THREE.PlaneGeometry(200, 200, 64, 64);
-    const seaMaterial = new THREE.ShaderMaterial({
+    // Aurora layer (FBM domain-warped)
+    const auroraGeometry = new THREE.PlaneGeometry(200, 100, 1, 1);
+    const auroraMaterial = new THREE.ShaderMaterial({
       uniforms: {
         time: { value: 0 }
       },
       vertexShader: `
-        varying vec3 vPosition;
-        uniform float time;
+        varying vec2 vUv;
         
         void main() {
-          vPosition = position;
-          vec3 pos = position;
-          pos.z += sin(pos.x * 0.3 + time) * 0.5;
-          pos.z += sin(pos.y * 0.2 + time * 0.7) * 0.3;
-          gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
+          vUv = uv;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
         }
       `,
       fragmentShader: `
-        varying vec3 vPosition;
+        varying vec2 vUv;
+        uniform float time;
+        
+        float random(in vec2 st) {
+          return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
+        }
+
+        float noise(in vec2 st) {
+          vec2 i = floor(st);
+          vec2 f = fract(st);
+          float a = random(i);
+          float b = random(i + vec2(1.0, 0.0));
+          float c = random(i + vec2(0.0, 1.0));
+          float d = random(i + vec2(1.0, 1.0));
+          vec2 u = f * f * (3.0 - 2.0 * f);
+          return mix(a, b, u.x) + (c - a)* u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
+        }
+
+        #define OCTAVES 6
+        float fbm(in vec2 st) {
+          float value = 0.0;
+          float amplitude = 0.5;
+          for (int i = 0; i < OCTAVES; i++) {
+            value += amplitude * noise(st);
+            st *= 2.0;
+            amplitude *= 0.5;
+          }
+          return value;
+        }
+
+        vec3 auroraDomainWarp(vec2 st, float time, float verticalPos) {
+          float verticalStrength = smoothstep(0.3, 0.6, verticalPos) * (1.0 - smoothstep(0.85, 1.0, verticalPos));
+
+          vec2 q = vec2(0.);
+          q.x = fbm(st + 0.2 * time);
+          q.y = fbm(st + vec2(1.0));
+
+          vec2 r = vec2(0.);
+          r.x = fbm(st + 1.5 * q + vec2(1.7, 9.2) + 0.25 * time);
+          r.y = fbm(st + 1.5 * q + vec2(8.3, 2.8) + 0.18 * time);
+
+          float f = fbm(st + r) * verticalStrength;
+
+          vec3 cyanGreen = vec3(0.0, 1.0, 0.83);
+          vec3 turquoise = vec3(0.0, 0.8, 0.78);
+          vec3 deepTeal = vec3(0.0, 0.54, 0.57);
+          vec3 whiteCyan = vec3(0.88, 1.0, 1.0);
+
+          vec3 color = mix(deepTeal, turquoise, r.x * 0.8);
+          color = mix(color, cyanGreen, r.y * 0.6);
+
+          float highlight = smoothstep(0.6, 1.0, f) * 0.3;
+          color = mix(color, whiteCyan, highlight);
+
+          float intensity = 2.0 * f * f;
+          color *= intensity;
+
+          return color;
+        }
         
         void main() {
-          vec3 color = vec3(0.0, 0.05, 0.15);
-          gl_FragColor = vec4(color, 1.0);
-        }
-      `
-    });
-    
-    const sea = new THREE.Mesh(seaGeometry, seaMaterial);
-    sea.rotation.x = -Math.PI / 2;
-    sea.position.y = -5;
-    scene.add(sea);
+          vec2 st = vUv;
+          st.x *= 2.0;
 
-    // Snow-covered ground (foreground)
-    const snowGroundGeometry = new THREE.PlaneGeometry(80, 60, 32, 32);
-    const vertices = snowGroundGeometry.attributes.position.array;
-    for (let i = 0; i < vertices.length; i += 3) {
-      vertices[i + 2] = Math.random() * 0.3 + Math.sin(vertices[i] * 0.3) * 0.2;
-    }
-    snowGroundGeometry.attributes.position.needsUpdate = true;
-    
-    const snowGroundMaterial = new THREE.MeshBasicMaterial({
-      color: 0xffffff,
+          vec3 auroraColor = auroraDomainWarp(st * 3.5, time * 0.15, vUv.y);
+
+          float alpha = length(auroraColor) * 0.8;
+
+          gl_FragColor = vec4(auroraColor, alpha);
+        }
+      `,
+      transparent: true,
+      blending: THREE.AdditiveBlending,
       side: THREE.DoubleSide
     });
     
-    const snowGround = new THREE.Mesh(snowGroundGeometry, snowGroundMaterial);
-    snowGround.rotation.x = -Math.PI / 2;
-    snowGround.position.set(0, -4, 15);
-    scene.add(snowGround);
+    const aurora = new THREE.Mesh(auroraGeometry, auroraMaterial);
+    aurora.position.set(0, 15, -50);
+    aurora.rotation.x = Math.PI * 0.99;
+    scene.add(aurora);
 
     // Animation
     let time = 0;
@@ -246,13 +222,8 @@
       requestAnimationFrame(animate);
       time += 0.01;
 
-      // Update auroras
-      auroras.forEach((aurora, i) => {
-        aurora.material.uniforms.time.value = time + i * 0.5;
-      });
-
-      // Update sea
-      seaMaterial.uniforms.time.value = time;
+      // Update aurora
+      auroraMaterial.uniforms.time.value = time;
 
       // Update sky stars
       skyMaterial.uniforms.time.value = time;
