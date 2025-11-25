@@ -99,12 +99,140 @@
       opacity: 0.6;
       font-size: 0.9rem;
     }
+    
+    .controls {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50vh;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1.5rem;
+      overflow-y: auto;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+      font-size: 0.75rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      align-content: start;
+    }
+    
+    .control-group {
+      margin-bottom: 0.75rem;
+    }
+    
+    .control-group label {
+      display: block;
+      margin-bottom: 0.25rem;
+      margin-top: 0;
+      color: #dcd9d6;
+    }
+    
+    .control-group input[type="range"] {
+      width: 100%;
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
   <canvas id="aurora-canvas"></canvas>
   
   <div class="technique-label">20. Aurora (Three.js + GLSL)</div>
+  
+  <div class="controls">
+    <h3 style="margin-top: 0; font-size: 0.9rem;">Aurora Controls</h3>
+    
+    <div style="grid-column: 1 / -1; display: flex; gap: 0.5rem;">
+      <button id="preset-original" style="padding: 0.5rem; cursor: pointer; flex: 1;">Explicit Bands</button>
+      <button id="preset-domain-warp" style="padding: 0.5rem; cursor: pointer; flex: 1;">Domain Warping</button>
+      <button id="preset-warped-bands" style="padding: 0.5rem; cursor: pointer; flex: 1;">Warped Bands</button>
+    </div>
+    
+    <div class="control-group">
+      <label>Band Width Base: <span id="val-bandwidth">0.008</span></label>
+      <input type="range" id="bandwidth" min="0.001" max="0.05" step="0.001" value="0.008">
+    </div>
+    
+    <div class="control-group">
+      <label>Texture Smoothstep Min: <span id="val-texMin">0.4</span></label>
+      <input type="range" id="texMin" min="0" max="0.8" step="0.05" value="0.4">
+    </div>
+    
+    <div class="control-group">
+      <label>Texture Smoothstep Max: <span id="val-texMax">0.65</span></label>
+      <input type="range" id="texMax" min="0.2" max="1" step="0.05" value="0.65">
+    </div>
+    
+    <div class="control-group">
+      <label>Texture Freq X: <span id="val-texFreqX">12</span></label>
+      <input type="range" id="texFreqX" min="1" max="30" step="1" value="12">
+    </div>
+    
+    <div class="control-group">
+      <label>Texture Freq Y: <span id="val-texFreqY">1.5</span></label>
+      <input type="range" id="texFreqY" min="0.5" max="5" step="0.1" value="1.5">
+    </div>
+    
+    <div class="control-group">
+      <label>Horizontal Fade Range: <span id="val-fadeRange">0.1</span></label>
+      <input type="range" id="fadeRange" min="0.01" max="0.3" step="0.01" value="0.1">
+    </div>
+    
+    <div class="control-group">
+      <label>FBM Position Amount: <span id="val-fbmPos">0.012</span></label>
+      <input type="range" id="fbmPos" min="0" max="0.05" step="0.001" value="0.012">
+    </div>
+    
+    <div class="control-group">
+      <label>Width Variation: <span id="val-widthVar">0.003</span></label>
+      <input type="range" id="widthVar" min="0" max="0.02" step="0.001" value="0.003">
+    </div>
+    
+    <h3 style="margin-top: 1rem; font-size: 0.9rem;">Band Heights</h3>
+    
+    <div class="control-group">
+      <label>Band 0 Height: <span id="val-band0Height">0.88</span></label>
+      <input type="range" id="band0Height" min="0.7" max="0.95" step="0.01" value="0.88">
+    </div>
+    
+    <div class="control-group">
+      <label>Band 1 Height: <span id="val-band1Height">0.84</span></label>
+      <input type="range" id="band1Height" min="0.7" max="0.95" step="0.01" value="0.84">
+    </div>
+    
+    <div class="control-group">
+      <label>Band 2 Height: <span id="val-band2Height">0.80</span></label>
+      <input type="range" id="band2Height" min="0.7" max="0.95" step="0.01" value="0.80">
+    </div>
+    
+    <div class="control-group">
+      <label>Band 3 Height: <span id="val-band3Height">0.76</span></label>
+      <input type="range" id="band3Height" min="0.7" max="0.95" step="0.01" value="0.76">
+    </div>
+    
+    <div class="control-group">
+      <label>Tilt Amount: <span id="val-tiltAmount">0.03</span></label>
+      <input type="range" id="tiltAmount" min="0" max="0.1" step="0.01" value="0.03">
+    </div>
+    
+    <div class="control-group">
+      <label>Curve Arc: <span id="val-curveArc">0.03</span></label>
+      <input type="range" id="curveArc" min="0" max="0.1" step="0.01" value="0.03">
+    </div>
+    
+    <h3 style="margin-top: 1rem; font-size: 0.9rem;">FBM Flow</h3>
+    
+    <div class="control-group">
+      <label>Horizontal Flow: <span id="val-flowHorizontal">0.0</span></label>
+      <input type="range" id="flowHorizontal" min="0" max="2" step="0.1" value="0.0">
+    </div>
+    
+    <div class="control-group">
+      <label>Per-Band Separation: <span id="val-bandSeparation">3.0</span></label>
+      <input type="range" id="bandSeparation" min="0" max="10" step="0.5" value="3.0">
+    </div>
+  </div>
   
   <div class="content-wrapper">
     <div class="container">
@@ -153,13 +281,47 @@
 
       uniforms = {
         u_time: { type: "f", value: 1.0 },
-        u_resolution: { type: "v2", value: new THREE.Vector2() }
+        u_resolution: { type: "v2", value: new THREE.Vector2() },
+        u_bandwidth: { type: "f", value: 0.008 },
+        u_texMin: { type: "f", value: 0.4 },
+        u_texMax: { type: "f", value: 0.65 },
+        u_texFreqX: { type: "f", value: 12.0 },
+        u_texFreqY: { type: "f", value: 1.5 },
+        u_fadeRange: { type: "f", value: 0.1 },
+        u_fbmPos: { type: "f", value: 0.012 },
+        u_widthVar: { type: "f", value: 0.003 },
+        u_band0Height: { type: "f", value: 0.88 },
+        u_band1Height: { type: "f", value: 0.84 },
+        u_band2Height: { type: "f", value: 0.80 },
+        u_band3Height: { type: "f", value: 0.76 },
+        u_tiltAmount: { type: "f", value: 0.03 },
+        u_curveArc: { type: "f", value: 0.03 },
+        u_flowHorizontal: { type: "f", value: 0.0 },
+        u_bandSeparation: { type: "f", value: 3.0 },
+        u_mode: { type: "i", value: 0 }  // 0=explicit-bands, 1=domain-warp, 2=warped-bands
       };
 
       // GLSL shader adapted for aurora description colors
       const fragmentShader = `
         uniform vec2 u_resolution;
         uniform float u_time;
+        uniform float u_bandwidth;
+        uniform float u_texMin;
+        uniform float u_texMax;
+        uniform float u_texFreqX;
+        uniform float u_texFreqY;
+        uniform float u_fadeRange;
+        uniform float u_fbmPos;
+        uniform float u_widthVar;
+        uniform float u_band0Height;
+        uniform float u_band1Height;
+        uniform float u_band2Height;
+        uniform float u_band3Height;
+        uniform float u_tiltAmount;
+        uniform float u_curveArc;
+        uniform float u_flowHorizontal;
+        uniform float u_bandSeparation;
+        uniform int u_mode;
 
         float random(in vec2 st) {
           return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
@@ -188,38 +350,174 @@
           return value;
         }
 
-        vec3 aurora(vec2 st, float time, float verticalPos) {
-          // Natural vertical gradient - aurora is stronger at top
-          // This makes patterns naturally concentrate in upper region
-          float verticalStrength = smoothstep(0.5625, 0.9125, verticalPos) * smoothstep(1.0625, 0.9425, verticalPos);
+        vec3 auroraDomainWarp(vec2 st, float time, float verticalPos) {
+          // Domain warping with optional horizontal flow
+          float verticalStrength = smoothstep(0.7, 0.85, verticalPos) * (1.0 - smoothstep(0.95, 1.0, verticalPos));
 
+          // Add horizontal flow bias
+          vec2 flowVec = vec2(u_flowHorizontal, 0.5);
+          
           vec2 q = vec2(0.);
-          q.x = fbm(st + 0.2 * time);
+          q.x = fbm(st + 0.2 * time + flowVec * 0.3);
           q.y = fbm(st + vec2(1.0));
           
           vec2 r = vec2(0.);
-          r.x = fbm(st + 1.5 * q + vec2(1.7, 9.2) + 0.25 * time);
+          r.x = fbm(st + 1.5 * q + vec2(1.7, 9.2) + 0.25 * time + flowVec * 0.5);
           r.y = fbm(st + 1.5 * q + vec2(8.3, 2.8) + 0.18 * time);
           
           float f = fbm(st + r) * verticalStrength;
 
-          // Aurora description colors: luminous cyan-green, electric turquoise, deep teal
-          vec3 cyanGreen = vec3(0.0, 1.0, 0.83);      // #00FFD4 - Luminous Cyan-Green
-          vec3 turquoise = vec3(0.0, 0.8, 0.78);      // #00CCC6 - Electric Turquoise  
-          vec3 deepTeal = vec3(0.0, 0.54, 0.57);      // #008B8B - Deep Teal-Cyan
-          vec3 whiteCyan = vec3(0.88, 1.0, 1.0);      // #E0FFFF - White-Cyan (highlights)
+          vec3 cyanGreen = vec3(0.0, 1.0, 0.83);
+          vec3 turquoise = vec3(0.0, 0.8, 0.78);
+          vec3 deepTeal = vec3(0.0, 0.54, 0.57);
+          vec3 whiteCyan = vec3(0.88, 1.0, 1.0);
 
-          // Mix colors based on noise patterns to create horizontal stratification
           vec3 color = mix(deepTeal, turquoise, r.x * 0.8);
           color = mix(color, cyanGreen, r.y * 0.6);
           
-          // Add bright highlights in concentrated areas
           float highlight = smoothstep(0.6, 1.0, f) * 0.3;
           color = mix(color, whiteCyan, highlight);
           
-          // Luminosity with soft falloff (60-95% brightness range)
           float intensity = 2.0 * f * f;
           color *= intensity;
+          
+          return color;
+        }
+        
+        vec3 auroraWarpedBands(vec2 st, float time, float verticalPos) {
+          // Domain warping without stretching - pure coordinate distortion
+          float verticalStrength = smoothstep(0.7, 0.85, verticalPos) * (1.0 - smoothstep(0.95, 1.0, verticalPos));
+          
+          vec2 flowVec = vec2(u_flowHorizontal, 0.5);
+          
+          // First warp layer
+          vec2 q = vec2(0.);
+          q.x = fbm(st + 0.2 * time + flowVec * 0.3);
+          q.y = fbm(st + vec2(1.0));
+          
+          // Second warp layer
+          vec2 r = vec2(0.);
+          r.x = fbm(st + 1.5 * q + vec2(1.7, 9.2) + 0.25 * time + flowVec * 0.5);
+          r.y = fbm(st + 1.5 * q + vec2(8.3, 2.8) + 0.18 * time);
+          
+          // Final noise
+          float f = fbm(st + r) * verticalStrength;
+          
+          vec3 cyanGreen = vec3(0.0, 1.0, 0.83);
+          vec3 turquoise = vec3(0.0, 0.8, 0.78);
+          vec3 deepTeal = vec3(0.0, 0.54, 0.57);
+          vec3 whiteCyan = vec3(0.88, 1.0, 1.0);
+          
+          // Color mixing directly from warped noise values
+          vec3 color = mix(deepTeal, turquoise, r.x * 0.8);
+          color = mix(color, cyanGreen, r.y * 0.6);
+          
+          float highlight = smoothstep(0.6, 1.0, f) * 0.3;
+          color = mix(color, whiteCyan, highlight);
+          
+          float intensity = 2.0 * f * f;
+          color *= intensity;
+          
+          return color;
+        }
+
+        vec3 auroraBands(vec2 st, float time, float verticalPos) {
+          // Normalize X coordinate to 0-1 range for band positioning
+          // Use actual screen bounds to avoid tiling
+          float normalizedX = st.x;
+          
+          // Aurora colors
+          vec3 cyanGreen = vec3(0.0, 1.0, 0.83);      // #00FFD4
+          vec3 turquoise = vec3(0.0, 0.8, 0.78);      // #00CCC6
+          vec3 deepTeal = vec3(0.0, 0.54, 0.57);      // #008B8B
+          vec3 whiteCyan = vec3(0.88, 1.0, 1.0);      // #E0FFFF
+          
+          vec3 color = vec3(0.0);
+          
+          // Shared arc for all bands - middle is higher (upward bow)
+          float sharedCurve = u_curveArc * (1.0 - 4.0 * (normalizedX - 0.5) * (normalizedX - 0.5));
+          
+          // Four curved bands spread across the sky
+          // Band pattern (- is band width, spaces are gaps):
+          // -- ---
+          //      ------
+          //  -------------
+          //       ----
+          for (int i = 0; i < 4; i++) {
+            float fi = float(i);
+            
+            // Each band at different height with unique horizontal placement
+            float baseHeight, bandStartX, bandEndX;
+            
+            if (i == 0) {
+              baseHeight = u_band0Height;
+              bandStartX = 0.0;
+              bandEndX = 0.20;  // Short on left edge
+            } else if (i == 1) {
+              baseHeight = u_band1Height;
+              bandStartX = 0.50;
+              bandEndX = 0.95;  // Medium on right edge
+            } else if (i == 2) {
+              baseHeight = u_band2Height;
+              bandStartX = 0.05;
+              bandEndX = 0.90;  // Long, spanning most of width
+            } else {
+              baseHeight = u_band3Height;
+              bandStartX = 0.35;
+              bandEndX = 0.55;  // Short in middle
+            }
+            
+            // Slight upward tilt from left to right
+            float tilt = mix(baseHeight, baseHeight + u_tiltAmount, normalizedX);
+            
+            // Horizontal fade mask for band start/end
+            float horizontalMask = smoothstep(bandStartX - u_fadeRange, bandStartX + u_fadeRange * 0.2, normalizedX) * 
+                                   smoothstep(bandEndX + u_fadeRange, bandEndX - u_fadeRange * 0.2, normalizedX);
+            
+            // FBM adds organic undulation with per-band separation
+            vec2 posNoise = vec2(normalizedX * 2.0 + fi * 1.5 + time * 0.15 + u_flowHorizontal * 0.5, fi * u_bandSeparation);
+            float yOffset = fbm(posNoise) * u_fbmPos;
+            
+            float bandY = tilt + sharedCurve + yOffset;
+            
+            // Distance from band center
+            float distFromBand = abs(st.y - bandY);
+            
+            // Band width controlled by uniform with per-band offset
+            vec2 widthNoise = vec2(normalizedX * 1.5 - time * 0.1 + fi * 0.8 + u_flowHorizontal * 0.3, fi * u_bandSeparation * 0.8);
+            float widthModulation = fbm(widthNoise) * u_widthVar + u_bandwidth;
+            
+            // Gaussian falloff for band shape
+            float bandMask = exp(-distFromBand * distFromBand / (widthModulation * widthModulation));
+            
+            // FBM creates aurora-like wispy texture within the band (vertical streaks)
+            // Each band gets its own noise layer via bandSeparation
+            vec2 textureCoord = vec2(normalizedX * u_texFreqX + fi * u_bandSeparation + u_flowHorizontal * 0.2, st.y * u_texFreqY - time * 0.05);
+            float auroraTexture = fbm(textureCoord);
+            
+            // Apply texture to band mask for organic, wispy edges
+            bandMask *= smoothstep(u_texMin, u_texMax, auroraTexture);
+            
+            // FBM controls horizontal intensity variation (bright/dim sections)
+            // Per-band offset creates independent intensity patterns
+            vec2 intensityNoise = vec2(normalizedX * 3.5 - time * 0.08 - fi * 0.4 + u_flowHorizontal * 0.4, fi * u_bandSeparation);
+            float intensity = fbm(intensityNoise) * 0.6 + 0.5;
+            
+            // Color gradation based on intensity
+            vec3 bandColor = mix(deepTeal, turquoise, intensity * 0.8);
+            bandColor = mix(bandColor, cyanGreen, smoothstep(0.5, 0.75, intensity));
+            bandColor = mix(bandColor, whiteCyan, smoothstep(0.75, 0.95, intensity) * 0.5);
+            
+            // Luminosity (subtler like option2-bands)
+            float brightness = 0.5 + intensity * 0.4;
+            
+            // Accumulate with additive blending, modulated by horizontal mask
+            color += bandColor * bandMask * brightness * horizontalMask;
+          }
+          
+          // Concentrate in upper region
+          float verticalMask = smoothstep(0.7, 0.85, verticalPos) * (1.0 - smoothstep(0.97, 1.0, verticalPos));
+          color *= verticalMask;
           
           return color;
         }
@@ -255,11 +553,19 @@
 
         void main() {
           vec2 st = gl_FragCoord.xy / u_resolution.xy;
-          st.x *= u_resolution.x / u_resolution.y;
           
-          // Slow animation: 2-5 seconds per drift cycle
-          // Pass vertical position so aurora naturally generates stronger at top
-          vec3 auroraColor = aurora(st * 3.5, u_time * 0.15, st.y);
+          // Choose rendering mode
+          vec3 auroraColor;
+          if (u_mode == 1) {
+            // Domain warping mode
+            auroraColor = auroraDomainWarp(st * 3.5, u_time * 0.15, st.y);
+          } else if (u_mode == 2) {
+            // Warped bands mode
+            auroraColor = auroraWarpedBands(st * 3.5, u_time * 0.15, st.y);
+          } else {
+            // Explicit band mode
+            auroraColor = auroraBands(st, u_time * 0.15, st.y);
+          }
           
           // Prussian Blue-Black background (#0A1F2E to #013250)
           vec3 backgroundColor = vec3(0.04, 0.12, 0.19);
@@ -324,6 +630,8 @@
       if (elapsed < STOP_AFTER_MS) {
         requestAnimationFrame(animate);
         render();
+      } else {
+        animating = false;
       }
     }
 
@@ -334,6 +642,110 @@
 
     init();
     animate();
+    
+    // Wire up controls
+    const controls = [
+      { id: 'bandwidth', uniform: 'u_bandwidth' },
+      { id: 'texMin', uniform: 'u_texMin' },
+      { id: 'texMax', uniform: 'u_texMax' },
+      { id: 'texFreqX', uniform: 'u_texFreqX' },
+      { id: 'texFreqY', uniform: 'u_texFreqY' },
+      { id: 'fadeRange', uniform: 'u_fadeRange' },
+      { id: 'fbmPos', uniform: 'u_fbmPos' },
+      { id: 'widthVar', uniform: 'u_widthVar' },
+      { id: 'band0Height', uniform: 'u_band0Height' },
+      { id: 'band1Height', uniform: 'u_band1Height' },
+      { id: 'band2Height', uniform: 'u_band2Height' },
+      { id: 'band3Height', uniform: 'u_band3Height' },
+      { id: 'tiltAmount', uniform: 'u_tiltAmount' },
+      { id: 'curveArc', uniform: 'u_curveArc' },
+      { id: 'flowHorizontal', uniform: 'u_flowHorizontal' },
+      { id: 'bandSeparation', uniform: 'u_bandSeparation' }
+    ];
+    
+    controls.forEach(({ id, uniform }) => {
+      const slider = document.getElementById(id);
+      const valueSpan = document.getElementById(`val-${id}`);
+      
+      slider.addEventListener('input', (e) => {
+        const value = parseFloat(e.target.value);
+        uniforms[uniform].value = value;
+        valueSpan.textContent = value.toFixed(3);
+        
+        // Resume animation for 5 seconds
+        startTime = Date.now();
+        if (!animating) {
+          animating = true;
+          animate();
+        }
+      });
+    });
+    
+    let animating = true;
+    
+    // Preset buttons
+    document.getElementById('preset-original').addEventListener('click', () => {
+      // Original a1db9e1 settings
+      const originalPreset = {
+        u_bandwidth: 0.008,
+        u_texMin: 0.4,
+        u_texMax: 0.65,
+        u_texFreqX: 12.0,
+        u_texFreqY: 1.5,
+        u_fadeRange: 0.1,
+        u_fbmPos: 0.012,
+        u_widthVar: 0.003,
+        u_band0Height: 0.88,
+        u_band1Height: 0.84,
+        u_band2Height: 0.80,
+        u_band3Height: 0.76,
+        u_tiltAmount: 0.03,
+        u_curveArc: 0.03,
+        u_mode: 0
+      };
+      applyPreset(originalPreset);
+    });
+    
+    document.getElementById('preset-domain-warp').addEventListener('click', () => {
+      // Domain warping mode
+      const domainWarpPreset = {
+        u_mode: 1
+      };
+      applyPreset(domainWarpPreset);
+    });
+    
+    document.getElementById('preset-warped-bands').addEventListener('click', () => {
+      // Warped bands mode - domain warping with anisotropic noise for horizontal bands
+      const warpedBandsPreset = {
+        u_flowHorizontal: 0.8,
+        u_mode: 2
+      };
+      applyPreset(warpedBandsPreset);
+    });
+    
+    function applyPreset(preset) {
+      Object.entries(preset).forEach(([key, value]) => {
+        uniforms[key].value = value;
+        
+        // Update UI sliders
+        const sliderId = key.replace('u_', '');
+        const slider = document.getElementById(sliderId);
+        const valueSpan = document.getElementById(`val-${sliderId}`);
+        if (slider && sliderId !== 'mode') {
+          slider.value = value;
+          if (valueSpan) {
+            valueSpan.textContent = value.toFixed(3);
+          }
+        }
+      });
+      
+      // Resume animation
+      startTime = Date.now();
+      if (!animating) {
+        animating = true;
+        animate();
+      }
+    }
   </script>
 </body>
 </html>
