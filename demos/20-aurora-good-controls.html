@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20. Aurora (Three.js Shader)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    #aurora-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    
+    p {
+      margin-top: 1.5em;
+    }
+    
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: #ff6300;
+    }
+    
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    
+    .back-link:hover {
+      opacity: 1;
+    }
+    
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+    
+    .controls {
+      position: fixed;
+      top: 4rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      border-radius: 4px;
+      max-width: 300px;
+      max-height: 80vh;
+      overflow-y: auto;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+      font-size: 0.75rem;
+    }
+    
+    .control-group {
+      margin-bottom: 0.75rem;
+    }
+    
+    .control-group label {
+      display: block;
+      margin-bottom: 0.25rem;
+      margin-top: 0;
+      color: #dcd9d6;
+    }
+    
+    .control-group input[type="range"] {
+      width: 100%;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="aurora-canvas"></canvas>
+  
+  <div class="technique-label">20. Aurora (Three.js + GLSL)</div>
+  
+  <div class="controls">
+    <h3 style="margin-top: 0; font-size: 0.9rem;">Aurora Controls</h3>
+    
+    <div class="control-group">
+      <label>Band Width Base: <span id="val-bandwidth">0.008</span></label>
+      <input type="range" id="bandwidth" min="0.001" max="0.05" step="0.001" value="0.008">
+    </div>
+    
+    <div class="control-group">
+      <label>Texture Smoothstep Min: <span id="val-texMin">0.4</span></label>
+      <input type="range" id="texMin" min="0" max="0.8" step="0.05" value="0.4">
+    </div>
+    
+    <div class="control-group">
+      <label>Texture Smoothstep Max: <span id="val-texMax">0.65</span></label>
+      <input type="range" id="texMax" min="0.2" max="1" step="0.05" value="0.65">
+    </div>
+    
+    <div class="control-group">
+      <label>Texture Freq X: <span id="val-texFreqX">12</span></label>
+      <input type="range" id="texFreqX" min="1" max="30" step="1" value="12">
+    </div>
+    
+    <div class="control-group">
+      <label>Texture Freq Y: <span id="val-texFreqY">1.5</span></label>
+      <input type="range" id="texFreqY" min="0.5" max="5" step="0.1" value="1.5">
+    </div>
+    
+    <div class="control-group">
+      <label>Horizontal Fade Range: <span id="val-fadeRange">0.1</span></label>
+      <input type="range" id="fadeRange" min="0.01" max="0.3" step="0.01" value="0.1">
+    </div>
+    
+    <div class="control-group">
+      <label>FBM Position Amount: <span id="val-fbmPos">0.012</span></label>
+      <input type="range" id="fbmPos" min="0" max="0.05" step="0.001" value="0.012">
+    </div>
+    
+    <div class="control-group">
+      <label>Width Variation: <span id="val-widthVar">0.003</span></label>
+      <input type="range" id="widthVar" min="0" max="0.02" step="0.001" value="0.003">
+    </div>
+    
+    <h3 style="margin-top: 1rem; font-size: 0.9rem;">Band Heights</h3>
+    
+    <div class="control-group">
+      <label>Band 0 Height: <span id="val-band0Height">0.88</span></label>
+      <input type="range" id="band0Height" min="0.7" max="0.95" step="0.01" value="0.88">
+    </div>
+    
+    <div class="control-group">
+      <label>Band 1 Height: <span id="val-band1Height">0.84</span></label>
+      <input type="range" id="band1Height" min="0.7" max="0.95" step="0.01" value="0.84">
+    </div>
+    
+    <div class="control-group">
+      <label>Band 2 Height: <span id="val-band2Height">0.80</span></label>
+      <input type="range" id="band2Height" min="0.7" max="0.95" step="0.01" value="0.80">
+    </div>
+    
+    <div class="control-group">
+      <label>Band 3 Height: <span id="val-band3Height">0.76</span></label>
+      <input type="range" id="band3Height" min="0.7" max="0.95" step="0.01" value="0.76">
+    </div>
+    
+    <div class="control-group">
+      <label>Tilt Amount: <span id="val-tiltAmount">0.03</span></label>
+      <input type="range" id="tiltAmount" min="0" max="0.1" step="0.01" value="0.03">
+    </div>
+    
+    <div class="control-group">
+      <label>Curve Arc: <span id="val-curveArc">0.03</span></label>
+      <input type="range" id="curveArc" min="0" max="0.1" step="0.01" value="0.03">
+    </div>
+  </div>
+  
+  <div class="content-wrapper">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to all demos</a>
+      
+      <h1>Aurora Borealis Background</h1>
+      
+      <p>This demo uses Three.js with a custom GLSL fragment shader to create a realistic aurora borealis effect. The shader implements fractal Brownian motion (FBM) with multiple octaves of noise to generate the flowing, organic patterns characteristic of the northern lights.</p>
+
+      <h2>The Technique</h2>
+      
+      <p>The aurora effect is achieved through layered noise functions that create flowing horizontal bands of luminous cyan-green light. The colors are carefully chosen to match real aurora photography: dominant cyan-greens (#00FFD4), electric turquoise (#00CCC6), and deep teal tones (#008B8B) against a midnight sky.</p>
+      
+      <p>The shader uses additive blending and soft edges with Gaussian-like falloff to create the characteristic atmospheric glow. Small animated stars add depth and scale, while the overall animation runs at a slow, meditative pace (2-5 seconds per drift cycle) to maintain subtlety.</p>
+      
+      <h2>Implementation Details</h2>
+      
+      <p>This is a pure WebGL solution using Three.js for the rendering pipeline. The fragment shader handles all the heavy lifting: noise generation, color mixing, star field rendering, and animation. The entire effect runs on the GPU, ensuring smooth 60fps performance even on modest hardware.</p>
+      
+      <p>The shader is designed to be barely perceptible at first glance—sophisticated enough to add richness and depth, but subtle enough to never compete with your content for attention. The text remains perfectly readable with excellent contrast.</p>
+
+      <h2>Performance</h2>
+      
+      <p>Because this effect is GPU-accelerated through WebGL, it has minimal CPU overhead. The shader complexity is kept reasonable with 6 octaves of FBM noise, balancing visual quality with performance. On modern devices, you should see consistent 60fps rendering.</p>
+
+      <div class="footer">
+        <p><a href="index.html">← Back to demo index</a> | <a href="21-aurora-vfxjs.html">Next: Aurora (VFX-JS) →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    let scene, camera, renderer, uniforms, material;
+
+    function init() {
+      scene = new THREE.Scene();
+      camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10);
+      camera.position.z = 1;
+
+      const canvas = document.getElementById('aurora-canvas');
+      renderer = new THREE.WebGLRenderer({ canvas, alpha: false });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+
+      const geometry = new THREE.PlaneGeometry(2, 2);
+
+      uniforms = {
+        u_time: { type: "f", value: 1.0 },
+        u_resolution: { type: "v2", value: new THREE.Vector2() },
+        u_bandwidth: { type: "f", value: 0.008 },
+        u_texMin: { type: "f", value: 0.4 },
+        u_texMax: { type: "f", value: 0.65 },
+        u_texFreqX: { type: "f", value: 12.0 },
+        u_texFreqY: { type: "f", value: 1.5 },
+        u_fadeRange: { type: "f", value: 0.1 },
+        u_fbmPos: { type: "f", value: 0.012 },
+        u_widthVar: { type: "f", value: 0.003 },
+        u_band0Height: { type: "f", value: 0.88 },
+        u_band1Height: { type: "f", value: 0.84 },
+        u_band2Height: { type: "f", value: 0.80 },
+        u_band3Height: { type: "f", value: 0.76 },
+        u_tiltAmount: { type: "f", value: 0.03 },
+        u_curveArc: { type: "f", value: 0.03 }
+      };
+
+      // GLSL shader adapted for aurora description colors
+      const fragmentShader = `
+        uniform vec2 u_resolution;
+        uniform float u_time;
+        uniform float u_bandwidth;
+        uniform float u_texMin;
+        uniform float u_texMax;
+        uniform float u_texFreqX;
+        uniform float u_texFreqY;
+        uniform float u_fadeRange;
+        uniform float u_fbmPos;
+        uniform float u_widthVar;
+        uniform float u_band0Height;
+        uniform float u_band1Height;
+        uniform float u_band2Height;
+        uniform float u_band3Height;
+        uniform float u_tiltAmount;
+        uniform float u_curveArc;
+
+        float random(in vec2 st) {
+          return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
+        }
+
+        float noise(in vec2 st) {
+          vec2 i = floor(st);
+          vec2 f = fract(st);
+          float a = random(i);
+          float b = random(i + vec2(1.0, 0.0));
+          float c = random(i + vec2(0.0, 1.0));
+          float d = random(i + vec2(1.0, 1.0));
+          vec2 u = f * f * (3.0 - 2.0 * f);
+          return mix(a, b, u.x) + (c - a)* u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
+        }
+
+        #define OCTAVES 6
+        float fbm(in vec2 st) {
+          float value = 0.0;
+          float amplitude = 0.5;
+          for (int i = 0; i < OCTAVES; i++) {
+            value += amplitude * noise(st);
+            st *= 2.0;
+            amplitude *= 0.5;
+          }
+          return value;
+        }
+
+        vec3 aurora(vec2 st, float time, float verticalPos) {
+          // Normalize X coordinate to 0-1 range for band positioning
+          // Use actual screen bounds to avoid tiling
+          float normalizedX = st.x;
+          
+          // Aurora colors
+          vec3 cyanGreen = vec3(0.0, 1.0, 0.83);      // #00FFD4
+          vec3 turquoise = vec3(0.0, 0.8, 0.78);      // #00CCC6
+          vec3 deepTeal = vec3(0.0, 0.54, 0.57);      // #008B8B
+          vec3 whiteCyan = vec3(0.88, 1.0, 1.0);      // #E0FFFF
+          
+          vec3 color = vec3(0.0);
+          
+          // Shared arc for all bands - middle is higher (upward bow)
+          float sharedCurve = u_curveArc * (1.0 - 4.0 * (normalizedX - 0.5) * (normalizedX - 0.5));
+          
+          // Four curved bands spread across the sky
+          // Band pattern (- is band width, spaces are gaps):
+          // -- ---
+          //      ------
+          //  -------------
+          //       ----
+          for (int i = 0; i < 4; i++) {
+            float fi = float(i);
+            
+            // Each band at different height with unique horizontal placement
+            float baseHeight, bandStartX, bandEndX;
+            
+            if (i == 0) {
+              baseHeight = u_band0Height;
+              bandStartX = 0.0;
+              bandEndX = 0.20;  // Short on left edge
+            } else if (i == 1) {
+              baseHeight = u_band1Height;
+              bandStartX = 0.50;
+              bandEndX = 0.95;  // Medium on right edge
+            } else if (i == 2) {
+              baseHeight = u_band2Height;
+              bandStartX = 0.05;
+              bandEndX = 0.90;  // Long, spanning most of width
+            } else {
+              baseHeight = u_band3Height;
+              bandStartX = 0.35;
+              bandEndX = 0.55;  // Short in middle
+            }
+            
+            // Slight upward tilt from left to right
+            float tilt = mix(baseHeight, baseHeight + u_tiltAmount, normalizedX);
+            
+            // Horizontal fade mask for band start/end
+            float horizontalMask = smoothstep(bandStartX - u_fadeRange, bandStartX + u_fadeRange * 0.2, normalizedX) * 
+                                   smoothstep(bandEndX + u_fadeRange, bandEndX - u_fadeRange * 0.2, normalizedX);
+            
+            // FBM adds organic undulation
+            vec2 posNoise = vec2(normalizedX * 2.0 + fi * 1.5 + time * 0.15, fi * 2.0);
+            float yOffset = fbm(posNoise) * u_fbmPos;
+            
+            float bandY = tilt + sharedCurve + yOffset;
+            
+            // Distance from band center
+            float distFromBand = abs(st.y - bandY);
+            
+            // Band width controlled by uniform
+            vec2 widthNoise = vec2(normalizedX * 1.5 - time * 0.1 + fi * 0.8, fi * 3.0);
+            float widthModulation = fbm(widthNoise) * u_widthVar + u_bandwidth;
+            
+            // Gaussian falloff for band shape
+            float bandMask = exp(-distFromBand * distFromBand / (widthModulation * widthModulation));
+            
+            // FBM creates aurora-like wispy texture within the band (vertical streaks)
+            vec2 textureCoord = vec2(normalizedX * u_texFreqX + fi * 3.0, st.y * u_texFreqY - time * 0.05);
+            float auroraTexture = fbm(textureCoord);
+            
+            // Apply texture to band mask for organic, wispy edges
+            bandMask *= smoothstep(u_texMin, u_texMax, auroraTexture);
+            
+            // FBM controls horizontal intensity variation (bright/dim sections)
+            vec2 intensityNoise = vec2(normalizedX * 3.5 - time * 0.08 - fi * 0.4, fi * 2.5);
+            float intensity = fbm(intensityNoise) * 0.6 + 0.5;
+            
+            // Color gradation based on intensity
+            vec3 bandColor = mix(deepTeal, turquoise, intensity * 0.8);
+            bandColor = mix(bandColor, cyanGreen, smoothstep(0.5, 0.75, intensity));
+            bandColor = mix(bandColor, whiteCyan, smoothstep(0.75, 0.95, intensity) * 0.5);
+            
+            // Luminosity (subtler like option2-bands)
+            float brightness = 0.5 + intensity * 0.4;
+            
+            // Accumulate with additive blending, modulated by horizontal mask
+            color += bandColor * bandMask * brightness * horizontalMask;
+          }
+          
+          // Concentrate in upper region
+          float verticalMask = smoothstep(0.7, 0.85, verticalPos) * (1.0 - smoothstep(0.97, 1.0, verticalPos));
+          color *= verticalMask;
+          
+          return color;
+        }
+
+        float star(vec2 uv, float flare) {
+          float d = length(uv);
+          float m = 0.02 / d;
+          float rays = max(0.0, 1.0 - abs(uv.x * uv.y * 1000.0));
+          m += rays * flare * 0.4;
+          m *= smoothstep(1.0, 0.2, d);
+          return m;
+        }
+
+        float starField(vec2 uv, float time) {
+          float m = 0.0;
+          vec2 gv = fract(uv) - 0.5;
+          vec2 id = floor(uv);
+          
+          for (int y = -1; y <= 1; y++) {
+            for (int x = -1; x <= 1; x++) {
+              vec2 offs = vec2(float(x), float(y));
+              float n = random(id + offs);
+              float size = fract(n * 345.32);
+              float s = star(gv - offs - vec2(n, fract(n * 34.)) + 0.5, smoothstep(0.9, 1.0, size) * 0.5);
+              
+              // Subtle shimmer at 0.5-2 Hz
+              s *= sin(time * 1.2 + n * 6.2831) * 0.3 + 0.7;
+              m += s * size * 0.5;
+            }
+          }
+          return m;
+        }
+
+        void main() {
+          vec2 st = gl_FragCoord.xy / u_resolution.xy;
+          
+          // Slow animation: 2-5 seconds per drift cycle
+          // Pass normalized coordinates (0-1 range) and vertical position
+          vec3 auroraColor = aurora(st, u_time * 0.15, st.y);
+          
+          // Prussian Blue-Black background (#0A1F2E to #013250)
+          vec3 backgroundColor = vec3(0.04, 0.12, 0.19);
+          
+          // Star field
+          vec2 uv = st * 18.0;
+          float starValue = starField(uv, u_time * 0.5);
+          vec3 starColor = vec3(0.95, 0.95, 1.0);
+          
+          // Blend with soft atmospheric scattering
+          vec3 finalColor = mix(backgroundColor, auroraColor, smoothstep(0.0, 0.5, length(auroraColor)));
+          finalColor += starValue * starColor * 0.35;
+          
+          // Subtle gradient to maintain depth
+          float vignette = 1.0 - smoothstep(0.4, 1.2, length(st - 0.5));
+          finalColor *= (0.85 + vignette * 0.15);
+          
+          gl_FragColor = vec4(finalColor, 1.0);
+        }
+      `;
+
+      material = new THREE.ShaderMaterial({
+        uniforms: uniforms,
+        fragmentShader: fragmentShader
+      });
+
+      const mesh = new THREE.Mesh(geometry, material);
+      scene.add(mesh);
+
+      onWindowResize();
+      window.addEventListener('resize', onWindowResize, false);
+    }
+
+    function onWindowResize() {
+      const aspectRatio = window.innerWidth / window.innerHeight;
+      let width, height;
+      
+      if (aspectRatio > 1) {
+        width = 1;
+        height = 1 / aspectRatio;
+      } else {
+        width = aspectRatio;
+        height = 1;
+      }
+      
+      camera.left = -width;
+      camera.right = width;
+      camera.top = height;
+      camera.bottom = -height;
+
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      uniforms.u_resolution.value.x = renderer.domElement.width;
+      uniforms.u_resolution.value.y = renderer.domElement.height;
+    }
+
+    let startTime = Date.now();
+    const STOP_AFTER_MS = 5000;
+
+    function animate() {
+      const elapsed = Date.now() - startTime;
+      if (elapsed < STOP_AFTER_MS) {
+        requestAnimationFrame(animate);
+        render();
+      } else {
+        animating = false;
+      }
+    }
+
+    function render() {
+      uniforms.u_time.value += 0.016;
+      renderer.render(scene, camera);
+    }
+
+    init();
+    animate();
+    
+    // Wire up controls
+    const controls = [
+      { id: 'bandwidth', uniform: 'u_bandwidth' },
+      { id: 'texMin', uniform: 'u_texMin' },
+      { id: 'texMax', uniform: 'u_texMax' },
+      { id: 'texFreqX', uniform: 'u_texFreqX' },
+      { id: 'texFreqY', uniform: 'u_texFreqY' },
+      { id: 'fadeRange', uniform: 'u_fadeRange' },
+      { id: 'fbmPos', uniform: 'u_fbmPos' },
+      { id: 'widthVar', uniform: 'u_widthVar' },
+      { id: 'band0Height', uniform: 'u_band0Height' },
+      { id: 'band1Height', uniform: 'u_band1Height' },
+      { id: 'band2Height', uniform: 'u_band2Height' },
+      { id: 'band3Height', uniform: 'u_band3Height' },
+      { id: 'tiltAmount', uniform: 'u_tiltAmount' },
+      { id: 'curveArc', uniform: 'u_curveArc' }
+    ];
+    
+    controls.forEach(({ id, uniform }) => {
+      const slider = document.getElementById(id);
+      const valueSpan = document.getElementById(`val-${id}`);
+      
+      slider.addEventListener('input', (e) => {
+        const value = parseFloat(e.target.value);
+        uniforms[uniform].value = value;
+        valueSpan.textContent = value.toFixed(3);
+        
+        // Resume animation for 5 seconds
+        startTime = Date.now();
+        if (!animating) {
+          animating = true;
+          animate();
+        }
+      });
+    });
+    
+    let animating = true;
+  </script>
+</body>
+</html>
