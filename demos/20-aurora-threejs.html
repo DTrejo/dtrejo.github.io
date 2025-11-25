@@ -188,7 +188,11 @@
           return value;
         }
 
-        vec3 aurora(vec2 st, float time) {
+        vec3 aurora(vec2 st, float time, float verticalPos) {
+          // Natural vertical gradient - aurora is stronger at top
+          // This makes patterns naturally concentrate in upper region
+          float verticalStrength = smoothstep(0.5625, 0.9125, verticalPos) * smoothstep(1.0625, 0.9425, verticalPos);
+
           vec2 q = vec2(0.);
           q.x = fbm(st + 0.2 * time);
           q.y = fbm(st + vec2(1.0));
@@ -197,7 +201,7 @@
           r.x = fbm(st + 1.5 * q + vec2(1.7, 9.2) + 0.25 * time);
           r.y = fbm(st + 1.5 * q + vec2(8.3, 2.8) + 0.18 * time);
           
-          float f = fbm(st + r);
+          float f = fbm(st + r) * verticalStrength;
 
           // Aurora description colors: luminous cyan-green, electric turquoise, deep teal
           vec3 cyanGreen = vec3(0.0, 1.0, 0.83);      // #00FFD4 - Luminous Cyan-Green
@@ -254,7 +258,8 @@
           st.x *= u_resolution.x / u_resolution.y;
           
           // Slow animation: 2-5 seconds per drift cycle
-          vec3 auroraColor = aurora(st * 3.5, u_time * 0.15);
+          // Pass vertical position so aurora naturally generates stronger at top
+          vec3 auroraColor = aurora(st * 3.5, u_time * 0.15, st.y);
           
           // Prussian Blue-Black background (#0A1F2E to #013250)
           vec3 backgroundColor = vec3(0.04, 0.12, 0.19);
