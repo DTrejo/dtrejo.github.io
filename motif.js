@@ -37,27 +37,45 @@ const generateSocialMediaImage = async ({
   const padding = 16 * 4
   // Write article title
   const fontWeight = '600'
-  // `'Avenir Next', sans-serif`
-  // `Ubuntu, sans-serif`
-  const fontFamily = `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif`
-  ctx.font = `${fontWeight} 3rem ${fontFamily}`
+  // Canvas requires simple font family names (no quotes, system names, or complex stacks)
+  // Old font stacks (kept for future reference):
+  // const fontFamily = `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif`
+  // const fontFamily = `'Avenir Next', sans-serif`
+  // const fontFamily = `Ubuntu, sans-serif`
+  const fontFamily = 'Helvetica, Arial, sans-serif'
+  // Canvas doesn't understand rem units, using px
+  const titleFontSize = 66
+  ctx.font = `${fontWeight} ${titleFontSize}px ${fontFamily}`
   const white = '#dcd9d6'
   ctx.fillStyle = `color: ${white}`
   ctx.fillStyle = white
+  if (DEBUG) {
+    const titleMetrics = ctx.measureText(title)
+    console.log('Title font:', ctx.font)
+    console.log('Title metrics:', { text: title, width: titleMetrics.width, maxWidth: background.width - padding * 2 })
+  }
   ctx.fillText(
     title,
     padding,
     background.height * 0.33,
     background.width - padding * 2
   )
-
+  if (DEBUG) console.log('Canvas dimensions:', {w: background.width, h: background.height})
   const secondLineHeight = background.height * 0.75
-  ctx.font = `${fontWeight} 2rem ${fontFamily}`
+  // Canvas doesn't understand rem units, using px
+  const secondaryFontSize = 46
+  ctx.font = `${fontWeight} ${secondaryFontSize}px ${fontFamily}`
+  if (DEBUG) console.log('Secondary font:', ctx.font)
   const avatarDiameter = 16 * 13
-  ctx.fillText(`by ${author}`, avatarDiameter + padding * 2, secondLineHeight)
+  const authorText = `by ${author}`
+  const authorMetrics = ctx.measureText(authorText)
+  if (DEBUG) console.log('Author metrics:', { text: authorText, width: authorMetrics.width })
+  ctx.fillText(authorText, avatarDiameter + padding * 2, secondLineHeight)
+  const domainMetrics = ctx.measureText(domain)
+  if (DEBUG) console.log('Domain metrics:', { text: domain, width: domainMetrics.width })
   ctx.fillText(
     domain,
-    background.width - ctx.measureText(domain).width - padding,
+    background.width - domainMetrics.width - padding,
     secondLineHeight
   )
 
