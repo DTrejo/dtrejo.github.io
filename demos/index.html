@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Enhancement Demos - dtrejo.com</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 2rem;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      line-height: 1.25;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      margin-bottom: 3rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: all 0.2s ease;
+    }
+    .card:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(245, 122, 89, 0.3);
+      transform: translateY(-2px);
+    }
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .card p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-block;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: rgba(245, 122, 89, 0.1);
+      border: 1px solid #f57a59;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      background: rgba(245, 122, 89, 0.2);
+      transform: translateX(4px);
+    }
+    .baseline {
+      border-color: rgba(99, 187, 185, 0.3);
+    }
+    .baseline .btn {
+      border-color: #63bbb9;
+      background: rgba(99, 187, 185, 0.1);
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Background Enhancement Demos</h1>
+    <p class="subtitle">Subtle, sophisticated background treatments for dtrejo.com</p>
+
+    <div class="grid">
+      <div class="card baseline">
+        <h2>00. Baseline</h2>
+        <p>Current flat background color for comparison. This is your starting point: simple, clean #013250.</p>
+        <a href="00-baseline.html" class="btn">View Demo →</a>
+      </div>
+
+      <div class="card">
+        <h2>01. Radial Vignette</h2>
+        <p>Subtle radial gradient that darkens toward edges. Creates depth without being noticeable. Most conservative option.</p>
+        <a href="01-radial-vignette.html" class="btn">View Demo →</a>
+      </div>
+
+      <div class="card">
+        <h2>02. Layered Depth</h2>
+        <p>Multiple background layers: SVG noise pattern with gradient overlay using soft-light blend mode for texture.</p>
+        <a href="02-layered-depth.html" class="btn">View Demo →</a>
+      </div>
+
+      <div class="card">
+        <h2>03. Animated Starfield</h2>
+        <p>CSS-only twinkling stars echoing the Milky Way aesthetic. Ultra-subtle animation adds life without distraction.</p>
+        <a href="03-animated-starfield.html" class="btn">View Demo →</a>
+      </div>
+
+      <div class="card">
+        <h2>04. Chromatic Glow</h2>
+        <p>Ethereal edge glow on content area using blur filters and blend modes. Aurora-inspired without being obvious.</p>
+        <a href="04-chromatic-glow.html" class="btn">View Demo →</a>
+      </div>
+
+      <div class="card">
+        <h2>05. Hero Fade</h2>
+        <p>Full-viewport background image that fades to solid color. Perfect for article pages with astronomical imagery.</p>
+        <a href="05-hero-fade.html" class="btn">View Demo →</a>
+      </div>
+
+      <div class="card">
+        <h2>06. Grain + Gradient</h2>
+        <p>Film grain texture over three-color vertical gradient. Adds analog warmth and sophistication. My top recommendation.</p>
+        <a href="06-grain-gradient.html" class="btn">View Demo →</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Each demo uses your exact color scheme: #013250 background, #dcd9d6 text, #f57a59 links</p>
+    </div>
+  </div>
+</body>
+</html>

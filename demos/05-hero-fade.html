@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05. Hero Fade - Background Image Transition</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    .hero-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 0;
+      background: 
+        linear-gradient(180deg, 
+          transparent 0%, 
+          rgba(1, 50, 80, 0.3) 30%,
+          rgba(1, 50, 80, 0.7) 60%,
+          #013250 100%
+        ),
+        url('https://images.unsplash.com/photo-1515951834549-4172b316de7e?fit=crop&h=1080&w=1920&q=80') center top / cover no-repeat;
+    }
+    
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.85em;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+    
+    .note {
+      background: rgba(99, 187, 185, 0.1);
+      border-left: 3px solid #63bbb9;
+      padding: 1rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-bg"></div>
+  <div class="technique-label">05. Hero Fade</div>
+  
+  <div class="content-wrapper">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to all demos</a>
+      
+      <h1>Hero Fade</h1>
+      
+      <p>This technique uses a full-viewport background that gradually fades from a starfield at the top to solid color as you scroll down. It's the most dramatic option—perfect for article pages.</p>
+
+      <div class="note">
+        <strong>Note:</strong> This demo uses an actual Milky Way photograph from Unsplash. You can swap it for any astronomical image—aurora borealis, nebula, etc.
+      </div>
+
+      <h2>The Effect</h2>
+      
+      <p>The background starts with a visible Milky Way photograph at the top, then gradually fades to your solid #013250 color as you scroll down. This creates a sense of depth and ties into your astronomical theme directly.</p>
+      
+      <ul style="margin-left: 2em;">
+        <li>Fixed positioning keeps background stable while content scrolls</li>
+        <li>Linear gradient mask fades image to color (0% → 30% → 60% → 100%)</li>
+        <li>Works with any image: Milky Way, aurora, nebula</li>
+        <li>Most impactful on article pages</li>
+        <li>Optional: add parallax scrolling for depth</li>
+        <li>Uses actual Unsplash photo (~150KB, loads quickly)</li>
+      </ul>
+
+      <h2>The Code</h2>
+      
+      <div class="code-block">
+.hero-bg {
+  position: fixed;
+  background: 
+    linear-gradient(180deg, 
+      transparent 0%, 
+      rgba(1, 50, 80, 0.3) 30%,
+      rgba(1, 50, 80, 0.7) 60%,
+      #013250 100%
+    ),
+    url('https://images.unsplash.com/photo-...') 
+      center top / cover no-repeat;
+}
+
+/* Alternative with aurora: */
+/* url('https://images.unsplash.com/photo-1529963183134...') */
+      </div>
+
+      <h2>Why It Works</h2>
+      
+      <p>This approach is used by Medium, Stripe docs, and many editorial sites. The image creates immediate visual interest and emotional connection, while the fade ensures it doesn't compete with content as the user reads.</p>
+      
+      <p>For your site, using actual astronomy photos is literal rather than metaphorical—your background shows the same Milky Way aesthetic you use in social images. It creates thematic consistency across your brand.</p>
+
+      <h2>Implementation Notes</h2>
+      
+      <p>This demo uses a Milky Way photo, but you can easily swap to aurora or other astronomical imagery:</p>
+      
+      <ul style="margin-left: 2em;">
+        <li><strong>Milky Way:</strong> <code>photo-1515951834549-4172b316de7e</code> (current)</li>
+        <li><strong>Aurora:</strong> <code>photo-1529963183134-61a90db47eaf</code></li>
+        <li>Use WebP format for smaller file size (40-80KB target)</li>
+        <li>Adjust imgix params: <code>?fit=crop&h=1080&w=1920&q=80</code></li>
+        <li>Consider different images per article or category</li>
+      </ul>
+
+      <h2>Parallax Enhancement</h2>
+      
+      <p>You could add subtle parallax scrolling (background moves at 0.5x speed) using JavaScript. This creates a sense of depth as the user scrolls. Let me know if you'd like me to add this to the demo.</p>
+
+      <h2>Best For</h2>
+      
+      <p>Article pages where you want to make an impression. This is your most dramatic option—it puts astronomy front and center. Not recommended for the homepage or index pages where simplicity is better, but perfect for long-form content.</p>
+
+      <p>Scroll down to see how the Milky Way photograph fades to solid color...</p>
+      
+      <div style="height: 60vh; display: flex; align-items: center; justify-content: center; opacity: 0.5;">
+        <p style="margin-top: 0;">↓ Notice how the Milky Way fades away ↓</p>
+      </div>
+
+      <p>By now, the background should be mostly solid color. The photograph has done its job—creating atmosphere at the article's opening—and gets out of the way for reading.</p>
+
+      <div class="footer">
+        <p><a href="04-chromatic-glow.html">← Previous: Chromatic Glow</a> | <a href="index.html">Back to demo index</a> | <a href="06-grain-gradient.html">Next: Grain + Gradient →</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

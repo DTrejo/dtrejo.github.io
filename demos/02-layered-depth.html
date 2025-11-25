@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02. Layered Depth - Noise + Gradient</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      background-image: 
+        radial-gradient(ellipse at top, rgba(99, 187, 185, 0.03) 0%, transparent 50%),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/></filter><rect width="300" height="300" filter="url(%23noise)" opacity="0.05"/></svg>');
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="technique-label">02. Layered Depth</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Layered Depth</h1>
+    
+    <p>This technique combines multiple background layers: a subtle accent gradient plus an SVG noise pattern. The layers create texture that's only visible when you look closely.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Look at any solid area of the background—there's a very subtle texture, almost like paper grain or canvas. Combined with a faint cyan gradient at the top, it creates depth in two ways:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>The noise adds tactile texture (zoom in to 150% to see it clearly)</li>
+      <li>The gradient provides a hint of your accent color (#63bbb9)</li>
+      <li>Both layers are ultra-low opacity (3-5%)</li>
+      <li>Creates richness without being obvious</li>
+    </ul>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+background-color: #013250;
+background-image: 
+  radial-gradient(
+    ellipse at top, 
+    rgba(99, 187, 185, 0.03) 0%, 
+    transparent 50%
+  ),
+  url('data:image/svg+xml;utf8,...');
+/* SVG generates procedural noise */
+    </div>
+
+    <h2>Why It Works</h2>
+    
+    <p>The SVG fractal noise is generated in-browser (no external image file needed), making it extremely lightweight. The radial gradient adds a subtle aurora-like glow using your secondary accent color.</p>
+    
+    <p>This approach is inspired by high-end editorial design where subtle texture implies quality and craftsmanship. It's invisible at first glance but adds richness when studied.</p>
+
+    <h2>Best For</h2>
+    
+    <p>If you want texture that's only perceptible on close inspection. This is more sophisticated than a flat background but more subtle than obvious patterns. Works especially well on high-DPI displays where the texture becomes more refined.</p>
+
+    <div class="footer">
+      <p><a href="01-radial-vignette.html">← Previous: Radial Vignette</a> | <a href="index.html">Back to demo index</a> | <a href="03-animated-starfield.html">Next: Animated Starfield →</a></p>
+    </div>
+  </div>
+</body>
+</html>

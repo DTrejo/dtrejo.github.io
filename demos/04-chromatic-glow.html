@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04. Chromatic Glow - Ethereal Edge Effect</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      right: -40px;
+      bottom: -40px;
+      background: radial-gradient(
+        ellipse at center,
+        rgba(99, 187, 185, 0.15) 0%,
+        rgba(245, 122, 89, 0.08) 50%,
+        transparent 70%
+      );
+      filter: blur(40px);
+      opacity: 0.5;
+      z-index: -1;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="technique-label">04. Chromatic Glow</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Chromatic Glow</h1>
+    
+    <p>This technique creates a subtle multi-color glow around the content area using blur filters and blend modes. It's reminiscent of aurora borealis without being obvious about it.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Look at the edges of the content area—notice a very subtle colored haze? It combines your accent colors (cyan #63bbb9 and coral #f57a59) in a radial gradient that's heavily blurred and uses screen blend mode.</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Uses both accent colors in gradient</li>
+      <li>40px blur creates soft, diffuse light</li>
+      <li>Screen blend mode for ethereal quality</li>
+      <li>Positioned around content, not full viewport</li>
+      <li>Creates aurora-like atmosphere</li>
+    </ul>
+    
+    <p>The effect is barely visible on the dark background, which is intentional—it should feel like ambient light rather than a spotlight.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+.container::before {
+  content: '';
+  position: absolute;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(99, 187, 185, 0.15) 0%,
+    rgba(245, 122, 89, 0.08) 50%,
+    transparent 70%
+  );
+  filter: blur(40px);
+  mix-blend-mode: screen;
+  opacity: 0.5;
+}
+    </div>
+
+    <h2>Why It Works</h2>
+    
+    <p>The screen blend mode is key—it makes dark areas darker and light areas lighter, similar to how light actually behaves. Combined with blur, it creates soft, glowing edges that feel more like atmospheric lighting than a design effect.</p>
+    
+    <p>The two-color gradient (cyan to coral) mirrors the aurora borealis color range and ties your design system together by using both accent colors simultaneously.</p>
+
+    <h2>Best For</h2>
+    
+    <p>If you want your aurora/astronomical theme to be more literal. This adds ambient color that changes character across the content area. More noticeable than other techniques but still subtle. Works best on wider viewports where the glow has space to diffuse.</p>
+
+    <h2>Performance Note</h2>
+    
+    <p>The blur filter does require GPU compositing. On modern devices this is negligible, but older/mobile devices may see minor performance impact. Test before deploying site-wide.</p>
+
+    <div class="footer">
+      <p><a href="03-animated-starfield.html">← Previous: Animated Starfield</a> | <a href="index.html">Back to demo index</a> | <a href="05-hero-fade.html">Next: Hero Fade →</a></p>
+    </div>
+  </div>
+</body>
+</html>
