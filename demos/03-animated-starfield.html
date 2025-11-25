@@ -139,14 +139,15 @@
     <p>Look at the background for 5-10 seconds. You'll notice tiny points of light slowly fading in and out across the page. Each star:</p>
     
     <ul style="margin-left: 2em;">
-      <li>Is only 2px in size</li>
-      <li>Has a maximum opacity between 0.1-0.3</li>
-      <li>Animates over 3-8 seconds</li>
+      <li>Varies in size (1-3px) to create depth—smaller stars appear farther away</li>
+      <li>Has a maximum opacity between 0.08-0.23 (brighter for "closer" stars)</li>
+      <li>Includes subtle color variation (5% blue, 5% orange, 90% white) for realism</li>
+      <li>Animates over 3-8 seconds at different rates</li>
       <li>Has a randomized delay for organic feel</li>
-      <li>Respects prefers-reduced-motion</li>
+      <li>Respects prefers-reduced-motion (shows static stars)</li>
     </ul>
     
-    <p>The effect is subliminal—you feel the life in the background more than you consciously see it.</p>
+    <p>The effect is subliminal—you feel the life in the background more than you consciously see it. The size, brightness, and color variations create a sense of three-dimensional space, like looking through a telescope.</p>
 
     <h2>The Code</h2>
     
@@ -161,13 +162,20 @@
   50% { opacity: var(--opacity); }
 }
 
-/* JavaScript generates 30 stars with random positions */
+/* JavaScript generates 50 stars with:
+   - Random positions
+   - Size variation (1-3px for depth)
+   - Brightness variation
+   - Slight color tints (blue/orange/white)
+*/
     </div>
 
     <h2>Why It Works</h2>
     
     <p>Movement catches the eye naturally—but only when it's gentle. These stars twinkle at biological rhythms (3-8 seconds mirrors breathing or heartbeat), making them feel organic rather than mechanical.</p>
     
+    <p>This enhanced version adds <strong>realistic depth cues</strong>: larger, brighter stars appear closer while smaller, dimmer ones recede into the distance. The subtle color variation (hot blue stars vs. cooler orange stars) mirrors actual stellar classification without being obvious.</p>
+
     <p>This technique adds life without demanding attention. It's inspired by actual astronomical observation: stars appear to twinkle due to atmospheric turbulence, which happens slowly from our perspective.</p>
 
     <h2>Best For</h2>
@@ -181,7 +189,7 @@
 
   <script>
     const starsContainer = document.getElementById('stars');
-    const starCount = 30;
+    const starCount = 50; // Increased for fuller field
     
     for (let i = 0; i < starCount; i++) {
       const star = document.createElement('div');
@@ -193,6 +201,19 @@
       star.style.left = `${x}%`;
       star.style.top = `${y}%`;
       
+      // Size variation for depth (distant stars smaller)
+      const sizeCategory = Math.random();
+      let size;
+      if (sizeCategory < 0.7) {
+        size = 1; // Far stars (70%)
+      } else if (sizeCategory < 0.95) {
+        size = 2; // Medium stars (25%)
+      } else {
+        size = 3; // Near stars (5%)
+      }
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+
       // Random animation duration (3-8 seconds)
       const duration = 3 + Math.random() * 5;
       star.style.setProperty('--duration', `${duration}s`);
@@ -201,10 +222,20 @@
       const delay = Math.random() * duration;
       star.style.setProperty('--delay', `${delay}s`);
       
-      // Random opacity (0.1-0.3)
-      const opacity = 0.1 + Math.random() * 0.2;
+      // Random opacity (0.1-0.3, brighter for closer stars)
+      const baseOpacity = 0.08 + Math.random() * 0.15;
+      const opacity = baseOpacity * (size / 1.5); // Larger stars slightly brighter
       star.style.setProperty('--opacity', opacity);
       
+      // Slight color variation (some stars slightly blue/red)
+      const colorVariation = Math.random();
+      if (colorVariation < 0.05) {
+        star.style.background = '#cce6ff'; // Slightly blue (hot stars)
+      } else if (colorVariation < 0.10) {
+        star.style.background = '#ffeedd'; // Slightly orange (cool stars)
+      }
+      // else white (default)
+
       starsContainer.appendChild(star);
     }
   </script>

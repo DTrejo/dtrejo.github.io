@@ -11,7 +11,10 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       font-size: 125%;
-      background: radial-gradient(ellipse at center top, #013e5f 0%, #013250 60%, #012240 100%);
+      background:
+        radial-gradient(ellipse 120% 80% at 30% 20%, rgba(2, 72, 105, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse 100% 70% at 70% 80%, rgba(1, 42, 75, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse at center top, #013e5f 0%, #013250 60%, #012240 100%);
       color: #dcd9d6;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -105,23 +108,40 @@
       <li>Has zero performance impact</li>
     </ul>
     
-    <p>The gradient transitions from a lighter blue (#013e5f) at the center to your base color (#013250) at 60%, then to a darker shade (#012240) at the edges.</p>
+    <p>The gradient transitions from a lighter blue (#013e5f) at the center to your base color (#013250) at 60%, then to a darker shade (#012240) at the edges. This enhanced version layers multiple gradients to create subtle depth variations across the page.</p>
 
     <h2>The Code</h2>
     
     <div class="code-block">
-background: radial-gradient(
-  ellipse at center top,
-  #013e5f 0%,
-  #013250 60%,
-  #012240 100%
-);
+/* Layered radial gradients for sophisticated depth */
+background:
+  /* Subtle highlight upper-left */
+  radial-gradient(
+    ellipse 120% 80% at 30% 20%,
+    rgba(2, 72, 105, 0.3) 0%,
+    transparent 50%
+  ),
+  /* Subtle depth lower-right */
+  radial-gradient(
+    ellipse 100% 70% at 70% 80%,
+    rgba(1, 42, 75, 0.4) 0%,
+    transparent 60%
+  ),
+  /* Main vignette */
+  radial-gradient(
+    ellipse at center top,
+    #013e5f 0%,
+    #013250 60%,
+    #012240 100%
+  );
     </div>
 
     <h2>Why It Works</h2>
     
     <p>This technique is used by companies like Apple, Stripe, and Linear. It's subtle enough to be professional, yet noticeable enough to add visual polish. The ellipse shape at "center top" means the lighter area is positioned near your content's starting point.</p>
     
+    <p>This enhanced version uses <strong>three layered gradients</strong>: a main vignette plus two subtle "depth zones" that create asymmetric lighting—like how natural light creates subtle variations across a surface. The upper-left is slightly lighter, the lower-right slightly darker, adding dimensionality without being obvious.</p>
+
     <p>Open this page and the baseline demo in side-by-side tabs. Toggle between them—you'll notice this version has more perceived depth and draws your attention to the content more naturally.</p>
 
     <h2>Best For</h2>
