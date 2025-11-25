@@ -8,7 +8,7 @@ jobs:
     docker:
       # specify the version you desire here
       # we need browsers b/c we need fonts.
-      - image: cimg/node:20.18.0-browsers
+      - image: cimg/node:24.11.1-browsers
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
