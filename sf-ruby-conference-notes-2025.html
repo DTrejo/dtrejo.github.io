@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SF Ruby Conference 2025 Notes</title>
+  <meta itemprop="name" content="SF Ruby Conference 2025 Notes">
+  <meta property="og:title" content="SF Ruby Conference 2025 Notes">
+  <link rel="icon" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:creator" content="@ddtrejo">
+  <meta name="twitter:site" content="@ddtrejo">
+  <link rel="me" href="https://infosec.exchange/@dtrejo">
+  
+  
+  
+  <link rel="canonical" href="https://dtrejo.com/sf-ruby-conference-notes-2025">
+  <meta property="og:url" content="https://dtrejo.com/sf-ruby-conference-notes-2025">
+  <meta property="og:image" content="https://dtrejo.com/images/social/sf-ruby-conference-notes-2025.jpg"/>
+  <meta name="image" content="https://dtrejo.com/images/social/sf-ruby-conference-notes-2025.jpg"/>
+  <meta itemprop="image" content="https://dtrejo.com/images/social/sf-ruby-conference-notes-2025.jpg"/>
+  <meta name="twitter:image:src" content="https://dtrejo.com/images/social/sf-ruby-conference-notes-2025.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="article">
+  
+  <link rel="stylesheet" href="/css/tachyons.min.css" />
+  
+  <style>
+    * { margin-top: 0 }
+    * + * { margin-top: 1.5em }
+    li li { margin-top: 1.5em }
+    html { scroll-behavior: smooth }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6; /*rgb(220, 217, 214)*/
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.25;
+      font-weight: 600;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:focus, a:active, a:hover {
+      color: #ff6300;
+    }
+    .footer {
+      border-top: 1px solid rgb(25, 73, 110);
+      background-color: #021928;
+    }
+    .amp {
+      font-family: Baskerville, "Goudy Old Style", "Palatino", "Palatino Linotype", "Book Antiqua", serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+    h1, h2, h3, h4, h5, h6, li, p, span, blockquote, pre, code {
+      text-rendering: optimizeLegibility;
+    }
+    hr {
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      border-top: 1px solid rgba(220, 217, 214, .1);
+    }
+    /* improve prism styles */
+    pre, pre[class*=language-] {
+      line-height: 1.4;
+      padding: 1.25rem 1.5rem;
+      margin: .85rem 0;
+      background-color: #282c34;
+      background-color: #191919;
+      border-radius: 6px;
+      overflow: auto;
+    }
+    blockquote {
+      margin-left: 0;
+      border-left: .5rem solid rgba(0, 0, 0, .5);
+      padding-left: 1.5em;
+    }
+    .customcolor { color: #013250 }
+    .b--customcolor { border-color: #013250 }
+    
+  </style>
+  
+  <meta name="cf-2fa-verify" content="27f0edaf36e9d24">
+</head>
+<body class="pt2 lh-copy">
+  <nav class="mw7 ph2 center flex flex-column flex-row-l">  <a class="fw5 link flex self-center self-start-l" href="/">    <img src="/images/dtrejo.jpg" class="w2 h2 br-100 mr3" alt="David Trejo">    dtrejo  </a>  <div class="flex self-center ml-auto-l mt0-l">    <a class="f5 fw5 link mt0 mr3 ttu" href="#footer">Articles</a>    <a class="f5 fw5 link mt0 mr0 ttu" href="/books">Books</a>    <!-- <a class="f5 fw5 link mt0 ttu" href="https://engineeroverflow.com"      >Hire Engineers</a    > -->  </div></nav>
+
+  <article class="content mw7 ph2 center">
+    <h1 id="sf-ruby-conference-2025-notes">SF Ruby Conference 2025 Notes</h1>
+<p>My SF Ruby notes (with tons of AI engineering homework for me 🤩📚). Most exciting items are 🌟 starred (both headings and bullets). There were plenty of cool things I didn&#39;t write down–see the full conference lineup on <a href="https://sfruby.com/schedule/#day1">https://sfruby.com/schedule/#day1</a> (click through days 1-3).</p>
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#ai-apps">AI apps</a></li>
+<li><a href="#testing-with-realistic-data">Testing with realistic data</a></li>
+<li><a href="#terminal">Terminal</a></li>
+<li><a href="#-vibe-engineering">🌟 Vibe engineering</a></li>
+<li><a href="#templates">Templates</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#-ai-news-and-communities">🌟 AI news and communities</a></li>
+<li><a href="#conceptstalks-people-liked-which-i-didnt-catch">Concepts/talks people liked which I didn’t catch</a></li>
+<li><a href="#upcoming-events">Upcoming events</a></li>
+<li><a href="#personal-finance">Personal finance</a></li>
+</ul>
+<hr>
+<ul>
+<li>Include latest features in your framework in your prompts so people and AI use them appropriately.ie.g. in agents.md or CLAUDE.md. Docs on all rails features as a table of contents would help, or context7 possibly.</li>
+<li>Lethal trifecta (<a href="https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/">https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/</a>) - e.g. ANY source of user content that gets logged and then consumed by a DD MCP could lead to a compromise if handled on an engineer machine AI agent.</li>
+</ul>
+<h2 id="ai-apps">AI apps</h2>
+<ul>
+<li>🌟 <a href="https://RubyLLM.com">https://RubyLLM.com</a> is a SUPER clean api for doing everything that langchain etc can do. Excited to use this in Monocle. Also, has tons of built in features and async support for many concurrent scalable ai calls in fibers.</li>
+<li>Async / reducing sidekick usage - more popular: concurrent ruby. Also, <a href="https://paolino.me/async-ruby-is-the-future/">https://paolino.me/async-ruby-is-the-future/</a></li>
+</ul>
+<h2 id="testing-with-realistic-data">Testing with realistic data</h2>
+<ul>
+<li><a href="https://github.com/kaspth/oaken">https://github.com/kaspth/oaken</a> - set up all the test scenarios once as seed data for the rails app so everyone always has a good setup locally. Also, seed data is used for the tests which greatly reduces test DB setup time and test time.</li>
+<li>What Gusto did: 1) Sampling and sanitizing prod data 2) tool to describe describe scenario then pull data into dev and sanitize and use it for testing</li>
+</ul>
+<h2 id="terminal">Terminal</h2>
+<ul>
+<li><a href="https://terminalwire.com/">https://terminalwire.com/</a> - auto-updating CLI that doesn’t need any update tooling - best for talking to APIs or a SaaS product</li>
+<li>Ubicloud CLI has a very cool thin client approach that allows a web API to be exposed as a CLI and kept up to date just like a webapp.</li>
+</ul>
+<h2 id="🌟-vibe-engineering">🌟 Vibe engineering</h2>
+<p>Met a guy who hasn&#39;t been typing his code for 3 years, who shared his workflow and what he&#39;s excited about.</p>
+<ul>
+<li>Claude skills from Every and compound engineering prompts <a href="https://github.com/EveryInc/every-marketplace/tree/main/plugins/compounding-engineering">https://github.com/EveryInc/every-marketplace/tree/main/plugins/compounding-engineering</a></li>
+<li>Above prompts also go well with Droid AI coding assistant by factory.ai</li>
+<li>New area of exploration: <strong>ambient agents</strong> - they notice when things are wrong and just fix them for you.</li>
+<li>Lots of videos from Kieran Klaassen, who has been vibe engineering for 3 years: <a href="https://m.youtube.com/results?sp=mAEA&amp;search_query=kieran+klaassen">https://m.youtube.com/results?sp=mAEA&amp;search_query=kieran+klaassen</a></li>
+<li>See his workflow: <a href="https://youtu.be/8IOeygZRIY8?t=191">https://youtu.be/8IOeygZRIY8?t=191</a></li>
+</ul>
+<h2 id="templates">Templates</h2>
+<ul>
+<li><a href="https://railsbytes.com/">https://railsbytes.com/</a> - templates for common rails enhancements (stripe! etc.). Very helpful for new full stack rails apps.</li>
+</ul>
+<h2 id="libraries">Libraries</h2>
+<ul>
+<li>Use HERB not .html.erb - it’s not just a big string, has autoformatting, etc.</li>
+<li><a href="https://github.com/socketry/async-cable">https://github.com/socketry/async-cable</a> - better actioncable option</li>
+<li>🌟 <a href="https://github.com/spinel-coop/rv">https://github.com/spinel-coop/rv</a> - Install new ruby versions in 1-2 seconds without building (rbenv replacement)</li>
+</ul>
+<h2 id="🌟-ai-news-and-communities">🌟 AI news and communities</h2>
+<ul>
+<li>Ruby AI builder discord - <a href="https://discord.com/invite/ruby-ai-builders-1081742403460923484">https://discord.com/invite/ruby-ai-builders-1081742403460923484</a></li>
+<li>Every AI discord <a href="https://every.to/everything/the-sunday-digest-draft-a0c691a4-ed89-420d-922c-c659f035c099">https://every.to/everything/the-sunday-digest-draft-a0c691a4-ed89-420d-922c-c659f035c099</a></li>
+<li>Ruby AI newsletter <a href="https://rubyai.beehiiv.com/">https://rubyai.beehiiv.com/</a></li>
+<li>Bad Dave&#39;s robot army, <a href="https://github.com/dgriffith/bad-daves-robot-army?tab=readme-ov-file#-command-categories">https://github.com/dgriffith/bad-daves-robot-army?tab=readme-ov-file#-command-categories</a>, e.g. <a href="https://davegriffith.substack.com/p/sometimes-it-really-is-that-easy">https://davegriffith.substack.com/p/sometimes-it-really-is-that-easy</a></li>
+</ul>
+<h2 id="conceptstalks-people-liked-which-i-didnt-catch">Concepts/talks people liked which I didn’t catch</h2>
+<ul>
+<li>“Rails riffing” a creative design and project typing process done in a single Ruby file <a href="https://www.youtube.com/watch?v=vH-mNygyXs0">https://www.youtube.com/watch?v=vH-mNygyXs0</a></li>
+</ul>
+<h2 id="upcoming-events">Upcoming events</h2>
+<ul>
+<li><a href="https://www.blastoffrails.com/">https://www.blastoffrails.com/</a></li>
+</ul>
+<h2 id="personal-finance">Personal finance</h2>
+<ul>
+<li><a href="https://tend.cash/">https://tend.cash/</a> - extremely simple mint based on a budgeting strategy used for 100 years</li>
+</ul>
+<p>Enjoy!<br><em>David Trejo</em><br><a  href="#david åt dtrejo.com"  title="david åt dtrejo.com"  onclick="event.preventDefault(); this.href = 'mailto:' + (this.innerText = 'david' + '@dtrejo.com')">  Email me ✉️</a></p>
+
+  </article>
+
+  <div class="mw7 ph2 center">    <img        src="/images/dtrejo.jpg"        title="David Trejo"        class="br-100 fl ml2 mr2"        height="80"    />    <div class="overflow-hidden mr2">        <h4>David Trejo</h4>        <p>Engineer at Chime <span class="amp">&</span> consultant. Past clients include Credit Karma, Aconex, Triplebyte, Neo, the Brown Computer Science Department, Voxer, Cloudera, and the Veteran's Benefits Administration.</p>    </div></div>
+
+  
+
+  <div id="footer" class="footer mt5 pt5 pb4"><div class="mw7 ph2 center">  <h3>Hiring Engineers? You'll like these articles</h3>  <ol><li><a href="/engineer-interview-script">Growth & full stack engineering interview script</a></li><li><a href="/referrals">How to hustle on your referrals so they actually get hired</a></li><li><a href="/moneyball-book-review-and-measuring-revenue-per-engineer">Moneyball book review and measuring revenue per engineer</a></li><li><a href="/questions-that-senior-systems-engineers-want-answered">Questions that Senior Systems Engineers want answered</a></li><li><a href="/tools-for-hiring-engineers">Tools for hiring engineers that save time and increase conversion</a></li><li><a href="/how-to-reliably-get-your-team-to-write-articles-for-your-engineering-blog">How to reliably get your team to write articles for your engineering blog</a></li><li><a href="/why-share-salary">Why share salary ranges with candidates?</a></li><li><a href="/massive-list-of-engineering-recruiting-channels">Massive list of engineering recruiting channels</a></li><li><a href="/how-to-run-an-intern-program-like-cloudera-s">How to run an intern program like Cloudera's</a></li><li><a href="/how-to-replicate-the-warmth-of-referral-hires">How do you replicate the warmth and friendliness of a referral hire, even with a stranger engineer? By treating hiring like dating.</a></li><li><a href="/how-to-run-an-intern-meetup">How to run an intern meetup</a></li></ol>
+  <h3>Growth Engineering Articles</h3>  <ol><li><a href="/engineer-interview-script">Growth & full stack engineering interview script</a></li><li><a href="/engineering-lead">Engineering lead checklists</a></li><li><a href="/how-do-you-transition-from-rails-lead-engineer-to-growth-engineer">How do you transition from Rails lead engineer to growth engineer?</a></li><li><a href="/days-as-a-growth-engineer">Everything you should do in the first 30 days of a new growth engineering job</a></li><li><a href="/chaos-in-your-product-prototyping">Chaos in your product prototyping</a></li></ol>
+  <h3>How to...</h3>  <ol><li><a href="/chicha-recipe">How to make Chicha, a Venezuelan rice drink</a></li><li><a href="/tailoring-perfect-shirt-pants-jacket">Tailoring the perfect shirt, pants, and jacket</a></li><li><a href="/home-search">Home Searching Advice</a></li><li><a href="/publishing-vue-codesandbox-to-github-pages">How to publish a Vue CodeSandbox.io to Github Pages on a custom domain</a></li><li><a href="/how-to-get-your-business-to-pull-you-forward">How to get your business to pull you forward</a></li><li><a href="/overcome-cold-email-procrastination">Overcome cold-email procrastination</a></li><li><a href="/how-to-write-consistently-painlessly-and-without-writers-block">How to write consistently, painlessly, and without writer's block</a></li><li><a href="/how-to-email">How to email</a></li><li><a href="/how-to-buy-and-cook-steak">How to Buy and Cook Steak</a></li></ol>
+  <h3>Health</h3>  <ol><li><a href="/why-go-carnivore-aka-zero-carb">Why go carnivore? (aka zero carb)</a></li><li><a href="/cancer">Cancer, fasting, carnivore, and chemotherapy side effects</a></li><li><a href="/lifting">Start weightlifting in just 720 days</a></li></ol>
+  <h3>Node.js</h3>  <ol><li><a href="/my-javascript-tooling-wishlist">My Javascript tooling wishlist</a></li><li><a href="/metrics-and-operational-awareness-at-voxer">Metrics and operational awareness at Voxer</a></li><li><a href="/zero-effort-responsive-email-creation">Zero effort responsive email creation</a></li><li><a href="/node-single-point-of-failure">Node single point of failure</a></li></ol>
+  <h3>Git</h3>  <ol><li><a href="/code-reviews-sad">Code reviews are sad</a></li><li><a href="/pull-requests">How Open Source People Do Pull Requests and What We Can Learn from Them</a></li><li><a href="/develop-on-a-cloud-machine">Develop on a cloud machine</a></li><li><a href="/faster-git-workflow">A faster Git workflow with Ampline</a></li><li><a href="/my-github-pull-request-workflow">My Github pull request workflow</a></li></ol>
+  <h3>Top Projects</h3>  <ul>  <li>    <a href="https://EngineerWorth.com">EngineerWorth.com</a> Is that    product feature worth coding? Run a quick ROI calculation and find out.  </li>  <li>    <a href="/qlock/qlock.html">jQuery Qlock2</a> Tell time with this $800 clock, for free.  </li>  <li>    <a href="/colorslice/">ColorSlice</a>    Wish it were easier to steal and create color schemes?    Colorslice helps front-end developers <span class="amp">&amp;</span>    designers with color.  </li>  <li>    <a href="/colorpreview/">ColorPreview</a>    Vet color combinations and pick only the ones with enough contrast,    that your eye finds pleasing.  </li>  <li>    <a href="/lazytemplating/">Lazy Templating</a>    What if you could do HTML templating using a spreadsheet? Now you  can.  </li>  <li>    <a href="http://github.com/DTrejo/ampline">Ampline</a>    Tired of copy-pasting or tab-completing long file paths? Accelerate yourself  on the command-line.  </li>  </ul>  <h4><a href="/archived">Archived</a></h4>  <h3>Find me</h3>  <ul>  <li><a href="https://github.com/DTrejo">Github</a></li>  <li><a rel="me" href="https://infosec.exchange/@dtrejo">Mastodon (infosec.exchange)</a></li>  <li><a href="https://twitter.com/ddtrejo">Twitter</a></li>  <li>    <a  href="#david åt dtrejo.com"  title="david åt dtrejo.com"  onclick="event.preventDefault(); this.href = 'mailto:' + (this.innerText = 'david' + '@dtrejo.com')">  Email me ✉️</a>  </li>  </ul>  <div>    Copyright © 2009-2025 David Trejo. Opinions mine.  </div></div></div>
+
+  
+</body>
+</html>
