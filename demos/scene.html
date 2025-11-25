@@ -457,8 +457,15 @@
 
     // Animation
     let time = 0;
+    let startTime = Date.now();
+    const STOP_AFTER_MS = 5000;
+
     function animate() {
-      requestAnimationFrame(animate);
+      const elapsed = Date.now() - startTime;
+      if (elapsed < STOP_AFTER_MS) {
+        requestAnimationFrame(animate);
+      }
+
       time += 0.01;
 
       // Update aurora
