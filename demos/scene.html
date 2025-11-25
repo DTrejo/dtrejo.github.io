@@ -281,6 +281,121 @@
     aurora.rotation.x = Math.PI * 0.99;
     scene.add(aurora);
 
+    // Aurora Clouds (static, arranged pattern)
+    const auroraCloudShader = {
+      vertexShader: `
+        varying vec2 vUv;
+
+        void main() {
+          vUv = uv;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        varying vec2 vUv;
+        uniform float seed;
+        uniform float time;
+
+        float random(in vec2 st) {
+          return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
+        }
+
+        float noise(in vec2 st) {
+          vec2 i = floor(st);
+          vec2 f = fract(st);
+          float a = random(i);
+          float b = random(i + vec2(1.0, 0.0));
+          float c = random(i + vec2(0.0, 1.0));
+          float d = random(i + vec2(1.0, 1.0));
+          vec2 u = f * f * (3.0 - 2.0 * f);
+          return mix(a, b, u.x) + (c - a)* u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
+        }
+
+        #define OCTAVES 6
+        float fbm(in vec2 st) {
+          float value = 0.0;
+          float amplitude = 0.5;
+          for (int i = 0; i < OCTAVES; i++) {
+            value += amplitude * noise(st);
+            st *= 2.0;
+            amplitude *= 0.5;
+          }
+          return value;
+        }
+
+        vec3 auroraDomainWarp(vec2 st, float seed, float time, float verticalPos) {
+          float verticalStrength = smoothstep(0.3, 0.6, verticalPos) * (1.0 - smoothstep(0.85, 1.0, verticalPos));
+
+          vec2 q = vec2(0.);
+          q.x = fbm(st + seed + 0.2 * time);
+          q.y = fbm(st + vec2(1.0));
+
+          vec2 r = vec2(0.);
+          r.x = fbm(st + 1.5 * q + vec2(1.7, 9.2) + seed * 0.5 + 0.25 * time);
+          r.y = fbm(st + 1.5 * q + vec2(8.3, 2.8) + seed * 0.3 + 0.18 * time);
+
+          float f = fbm(st + r) * verticalStrength;
+
+          vec3 cyanGreen = vec3(0.0, 1.0, 0.83);
+          vec3 turquoise = vec3(0.0, 0.8, 0.78);
+          vec3 deepTeal = vec3(0.0, 0.54, 0.57);
+          vec3 whiteCyan = vec3(0.88, 1.0, 1.0);
+
+          vec3 color = mix(deepTeal, turquoise, r.x * 0.8);
+          color = mix(color, cyanGreen, r.y * 0.6);
+
+          float highlight = smoothstep(0.6, 1.0, f) * 0.3;
+          color = mix(color, whiteCyan, highlight);
+
+          float intensity = 2.0 * f * f;
+          color *= intensity;
+
+          return color;
+        }
+
+        void main() {
+          vec2 st = vUv;
+          st.x *= 2.0;
+
+          vec3 auroraColor = auroraDomainWarp(st * 3.5, seed, time * 0.15, vUv.y);
+
+          float alpha = length(auroraColor) * 0.8;
+
+          gl_FragColor = vec4(auroraColor, alpha);
+        }
+      `
+    };
+
+    const auroraClouds = [
+      { width: 20, height: 8, x: -30, y: 25, z: -35 },
+      { width: 30, height: 8, x: 0, y: 25, z: -35 },
+      { width: 50, height: 8, x: 10, y: 20, z: -38 },
+      { width: 80, height: 8, x: -5, y: 15, z: -40 },
+      { width: 35, height: 8, x: 5, y: 10, z: -36 }
+    ];
+
+    const auroraCloudMeshes = [];
+    auroraClouds.forEach((cloudData, i) => {
+      const geom = new THREE.PlaneGeometry(cloudData.width, cloudData.height);
+      const mat = new THREE.ShaderMaterial({
+        uniforms: {
+          seed: { value: i * 3.7 },
+          time: { value: 0 }
+        },
+        vertexShader: auroraCloudShader.vertexShader,
+        fragmentShader: auroraCloudShader.fragmentShader,
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        side: THREE.DoubleSide
+      });
+
+      const cloud = new THREE.Mesh(geom, mat);
+      cloud.position.set(cloudData.x, cloudData.y, cloudData.z);
+      cloud.rotation.x = Math.PI * 0.2;
+      scene.add(cloud);
+      auroraCloudMeshes.push(cloud);
+    });
+
     // Animation
     let time = 0;
     function animate() {
@@ -296,6 +411,11 @@
 
       // Update clouds
       cloudGroup.children.forEach((cloud) => {
+        cloud.material.uniforms.time.value = time;
+      });
+
+      // Update aurora clouds
+      auroraCloudMeshes.forEach((cloud) => {
         cloud.material.uniforms.time.value = time;
       });
 
