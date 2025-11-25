@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21. Aurora (VFX-JS)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    #aurora-base {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, 
+        #0A1F2E 0%, 
+        #013250 50%, 
+        #0D2A3A 100%
+      );
+      z-index: -1;
+    }
+    
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    
+    p {
+      margin-top: 1.5em;
+    }
+    
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: #ff6300;
+    }
+    
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    
+    .back-link:hover {
+      opacity: 1;
+    }
+    
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="aurora-base"></div>
+  
+  <div class="technique-label">21. Aurora (VFX-JS)</div>
+  
+  <div class="content-wrapper">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to all demos</a>
+      
+      <h1>Aurora with VFX-JS</h1>
+      
+      <p>This demo uses the VFX-JS library to apply a custom GLSL aurora shader to a background element. VFX-JS makes it easy to add WebGL-powered effects to DOM elements without the usual WebGL boilerplate setup.</p>
+
+      <h2>The VFX-JS Approach</h2>
+      
+      <p>Unlike traditional WebGL implementations that require setting up scenes, cameras, and geometries, VFX-JS automatically handles all that infrastructure. You simply select a DOM element and pass it a custom shader. The library takes care of texture loading, positioning, and synchronization.</p>
+      
+      <p>This aurora shader creates flowing horizontal bands of luminous cyan-green light using fractal noise patterns. The colors match real aurora photography: dominant cyan (#00FFD4), turquoise (#00CCC6), and teal (#008B8B) tones that create the characteristic atmospheric glow.</p>
+      
+      <h2>Custom Shader Magic</h2>
+      
+      <p>The shader uses multiple layers of Perlin noise to generate organic, wave-like patterns. Time-based animation creates the slow horizontal drift you'd see in real northern lights. The effect includes subtle vertical pulsing and shimmer to add life to the animation.</p>
+      
+      <p>Star particles are rendered procedurally with subtle scintillation at 0.5-2 Hz, adding depth and scale to the scene. The entire effect runs on your GPU for smooth 60fps performance.</p>
+
+      <h2>Why VFX-JS?</h2>
+      
+      <p>VFX-JS bridges the gap between web design and WebGL effects. It's perfect for adding sophisticated visual polish to websites without requiring deep WebGL expertise. The library handles the tedious setup while giving you full creative control through custom GLSL shaders.</p>
+
+      <div class="footer">
+        <p><a href="20-aurora-threejs.html">← Previous: Aurora (Three.js)</a> | <a href="index.html">Back to demo index</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { VFX } from 'https://esm.sh/@vfx-js/core@0.6.0';
+
+    const shader = `
+      precision highp float;
+      uniform vec2 resolution;
+      uniform vec2 offset;
+      uniform float time;
+      uniform sampler2D src;
+      out vec4 outColor;
+
+      float random(vec2 st) {
+        return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
+      }
+
+      float noise(vec2 st) {
+        vec2 i = floor(st);
+        vec2 f = fract(st);
+        float a = random(i);
+        float b = random(i + vec2(1.0, 0.0));
+        float c = random(i + vec2(0.0, 1.0));
+        float d = random(i + vec2(1.0, 1.0));
+        vec2 u = f * f * (3.0 - 2.0 * f);
+        return mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
+      }
+
+      float fbm(vec2 st) {
+        float value = 0.0;
+        float amplitude = 0.5;
+        for (int i = 0; i < 6; i++) {
+          value += amplitude * noise(st);
+          st *= 2.0;
+          amplitude *= 0.5;
+        }
+        return value;
+      }
+
+      vec3 aurora(vec2 st, float t) {
+        vec2 q = vec2(0.);
+        q.x = fbm(st + 0.2 * t);
+        q.y = fbm(st + vec2(1.0));
+        
+        vec2 r = vec2(0.);
+        r.x = fbm(st + 1.5 * q + vec2(1.7, 9.2) + 0.25 * t);
+        r.y = fbm(st + 1.5 * q + vec2(8.3, 2.8) + 0.18 * t);
+        
+        float f = fbm(st + r);
+
+        // Aurora colors from photo analysis
+        vec3 cyanGreen = vec3(0.0, 1.0, 0.83);   // Luminous Cyan-Green
+        vec3 turquoise = vec3(0.0, 0.8, 0.78);   // Electric Turquoise
+        vec3 deepTeal = vec3(0.0, 0.54, 0.57);   // Deep Teal-Cyan
+        vec3 whiteCyan = vec3(0.88, 1.0, 1.0);   // White-Cyan highlights
+
+        // Create horizontal stratification with color mixing
+        vec3 color = mix(deepTeal, turquoise, r.x * 0.8);
+        color = mix(color, cyanGreen, r.y * 0.6);
+        
+        // Bright highlights
+        float highlight = smoothstep(0.6, 1.0, f) * 0.3;
+        color = mix(color, whiteCyan, highlight);
+        
+        // Luminosity
+        color *= 2.0 * f * f;
+        
+        return color;
+      }
+
+      float star(vec2 uv, float flare) {
+        float d = length(uv);
+        float m = 0.02 / d;
+        m *= smoothstep(1.0, 0.2, d);
+        return m;
+      }
+
+      float starField(vec2 uv, float t) {
+        float m = 0.0;
+        vec2 gv = fract(uv) - 0.5;
+        vec2 id = floor(uv);
+        
+        for (int y = -1; y <= 1; y++) {
+          for (int x = -1; x <= 1; x++) {
+            vec2 offs = vec2(float(x), float(y));
+            float n = random(id + offs);
+            float size = fract(n * 345.32);
+            float s = star(gv - offs - vec2(n, fract(n * 34.)) + 0.5, 0.5);
+            s *= sin(t * 1.2 + n * 6.2831) * 0.3 + 0.7;
+            m += s * size * 0.5;
+          }
+        }
+        return m;
+      }
+
+      void main() {
+        vec2 uv = (gl_FragCoord.xy - offset) / resolution;
+        vec2 st = uv;
+        st.x *= resolution.x / resolution.y;
+        
+        // Sample the base gradient
+        vec4 baseColor = texture(src, uv);
+        
+        // Add aurora effect
+        vec3 auroraColor = aurora(st * 3.5, time * 0.15);
+        
+        // Add stars
+        vec2 starUV = st * 18.0;
+        float stars = starField(starUV, time * 0.5);
+        vec3 starColor = vec3(0.95, 0.95, 1.0);
+        
+        // Blend everything
+        vec3 finalColor = baseColor.rgb;
+        finalColor = mix(finalColor, auroraColor, smoothstep(0.0, 0.5, length(auroraColor)) * 0.7);
+        finalColor += stars * starColor * 0.35;
+        
+        // Subtle vignette
+        float vignette = 1.0 - smoothstep(0.4, 1.2, length(uv - 0.5));
+        finalColor *= (0.85 + vignette * 0.15);
+        
+        outColor = vec4(finalColor, 1.0);
+      }
+    `;
+
+    const vfx = new VFX();
+    const auroraBase = document.getElementById('aurora-base');
+    
+    vfx.add(auroraBase, {
+      shader: shader,
+      overflow: 0
+    });
+  </script>
+</body>
+</html>
