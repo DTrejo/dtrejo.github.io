@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>19. SVG Filter Experiments - Declarative Effects</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    .svg-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.15;
+    }
+    
+    .svg-background rect {
+      width: 100%;
+      height: 100%;
+      fill: white;
+      filter: url(#complexFilter);
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <svg class="svg-background">
+    <defs>
+      <filter id="complexFilter" x="0%" y="0%" width="100%" height="100%">
+        <!-- Create turbulent noise -->
+        <feTurbulence 
+          type="fractalNoise" 
+          baseFrequency="0.02 0.015" 
+          numOctaves="3" 
+          seed="42">
+          <animate 
+            attributeName="baseFrequency" 
+            values="0.02 0.015; 0.025 0.018; 0.02 0.015" 
+            dur="20s" 
+            repeatCount="indefinite"/>
+        </feTurbulence>
+        
+        <!-- Create displacement map -->
+        <feDisplacementMap 
+          in="SourceGraphic" 
+          scale="30" 
+          xChannelSelector="R" 
+          yChannelSelector="G"/>
+        
+        <!-- Apply color transformation -->
+        <feColorMatrix 
+          type="matrix"
+          values="0.3 0 0 0 0
+                  0 0.5 0 0 0
+                  0 0 0.8 0 0
+                  0 0 0 0.2 0"/>
+        
+        <!-- Add subtle blur -->
+        <feGaussianBlur stdDeviation="1.5"/>
+        
+        <!-- Blend with original -->
+        <feBlend mode="screen" in2="SourceGraphic"/>
+      </filter>
+    </defs>
+    
+    <rect x="0" y="0" width="100%" height="100%"/>
+  </svg>
+  
+  <div class="technique-label">19. SVG Filters</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>SVG Filter Experiments</h1>
+    
+    <p>This technique uses SVG filter primitives—low-level graphics operations like turbulence, displacement, color transformation, and blending—to create complex effects declaratively. No canvas, no JavaScript calculations, just XML.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Look at the background. You'll see organic, flowing patterns that slowly animate over 20 seconds. This is created by chaining several SVG filter primitives:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>feTurbulence</strong> — Generates Perlin noise (like clouds)</li>
+      <li><strong>feDisplacementMap</strong> — Warps the image based on noise</li>
+      <li><strong>feColorMatrix</strong> — Transforms colors to blue tones</li>
+      <li><strong>feGaussianBlur</strong> — Adds soft focus</li>
+      <li><strong>feBlend</strong> — Composites with screen blend mode</li>
+    </ul>
+    
+    <p>Each primitive is a building block—combined, they create sophisticated effects.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+&lt;svg&gt;
+  &lt;filter id="complexFilter"&gt;
+    &lt;!-- Generate animated noise --&gt;
+    &lt;feTurbulence 
+      type="fractalNoise" 
+      baseFrequency="0.02 0.015" 
+      numOctaves="3"&gt;
+      &lt;animate 
+        attributeName="baseFrequency" 
+        values="0.02; 0.025; 0.02" 
+        dur="20s" 
+        repeatCount="indefinite"/&gt;
+    &lt;/feTurbulence&gt;
+    
+    &lt;!-- Displace based on noise --&gt;
+    &lt;feDisplacementMap scale="30"/&gt;
+    
+    &lt;!-- Color transformation --&gt;
+    &lt;feColorMatrix type="matrix" values="..."/&gt;
+    
+    &lt;!-- Blur and blend --&gt;
+    &lt;feGaussianBlur stdDeviation="1.5"/&gt;
+    &lt;feBlend mode="screen"/&gt;
+  &lt;/filter&gt;
+&lt;/svg&gt;
+
+&lt;rect filter="url(#complexFilter)"/&gt;
+    </code-block>
+
+    <h2>Why It Works</h2>
+    
+    <p>SVG filters are declarative graphics programming—you describe <em>what</em> you want, not <em>how</em> to compute it. Benefits:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Composability:</strong> Chain primitives for complex effects</li>
+      <li><strong>Hardware acceleration:</strong> Browsers optimize filter pipelines</li>
+      <li><strong>Zero JavaScript:</strong> Declarative, no imperative code</li>
+      <li><strong>Animation:</strong> SMIL animations built into SVG</li>
+      <li><strong>Standards-based:</strong> Part of SVG spec since 2001</li>
+    </ul>
+    
+    <p>This is lower-level than CSS but more powerful for certain effects.</p>
+
+    <h2>SVG Filter Primitives</h2>
+    
+    <p>Available building blocks:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>feTurbulence:</strong> Perlin/fractal noise generation</li>
+      <li><strong>feDisplacementMap:</strong> Warp images based on another image</li>
+      <li><strong>feColorMatrix:</strong> Transform colors via matrix multiplication</li>
+      <li><strong>feGaussianBlur:</strong> Blur effect</li>
+      <li><strong>feBlend:</strong> Blend two images with modes (screen, multiply, etc.)</li>
+      <li><strong>feComposite:</strong> Combine images with Porter-Duff operations</li>
+      <li><strong>feMorphology:</strong> Erode or dilate images</li>
+      <li><strong>feConvolveMatrix:</strong> Apply convolution kernels (sharpen, emboss)</li>
+      <li><strong>feDiffuseLighting:</strong> 3D lighting effects</li>
+      <li><strong>feComponentTransfer:</strong> Per-channel color adjustments</li>
+    </ul>
+
+    <h2>Use Cases</h2>
+    
+    <p>SVG filters excel at:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Organic textures (noise, clouds, marble)</li>
+      <li>Distortion effects (ripples, waves, displacement)</li>
+      <li>Complex color transformations</li>
+      <li>Lighting and shadow simulations</li>
+      <li>Artistic effects (watercolor, oil painting)</li>
+    </ul>
+    
+    <p>They're more powerful than CSS filters but less flexible than canvas for pixel manipulation.</p>
+
+    <h2>Performance</h2>
+    
+    <p>SVG filters can be expensive—they process every pixel. Tips for performance:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Keep filter regions small when possible</li>
+      <li>Minimize number of primitives in chain</li>
+      <li>Use lower numOctaves for turbulence</li>
+      <li>Test on target devices (mobile can struggle)</li>
+      <li>Consider providing fallback background</li>
+    </ul>
+
+    <h2>Browser Support</h2>
+    
+    <p>SVG filters are well-supported but with quirks:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Desktop:</strong> Excellent across all modern browsers</li>
+      <li><strong>Mobile:</strong> Good but can be slow on older devices</li>
+      <li><strong>SMIL animation:</strong> Not supported in IE11 (use CSS animation fallback)</li>
+      <li><strong>Blend modes:</strong> Some older browsers have limited support</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If you want complex, organic effects without JavaScript. SVG filters provide capabilities that CSS and canvas can't match for certain effects. Best when you need Perlin noise, displacement mapping, or complex compositing—and you're willing to write XML and test thoroughly across devices.</p>
+
+    <div class="footer">
+      <p><a href="18-css-only.html">← Previous: CSS-Only Solutions</a> | <a href="index.html">Back to demo index</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11. Nebula Glow Zones - Atmospheric Color</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    .nebula-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    
+    .nebula-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.05;
+      animation: nebula-pulse 20s ease-in-out infinite;
+    }
+    
+    .nebula-1 {
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(99, 187, 185, 0.8) 0%, transparent 70%);
+      top: 10%;
+      left: 10%;
+      animation-delay: 0s;
+    }
+    
+    .nebula-2 {
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(138, 43, 226, 0.6) 0%, transparent 70%);
+      top: 40%;
+      right: 5%;
+      animation-delay: 7s;
+    }
+    
+    .nebula-3 {
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(75, 0, 130, 0.7) 0%, transparent 70%);
+      bottom: 10%;
+      left: 30%;
+      animation-delay: 14s;
+    }
+    
+    .nebula-4 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(245, 122, 89, 0.4) 0%, transparent 70%);
+      top: 60%;
+      left: 60%;
+      animation-delay: 5s;
+    }
+    
+    @keyframes nebula-pulse {
+      0%, 100% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0.05;
+      }
+      50% {
+        transform: scale(1.2) translate(20px, 20px);
+        opacity: 0.08;
+      }
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .color-swatch {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border-radius: 3px;
+      vertical-align: middle;
+      margin: 0 0.3em;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="nebula-layer">
+    <div class="nebula-glow nebula-1"></div>
+    <div class="nebula-glow nebula-2"></div>
+    <div class="nebula-glow nebula-3"></div>
+    <div class="nebula-glow nebula-4"></div>
+  </div>
+  
+  <div class="technique-label">11. Nebula Glow Zones</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Nebula Glow Zones</h1>
+    
+    <p>This technique creates localized color areas using heavily blurred radial gradients that slowly pulse and shift. It mimics the colorful gas clouds of nebulae—purple, cyan, indigo, and coral zones at extremely low opacity.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Look at different areas of the background. You'll notice very subtle color tinting that varies by location. Four nebula zones are positioned across the viewport:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><span class="color-swatch" style="background: #63bbb9;"></span><strong>Cyan nebula</strong> (upper-left) — Your secondary accent color</li>
+      <li><span class="color-swatch" style="background: #8a2be2;"></span><strong>Purple nebula</strong> (right side) — Deep space purple</li>
+      <li><span class="color-swatch" style="background: #4b0082;"></span><strong>Indigo nebula</strong> (bottom) — Dark violet</li>
+      <li><span class="color-swatch" style="background: #f57a59;"></span><strong>Coral nebula</strong> (center-right) — Your primary accent</li>
+    </ul>
+    
+    <p>Each zone slowly pulses over 20 seconds—growing slightly larger and brighter, then shrinking back. The 120px blur makes them diffuse like actual nebulae.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+.nebula-glow {
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.05;
+  background: radial-gradient(
+    circle, 
+    rgba(99, 187, 185, 0.8) 0%, 
+    transparent 70%
+  );
+}
+
+@keyframes nebula-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.05;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.08;
+  }
+}
+    </code-block>
+
+    <h2>Why It Works</h2>
+    
+    <p>Real nebulae are massive clouds of ionized gas—they glow in specific colors based on which elements are present (hydrogen = red, oxygen = blue-green). By recreating this digitally:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Creates atmospheric depth through color variation</li>
+      <li>Ties your accent colors to astronomical phenomena</li>
+      <li>Adds warmth and life to flat blue background</li>
+      <li>Slow pulsing suggests organic, living cosmos</li>
+    </ul>
+    
+    <p>The extreme blur (120px) and low opacity (5-8%) means colors feel ambient rather than applied. Like colored light washing across a surface.</p>
+
+    <h2>Color Theory</h2>
+    
+    <p>The chosen colors reference actual deep space photography:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Cyan/Turquoise:</strong> Oxygen III emissions in planetary nebulae</li>
+      <li><strong>Purple/Violet:</strong> Combination of hydrogen-alpha and oxygen</li>
+      <li><strong>Coral/Orange:</strong> Hydrogen-alpha emissions, dust reflection</li>
+    </ul>
+    
+    <p>These aren't arbitrary—they're scientifically accurate nebula colors that happen to match your design system.</p>
+
+    <h2>Variations</h2>
+    
+    <p>You could:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Change nebula positions based on scroll depth</li>
+      <li>Use different colors per article category</li>
+      <li>Add more nebulae for denser atmosphere</li>
+      <li>Make movement respond to mouse position</li>
+      <li>Adjust opacity based on time of day</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If you want color variety while maintaining dark aesthetic. This adds warmth and atmosphere without brightness—the background stays dark but gains personality. Perfect for sites where your brand includes multiple accent colors that deserve equal presence.</p>
+
+    <div class="footer">
+      <p><a href="10-deep-space-parallax.html">← Previous: Deep Space Parallax</a> | <a href="index.html">Back to demo index</a> | <a href="12-perlin-noise-displacement.html">Next: Perlin Noise Displacement →</a></p>
+    </div>
+  </div>
+</body>
+</html>

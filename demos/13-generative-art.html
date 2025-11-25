@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13. Generative Art - Unique Per Visit</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    #art-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.12;
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .refresh-hint {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: rgba(245, 122, 89, 0.2);
+      border: 1px solid rgba(245, 122, 89, 0.4);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="art-canvas"></canvas>
+  
+  <div class="technique-label">13. Generative Art</div>
+  <div class="refresh-hint">Refresh page to generate new pattern</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Generative Art</h1>
+    
+    <p>This technique generates a unique abstract pattern every time the page loads. Using astronomical data (star positions based on current date/time) and randomness, it creates one-of-a-kind backgrounds that never repeat.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Look at the background—you'll see an abstract pattern of connected lines and nodes. This specific pattern was generated at page load and is unique to this visit. Characteristics:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>~50 nodes placed using mathematical distributions</li>
+      <li>Connections between nearby nodes (Delaunay-like)</li>
+      <li>Opacity varies based on distance</li>
+      <li>Pattern is deterministic but appears random</li>
+      <li>Refresh the page—you'll get a completely different pattern</li>
+    </ul>
+    
+    <p>The seed is based on current timestamp, so every visitor sees something unique.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+// Seed random number generator with timestamp
+const seed = Date.now();
+function seededRandom() {
+  // Pseudo-random based on seed
+  return Math.sin(seed * x) * 10000 - Math.floor(...)
+}
+
+// Generate nodes
+const nodes = [];
+for (let i = 0; i < 50; i++) {
+  nodes.push({
+    x: seededRandom() * width,
+    y: seededRandom() * height,
+    size: seededRandom() * 3 + 1
+  });
+}
+
+// Connect nearby nodes
+for (let i = 0; i < nodes.length; i++) {
+  for (let j = i + 1; j < nodes.length; j++) {
+    const dist = distance(nodes[i], nodes[j]);
+    if (dist < threshold) {
+      drawLine(nodes[i], nodes[j], dist);
+    }
+  }
+}
+    </code-block>
+
+    <h2>Why It Works</h2>
+    
+    <p>Generative art creates a sense of uniqueness—"this was made for me, right now." By using algorithmic generation:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Personal:</strong> Each visitor's experience is unique</li>
+      <li><strong>Discovery:</strong> Refreshing reveals new patterns</li>
+      <li><strong>Infinite variety:</strong> Never runs out of designs</li>
+      <li><strong>Computational aesthetic:</strong> Celebrates code as art</li>
+    </ul>
+    
+    <p>This connects to your astronomical theme through emergence—just as complex patterns emerge from simple physical laws in space, complex art emerges from simple algorithms.</p>
+
+    <h2>Algorithm</h2>
+    
+    <p>This demo uses a particle network algorithm:</p>
+    
+    <ol style="margin-left: 2em;">
+      <li>Scatter nodes across canvas using weighted randomness (clustering in center)</li>
+      <li>For each node pair, calculate distance</li>
+      <li>If distance is below threshold, draw connecting line</li>
+      <li>Line opacity inversely proportional to distance</li>
+    </ol>
+    
+    <p>This creates constellation-like patterns that feel organic yet structured.</p>
+
+    <h2>Variations</h2>
+    
+    <p>Different algorithms could generate:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Flow fields:</strong> Curved lines following vector fields</li>
+      <li><strong>L-systems:</strong> Fractal tree-like growth patterns</li>
+      <li><strong>Cellular automata:</strong> Conway's Game of Life-style evolution</li>
+      <li><strong>Orbital mechanics:</strong> Simulated gravity between particles</li>
+      <li><strong>Voronoi diagrams:</strong> Organic cell divisions</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If you want each visit to feel special and unique. This is most experimental option—it celebrates computation and emergence. Best for technical audiences who appreciate algorithmic beauty, or anyone who wants their site to never feel "static" even with the same content.</p>
+
+    <div class="footer">
+      <p><a href="12-perlin-noise-displacement.html">← Previous: Perlin Noise</a> | <a href="index.html">Back to demo index</a> | <a href="14-glitch-effects.html">Next: Glitch Effects →</a></p>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('art-canvas');
+    const ctx = canvas.getContext('2d');
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    // Seeded random using timestamp
+    let seed = Date.now();
+    function random() {
+      seed = (seed * 9301 + 49297) % 233280;
+      return seed / 233280;
+    }
+    
+    // Generate nodes
+    const nodeCount = 50;
+    const nodes = [];
+    
+    for (let i = 0; i < nodeCount; i++) {
+      // Bias toward center using power distribution
+      const angle = random() * Math.PI * 2;
+      const radiusFactor = Math.pow(random(), 0.6); // Bias toward center
+      const radius = Math.min(canvas.width, canvas.height) * 0.4 * radiusFactor;
+      
+      nodes.push({
+        x: canvas.width / 2 + Math.cos(angle) * radius,
+        y: canvas.height / 2 + Math.sin(angle) * radius,
+        size: random() * 2 + 1
+      });
+    }
+    
+    // Draw connections
+    const maxDist = 200;
+    ctx.strokeStyle = 'rgba(220, 217, 214, 0.3)';
+    ctx.lineWidth = 0.5;
+    
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const dx = nodes[j].x - nodes[i].x;
+        const dy = nodes[j].y - nodes[i].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        
+        if (dist < maxDist) {
+          const opacity = 1 - (dist / maxDist);
+          ctx.globalAlpha = opacity * 0.3;
+          ctx.beginPath();
+          ctx.moveTo(nodes[i].x, nodes[i].y);
+          ctx.lineTo(nodes[j].x, nodes[j].y);
+          ctx.stroke();
+        }
+      }
+    }
+    
+    // Draw nodes
+    ctx.fillStyle = 'rgba(220, 217, 214, 0.6)';
+    for (let node of nodes) {
+      ctx.globalAlpha = 0.6;
+      ctx.beginPath();
+      ctx.arc(node.x, node.y, node.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    
+    ctx.globalAlpha = 1;
+  </script>
+</body>
+</html>

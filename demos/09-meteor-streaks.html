@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09. Meteor Streaks - Shooting Stars</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .meteor-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .meteor {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0;
+      box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.8);
+    }
+    
+    .meteor::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 2px;
+      background: linear-gradient(90deg, white, transparent);
+      transform: translateX(-80px);
+      opacity: 0.6;
+    }
+    
+    @keyframes meteor-fall {
+      0% {
+        opacity: 0;
+        transform: translate(0, 0);
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(300px, 300px);
+      }
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      .meteor {
+        display: none;
+      }
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="meteor-container" id="meteor-container"></div>
+  
+  <div class="technique-label">09. Meteor Streaks</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Meteor Streaks</h1>
+    
+    <p>This technique creates occasional shooting star effects—fast diagonal streaks that appear every 30-60 seconds. They're extremely subtle: blink and you'll miss them.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Watch the background for 30-60 seconds. You'll see brief flashes of light streaking diagonally across the screen. Each meteor:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Appears at random position in upper area</li>
+      <li>Falls diagonally (down and to the right)</li>
+      <li>Lasts only 1-2 seconds total</li>
+      <li>Has a glowing trail that fades</li>
+      <li>Appears every 30-60 seconds (randomized)</li>
+    </ul>
+    
+    <p>The timing mimics real meteor showers—you're not constantly watching for them, but when one appears, it catches your peripheral vision.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+.meteor::before {
+  content: '';
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, white, transparent);
+}
+
+@keyframes meteor-fall {
+  0% { opacity: 0; transform: translate(0, 0); }
+  5% { opacity: 1; }
+  100% { opacity: 0; transform: translate(300px, 300px); }
+}
+
+// JavaScript spawns meteors at random intervals
+function createMeteor() {
+  const meteor = document.createElement('div');
+  meteor.className = 'meteor';
+  // Random position, random timing...
+}
+    </div>
+
+    <h2>Why It Works</h2>
+    
+    <p>Shooting stars create moments of delight. In nature, seeing a meteor is special—it's unpredictable and fleeting. By recreating this digitally:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Surprise factor:</strong> Random timing prevents habituation</li>
+      <li><strong>Peripheral vision:</strong> Movement catches eye without demanding focus</li>
+      <li><strong>Wishful thinking:</strong> Cultural association with making wishes</li>
+      <li><strong>Real phenomenon:</strong> Everyone has seen real shooting stars</li>
+    </ul>
+    
+    <p>The key is restraint—too many meteors become annoying. Real meteor showers average 1-2 per minute during peak activity. We match that pace.</p>
+
+    <h2>Accessibility</h2>
+    
+    <p>Respects <code>prefers-reduced-motion</code> by hiding all meteors completely. For users with vestibular disorders, sudden motion can cause discomfort—better to disable entirely than try to slow it down.</p>
+
+    <h2>Variations</h2>
+    
+    <p>You could:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Change color to cyan or coral for variety</li>
+      <li>Add particle trail that dissipates</li>
+      <li>Create "meteor shower" mode with burst of several</li>
+      <li>Angle meteors in different directions</li>
+      <li>Make speed variable (faster = brighter in real life)</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If you want moments of surprise and delight. This is more playful than other astronomical techniques—it adds personality and whimsy. Best for sites where occasional animation won't distract from serious reading, or where you want to reward long-time visitors who might catch multiple meteors.</p>
+
+    <div class="footer">
+      <p><a href="08-orbital-trails.html">← Previous: Orbital Trails</a> | <a href="index.html">Back to demo index</a> | <a href="10-deep-space-parallax.html">Next: Deep Space Parallax →</a></p>
+    </div>
+  </div>
+
+  <script>
+    const container = document.getElementById('meteor-container');
+    
+    function createMeteor() {
+      const meteor = document.createElement('div');
+      meteor.className = 'meteor';
+      
+      // Random starting position in upper portion of screen
+      const startX = Math.random() * (window.innerWidth - 300);
+      const startY = Math.random() * (window.innerHeight * 0.3);
+      
+      meteor.style.left = `${startX}px`;
+      meteor.style.top = `${startY}px`;
+      
+      // Random animation duration (1-2 seconds)
+      const duration = 1 + Math.random();
+      meteor.style.animation = `meteor-fall ${duration}s ease-in`;
+      
+      container.appendChild(meteor);
+      
+      // Remove after animation completes
+      setTimeout(() => {
+        meteor.remove();
+      }, duration * 1000);
+      
+      // Schedule next meteor (30-60 seconds)
+      const nextDelay = 30000 + Math.random() * 30000;
+      setTimeout(createMeteor, nextDelay);
+    }
+    
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (!prefersReducedMotion) {
+      // Start first meteor after 5-10 seconds
+      const initialDelay = 5000 + Math.random() * 5000;
+      setTimeout(createMeteor, initialDelay);
+    }
+  </script>
+</body>
+</html>

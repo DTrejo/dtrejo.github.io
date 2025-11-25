@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14. Glitch Effects - Digital Chromatic Aberration</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    body::before, body::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      background: #013250;
+    }
+    
+    body::before {
+      opacity: 0.03;
+      animation: glitch-red 3s infinite;
+      mix-blend-mode: screen;
+    }
+    
+    body::after {
+      opacity: 0.03;
+      animation: glitch-cyan 5s infinite;
+      mix-blend-mode: screen;
+    }
+    
+    @keyframes glitch-red {
+      0%, 100% { 
+        transform: translate(0, 0);
+        background: rgba(255, 0, 0, 1);
+      }
+      20% {
+        transform: translate(2px, 0);
+        background: rgba(255, 0, 0, 1);
+      }
+      21% {
+        transform: translate(0, 0);
+        background: rgba(255, 0, 0, 1);
+      }
+    }
+    
+    @keyframes glitch-cyan {
+      0%, 100% {
+        transform: translate(0, 0);
+        background: rgba(0, 255, 255, 1);
+      }
+      40% {
+        transform: translate(-1px, 0);
+        background: rgba(0, 255, 255, 1);
+      }
+      41% {
+        transform: translate(0, 0);
+        background: rgba(0, 255, 255, 1);
+      }
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      body::before, body::after {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="technique-label">14. Glitch Effects</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Glitch Effects</h1>
+    
+    <p>This technique creates extremely subtle chromatic aberration—the RGB color channels are slightly offset by 1-2 pixels, creating a digital/glitch aesthetic. The effect pulses occasionally, mimicking momentary signal interference.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Look carefully at edges in the background. You might notice a very faint red/cyan shift that occasionally "glitches" by moving 1-2 pixels. This creates:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Subtle chromatic aberration (like old CRT monitors)</li>
+      <li>Occasional micro-shifts (every 3-5 seconds)</li>
+      <li>Red channel shifts right, cyan shifts left</li>
+      <li>Screen blend mode for color mixing</li>
+      <li>3% opacity—barely perceptible</li>
+    </ul>
+    
+    <p>The glitch is so subtle you might question whether you saw it. That's intentional—it's subliminal digital artifact.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+body::before {
+  background: rgba(255, 0, 0, 1);
+  opacity: 0.03;
+  mix-blend-mode: screen;
+  animation: glitch-red 3s infinite;
+}
+
+body::after {
+  background: rgba(0, 255, 255, 1);
+  opacity: 0.03;
+  mix-blend-mode: screen;
+  animation: glitch-cyan 5s infinite;
+}
+
+@keyframes glitch-red {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(2px, 0); }
+  21% { transform: translate(0, 0); }
+}
+    </code-block>
+
+    <h2>Why It Works</h2>
+    
+    <p>Chromatic aberration happens naturally in optics when different wavelengths of light refract differently. In digital displays, it occurs when RGB channels misalign. By recreating this artificially:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Digital aesthetic:</strong> Celebrates rather than hides pixels</li>
+      <li><strong>Cyberpunk vibe:</strong> Glitch art is cultural signifier</li>
+      <li><strong>Imperfection:</strong> Adds "character" like vinyl crackle</li>
+      <li><strong>Subliminal unease:</strong> Something is slightly "off"</li>
+    </ul>
+    
+    <p>The occasional movement mimics signal interference or data corruption—digital artifacts we all recognize from screen glitches.</p>
+
+    <h2>Cultural Context</h2>
+    
+    <p>Glitch aesthetics emerged from early digital art and "databending" (intentionally corrupting files). Artists like Rosa Menkman and Kim Asendorf pioneered glitch as intentional aesthetic. It's now mainstream in:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Video game UI (cyberpunk games)</li>
+      <li>Music videos and album art</li>
+      <li>Fashion and graphic design</li>
+      <li>Digital brutalism</li>
+    </ul>
+
+    <h2>Accessibility</h2>
+    
+    <p>Respects <code>prefers-reduced-motion</code> by disabling the glitch animation entirely. Even subtle shifts can be problematic for users with vestibular sensitivity.</p>
+
+    <h2>Variations</h2>
+    
+    <p>You could:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Make glitches random rather than periodic</li>
+      <li>Add vertical scan lines (CRT effect)</li>
+      <li>Include RGB splits on text/content (more aggressive)</li>
+      <li>Trigger glitches on hover or scroll events</li>
+      <li>Use your brand colors instead of red/cyan</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If you want a digital/cyberpunk aesthetic that acknowledges technology's imperfections. This is more about attitude than astronomy—it says "I embrace the digital medium." Best for technical content, developer blogs, or anyone comfortable with intentionally "broken" design as aesthetic choice.</p>
+
+    <div class="footer">
+      <p><a href="13-generative-art.html">← Previous: Generative Art</a> | <a href="index.html">Back to demo index</a> | <a href="15-lenticular-illusion.html">Next: Lenticular Illusion →</a></p>
+    </div>
+  </div>
+</body>
+</html>

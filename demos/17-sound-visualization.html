@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17. Sound Visualization - Audio Reactive Background</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    #audio-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.15;
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    
+    .audio-controls {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      border: 1px solid rgba(245, 122, 89, 0.3);
+      z-index: 10;
+      text-align: center;
+    }
+    
+    .audio-controls button {
+      background: #f57a59;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    
+    .audio-controls button:hover {
+      background: #ff6300;
+      transform: scale(1.05);
+    }
+    
+    .audio-controls button:disabled {
+      background: rgba(99, 187, 185, 0.3);
+      cursor: not-allowed;
+      transform: none;
+    }
+    
+    .audio-controls p {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+    
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .warning {
+      background: rgba(245, 122, 89, 0.1);
+      border-left: 3px solid #f57a59;
+      padding: 1rem;
+      border-radius: 4px;
+      margin: 2rem 0;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="audio-canvas"></canvas>
+  
+  <div class="technique-label">17. Sound Visualization</div>
+  
+  <div class="audio-controls">
+    <button id="start-btn">Enable Microphone Visualization</button>
+    <p id="status">Click to allow microphone access</p>
+  </div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Sound Visualization</h1>
+    
+    <p>This technique makes the background respond to ambient sound via your device's microphone. Audio frequencies are visualized as subtle waves and pulses—speak, play music, or make sounds to see the effect.</p>
+
+    <div class="warning">
+      <strong>Privacy Note:</strong> This demo requires microphone permission. Audio is processed locally in your browser and is never recorded or transmitted. Click the button below to enable.
+    </div>
+
+    <h2>The Effect</h2>
+    
+    <p>Once enabled, the background will visualize sound in real-time:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Circular waves emanating from center</li>
+      <li>Amplitude determines wave size</li>
+      <li>Frequency affects color intensity</li>
+      <li>Quiet rooms show gentle baseline activity</li>
+      <li>Music, speech, or sounds create dramatic patterns</li>
+    </ul>
+    
+    <p>Try speaking, playing music, clapping, or tapping near your microphone to see the visualization react.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+// Request microphone access
+navigator.mediaDevices.getUserMedia({ audio: true })
+  .then(stream => {
+    const audioContext = new AudioContext();
+    const source = audioContext.createMediaStreamSource(stream);
+    const analyser = audioContext.createAnalyser();
+    
+    source.connect(analyser);
+    analyser.fftSize = 256;
+    
+    const dataArray = new Uint8Array(analyser.frequencyBinCount);
+    
+    function visualize() {
+      analyser.getByteFrequencyData(dataArray);
+      
+      // Draw visualization based on frequency data
+      const average = dataArray.reduce((a,b) => a+b) / dataArray.length;
+      drawWave(average);
+      
+      requestAnimationFrame(visualize);
+    }
+    
+    visualize();
+  });
+    </code-block>
+
+    <h2>Why It Works</h2>
+    
+    <p>Sound-reactive visuals create a unique relationship between user and interface. By responding to ambient audio:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Personalization:</strong> Your environment affects the design</li>
+      <li><strong>Interactivity:</strong> You can "perform" the background with sound</li>
+      <li><strong>Contextual:</strong> Reflects your actual surroundings</li>
+      <li><strong>Novelty:</strong> Most websites don't listen to you</li>
+    </ul>
+    
+    <p>This transforms passive viewing into active participation—you become part of the design system.</p>
+
+    <h2>Privacy & Security</h2>
+    
+    <p>Important considerations:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Requires explicit user permission (browser prompts)</li>
+      <li>Audio is processed in real-time, never stored</li>
+      <li>Only frequency data is used (not actual audio content)</li>
+      <li>Users can revoke permission at any time</li>
+      <li>Consider adding visual indicator when mic is active</li>
+    </ul>
+    
+    <p>Always be transparent about microphone usage—privacy concerns are valid and must be respected.</p>
+
+    <h2>Use Cases</h2>
+    
+    <p>When this makes sense:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Music sites:</strong> Artist pages, album launches</li>
+      <li><strong>Podcasts:</strong> Shows about audio/sound design</li>
+      <li><strong>Creative portfolios:</strong> Audio engineers, musicians</li>
+      <li><strong>Interactive experiences:</strong> Experimental web art</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If you want maximum interactivity and novelty. This is the most "alive" option—it literally responds to your world. Best for creative/artistic contexts where experimentation is valued. Not suitable for professional/corporate sites where microphone requests would seem intrusive or odd.</p>
+
+    <div class="footer">
+      <p><a href="16-quantum-foam.html">← Previous: Quantum Foam</a> | <a href="index.html">Back to demo index</a> | <a href="18-css-only.html">Next: CSS-Only Solutions →</a></p>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('audio-canvas');
+    const ctx = canvas.getContext('2d');
+    const startBtn = document.getElementById('start-btn');
+    const status = document.getElementById('status');
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    let audioContext, analyser, dataArray, animationId;
+    
+    startBtn.addEventListener('click', async () => {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        analyser = audioContext.createAnalyser();
+        const source = audioContext.createMediaStreamSource(stream);
+        
+        source.connect(analyser);
+        analyser.fftSize = 256;
+        
+        dataArray = new Uint8Array(analyser.frequencyBinCount);
+        
+        startBtn.disabled = true;
+        status.textContent = 'Microphone active - make some noise!';
+        
+        visualize();
+      } catch (err) {
+        status.textContent = 'Microphone access denied or unavailable';
+        console.error('Error accessing microphone:', err);
+      }
+    });
+    
+    function visualize() {
+      analyser.getByteFrequencyData(dataArray);
+      
+      // Calculate average amplitude
+      const average = dataArray.reduce((a, b) => a + b, 0) / dataArray.length;
+      
+      // Clear canvas with fade effect
+      ctx.fillStyle = 'rgba(1, 50, 80, 0.1)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      // Draw circular wave based on amplitude
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+      const radius = (average / 255) * 300 + 50;
+      
+      ctx.strokeStyle = `rgba(220, 217, 214, ${average / 255 * 0.3})`;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+      ctx.stroke();
+      
+      // Draw frequency bars around circle
+      const sliceAngle = (Math.PI * 2) / dataArray.length;
+      for (let i = 0; i < dataArray.length; i++) {
+        const value = dataArray[i];
+        const angle = sliceAngle * i;
+        const barHeight = (value / 255) * 100;
+        
+        const x1 = centerX + Math.cos(angle) * radius;
+        const y1 = centerY + Math.sin(angle) * radius;
+        const x2 = centerX + Math.cos(angle) * (radius + barHeight);
+        const y2 = centerY + Math.sin(angle) * (radius + barHeight);
+        
+        ctx.strokeStyle = `rgba(99, 187, 185, ${value / 255 * 0.3})`;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+      }
+      
+      animationId = requestAnimationFrame(visualize);
+    }
+  </script>
+</body>
+</html>

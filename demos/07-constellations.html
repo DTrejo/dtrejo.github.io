@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07. Constellations - Subtle Star Patterns</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    .constellation-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.08;
+    }
+    
+    .constellation-layer svg {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .star-point {
+      fill: white;
+    }
+    
+    .constellation-line {
+      stroke: white;
+      stroke-width: 0.5;
+      stroke-opacity: 0.6;
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="constellation-layer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+      <!-- Orion constellation (simplified) -->
+      <g id="orion">
+        <!-- Stars -->
+        <circle class="star-point" cx="800" cy="200" r="2" />
+        <circle class="star-point" cx="750" cy="280" r="2" />
+        <circle class="star-point" cx="850" cy="280" r="2" />
+        <circle class="star-point" cx="780" cy="380" r="1.5" />
+        <circle class="star-point" cx="800" cy="380" r="1.5" />
+        <circle class="star-point" cx="820" cy="380" r="1.5" />
+        <circle class="star-point" cx="770" cy="480" r="2" />
+        <circle class="star-point" cx="830" cy="480" r="2" />
+        
+        <!-- Constellation lines -->
+        <line class="constellation-line" x1="800" y1="200" x2="750" y2="280" />
+        <line class="constellation-line" x1="800" y1="200" x2="850" y2="280" />
+        <line class="constellation-line" x1="750" y1="280" x2="780" y2="380" />
+        <line class="constellation-line" x1="850" y1="280" x2="820" y2="380" />
+        <line class="constellation-line" x1="780" y1="380" x2="800" y2="380" />
+        <line class="constellation-line" x1="800" y1="380" x2="820" y2="380" />
+        <line class="constellation-line" x1="780" y1="380" x2="770" y2="480" />
+        <line class="constellation-line" x1="820" y1="380" x2="830" y2="480" />
+      </g>
+      
+      <!-- Cassiopeia (W shape) -->
+      <g id="cassiopeia">
+        <circle class="star-point" cx="1400" cy="250" r="2" />
+        <circle class="star-point" cx="1450" cy="200" r="2" />
+        <circle class="star-point" cx="1500" cy="250" r="2" />
+        <circle class="star-point" cx="1550" cy="200" r="2" />
+        <circle class="star-point" cx="1600" cy="250" r="2" />
+        
+        <line class="constellation-line" x1="1400" y1="250" x2="1450" y2="200" />
+        <line class="constellation-line" x1="1450" y1="200" x2="1500" y2="250" />
+        <line class="constellation-line" x1="1500" y1="250" x2="1550" y2="200" />
+        <line class="constellation-line" x1="1550" y1="200" x2="1600" y2="250" />
+      </g>
+      
+      <!-- Big Dipper (simplified) -->
+      <g id="big-dipper">
+        <circle class="star-point" cx="300" cy="400" r="2" />
+        <circle class="star-point" cx="380" cy="380" r="2" />
+        <circle class="star-point" cx="460" cy="400" r="2" />
+        <circle class="star-point" cx="510" cy="430" r="2" />
+        <circle class="star-point" cx="480" cy="500" r="2" />
+        <circle class="star-point" cx="420" cy="530" r="2" />
+        <circle class="star-point" cx="350" cy="520" r="2" />
+        
+        <line class="constellation-line" x1="300" y1="400" x2="380" y2="380" />
+        <line class="constellation-line" x1="380" y1="380" x2="460" y2="400" />
+        <line class="constellation-line" x1="460" y1="400" x2="510" y2="430" />
+        <line class="constellation-line" x1="460" y1="400" x2="480" y2="500" />
+        <line class="constellation-line" x1="480" y1="500" x2="420" y2="530" />
+        <line class="constellation-line" x1="420" y1="530" x2="350" y2="520" />
+        <line class="constellation-line" x1="350" y1="520" x2="300" y2="400" />
+      </g>
+    </svg>
+  </div>
+  
+  <div class="technique-label">07. Constellations</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Constellations</h1>
+    
+    <p>This technique draws actual constellation patterns in the background using SVG paths. The lines and stars are barely visible (8% opacity) until you look for them—then you recognize familiar shapes from the night sky.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Look carefully at the background. You'll notice subtle star patterns connected by thin lines. Featured constellations:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Orion</strong> (center-left) — The hunter, recognizable by the three-star belt</li>
+      <li><strong>Cassiopeia</strong> (upper-right) — The distinctive W shape</li>
+      <li><strong>Big Dipper</strong> (left side) — Part of Ursa Major</li>
+    </ul>
+    
+    <p>These are astronomically accurate simplified versions. The ultra-low opacity means they're subliminal—adding depth without distraction.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+&lt;div class="constellation-layer"&gt;
+  &lt;svg viewBox="0 0 1920 1080"&gt;
+    &lt;!-- Star points --&gt;
+    &lt;circle class="star-point" cx="800" cy="200" r="2" /&gt;
+    
+    &lt;!-- Connecting lines --&gt;
+    &lt;line class="constellation-line" 
+          x1="800" y1="200" x2="750" y2="280" /&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;
+
+.constellation-layer {
+  position: fixed;
+  opacity: 0.08;
+  pointer-events: none;
+}
+    </div>
+
+    <h2>Why It Works</h2>
+    
+    <p>Constellations are humanity's oldest way of organizing the night sky—they're deeply embedded in culture and mythology. By including them subtly, you create:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Literal astronomical reference (not just aesthetic)</li>
+      <li>Easter egg quality—users delight in discovering them</li>
+      <li>Educational subtle touch (people might learn constellations)</li>
+      <li>Cultural resonance across civilizations</li>
+    </ul>
+    
+    <p>The key is extreme subtlety. At 8% opacity, you won't notice them while reading. But glance away or unfocus your eyes, and the patterns emerge.</p>
+
+    <h2>Variations</h2>
+    
+    <p>You could:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Change constellations per article or season</li>
+      <li>Use Southern Hemisphere constellations (Southern Cross, Centaurus)</li>
+      <li>Add zodiac constellations for personality</li>
+      <li>Include constellation names in tiny text</li>
+      <li>Animate very slowly (stars brightening/dimming over minutes)</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If you want your astronomical theme to be educational and culturally resonant. This is more sophisticated than generic stars—it shows you care about accuracy. Perfect for science/astronomy-focused content or anyone who wants an "aha!" moment when readers discover them.</p>
+
+    <div class="footer">
+      <p><a href="06-grain-gradient.html">← Previous: Grain + Gradient</a> | <a href="index.html">Back to demo index</a> | <a href="08-orbital-trails.html">Next: Orbital Trails →</a></p>
+    </div>
+  </div>
+</body>
+</html>

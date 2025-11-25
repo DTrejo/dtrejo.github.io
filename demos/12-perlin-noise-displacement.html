@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12. Perlin Noise Displacement - Organic Flow</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    #noise-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.15;
+      mix-blend-mode: screen;
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="noise-canvas"></canvas>
+  
+  <div class="technique-label">12. Perlin Noise Displacement</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Perlin Noise Displacement</h1>
+    
+    <p>This technique uses Perlin noise (organic, flowing noise) that slowly shifts over time. Unlike random noise, Perlin noise is smooth and continuous—like clouds, water, or smoke. It creates a 5-10 minute animation cycle that's barely perceptible.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Look at the background carefully. You'll notice a subtle, organic texture that seems to flow and shift very slowly. This isn't random static—it's coherent noise that:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Moves smoothly like clouds drifting</li>
+      <li>Has varying scales of detail (large and small patterns)</li>
+      <li>Creates depth through lighter and darker regions</li>
+      <li>Never repeats exactly—always evolving</li>
+      <li>Completes a full cycle in 5-10 minutes</li>
+    </ul>
+    
+    <p>The movement is subliminal—watch for 20-30 seconds and you might notice the pattern shifting. It feels alive but not animated.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+const canvas = document.getElementById('noise-canvas');
+const ctx = canvas.getContext('2d');
+
+// Simplified Perlin noise implementation
+function perlin(x, y, t) {
+  // Returns smooth noise value between 0-1
+  // t parameter shifts noise over time
+}
+
+function animate() {
+  const time = Date.now() * 0.00005; // Very slow
+  
+  for (let x = 0; x < width; x += 4) {
+    for (let y = 0; y < height; y += 4) {
+      const noise = perlin(x * 0.01, y * 0.01, time);
+      const brightness = Math.floor(noise * 255);
+      ctx.fillStyle = `rgb(${brightness}, ${brightness}, ${brightness})`;
+      ctx.fillRect(x, y, 4, 4);
+    }
+  }
+  
+  requestAnimationFrame(animate);
+}
+    </code-block>
+
+    <h2>Why It Works</h2>
+    
+    <p>Perlin noise was invented by Ken Perlin in 1983 for the movie Tron. It's used throughout CGI for natural textures—wood grain, marble, clouds, terrain. Unlike pure random noise:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Coherent:</strong> Nearby values are similar (smooth transitions)</li>
+      <li><strong>Organic:</strong> Feels natural, not mechanical</li>
+      <li><strong>Infinite:</strong> Can generate endless unique patterns</li>
+      <li><strong>Scalable:</strong> Works at any resolution or detail level</li>
+    </ul>
+    
+    <p>By animating it slowly, you get continuous subtle change—like watching clouds move in time-lapse.</p>
+
+    <h2>Performance</h2>
+    
+    <p>Canvas rendering at low resolution (every 4th pixel) then scaled up. The slow animation means noise calculation happens infrequently. On modern hardware, this is negligible CPU usage.</p>
+    
+    <p>For better performance:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Pause animation when tab is not visible</li>
+      <li>Use WebGL for GPU-accelerated noise generation</li>
+      <li>Lower resolution on mobile devices</li>
+      <li>Cache noise values and interpolate between frames</li>
+    </ul>
+
+    <h2>Variations</h2>
+    
+    <p>You could:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Add color—blue-purple noise instead of grayscale</li>
+      <li>Layer multiple scales of noise (fractional Brownian motion)</li>
+      <li>Make speed respond to scroll or mouse movement</li>
+      <li>Use displacement map to warp other background elements</li>
+      <li>Blend with gradient backgrounds</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If you want organic, living texture that never repeats. This is more sophisticated than static grain—it evolves. Best for sites where you want subliminal dynamism without obvious animation. The slow evolution rewards long-time visitors who might notice the background is "different" between visits.</p>
+
+    <div class="footer">
+      <p><a href="11-nebula-glow-zones.html">← Previous: Nebula Glow Zones</a> | <a href="index.html">Back to demo index</a> | <a href="13-generative-art.html">Next: Generative Art →</a></p>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('noise-canvas');
+    const ctx = canvas.getContext('2d');
+    
+    // Set canvas size
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    
+    // Simplified Perlin-like noise using Math.sin (not true Perlin but creates smooth patterns)
+    function noise(x, y, t) {
+      // Layered sine waves create Perlin-like smooth noise
+      const freq1 = 0.01;
+      const freq2 = 0.02;
+      const freq3 = 0.005;
+      
+      const n1 = Math.sin(x * freq1 + t) * Math.cos(y * freq1 + t);
+      const n2 = Math.sin(x * freq2 - t * 0.5) * Math.cos(y * freq2 - t * 0.5);
+      const n3 = Math.sin(x * freq3 + t * 0.3) * Math.cos(y * freq3 + t * 0.3);
+      
+      return (n1 + n2 * 0.5 + n3 * 0.25) / 1.75;
+    }
+    
+    let time = 0;
+    const scale = 4; // Render every 4th pixel for performance
+    
+    function animate() {
+      time += 0.0003; // Very slow time progression
+      
+      const width = Math.ceil(canvas.width / scale);
+      const height = Math.ceil(canvas.height / scale);
+      
+      for (let x = 0; x < width; x++) {
+        for (let y = 0; y < height; y++) {
+          const n = noise(x * scale, y * scale, time);
+          const brightness = Math.floor((n + 1) * 0.5 * 255);
+          
+          ctx.fillStyle = `rgb(${brightness}, ${brightness}, ${brightness})`;
+          ctx.fillRect(x * scale, y * scale, scale, scale);
+        }
+      }
+      
+      requestAnimationFrame(animate);
+    }
+    
+    animate();
+  </script>
+</body>
+</html>

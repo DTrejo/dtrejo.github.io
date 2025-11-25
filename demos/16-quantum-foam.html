@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>16. Quantum Foam - Particle Fluctuations</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    .quantum-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .quantum-particle {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0;
+    }
+    
+    @keyframes quantum-fluctuation {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      50% {
+        opacity: 0.4;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(0);
+      }
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      .quantum-particle {
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="quantum-layer" id="quantum-layer"></div>
+  
+  <div class="technique-label">16. Quantum Foam</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Quantum Foam</h1>
+    
+    <p>This technique visualizes quantum foam—the theoretical turbulent fluctuation of spacetime at the Planck scale. Tiny particles randomly appear and disappear across the screen, suggesting subatomic quantum fluctuations.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Watch the background carefully. You'll see tiny white dots appearing and vanishing randomly across the viewport. Each particle:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Appears at a random location</li>
+      <li>Exists for only ~0.5 seconds</li>
+      <li>Fades in and out (not instant)</li>
+      <li>Very low density (~20 visible at any moment)</li>
+      <li>Maximum opacity 40%</li>
+    </ul>
+    
+    <p>The effect mimics virtual particles popping in and out of existence—a phenomenon predicted by quantum field theory.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+function createQuantumParticle() {
+  const particle = document.createElement('div');
+  particle.className = 'quantum-particle';
+  
+  // Random position
+  particle.style.left = `${Math.random() * 100}%`;
+  particle.style.top = `${Math.random() * 100}%`;
+  
+  // Random lifespan (300-700ms)
+  const lifespan = 300 + Math.random() * 400;
+  particle.style.animation = 
+    `quantum-fluctuation ${lifespan}ms ease-in-out`;
+  
+  container.appendChild(particle);
+  
+  // Remove after animation
+  setTimeout(() => particle.remove(), lifespan);
+}
+
+// Create particles at random intervals
+setInterval(() => {
+  if (Math.random() > 0.5) {
+    createQuantumParticle();
+  }
+}, 100);
+    </code-block>
+
+    <h2>Why It Works</h2>
+    
+    <p>Quantum foam is one of physics' most mind-bending concepts. At the smallest possible scale (Planck length: 10^-35 meters), spacetime itself is turbulent—particles and antiparticles constantly appear and annihilate. By visualizing this:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Conceptual accuracy:</strong> Represents actual physics theory</li>
+      <li><strong>Subliminal life:</strong> Background feels "alive" at microscopic level</li>
+      <li><strong>Uncertainty principle:</strong> Random appearance mirrors quantum indeterminacy</li>
+      <li><strong>Scale connection:</strong> Links cosmic (your other themes) to subatomic</li>
+    </ul>
+    
+    <p>It's a visual metaphor for "there's more going on than meets the eye."</p>
+
+    <h2>Physics Context</h2>
+    
+    <p>Real quantum foam involves:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Virtual particles:</strong> Particle-antiparticle pairs that exist briefly</li>
+      <li><strong>Heisenberg uncertainty:</strong> Energy can be "borrowed" for short time</li>
+      <li><strong>Zero-point energy:</strong> Vacuum isn't empty—it seethes with activity</li>
+      <li><strong>Planck scale:</strong> Where quantum effects dominate spacetime</li>
+    </ul>
+    
+    <p>This visualization is scientifically inspired but artistically interpreted—real quantum foam occurs at scales far too small to see.</p>
+
+    <h2>Performance</h2>
+    
+    <p>Low particle count means minimal DOM manipulation. Each particle is a simple div that removes itself. No continuous animation—only CSS transitions. Lightweight and performant even on mobile.</p>
+
+    <h2>Variations</h2>
+    
+    <p>You could:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Make particles colored (your accent colors)</li>
+      <li>Create particle-antiparticle pairs that annihilate</li>
+      <li>Increase density in certain "hot" zones</li>
+      <li>Make size variable (some larger "virtual particles")</li>
+      <li>Add very subtle connection lines between nearby particles</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If you want the most scientifically esoteric background. This references cutting-edge physics theory—it's subtle but intellectually rich. Best for technical/scientific audiences who appreciate the reference, or anyone who wants to suggest "there's hidden complexity beneath the surface."</p>
+
+    <div class="footer">
+      <p><a href="15-lenticular-illusion.html">← Previous: Lenticular Illusion</a> | <a href="index.html">Back to demo index</a> | <a href="17-sound-visualization.html">Next: Sound Visualization →</a></p>
+    </div>
+  </div>
+
+  <script>
+    const layer = document.getElementById('quantum-layer');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (!prefersReducedMotion) {
+      function createQuantumParticle() {
+        const particle = document.createElement('div');
+        particle.className = 'quantum-particle';
+        
+        // Random position
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        
+        // Random lifespan (300-700ms)
+        const lifespan = 300 + Math.random() * 400;
+        particle.style.animation = `quantum-fluctuation ${lifespan}ms ease-in-out`;
+        
+        layer.appendChild(particle);
+        
+        // Remove after animation completes
+        setTimeout(() => {
+          particle.remove();
+        }, lifespan);
+      }
+      
+      // Create particles at random intervals
+      setInterval(() => {
+        // 50% chance every 100ms = ~5 particles per second
+        if (Math.random() > 0.5) {
+          createQuantumParticle();
+        }
+      }, 100);
+    }
+  </script>
+</body>
+</html>

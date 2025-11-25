@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15. Lenticular Illusion - Scroll-Based 3D Depth</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 0;
+      min-height: 300vh;
+    }
+    
+    .lenticular-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .lenticular-stripes {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        90deg,
+        transparent 0px,
+        rgba(99, 187, 185, 0.03) 10px,
+        transparent 20px,
+        rgba(245, 122, 89, 0.03) 30px,
+        transparent 40px
+      );
+      transform-origin: center;
+    }
+    
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .scroll-indicator {
+      text-align: center;
+      opacity: 0.5;
+      padding: 3rem 0;
+      font-size: 1.2rem;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      .lenticular-stripes {
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="lenticular-layer">
+    <div class="lenticular-stripes" id="stripes"></div>
+  </div>
+  
+  <div class="technique-label">15. Lenticular Illusion</div>
+  
+  <div class="content-wrapper">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to all demos</a>
+      
+      <h1>Lenticular Illusion</h1>
+      
+      <p>This technique creates a 3D depth illusion using vertical stripes that shift based on scroll position. It mimics lenticular printing (those images that change when you tilt them), creating perceived depth from 2D patterns.</p>
+
+      <h2>The Effect</h2>
+      
+      <p>Scroll up and down slowly. Notice how the background stripes appear to shift and create a sense of depth—as if you're looking through venetian blinds or a ribbed surface. The pattern:</p>
+      
+      <ul style="margin-left: 2em;">
+        <li>Uses your accent colors (cyan and coral)</li>
+        <li>Repeats every 40 pixels</li>
+        <li>Shifts perspective based on scroll position</li>
+        <li>Creates 3D illusion from 2D stripes</li>
+        <li>Extremely low opacity (3%)</li>
+      </ul>
+
+      <div class="scroll-indicator">
+        ↓ Scroll slowly to see the lenticular shift ↓
+      </div>
+
+      <h2>The Code</h2>
+      
+      <div class="code-block">
+.lenticular-stripes {
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0px,
+    rgba(99, 187, 185, 0.03) 10px,
+    transparent 20px,
+    rgba(245, 122, 89, 0.03) 30px,
+    transparent 40px
+  );
+}
+
+// On scroll, apply subtle perspective shift
+window.addEventListener('scroll', () => {
+  const scroll = window.pageYOffset;
+  stripes.style.transform = 
+    `perspective(1000px) 
+     rotateY(${scroll * 0.01}deg) 
+     scale(1.05)`;
+});
+      </code-block>
+
+      <h2>Why It Works</h2>
+      
+      <p>Lenticular effects exploit parallax and perspective cues. Your brain interprets the shifting stripes as evidence of 3D depth—similar to how:</p>
+      
+      <ul style="margin-left: 2em;">
+        <li><strong>Lenticular prints</strong> show different images at different angles</li>
+        <li><strong>Venetian blinds</strong> reveal/hide what's behind based on viewing angle</li>
+        <li><strong>Parallax barriers</strong> in 3D displays direct different images to each eye</li>
+      </ul>
+      
+      <p>The subtle perspective transform creates motion parallax as you scroll, tricking your visual system into perceiving depth.</p>
+
+      <div class="scroll-indicator">
+        ↓ Keep scrolling ↓
+      </div>
+
+      <h2>Perceptual Psychology</h2>
+      
+      <p>This technique leverages multiple depth cues:</p>
+      
+      <ul style="margin-left: 2em;">
+        <li><strong>Motion parallax:</strong> Stripes shift as you "move" (scroll)</li>
+        <li><strong>Perspective:</strong> Subtle 3D transform suggests receding plane</li>
+        <li><strong>Texture gradient:</strong> Regular stripe pattern implies surface</li>
+        <li><strong>Interposition:</strong> Stripes appear to be "over" background</li>
+      </ul>
+
+      <h2>Calibration Warning</h2>
+      
+      <p>This effect requires careful tuning. Too much rotation/shift can cause:</p>
+      
+      <ul style="margin-left: 2em;">
+        <li>Motion sickness (vestibular conflict)</li>
+        <li>Visual discomfort (straining to focus)</li>
+        <li>Distraction from content</li>
+      </ul>
+      
+      <p>Current settings (0.01deg per pixel scroll) are extremely subtle. Test thoroughly before production use.</p>
+
+      <h2>Best For</h2>
+      
+      <p>If you want an experimental, almost psychedelic depth effect. This is the most "trippy" option—it plays with perception in noticeable ways. Best for creative/artistic sites or experimental portfolios. Not recommended for corporate/professional contexts where conventional design is expected.</p>
+
+      <div class="footer">
+        <p><a href="14-glitch-effects.html">← Previous: Glitch Effects</a> | <a href="index.html">Back to demo index</a> | <a href="16-quantum-foam.html">Next: Quantum Foam →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const stripes = document.getElementById('stripes');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (!prefersReducedMotion) {
+      let ticking = false;
+      
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const scroll = window.pageYOffset;
+            const rotation = scroll * 0.01; // Very subtle
+            
+            stripes.style.transform = `
+              perspective(1000px) 
+              rotateY(${rotation}deg) 
+              scale(1.05)
+            `;
+            
+            ticking = false;
+          });
+          
+          ticking = true;
+        }
+      });
+    }
+  </script>
+</body>
+</html>

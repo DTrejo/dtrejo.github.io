@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18. CSS-Only Solutions - Zero JavaScript</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      background-image: 
+        /* Radial gradient vignette */
+        radial-gradient(ellipse at center top, 
+          rgba(1, 62, 95, 0.8) 0%, 
+          rgba(1, 50, 80, 1) 60%, 
+          rgba(1, 34, 64, 1) 100%
+        ),
+        /* Subtle noise pattern via inline SVG */
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.08"/></svg>'),
+        /* Color accent spots */
+        radial-gradient(circle at 20% 30%, 
+          rgba(99, 187, 185, 0.05) 0%, 
+          transparent 40%
+        ),
+        radial-gradient(circle at 80% 70%, 
+          rgba(245, 122, 89, 0.04) 0%, 
+          transparent 50%
+        );
+      background-repeat: no-repeat, repeat, no-repeat, no-repeat;
+      background-size: 100% 100%, 200px 200px, 100% 100%, 100% 100%;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+    }
+    
+    /* CSS-only animated accent */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, 
+        rgba(99, 187, 185, 0.03) 0%, 
+        transparent 70%
+      );
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: pulse-glow 8s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    @keyframes pulse-glow {
+      0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.6;
+      }
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .highlight {
+      background: rgba(245, 122, 89, 0.1);
+      padding: 0.1em 0.3em;
+      border-radius: 3px;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="technique-label">18. CSS-Only Solutions</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>CSS-Only Solutions</h1>
+    
+    <p><span class="highlight">Zero JavaScript.</span> This demo combines multiple CSS techniques—gradients, noise patterns, pseudo-elements, and animations—to create a rich background using only CSS. No DOM manipulation, no event listeners, no runtime overhead.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>This background layers several pure CSS effects:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Radial vignette</strong> — Darkens edges for depth</li>
+      <li><strong>SVG noise texture</strong> — Inline data URI for grain</li>
+      <li><strong>Color accent spots</strong> — Cyan/coral gradients positioned strategically</li>
+      <li><strong>Pulsing glow</strong> — CSS animation on pseudo-element</li>
+    </ul>
+    
+    <p>All declared in <code>background-image</code> and pseudo-elements—zero JavaScript means zero execution cost.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+body {
+  background-image: 
+    /* Vignette */
+    radial-gradient(ellipse at center top, 
+      rgba(1, 62, 95, 0.8) 0%, 
+      rgba(1, 50, 80, 1) 60%, 
+      rgba(1, 34, 64, 1) 100%
+    ),
+    /* Noise */
+    url('data:image/svg+xml;utf8,...'),
+    /* Color accents */
+    radial-gradient(circle at 20% 30%, 
+      rgba(99, 187, 185, 0.05) 0%, 
+      transparent 40%
+    ),
+    radial-gradient(circle at 80% 70%, 
+      rgba(245, 122, 89, 0.04) 0%, 
+      transparent 50%
+    );
+}
+
+/* Animated glow via pseudo-element */
+body::before {
+  background: radial-gradient(...);
+  animation: pulse-glow 8s ease-in-out infinite;
+}
+    </code-block>
+
+    <h2>Why It Works</h2>
+    
+    <p>CSS has become remarkably powerful—what once required JavaScript can now be achieved declaratively. Benefits of pure CSS:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Performance:</strong> Runs on GPU, no main thread blocking</li>
+      <li><strong>Reliability:</strong> Works even if JavaScript fails to load</li>
+      <li><strong>Simplicity:</strong> No build step, no dependencies, no runtime</li>
+      <li><strong>Compatibility:</strong> Degradation is graceful (just less fancy)</li>
+      <li><strong>Bundle size:</strong> Zero bytes of JavaScript</li>
+    </ul>
+    
+    <p>Modern CSS can do gradients, filters, transforms, animations, blend modes, masks, and more—all without scripting.</p>
+
+    <h2>What CSS Can Do</h2>
+    
+    <p>Techniques available in pure CSS:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Gradients:</strong> Linear, radial, conic—unlimited combinations</li>
+      <li><strong>Patterns:</strong> Repeating gradients create stripes, grids, dots</li>
+      <li><strong>Filters:</strong> blur, brightness, contrast, hue-rotate, etc.</li>
+      <li><strong>Blend modes:</strong> screen, multiply, overlay, difference</li>
+      <li><strong>Masks:</strong> Fade effects with linear/radial gradients</li>
+      <li><strong>Transforms:</strong> 3D rotations, scaling, perspective</li>
+      <li><strong>Animations:</strong> @keyframes with infinite loops</li>
+      <li><strong>Pseudo-elements:</strong> Extra layers without DOM nodes</li>
+    </ul>
+
+    <h2>Limitations</h2>
+    
+    <p>What you <em>can't</em> do without JavaScript:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Respond to user input (scroll, mouse, keyboard)</li>
+      <li>Generate random/unique patterns per visit</li>
+      <li>Complex logic or conditional rendering</li>
+      <li>Interact with APIs or external data</li>
+      <li>Respond to audio or sensors</li>
+    </ul>
+    
+    <p>But for static, declarative effects, CSS is sufficient and superior.</p>
+
+    <h2>Performance Benefits</h2>
+    
+    <p>This approach is dramatically faster:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Parse time:</strong> CSS parsed during page load, no deferred execution</li>
+      <li><strong>Main thread:</strong> Zero JavaScript means no blocking</li>
+      <li><strong>GPU acceleration:</strong> Transforms and animations run on GPU</li>
+      <li><strong>Memory:</strong> No event listeners, no DOM references, no state</li>
+      <li><strong>Battery:</strong> Hardware-accelerated, minimal CPU usage</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If performance and simplicity are priorities. This demonstrates that sophisticated backgrounds don't require JavaScript. Best for production sites where reliability and speed matter more than interactivity. Shows restraint and technical maturity—you know when <em>not</em> to use JavaScript.</p>
+
+    <div class="footer">
+      <p><a href="17-sound-visualization.html">← Previous: Sound Visualization</a> | <a href="index.html">Back to demo index</a> | <a href="19-svg-filters.html">Next: SVG Filters →</a></p>
+    </div>
+  </div>
+</body>
+</html>

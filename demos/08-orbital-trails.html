@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08. Orbital Trails - Planetary Motion</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+    
+    .orbits {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200%;
+      height: 200%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .orbit {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .orbit-1 {
+      width: 40%;
+      height: 30%;
+      animation: rotate-orbit 120s linear infinite;
+    }
+    
+    .orbit-2 {
+      width: 60%;
+      height: 45%;
+      animation: rotate-orbit 180s linear infinite reverse;
+      opacity: 0.7;
+    }
+    
+    .orbit-3 {
+      width: 80%;
+      height: 60%;
+      animation: rotate-orbit 240s linear infinite;
+      opacity: 0.5;
+    }
+    
+    .orbit-4 {
+      width: 100%;
+      height: 75%;
+      animation: rotate-orbit 300s linear infinite reverse;
+      opacity: 0.3;
+    }
+    
+    @keyframes rotate-orbit {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      .orbit {
+        animation: none;
+      }
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="orbits">
+    <div class="orbit orbit-1"></div>
+    <div class="orbit orbit-2"></div>
+    <div class="orbit orbit-3"></div>
+    <div class="orbit orbit-4"></div>
+  </div>
+  
+  <div class="technique-label">08. Orbital Trails</div>
+  
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to all demos</a>
+    
+    <h1>Orbital Trails</h1>
+    
+    <p>This technique shows curved elliptical paths suggesting planetary orbits. They rotate extremely slowly (2-5 minutes per revolution), creating subliminal motion that suggests cosmic scale and movement.</p>
+
+    <h2>The Effect</h2>
+    
+    <p>Look at the background for 10-15 seconds. You'll notice faint elliptical curves that are slowly, almost imperceptibly, rotating. Four overlapping orbits create depth through:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Different sizes (inner to outer orbits)</li>
+      <li>Different rotation speeds (120s to 300s)</li>
+      <li>Counter-rotating directions (some clockwise, some counterclockwise)</li>
+      <li>Decreasing opacity (inner orbits brighter, outer fainter)</li>
+    </ul>
+    
+    <p>The motion is so slow you don't consciously perceive it—your brain registers it as "alive" without being distracting.</p>
+
+    <h2>The Code</h2>
+    
+    <div class="code-block">
+.orbit {
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+  animation: rotate-orbit 120s linear infinite;
+}
+
+@keyframes rotate-orbit {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .orbit { animation: none; }
+}
+    </div>
+
+    <h2>Why It Works</h2>
+    
+    <p>Orbital mechanics create the most fundamental patterns in the universe—from electrons around nuclei to planets around stars to galaxies rotating. By referencing this, you tap into:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li><strong>Universal motion:</strong> Everything in space is in orbit</li>
+      <li><strong>Timeless elegance:</strong> Ellipses are perfect, eternal curves</li>
+      <li><strong>Subliminal life:</strong> Slow rotation feels organic, not mechanical</li>
+      <li><strong>Depth perception:</strong> Overlapping orbits create spatial layers</li>
+    </ul>
+    
+    <p>The 2-5 minute rotation periods match astronomical scales—you'd need a time-lapse to see real planets move. This creates accurate "feel" for cosmic motion.</p>
+
+    <h2>Performance</h2>
+    
+    <p>Pure CSS animation with GPU acceleration. The slow speed means updates are infrequent, resulting in minimal CPU usage. Four simple div elements with border and transform—extremely lightweight.</p>
+
+    <h2>Variations</h2>
+    
+    <p>You could:</p>
+    
+    <ul style="margin-left: 2em;">
+      <li>Add tiny dots that travel along orbit paths (actual "planets")</li>
+      <li>Use your accent colors (cyan/coral) for orbits</li>
+      <li>Make innermost orbit fastest, outermost slowest (Kepler's laws)</li>
+      <li>Add more orbits for denser orrery effect</li>
+      <li>Pulsate opacity in sync with rotation</li>
+    </ul>
+
+    <h2>Best For</h2>
+    
+    <p>If you want continuous subtle motion that reinforces cosmic themes. This is more abstract than constellations—it suggests physics and mechanics rather than mythology. Works well for technical/scientific content where precision and systems thinking are valued.</p>
+
+    <div class="footer">
+      <p><a href="07-constellations.html">← Previous: Constellations</a> | <a href="index.html">Back to demo index</a> | <a href="09-meteor-streaks.html">Next: Meteor Streaks →</a></p>
+    </div>
+  </div>
+</body>
+</html>

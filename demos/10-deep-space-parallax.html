@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10. Deep Space Parallax - Multi-Layer Depth</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * + * { margin-top: 1.5em; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 125%;
+      background-color: #013250;
+      color: #dcd9d6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      padding: 0;
+      min-height: 300vh;
+    }
+    
+    .parallax-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      pointer-events: none;
+    }
+    
+    .stars-far {
+      z-index: 1;
+    }
+    
+    .stars-mid {
+      z-index: 2;
+    }
+    
+    .stars-near {
+      z-index: 3;
+    }
+    
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+    }
+    
+    .star-far {
+      width: 1px;
+      height: 1px;
+      opacity: 0.3;
+    }
+    
+    .star-mid {
+      width: 1.5px;
+      height: 1.5px;
+      opacity: 0.5;
+    }
+    
+    .star-near {
+      width: 2px;
+      height: 2px;
+      opacity: 0.7;
+    }
+    
+    .technique-label {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    
+    .content-wrapper {
+      position: relative;
+      z-index: 4;
+      padding: 2rem;
+    }
+    
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 2.5rem;
+    }
+    p {
+      margin-top: 1.5em;
+    }
+    a {
+      color: #f57a59;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6300;
+    }
+    .back-link {
+      margin-top: 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+    .back-link:hover {
+      opacity: 1;
+    }
+    .code-block {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .scroll-indicator {
+      text-align: center;
+      opacity: 0.5;
+      padding: 3rem 0;
+      font-size: 1.2rem;
+    }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      .parallax-layer {
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="parallax-layer stars-far" id="stars-far"></div>
+  <div class="parallax-layer stars-mid" id="stars-mid"></div>
+  <div class="parallax-layer stars-near" id="stars-near"></div>
+  
+  <div class="technique-label">10. Deep Space Parallax</div>
+  
+  <div class="content-wrapper">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to all demos</a>
+      
+      <h1>Deep Space Parallax</h1>
+      
+      <p>This technique creates three layers of stars that move at different speeds as you scroll—far stars move slowly, near stars move faster, creating a sense of depth through differential motion.</p>
+
+      <h2>The Effect</h2>
+      
+      <p>Scroll down slowly and watch the background. Notice how the stars move at different rates:</p>
+      
+      <ul style="margin-left: 2em;">
+        <li><strong>Far stars</strong> (dim, 1px) — Move at 0.3x scroll speed</li>
+        <li><strong>Mid stars</strong> (medium, 1.5px) — Move at 0.6x scroll speed</li>
+        <li><strong>Near stars</strong> (bright, 2px) — Move at 0.9x scroll speed</li>
+        <li><strong>Content</strong> (this text) — Moves at 1.0x scroll speed</li>
+      </ul>
+      
+      <p>This differential motion tricks your brain into perceiving depth. It's the same principle used in video games and animation to create 3D environments from 2D layers.</p>
+
+      <div class="scroll-indicator">
+        ↓ Keep scrolling to experience the parallax effect ↓
+      </div>
+
+      <h2>The Code</h2>
+      
+      <div class="code-block">
+// Generate stars in three layers
+const layerFar = document.getElementById('stars-far');
+const layerMid = document.getElementById('stars-mid');
+const layerNear = document.getElementById('stars-near');
+
+// On scroll, move layers at different rates
+window.addEventListener('scroll', () => {
+  const scrolled = window.pageYOffset;
+  
+  layerFar.style.transform = 
+    `translateY(${scrolled * 0.3}px)`;
+  layerMid.style.transform = 
+    `translateY(${scrolled * 0.6}px)`;
+  layerNear.style.transform = 
+    `translateY(${scrolled * 0.9}px)`;
+});
+      </code-block>
+
+      <h2>Why It Works</h2>
+      
+      <p>Parallax scrolling exploits motion parallax—a depth cue your brain uses constantly. When you move your head, distant objects appear to move slower than near objects. By recreating this digitally:</p>
+      
+      <ul style="margin-left: 2em;">
+        <li>Brain interprets different speeds as different depths</li>
+        <li>Creates immersive "floating through space" feeling</li>
+        <li>Adds dynamism to what would be static starfield</li>
+        <li>Rewards scrolling with visual feedback</li>
+      </ul>
+      
+      <p>The subtle difference in star size and opacity reinforces the depth cues from motion.</p>
+
+      <div class="scroll-indicator">
+        ↓ Continue scrolling ↓
+      </div>
+
+      <h2>Performance Considerations</h2>
+      
+      <p>Scroll event listener fires frequently, so we use CSS transforms (GPU-accelerated) rather than position properties. Stars are simple div elements—no images, no canvas complexity.</p>
+      
+      <p>For production, consider:</p>
+      
+      <ul style="margin-left: 2em;">
+        <li>Throttling scroll listener to 60fps max</li>
+        <li>Using Intersection Observer to pause when off-screen</li>
+        <li>Limiting star count on mobile devices</li>
+        <li>Using will-change: transform on parallax layers</li>
+      </ul>
+
+      <h2>Accessibility</h2>
+      
+      <p>Respects <code>prefers-reduced-motion</code> by disabling all parallax movement. Motion can cause discomfort for users with vestibular disorders—static stars are shown instead.</p>
+
+      <h2>Best For</h2>
+      
+      <p>Long-form articles where scrolling is inevitable. The parallax effect rewards readers for progressing through content. Best on desktop where smooth scrolling is standard—mobile scrolling is often momentum-based, making parallax less effective.</p>
+
+      <div class="scroll-indicator">
+        ↓ Almost at the end ↓
+      </div>
+
+      <p>As you've scrolled through this demo, the three star layers have moved at different rates, creating depth. This technique is more noticeable than others—it's an experience, not just decoration.</p>
+
+      <div class="footer">
+        <p><a href="09-meteor-streaks.html">← Previous: Meteor Streaks</a> | <a href="index.html">Back to demo index</a> | <a href="11-nebula-glow-zones.html">Next: Nebula Glow Zones →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const layerFar = document.getElementById('stars-far');
+    const layerMid = document.getElementById('stars-mid');
+    const layerNear = document.getElementById('stars-near');
+    
+    // Generate stars
+    function generateStars(container, count, className) {
+      for (let i = 0; i < count; i++) {
+        const star = document.createElement('div');
+        star.className = `star ${className}`;
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 200}vh`; // Taller to cover scroll area
+        container.appendChild(star);
+      }
+    }
+    
+    generateStars(layerFar, 50, 'star-far');
+    generateStars(layerMid, 30, 'star-mid');
+    generateStars(layerNear, 20, 'star-near');
+    
+    // Parallax scroll effect
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (!prefersReducedMotion) {
+      let ticking = false;
+      
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const scrolled = window.pageYOffset;
+            
+            layerFar.style.transform = `translateY(${scrolled * 0.3}px)`;
+            layerMid.style.transform = `translateY(${scrolled * 0.6}px)`;
+            layerNear.style.transform = `translateY(${scrolled * 0.9}px)`;
+            
+            ticking = false;
+          });
+          
+          ticking = true;
+        }
+      });
+    }
+  </script>
+</body>
+</html>
