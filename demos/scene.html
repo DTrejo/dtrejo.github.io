@@ -186,7 +186,22 @@
     scene.add(cloudGroup);
 
     // Aurora layer (FBM domain-warped)
+
+    // Strategy 1: Original flat plane (current)
     const auroraGeometry = new THREE.PlaneGeometry(200, 100, 1, 1);
+
+    // Strategy 2: Vertex Shader Displacement
+    // const auroraGeometry = new THREE.PlaneGeometry(200, 100, 32, 16);
+
+    // Strategy 4: Higher-Res Plane with Manual Arc
+    // const auroraGeometry = new THREE.PlaneGeometry(200, 100, 64, 16);
+    // const positions = auroraGeometry.attributes.position.array;
+    // for (let i = 0; i < positions.length; i += 3) {
+    //   const x = positions[i];
+    //   positions[i + 2] = Math.sin(x * 0.02) * 15; // Arc depth
+    // }
+    // auroraGeometry.attributes.position.needsUpdate = true;
+
     const auroraMaterial = new THREE.ShaderMaterial({
       uniforms: {
         time: { value: 0 }
@@ -196,7 +211,16 @@
         
         void main() {
           vUv = uv;
-          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+          vec3 pos = position;
+
+          // Strategy 1: Original flat (no displacement)
+          // (no changes to pos)
+
+          // Strategy 2: Vertex Shader Displacement
+          // pos.z += sin(pos.x * 0.015) * 8.0;
+          // pos.y += pos.x * pos.x * 0.0005;
+
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
         }
       `,
       fragmentShader: `
@@ -277,8 +301,15 @@
     });
     
     const aurora = new THREE.Mesh(auroraGeometry, auroraMaterial);
+
+    // Strategy 1: Original positioning
     aurora.position.set(0, 15, -50);
     aurora.rotation.x = Math.PI * 0.99;
+
+    // Strategy 2, 4: Plane positioning
+    // aurora.position.set(0, 15, -50);
+    // aurora.rotation.x = Math.PI * 0.2;
+
     scene.add(aurora);
 
     // Aurora Clouds (static, arranged pattern)
@@ -288,7 +319,15 @@
 
         void main() {
           vUv = uv;
-          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+          vec3 pos = position;
+
+          // Strategy 1: Original flat (no displacement)
+          // (no changes to pos)
+
+          // Strategy 2: Vertex Shader Displacement
+          // pos.z += sin(pos.x * 0.08) * 2.0;
+
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
         }
       `,
       fragmentShader: `
@@ -376,7 +415,20 @@
 
     const auroraCloudMeshes = [];
     auroraClouds.forEach((cloudData, i) => {
+      // Strategy 1: Original flat plane (current)
       const geom = new THREE.PlaneGeometry(cloudData.width, cloudData.height);
+
+      // Strategy 2: Vertex Shader Displacement (needs segments)
+      // const geom = new THREE.PlaneGeometry(cloudData.width, cloudData.height, 16, 8);
+
+      // Strategy 4: Higher-Res Plane with Manual Arc
+      // const geom = new THREE.PlaneGeometry(cloudData.width, cloudData.height, 32, 8);
+      // const positions = geom.attributes.position.array;
+      // for (let i = 0; i < positions.length; i += 3) {
+      //   const x = positions[i];
+      //   positions[i + 2] = Math.sin(x * 0.08) * 3; // Arc depth
+      // }
+      // geom.attributes.position.needsUpdate = true;
       const mat = new THREE.ShaderMaterial({
         uniforms: {
           seed: { value: i * 3.7 },
@@ -390,8 +442,15 @@
       });
 
       const cloud = new THREE.Mesh(geom, mat);
+
+      // Strategy 1: Original positioning
       cloud.position.set(cloudData.x, cloudData.y, cloudData.z);
       cloud.rotation.x = Math.PI * 0.2;
+
+      // Strategy 2, 4: Plane positioning
+      // cloud.position.set(cloudData.x, cloudData.y, cloudData.z);
+      // cloud.rotation.x = Math.PI * 0.2;
+
       scene.add(cloud);
       auroraCloudMeshes.push(cloud);
     });
