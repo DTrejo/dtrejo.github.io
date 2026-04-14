@@ -79,13 +79,13 @@ const mds = []
 const assets = []
 const pages = []
 for (const f of files) {
+  const base = basename(f)
   if (f === 'blah.js') continue
   if (f === 'motif.js') continue
-  if (f === 'AGENTS.md') continue
+  if (base.toLowerCase() === 'agents.md') continue
   if (f.startsWith('server-fonts/')) continue
   if (f.startsWith('dist/')) continue
 
-  const base = basename(f)
   if (base[0] === '.') continue
   if (f.startsWith('_components/') && extname(f) === '.html') {
     component(f) // also processes these before .md
