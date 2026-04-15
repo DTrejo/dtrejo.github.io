@@ -15,9 +15,9 @@ My definition of a good doula: they are vouched for as "good" by one of your fri
 
 ## A reassuring message from my wife 😊 😈
 She says...
-**On a pain/difficulty scale of 0-10:**
+**On a pain/difficulty scale of 0–10:**
 1. **Contractions before the epidural:** As long as I had a TENS unit, it was manageable. Probably a 5.
-2. **The pushing stage:** I thought this would be the easiest part, but because my legs were completely numb from the epidural, I pushed for five and a half hours. I reached a point where I wanted to give up and just get a C-section. Then, the midwife had me push from the most awkward angle, and I finally delivered vaginally (plus a 2nd-degree tear). An 8.
+2. **The pushing stage:** I thought this would be the easiest part, but because my legs were completely numb from the epidural, I pushed for five and a half hours. I reached a point where I wanted to give up and just get a C-section. Then, the midwife had me push from the most awkward angle, and I finally delivered vaginally (plus a second-degree tear). An 8.
 3. **No colostrum postpartum:** The baby went hungry for two days, and her bilirubin levels spiked right to the borderline of needing to be admitted to the NICU. Fresh out of labor, we had to run back and forth between the pediatrician's office and the hospital for four consecutive days. Watching the baby get her blood drawn every day made my heart bleed too. Physical pain can be managed, but the emotional pain was a 10.
 4. **Breastfeeding:** After trying for five days, my milk finally came in and I started breastfeeding. Little did I know the difficulty level would skyrocket completely off the charts. On a scale of 0-10, I give it a 100! If you know, you know.
 
@@ -36,39 +36,39 @@ When stalled during active pushing, you have options:
 - Progression was stalled after pushing for a few hours. Very tough to curl into shrimp and push while relaxing everything else. Wanted to try cat-cow but didn’t get a chance to (and maybe that would have worsened tearing?). The midwife felt there was extra space between head and mom’s spine when on back. Almost hit four-hour push limit and had to do a C-section, later learned the limit is 6 hours. Super intense amount of energy used and pushing 💪.
 
 ## Pregnancy
-Start pumping with a good pump (or rent a hospital grade one for $70/mo, cheap) so you have plenty saved up to feed the baby and milk is ready to go when baby arrives. If you don’t have it physically with you at T-minus-one month, then rent one. Yes, this can cause induction so consult your doula and wait until gestationally mature. As you've heard, colostrum is gold.
+Start pumping with a good pump (or rent a hospital grade one for $70/mo, cheap) so you have plenty saved up to feed the baby and milk is ready to go when baby arrives. If you don’t have it physically with you at T-minus one month, then rent one. Yes, this can cause induction so consult your doula and wait until gestationally mature. As you've heard, colostrum is gold.
 
-All the nursery prep stuff is mostly unimportant in comparison. Do not paint anything–mom is super sensitive to smells–if you do (don't!!) use zero-VOC primer and paint. Ergonomic changing table, diapers, wipes, zinc diaper cream, bottle washer, breastfeeding products, mother care products, and other basics are as far as I’d go.
+All the nursery prep stuff is mostly unimportant in comparison. Do not paint anything—mom is super sensitive to smells. If you do (don't!!) use zero-VOC primer and paint. Ergonomic changing table, diapers, wipes, zinc diaper cream, bottle washer, breastfeeding products, mother care products, and other basics are as far as I’d go.
 
 IMO, DO NOT read or listen to any book about expecting: instead read a book balanced between pregnancy, birth, postpartum. The [Birth class recommended by our doula with Renata and Tia is very good (group)](https://www.thebayareadoula.com/servicesprivateclass-1), if you’re local, go take it! Would take it again and also want one on breastfeeding with an actual doll–knit 🧶 puppets are not detailed enough!
 
-In my opinion any book should cover the first 3 months, not just pregnancy. And at least 1/3 the book should be on the birth itself. So, 1/3 pregnancy, 1/3 birth, 1/3 the first 3 months (aka fourth trimester).
+In my opinion any book should cover the first three months, not just pregnancy. And at least 1/3 the book should be on the birth itself. So, 1/3 pregnancy, 1/3 birth, 1/3 the first three months (aka the fourth trimester).
 
 # Postpartum: 🎉 congrats! Now it gets hard
 
-You should learn how to triple feed, which everyone thinks is “so hard”, but what’s harder: your baby crying constantly and hungry or a bit more work? Oh, and 60% of babies get jaundice–do you want to visit the doctor daily and potentially also visit the hospital lab for blood draws when you should be home resting and are still bleeding?
+You should learn how to triple feed, which everyone thinks is “so hard”, but what’s harder: your baby crying constantly from hunger, or a bit more work? Oh, and 60% of babies get jaundice–do you want to visit the doctor daily and potentially also visit the hospital lab for blood draws when you should be home resting and are still bleeding?
 
 Here’s my definition of triple feeding:
 
-- breastfeed 0–10 minutes per side - careful not to make yourself raw! Follow deep latch cues (whole areola, head angled to allow nose space, ear/shoulder/hips in line, fingers in V behind each ear on bone, wrist pressing back under neck to achieve angle and lifted nose, mom's hand forms a C from underneath to create a "sandwich" to promote a deep latch, nipple to nose to which cues wide open mouth which prevents nipple damage). Dad helps keep hands out of the way, and gently compresses for 3 seconds and releases slowly to aid milk flow without disturbing latch. Mom does same from underneath.
+- Breastfeed 0–10 minutes per side—careful not to make yourself raw. Follow deep latch cues (whole areola, head angled to allow nose space, ear/shoulder/hips in line, fingers in V behind each ear on bone, wrist pressing back under neck to achieve angle and lifted nose, mom's hand forms a C from underneath to create a "sandwich" to promote a deep latch, nipple to nose to which cues wide open mouth which prevents nipple damage). Dad helps keep hands out of the way, and gently compresses for 3 seconds and releases slowly to aid milk flow without disturbing latch. Mom does same from underneath.
 - In parallel:
 -   || Mom: pump 10–15 minutes, adjust strength to comfortable just under discomfort, and experiment with flange sizes to feel what you like
 -   || Dad: feed breastmilk from previous pump, then feed formula if the baby is still making mouth noises or crying or sticking out tongue.
-- After pumping, dad can clean equipment while mom applies lanolin cream and silver shields (ensure no moisture underneath either!). Either holds baby upright and burps for 15mins.
-- Change diaper if you heard anything - apply zinc diaper cream after drying if there are any red spots.
+- After pumping, dad can clean equipment while mom applies lanolin cream and silver shields (ensure no moisture underneath either!). Either holds baby upright and burps for 15 minutes.
+- Change diaper if you heard anything - apply zinc diaper cream after drying if there are red spots.
 - Done! Satisfied and clean baby ready to go back to sleep, hopefully.
 
-In my opinion, the breastfeeding consultant should be there right when the baby is born–to help with the very first feeding and prevent damage, and share SPECIFICS on how to be successful. Get advice from a few consultants if you're not feeling good success and progress after the first meeting. Your provider may offer free sessions.
+In my opinion, the breastfeeding consultant should be there right when the baby is born—to help with the very first feeding and prevent damage, and share SPECIFICS on how to be successful. Get advice from a few consultants if you're not feeling good success and progress after the first meeting. Your provider may offer free sessions.
 
 Must have: electric or hospital grade breast pump.
 
-It’s very not fun how 1) super mega late breast pump and 2) healthcare advisors not giving pointed-enough advice, results in a chain of things that turn into a huge hassle (noted above).
+It’s very not fun how 1) super mega late breast pump and 2) healthcare advisors not giving pointed enough advice, results in a chain of things that turn into a huge hassle (noted above).
 
 ### High bilirubin, aka jaundice
 - Fight it by feeding more (triple feeding)
 - Visiting hospital daily for blood tests SUCKS
 - NICU for light therapy if levels get too high (based on hours of age), which prevents very low chance of brain damage.
-- Very common (60% of first-borns in U.S.), due to poor advice on how to prepare for after the birth, imo.
+- Very common (60% of firstborns in the U.S.), due to poor advice on how to prepare for after the birth, imo.
 
 ### Bottle feeding
 - Slow flow wide nipple for jaw development and to reduce nipple confusion. Dr. Brown’s bottle and nipple are good.
@@ -77,7 +77,7 @@ It’s very not fun how 1) super mega late breast pump and 2) healthcare advisor
 
 I think a postpartum doula, along with parents to help, is very valuable. What would you pay to reduce the 50% divorce rate of new parents? A postpartum doula is very affordable in comparison to all the pain of a divorce.
 
-Now you know a lot more than I did about the tough parts than I did. I don't expect you do everything in this article, and you definitely need to customize everything so it works for you. This article is not intended to cover everything you need to know, just the stuff we found most important that we felt was missing elsewhere.
+Now you know a lot more about the tough parts than I did. I don't expect you do everything in this article, and you definitely need to customize everything so it works for you. This article is not intended to cover everything you need to know, just the stuff we found most important that we felt was missing elsewhere.
 
 Wishing you a very healthy and happy family,  
 _David Trejo_  
