@@ -5,7 +5,7 @@ tags: howto, health
 ---
 # ${this.title}
 
-This is not medical advice, I am not liable for anything.
+This is not medical advice, I am not liable for anything. We are first time parents.
 
 ## Don't learn the slow way: trial and error
 
