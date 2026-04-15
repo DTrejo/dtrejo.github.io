@@ -9,7 +9,7 @@ This is not medical advice, I am not liable for anything. We are first-time pare
 
 ## Don't learn the slow way: trial and error
 
-Having a good paid mentor helps you learn things that you’d never have figured out on your own, at top speed. That’s why I highly recommend a good doula (we really like ours), and a doula can be your conduit for all the advice and recommendations you need. We would have had a much more difficult time without our doula.
+Having a good paid mentor helps you learn things that you’d never have figured out on your own, at top speed. That’s why I highly recommend a good doula (we really like ours), and they can be your conduit for all the advice and recommendations you need. We would have had a much more difficult time without our doula.
 
 My definition of a good doula: they are vouched for as "good" by one of your friends who has had multiple kids.
 
@@ -44,7 +44,7 @@ Here’s my definition of triple feeding:
 
 - breastfeed 0–10 minutes per side - careful not to make yourself raw! Follow deep latch cues (whole areola, head angled to allow nose space, ear/shoulder/hips in line, fingers in V behind each ear on bone, wrist pressing back under neck to achieve angle and lifted nose, mom's hand forms a C from underneath to create a "sandwich" to promote a deep latch, nipple to nose to which cues wide open mouth which prevents nipple damage). Dad helps keep hands out of the way, and gently compresses for 3 seconds and releases slowly to aid milk flow without disturbing latch. Mom does same from underneath.
 - In parallel:
--   || Mom: pump 10–15 minutes, adjust strength to comfortable just under discomfort, and experiment with flanges to feel what you like
+-   || Mom: pump 10–15 minutes, adjust strength to comfortable just under discomfort, and experiment with flange sizes to feel what you like
 -   || Dad: feed breastmilk from previous pump, then feed formula if the baby is still making mouth noises or crying or sticking out tongue.
 - After pumping, dad can clean equipment while mom applies lanolin cream and silver shields (ensure no moisture underneath either!). Either holds baby upright and burps for 15mins.
 - Change diaper if you heard anything - apply zinc diaper cream after drying if there are any red spots.
