@@ -13,6 +13,14 @@ Having a good paid mentor helps you learn things that you’d never have figured
 
 My definition of a good doula: they are vouched for as "good" by one of your friends who has had multiple kids.
 
+## A reassuring message from my wife 😈
+She says...
+**On a pain/difficulty scale of 0-10:**
+1. **Contractions before the epidural:** As long as I had a TENS unit, it was manageable. Probably a 5.
+2. **The pushing stage:** I thought this would be the easiest part, but because my legs were completely numb from the epidural, I pushed for five and a half hours. I reached a point where I wanted to give up and just get a C-section. Then, the midwife had me push from the most awkward angle, and I finally delivered vaginally (plus a 2nd-degree tear). An 8.
+3. **No colostrum postpartum:** The baby went hungry for two days, and her bilirubin levels spiked right to the borderline of needing to be admitted to the NICU. Fresh out of labor, we had to run back and forth between the pediatrician's office and the hospital for four consecutive days. Watching the baby get her blood drawn every day made my heart bleed too. Physical pain can be managed, but the emotional pain was a 10.
+4. **Breastfeeding:** After trying for five days, my milk finally came in and I started breastfeeding. Little did I know the difficulty level would skyrocket completely off the charts. On a scale of 0-10, I give it a 100! If you know, you know.
+
 ## Birth
 Changing positions during birth makes it a lot easier for the baby to navigate its way out.
 
@@ -36,7 +44,7 @@ IMO, DO NOT read or listen to any book about expecting: instead read a book bala
 
 In my opinion any book should cover the first 3 months, not just pregnancy. And at least 1/3 the book should be on the birth itself. So, 1/3 pregnancy, 1/3 birth, 1/3 the first 3 months (aka fourth trimester).
 
-# Postpartum: congrats! Now it gets hard
+# Postpartum: 🎉 congrats! Now it gets hard
 
 You should learn how to triple feed, which everyone thinks is “so hard”, but what’s harder: your baby crying constantly and hungry or a bit more work? Oh, and 60% of babies get jaundice–do you want to visit the doctor daily and potentially also visit the hospital lab for blood draws when you should be home resting and are still bleeding?
 
@@ -50,13 +58,13 @@ Here’s my definition of triple feeding:
 - Change diaper if you heard anything - apply zinc diaper cream after drying if there are any red spots.
 - Done! Satisfied and clean baby ready to go back to sleep, hopefully.
 
-In my opinion, breastfeeding consultant should be there right when the baby is born! To help with the very first feeding and prevent damage, and share SPECIFICS on how to be successful
+In my opinion, the breastfeeding consultant should be there right when the baby is born–to help with the very first feeding and prevent damage, and share SPECIFICS on how to be successful. Get advice from a few consultants if you're not feeling good success and progress after the first meeting. Your provider may offer free sessions.
 
 Must have: electric or hospital grade breast pump.
 
 It’s very not fun how 1) super mega late breast pump and 2) healthcare advisors not giving pointed-enough advice, results in a chain of things that turn into a huge hassle (noted above).
 
-### High Bilirubin, aka Jaundice
+### High bilirubin, aka jaundice
 - Fight it by feeding more (triple feeding)
 - Visiting hospital daily for blood tests SUCKS
 - NICU for light therapy if levels get too high (based on hours of age), which prevents very low chance of brain damage.
