@@ -13,7 +13,7 @@ Having a good paid mentor helps you learn things that you’d never have figured
 
 My definition of a good doula: they are vouched for as "good" by one of your friends who has had multiple kids.
 
-## A reassuring message from my wife 😈
+## A reassuring message from my wife 😊 😈
 She says...
 **On a pain/difficulty scale of 0-10:**
 1. **Contractions before the epidural:** As long as I had a TENS unit, it was manageable. Probably a 5.
