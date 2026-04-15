@@ -9,7 +9,7 @@ This is not medical advice. I am not liable for anything. Opinions mine. We are 
 
 ## Don't learn the slow way: trial and error
 
-Having a good paid mentor helps you learn things that you’d never have figured out on your own, at top speed. That’s why I highly recommend a good doula (we really like ours), and they can be your conduit for all the advice and recommendations you need. We would have had a much more difficult time without our doula.
+Having a good paid mentor helps you learn things that you’d never have figured out on your own, at top speed. That’s why I highly recommend a good doula (we really like ours), and they can be your conduit for all the advice and recommendations you need. We would have had a much more difficult time without our doula. Our [doula was Ronit Varga](https://www.ronitaprilv.com/) ([Google reviews](https://share.google/9BrFGkOCx2k7C2fPd)).
 
 My definition of a good doula: they are vouched for as "good" by one of your friends who has had multiple kids.
 
