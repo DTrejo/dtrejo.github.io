@@ -82,7 +82,8 @@ for (const f of files) {
   const base = basename(f)
   if (f === 'blah.js') continue
   if (f === 'motif.js') continue
-  if (['agents.md', 'readme.md'].includes(base.toLowerCase())) continue
+  if (f === 'agents.md') continue
+  if (f === 'readme.md') continue
   if (f.startsWith('server-fonts/')) continue
   if (f.startsWith('dist/')) continue
 
