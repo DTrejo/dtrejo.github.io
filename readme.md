@@ -1,4 +1,7 @@
-# Creating a new article
+# dtrejo.com
+Source and static site generator for dtrejo.com. See blah.js for article generation code and motif.js for social image generation code.
+
+## Creating a new article
 
 1. Copy `a-draft.md` to a new file named `<slug>.md` (example: `my-new-article.md`).
 2. Update frontmatter (`title`, `date`, optional `tags`, optional `layout`, optional `redirect`).
