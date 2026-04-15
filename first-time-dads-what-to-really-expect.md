@@ -9,7 +9,7 @@ This is not medical advice, I am not liable for anything. We are first time pare
 
 ## Don't learn the slow way: trial and error
 
-Having a good paid mentor helps you learn things that you’d never have figured out on your own, at top speed. That’s why I highly recommend a good doula (we really like ours), and they can be your conduit for all the advice and recommendations you need.
+Having a good paid mentor helps you learn things that you’d never have figured out on your own, at top speed. That’s why I highly recommend a good doula (we really like ours), and they can be your conduit for all the advice and recommendations you need. We would have had a much more difficult time without our doula.
 
 My definition of a good doula: they are vouched for as "good" by one of your friends who has had multiple kids.
 
@@ -19,7 +19,7 @@ Changing positions during birth makes it a lot easier for the baby to navigate i
 When stalled during active pushing, you have options:
 1. Ask for progress stats (effacement %, position, diameter).
 2. Midwife feels for gaps to inform positions to try (weighted by positions which reduce tearing)
-3. Your Doula is key owner of and helper to initiate new positions. You likely just won't have mental bandwith for this if you don't have a doula, plus you don't know all the fancy and useful ways the hospital bed can be configured.
+3. Your doula is key owner of positioning and a huge help to initiate new positions. You likely just won't have mental bandwidth for this if you don't have a doula, plus you don't know all the fancy and useful ways the hospital bed can be configured. I am understating the ways a doula can be helpful.
 
 ### Our birth events
 - Must have: TENS unit (~$80) to reduce pain of contractions. TENS unit on acupuncture point for morning sickness helps too. Our doula loaned us hers.
@@ -32,7 +32,7 @@ Start pumping with a good pump (or rent a hospital grade one for $70/mo, cheap i
 
 All the nursery prep stuff is mostly unimportant in comparison. Do not paint anything–mom is super sensitive to smells–if you do (don't!!) use zero VoC primer and paint. Ergonomic changing table, diapers, wipes, zinc diaper cream, bottle washer, breastfeeding products, mother care products, and other basics are as far as I’d go.
 
-IMO, DO NOT read/listen any book about expecting: instead read a book balanced between pregnancy, birth, postpartum. The [Birth class rec’d by our Doula with Renata and Tia is very good (group)](https://www.thebayareadoula.com/servicesprivateclass-1), if you’re local, go take it! Would take it again and also want one on breastfeeding with an actual doll–knit 🧶 puppets are not detailed enough!
+IMO, DO NOT read/listen any book about expecting: instead read a book balanced between pregnancy, birth, postpartum. The [Birth class rec’d by our doula with Renata and Tia is very good (group)](https://www.thebayareadoula.com/servicesprivateclass-1), if you’re local, go take it! Would take it again and also want one on breastfeeding with an actual doll–knit 🧶 puppets are not detailed enough!
 
 In my opinion any book should cover the first 3 months, not just pregnancy. And at least 1/3 the book should be on the birth itself. So, 1/3 pregnancy, 1/3 birth, 1/3 the first 3 months (aka fourth trimester).
 
@@ -42,7 +42,7 @@ You should learn how to triple feed, which everyone thinks is “so hard”, but
 
 Here’s my definition of triple feeding:
 
-- breastfeed 0-10 mins per side - careful not to make yourself raw! Follow deep latch cues (whole areola, head angled to allow nose space, ear/shoulder/hips in line, fingers in V behind each ear on bone, wrist pressing back under neck to achieve angle and lifted nose, mom's hand forms C from underneath to create a "sandwich" to promote a deep latch, nipple to nose to which cues wide open mouth which prevents nipple damage). Dad helps keep hands out of the way, and gently compresses for 3 seconds and releases slowly to aid milk flow without disturbing latch. Mom does same from underneath.
+- breastfeed 0-10 mins per side - careful not to make yourself raw! Follow deep latch cues (whole areola, head angled to allow nose space, ear/shoulder/hips in line, fingers in V behind each ear on bone, wrist pressing back under neck to achieve angle and lifted nose, mom's hand forms a C from underneath to create a "sandwich" to promote a deep latch, nipple to nose to which cues wide open mouth which prevents nipple damage). Dad helps keep hands out of the way, and gently compresses for 3 seconds and releases slowly to aid milk flow without disturbing latch. Mom does same from underneath.
 - In parallel:
 -   || Mom: pump 10-15mins, adjust strength to comfortable just under discomfort , experiment with flanges to feel what you like
 -   || Dad: feed breastmilk from previous pump, then feed formula if baby still making mouth noises or crying or sticking out tongue.
