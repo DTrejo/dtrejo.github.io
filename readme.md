@@ -9,3 +9,5 @@ Source and static site generator for dtrejo.com. See blah.js for article generat
 4. For typical articles, skip local build checks; generation happens on push.
 5. For typical articles, skip local output checks (HTML/social image/sitemap); these are handled on push.
 6. Commit and push the new `.md` file.
+7. CCI rebuilds and publishes site to `main`, github pages displays it within a minute or two.
+8. Done!
