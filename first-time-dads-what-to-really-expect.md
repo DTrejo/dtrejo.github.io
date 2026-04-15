@@ -56,7 +56,7 @@ Must have: electric or hospital grade breast pump.
 
 It’s very not fun how 1) super mega late breast pump and 2) healthcare advisors not giving pointed-enough advice, results in a chain of things that turn into a huge hassle (noted above).
 
-### High Bilirubin / Jaundice
+### High Bilirubin, aka Jaundice
 - Fight it by feeding more (triple feeding)
 - Visiting hospital daily for blood tests SUCKS
 - NICU for light therapy if levels get too high (based on hours of age), which prevents very low chance of brain damage.
@@ -69,7 +69,7 @@ It’s very not fun how 1) super mega late breast pump and 2) healthcare advisor
 
 I think a postpartum doula, along with parents to help, is very valuable. What would you pay to reduce the 50% divorce rate of new parents? A postpartum doula is very affordable in comparison to all the pain of a divorce.
 
-Now you know a lot more than I did about the tough parts than I did. I don't expect you do everything in this article, and you definitely need to customize everything so it works for you. This article is not intended to cover everything you need to know, just the stuff we found most important.
+Now you know a lot more than I did about the tough parts than I did. I don't expect you do everything in this article, and you definitely need to customize everything so it works for you. This article is not intended to cover everything you need to know, just the stuff we found most important that we felt was missing elsewhere.
 
 Wishing you a very healthy and happy family,  
 _David Trejo_  
