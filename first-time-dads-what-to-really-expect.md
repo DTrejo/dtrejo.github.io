@@ -5,7 +5,7 @@ tags: howto, health
 ---
 # ${this.title}
 
-This is not medical advice, I am not liable for anything. We are first-time parents.
+This is not medical advice. I am not liable for anything. We are first-time parents.
 
 ## Don't learn the slow way: trial and error
 
@@ -36,7 +36,7 @@ When stalled during active pushing, you have options:
 - Progression was stalled after pushing for a few hours. Very tough to curl into shrimp and push while relaxing everything else. Wanted to try cat-cow but didn’t get a chance to (and maybe that would have worsened tearing?). The midwife felt there was extra space between head and mom’s spine when on back. Almost hit four-hour push limit and had to do a C-section, later learned the limit is 6 hours. Super intense amount of energy used and pushing 💪.
 
 ## Pregnancy
-Start pumping with a good pump (or rent a hospital grade one for $70/mo, cheap imo) so you have plenty saved up to feed the baby and milk is ready to go when baby arrives. If you don’t have it physically with you at T-minus-one month, then rent one. Yes, this can cause induction so consult your doula and wait until gestationally mature. As you've heard, colostrum is gold.
+Start pumping with a good pump (or rent a hospital grade one for $70/mo, cheap) so you have plenty saved up to feed the baby and milk is ready to go when baby arrives. If you don’t have it physically with you at T-minus-one month, then rent one. Yes, this can cause induction so consult your doula and wait until gestationally mature. As you've heard, colostrum is gold.
 
 All the nursery prep stuff is mostly unimportant in comparison. Do not paint anything–mom is super sensitive to smells–if you do (don't!!) use zero-VOC primer and paint. Ergonomic changing table, diapers, wipes, zinc diaper cream, bottle washer, breastfeeding products, mother care products, and other basics are as far as I’d go.
 
