@@ -15,6 +15,7 @@ My definition of a good doula: they are vouched for as "good" by one of your fri
 
 ## A reassuring message from my wife 😊 😈
 She says...
+
 **On a pain/difficulty scale of 0–10:**
 1. **Contractions before the epidural:** As long as I had a TENS unit, it was manageable. Probably a 5.
 2. **The pushing stage:** I thought this would be the easiest part, but because my legs were completely numb from the epidural, I pushed for five and a half hours. I reached a point where I wanted to give up and just get a C-section. Then, the midwife had me push from the most awkward angle, and I finally delivered vaginally (plus a second-degree tear). An 8.
@@ -40,7 +41,7 @@ Start pumping with a good pump (or rent a hospital grade one for $70/mo, cheap) 
 
 All the nursery prep stuff is mostly unimportant in comparison. Do not paint anything—mom is super sensitive to smells. If you do (don't!!) use zero-VOC primer and paint. Ergonomic changing table, diapers, wipes, zinc diaper cream, bottle washer, breastfeeding products, mother care products, and other basics are as far as I’d go.
 
-DO NOT read or listen to any book about expecting: instead read a book balanced between pregnancy, birth, postpartum. The [Birth class recommended by our doula with Renata and Tia is very good (group)](https://www.thebayareadoula.com/servicesprivateclass-1), if you’re local, go take it! Would take it again and also want one on breastfeeding with an actual doll–knit 🧶 puppets are not detailed enough!
+DO NOT read or listen to any book about expecting: instead read a book balanced between pregnancy, birth, postpartum. The [birth class recommended by our doula with Renata and Tia is very good (group)](https://www.thebayareadoula.com/servicesprivateclass-1), if you’re local, go take it! Would take it again and also want one on breastfeeding with an actual doll–knit 🧶 puppets are not detailed enough!
 
 In my opinion any book should cover the first three months, not just pregnancy. And at least 1/3 the book should be on the birth itself. So, 1/3 pregnancy, 1/3 birth, 1/3 the first three months (aka the fourth trimester).
 
@@ -62,13 +63,13 @@ In my opinion, the breastfeeding consultant should be there right when the baby 
 
 Must have: electric or hospital grade breast pump.
 
-It’s very not fun how 1) super mega late breast pump and 2) healthcare advisors not giving pointed enough advice, results in a chain of things that turn into a huge hassle (noted above).
-
 ### High bilirubin, aka jaundice
 - Fight it by feeding more (triple feeding)
 - Visiting hospital daily for blood tests SUCKS
 - NICU for light therapy if levels get too high (based on hours of age), which prevents very low chance of brain damage.
 - Very common (60% of firstborns in the U.S.), due to poor advice on how to prepare for after the birth.
+
+It’s very not fun how 1) super mega late breast pump and 2) healthcare advisors not giving pointed enough advice, results in a chain of things that turn into a huge hassle.
 
 ### Bottle feeding
 - Slow flow wide nipple for jaw development and to reduce nipple confusion. Dr. Brown’s bottle and nipple are good.
