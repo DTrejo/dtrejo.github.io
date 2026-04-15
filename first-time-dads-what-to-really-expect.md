@@ -5,7 +5,7 @@ tags: howto, health
 ---
 # ${this.title}
 
-This is not medical advice. I am not liable for anything. We are first-time parents.
+This is not medical advice. I am not liable for anything. Opinions mine. We are first-time parents.
 
 ## Don't learn the slow way: trial and error
 
@@ -40,7 +40,7 @@ Start pumping with a good pump (or rent a hospital grade one for $70/mo, cheap) 
 
 All the nursery prep stuff is mostly unimportant in comparison. Do not paint anything—mom is super sensitive to smells. If you do (don't!!) use zero-VOC primer and paint. Ergonomic changing table, diapers, wipes, zinc diaper cream, bottle washer, breastfeeding products, mother care products, and other basics are as far as I’d go.
 
-IMO, DO NOT read or listen to any book about expecting: instead read a book balanced between pregnancy, birth, postpartum. The [Birth class recommended by our doula with Renata and Tia is very good (group)](https://www.thebayareadoula.com/servicesprivateclass-1), if you’re local, go take it! Would take it again and also want one on breastfeeding with an actual doll–knit 🧶 puppets are not detailed enough!
+DO NOT read or listen to any book about expecting: instead read a book balanced between pregnancy, birth, postpartum. The [Birth class recommended by our doula with Renata and Tia is very good (group)](https://www.thebayareadoula.com/servicesprivateclass-1), if you’re local, go take it! Would take it again and also want one on breastfeeding with an actual doll–knit 🧶 puppets are not detailed enough!
 
 In my opinion any book should cover the first three months, not just pregnancy. And at least 1/3 the book should be on the birth itself. So, 1/3 pregnancy, 1/3 birth, 1/3 the first three months (aka the fourth trimester).
 
@@ -50,7 +50,7 @@ You should learn how to triple feed, which everyone thinks is “so hard”, but
 
 Here’s my definition of triple feeding:
 
-- Breastfeed 0–10 minutes per side—careful not to make yourself raw. Follow deep latch cues (whole areola, head angled to allow nose space, ear/shoulder/hips in line, fingers in V behind each ear on bone, wrist pressing back under neck to achieve angle and lifted nose, mom's hand forms a C from underneath to create a "sandwich" to promote a deep latch, nipple to nose to which cues wide open mouth which prevents nipple damage). Dad helps keep hands out of the way, and gently compresses for 3 seconds and releases slowly to aid milk flow without disturbing latch. Mom does same from underneath.
+- Breastfeed 0–10 minutes per side—careful not to make yourself raw! Follow deep latch cues (whole areola, head angled to allow nose space, ear/shoulder/hips in line, fingers in V behind each ear on bone, wrist pressing back under neck to achieve angle and lifted nose, mom's hand forms a C from underneath to create a "sandwich" to promote a deep latch, nipple to nose to which cues wide open mouth which prevents nipple damage). Dad helps keep hands out of the way, and gently compresses for 3 seconds and releases slowly to aid milk flow without disturbing latch. Mom does same from underneath.
 - In parallel:
 -   || Mom: pump 10–15 minutes, adjust strength to comfortable just under discomfort, and experiment with flange sizes to feel what you like
 -   || Dad: feed breastmilk from previous pump, then feed formula if the baby is still making mouth noises or crying or sticking out tongue.
@@ -68,7 +68,7 @@ It’s very not fun how 1) super mega late breast pump and 2) healthcare advisor
 - Fight it by feeding more (triple feeding)
 - Visiting hospital daily for blood tests SUCKS
 - NICU for light therapy if levels get too high (based on hours of age), which prevents very low chance of brain damage.
-- Very common (60% of firstborns in the U.S.), due to poor advice on how to prepare for after the birth, imo.
+- Very common (60% of firstborns in the U.S.), due to poor advice on how to prepare for after the birth.
 
 ### Bottle feeding
 - Slow flow wide nipple for jaw development and to reduce nipple confusion. Dr. Brown’s bottle and nipple are good.
