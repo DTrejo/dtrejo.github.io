@@ -71,6 +71,13 @@ Must have: electric or hospital grade breast pump.
 
 It’s very not fun how 1) super mega late breast pump and 2) healthcare advisors not giving pointed enough advice, results in a chain of things that turn into a huge hassle.
 
+*Update:* my friend shares the following with us:
+> We also had jaundice and did the blood tests. I hated that our baby had to go through that.
+> The NICU treatment for jaundice is just a specific wavelength of blue light.
+> There is no reason not to just do the light treatment yourself. You can [get it on Amazon for ~$40](https://a.co/d/06lsFmMM).
+> I was so pissed about the back and forth trips to do the blood draws.
+> The risk factor of blue light treatment is just that the baby gets cold during the skin exposure to blue light. So you have to keep them warm but otherwise it’s harmless. It's not UV or super powerful light or anything.
+
 ### Bottle feeding
 - Slow flow wide nipple for jaw development and to reduce nipple confusion. Dr. Brown’s bottle and nipple are good.
 - Side position in line.
