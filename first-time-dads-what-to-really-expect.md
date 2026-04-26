@@ -51,7 +51,7 @@ You should learn how to triple feed, which everyone thinks is “so hard”, but
 
 Here’s my definition of triple feeding:
 
-- Breastfeed 0–10 minutes per side—careful not to make yourself raw! Follow deep latch cues (whole areola, head angled to allow nose space, ear/shoulder/hips in line, fingers in V behind each ear on bone, wrist pressing back under neck to achieve angle and lifted nose, mom's hand forms a C from underneath to create a "sandwich" to promote a deep latch, nipple to nose to which cues wide open mouth which prevents nipple damage). Dad helps keep hands out of the way, and gently compresses for 3 seconds and releases slowly to aid milk flow without disturbing latch. Mom does same from underneath.
+- Breastfeed 0–10 minutes per side—careful not to make yourself raw! Follow deep latch cues (whole areola, head angled to allow nose space, ear/shoulder/hips in line, fingers in V behind each ear on bone, wrist pressing back under neck to achieve angle and lifted nose, mom's hand forms a C from underneath to create a "sandwich" to promote a deep latch, nipple to nose to which cues wide open mouth which prevents nipple damage). Dad helps keep hands out of the way, and gently compresses for 3 seconds and releases slowly to aid milk flow without disturbing latch. Mom does same from underneath. *Update:* Laid back position / biological nurturing is superior to all other breastfeeding positions. No need for any of the complex cues outlined above. 
 - In parallel:
 -   || Mom: pump 10–15 minutes, adjust strength to comfortable just under discomfort, and experiment with flange sizes to feel what you like
 -   || Dad: feed breastmilk from previous pump, then feed formula if the baby is still making mouth noises or crying or sticking out tongue.
