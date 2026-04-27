@@ -56,7 +56,7 @@ So, how can I create more pull energy?
 The best work is work you can't resist doing. The best marketing is marketing you
 can't resist doing. The best money is money you couldn't resist making.
 
-They say content marketing takes 6 months to kick in. You may not realize it when you first start, but you're probably going to spend at least 12 months trying to make your niche work. It is worth starting right away, but how do we may writing enjoyable? I haven't taken Amy Hoy's 30x500, but I have read Year Of Hustle and both Jonathan Stark and Philip Morgan have told me how much they look forward to speaking to their audience.
+They say content marketing takes 6 months to kick in. You may not realize it when you first start, but you're probably going to spend at least 12 months trying to make your niche work. It is worth starting right away, but how do we make writing enjoyable? I haven't taken Amy Hoy's 30x500, but I have read Year Of Hustle and both Jonathan Stark and Philip Morgan have told me how much they look forward to speaking to their audience.
 
 ## How I'd create pull for myself in my next business:
 You'll notice this is almost exactly what Amy recommends.
@@ -71,7 +71,7 @@ A very low amount of grind activation energy is needed to begin:
 - Pull: People pay you for your product/book or ask for your consulting help.
 - Repeat.
 
-Once you have set up the preceding virtuous cycle, you can repeat it with new products and services, and only include CTAs to what people haven't already bought. This idea is Brennan's. Brennan: thanks for coming over for steak before I'd even begun solo-consulting and recommending that I read The Brain Audit (my #2 favorite book); Getting Everything You Can Out of Everything You've Got (partially read); The Sticking Point Solution (unread still); Influence (unread still); and Inc Yourself (partially read). I really enjoyed the Double Your Freelancing Rate book (née The Blueprint).
+Once you have set up the preceding virtuous cycle, you can repeat it with new products and services, and only include CTAs to what people haven't already bought. This idea is Brennan's. Brennan: thanks for coming over for steak before I'd even begun solo-consulting and recommending that I read The Brain Audit (my #2 favorite book); Getting Everything You Can Out of Everything You've Got (partially read); The Sticking Point Solution (unread still); Influence; and Inc Yourself (partially read). I really enjoyed the Double Your Freelancing Rate book (née The Blueprint).
 
 The above compares very favorably to my main strategy for making sales, cold outreach emails:
 
